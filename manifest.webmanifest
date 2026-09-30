@@ -1,0 +1,29 @@
+{
+  "name": "MotorLab EF · Repositorio editable de juegos",
+  "short_name": "MotorLab EF",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone"
+  ],
+  "orientation": "any",
+  "background_color": "#f5f7fb",
+  "theme_color": "#2563eb",
+  "description": "Repositorio editable de juegos de Educación Física con constructor de sesiones.",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
