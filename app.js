@@ -1,8 +1,8 @@
 let games=[], sources=[], session=[], savedSessions=[], units=[];
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
-const KEYS={sessions:'motorlab_sessions',units:'motorlab_units',overrides:'motorlab_game_overrides',deleted:'motorlab_deleted_games',meta:'motorlab_game_meta',settings:'motorlab_sync_settings',sync:'motorlab_sync_meta'};
-const DEFAULT_API='http://100.106.38.57:8090';
+const KEYS={sessions:'motorlab_sessions',units:'motorlab_units',overrides:'motorlab_game_overrides',deleted:'motorlab_deleted_games',deletedSessions:'motorlab_deleted_sessions',deletedUnits:'motorlab_deleted_units',meta:'motorlab_game_meta',settings:'motorlab_sync_settings',sync:'motorlab_sync_meta'};
+const DEFAULT_API='https://ugreen-tailscale.tailfc6c36.ts.net:8443/motorlab';
 const CATALOG_VERSION='2026-10-01T00:00:00.000Z';
 let syncState='idle', syncTimer=null;
 
@@ -92,17 +92,53 @@ function renderSession(){const box=$('#sessionList');box.innerHTML='';if(!sessio
 function updateTotals(){const mins=session.reduce((a,x)=>a+(Number(x.minutes)||0),0),target=Number($('#sessionDuration')?.value||0);$('#sessionTotals').textContent=`${session.length} juegos · ${mins} min${target?` / objetivo ${target} min`:''}`}
 function bindDrop(){const dz=$('#dropzone');if(!dz)return;dz.ondragover=e=>e.preventDefault();dz.ondrop=e=>{e.preventDefault();const raw=e.dataTransfer.getData('text/plain');try{const d=JSON.parse(raw);addToSession(d.id)}catch(_){if(raw)addToSession(raw)}}}
 function autoPhase(){if(!session.length)return;const n=session.length;session.forEach((x,i)=>{x.phase=i===0?'Calentamiento':(i===n-1&&n>2?'Vuelta a la calma':'Parte principal');if(!x.minutes)x.minutes=i===0?'10':(i===n-1&&n>2?'5':'10')});renderSession();markPending()}
-function renderSaved(){const el=$('#savedList');el.innerHTML=savedSessions.length?'':'<p class="muted">Aún no hay sesiones guardadas.</p>';savedSessions.forEach((s,i)=>{const d=document.createElement('div');d.className='saved-card';const u=units.find(x=>x.id===s.unitId);d.innerHTML=`<strong>${esc(s.name||'Sesión sin nombre')}</strong><small>${esc(s.date||'')} · ${esc(s.group||'Sin grupo')}${u?` · 📚 ${esc(u.name)}`:''} · ${(s.games||[]).length} juegos</small><div class="card-actions"><button data-act="load">Abrir</button><button data-act="rename">Renombrar</button><button data-act="delete">Eliminar</button></div>`;d.querySelector('[data-act=load]').onclick=()=>loadSession(i);d.querySelector('[data-act=rename]').onclick=()=>renameSession(i);d.querySelector('[data-act=delete]').onclick=()=>deleteSession(i);el.appendChild(d)})}
+function clearCurrentSession(){
+  if(!session.length)return;
+  if(!confirm('¿Vaciar todos los juegos de la sesión actual?'))return;
+  session=[];
+  renderSession();
+  $('#sessionCount').textContent=0;
+  markPending();
+}
+function duplicateSession(i){
+  const source=savedSessions[i];
+  if(!source)return;
+  const copy={...source,id:uid('session'),name:`${source.name||'Sesión'} (copia)`,games:(source.games||[]).map(x=>({...x})),updatedAt:now()};
+  savedSessions.unshift(copy);
+  write(KEYS.sessions,savedSessions);
+  renderSaved();
+  markPending();
+  loadSession(0);
+}
+function startNewSessionFromUnit(unitId){
+  switchView('builder');
+  session=[];
+  $('#editingSessionId').value='';
+  $('#sessionName').value='';
+  $('#sessionGroup').value='';
+  $('#sessionDate').value=new Date().toISOString().slice(0,10);
+  $('#sessionUnit').value=unitId||'';
+  if($('#studentCount'))$('#studentCount').value='';
+  if($('#sessionDuration'))$('#sessionDuration').value='';
+  if($('#sessionGrouping'))$('#sessionGrouping').value='Gran grupo';
+  if($('#sessionObjectives'))$('#sessionObjectives').value='';
+  if($('#sessionCompetencies'))$('#sessionCompetencies').value='';
+  if($('#sessionObservations'))$('#sessionObservations').value='';
+  renderSession();
+  $('#sessionCount').textContent=0;
+}
+function openLibraryForAdding(){switchView('library');window.scrollTo({top:0,behavior:'smooth'});}
+function renderSaved(){const el=$('#savedList');el.innerHTML=savedSessions.length?'':'<p class="muted">Aún no hay sesiones guardadas.</p>';savedSessions.forEach((s,i)=>{const d=document.createElement('div');d.className='saved-card';const u=units.find(x=>x.id===s.unitId);d.innerHTML=`<strong>${esc(s.name||'Sesión sin nombre')}</strong><small>${esc(s.date||'')} · ${esc(s.group||'Sin grupo')}${u?` · 📚 ${esc(u.name)}`:''} · ${(s.games||[]).length} juegos</small><div class="card-actions"><button data-act="load">Abrir</button><button data-act="duplicate">Duplicar</button><button data-act="rename">Renombrar</button><button data-act="delete">Eliminar</button></div>`;d.querySelector('[data-act=load]').onclick=()=>loadSession(i);d.querySelector('[data-act=duplicate]').onclick=()=>duplicateSession(i);d.querySelector('[data-act=rename]').onclick=()=>renameSession(i);d.querySelector('[data-act=delete]').onclick=()=>deleteSession(i);el.appendChild(d)})}
 function loadSession(i){const s=savedSessions[i];$('#editingSessionId').value=s.id||'';session=(s.games||[]).map(x=>typeof x==='string'?{id:x,phase:'Sin asignar',minutes:'',grouping:s.grouping||'Gran grupo',note:''}:x);fillSessionMeta(s);renderSession();$('#sessionCount').textContent=session.length;switchView('builder')}
 function fillSessionMeta(s){$('#sessionName').value=s.name||'';$('#sessionDate').value=s.date||'';$('#sessionGroup').value=s.group||'';if($('#studentCount'))$('#studentCount').value=s.students||'';if($('#sessionDuration'))$('#sessionDuration').value=s.duration||'';if($('#sessionGrouping'))$('#sessionGrouping').value=s.grouping||'Gran grupo';if($('#sessionUnit'))$('#sessionUnit').value=s.unitId||'';if($('#sessionObjectives'))$('#sessionObjectives').value=s.objectives||'';if($('#sessionCompetencies'))$('#sessionCompetencies').value=s.competencies||'';if($('#sessionObservations'))$('#sessionObservations').value=s.observations||''}
 function saveCurrentSession(){const meta=sessionMetaFromUI();if(!meta.name){alert('Pon un nombre a la sesión antes de guardarla.');return}const existingId=$('#editingSessionId').value||uid('session');const s={...meta,id:existingId,games:[...session],updatedAt:now()};const idx=savedSessions.findIndex(x=>x.id===existingId);if(idx>=0)savedSessions[idx]=s;else savedSessions.unshift(s);write(KEYS.sessions,savedSessions);$('#editingSessionId').value=existingId;renderSaved();markPending();alert('Sesión guardada.')}
 function renameSession(i){const s=savedSessions[i],name=prompt('Nuevo nombre de la sesión:',s.name||'');if(name&&name.trim()){s.name=name.trim();s.updatedAt=now();write(KEYS.sessions,savedSessions);renderSaved();markPending()}}
-function deleteSession(i){if(!confirm('¿Eliminar esta sesión del repositorio?'))return;savedSessions.splice(i,1);write(KEYS.sessions,savedSessions);renderSaved();markPending()}
-function renderUnits(){const list=$('#unitsList');if(!list)return;list.innerHTML=units.length?'':'<p class="muted">Aún no hay unidades didácticas.</p>';units.forEach((u,i)=>{const count=savedSessions.filter(s=>s.unitId===u.id).length;const d=document.createElement('div');d.className='saved-card';d.innerHTML=`<strong>📚 ${esc(u.name)}</strong><small>${count} sesiones · ${esc(u.updatedAt?.slice(0,10)||'')}</small><div class="card-actions"><button data-a="rename">Renombrar</button><button data-a="open">Ver sesiones</button><button data-a="delete">Eliminar</button></div>`;d.querySelector('[data-a=rename]').onclick=()=>renameUnit(i);d.querySelector('[data-a=open]').onclick=()=>filterSessionsByUnit(u.id);d.querySelector('[data-a=delete]').onclick=()=>deleteUnit(i);list.appendChild(d)});renderUnitSelect()}
+function deleteSession(i){const s=savedSessions[i];if(!s||!confirm('¿Eliminar esta sesión del repositorio?'))return;savedSessions.splice(i,1);const deleted=read(KEYS.deletedSessions,{});deleted[s.id]={id:s.id,updatedAt:now()};write(KEYS.deletedSessions,deleted);write(KEYS.sessions,savedSessions);renderSaved();markPending()}
+function renderUnits(){const list=$('#unitsList');if(!list)return;const countEl=$('#unitCount');if(countEl)countEl.textContent=units.length;list.innerHTML=units.length?'':'<p class="muted">Aún no hay unidades didácticas.</p>';units.forEach((u,i)=>{const count=savedSessions.filter(s=>s.unitId===u.id).length;const d=document.createElement('div');d.className='saved-card';d.innerHTML=`<strong>📚 ${esc(u.name)}</strong><small>${count} sesiones · ${esc(u.updatedAt?.slice(0,10)||'')}</small><div class="card-actions"><button data-a="rename">Renombrar</button><button data-a="open">Ver sesiones</button><button data-a="delete">Eliminar</button></div>`;d.querySelector('[data-a=rename]').onclick=()=>renameUnit(i);d.querySelector('[data-a=open]').onclick=()=>filterSessionsByUnit(u.id);d.querySelector('[data-a=delete]').onclick=()=>deleteUnit(i);list.appendChild(d)});renderUnitSelect()}
 function renderUnitSelect(){const sel=$('#sessionUnit');if(!sel)return;const current=sel.value;sel.innerHTML='<option value="">Sin unidad didáctica</option>'+units.map(u=>`<option value="${esc(u.id)}">${esc(u.name)}</option>`).join('');sel.value=current}
 function createUnit(){const name=prompt('Nombre de la unidad didáctica:');if(!name||!name.trim())return;const u={id:uid('unit'),name:name.trim(),updatedAt:now()};units.unshift(u);write(KEYS.units,units);renderUnits();$('#sessionUnit').value=u.id;markPending()}
 function renameUnit(i){const u=units[i],name=prompt('Nuevo nombre de la unidad didáctica:',u.name);if(name&&name.trim()){u.name=name.trim();u.updatedAt=now();write(KEYS.units,units);renderUnits();renderSaved();markPending()}}
-function deleteUnit(i){const u=units[i];if(!confirm(`¿Eliminar la unidad "${u.name}"? Las sesiones no se borrarán.`))return;units.splice(i,1);savedSessions=savedSessions.map(s=>s.unitId===u.id?{...s,unitId:'',updatedAt:now()}:s);write(KEYS.units,units);write(KEYS.sessions,savedSessions);renderUnits();renderSaved();markPending()}
+function deleteUnit(i){const u=units[i];if(!u||!confirm(`¿Eliminar la unidad "${u.name}"? Las sesiones no se borrarán.`))return;units.splice(i,1);const deleted=read(KEYS.deletedUnits,{});deleted[u.id]={id:u.id,updatedAt:now()};savedSessions=savedSessions.map(s=>s.unitId===u.id?{...s,unitId:'',updatedAt:now()}:s);write(KEYS.deletedUnits,deleted);write(KEYS.units,units);write(KEYS.sessions,savedSessions);renderUnits();renderSaved();markPending()}
 function filterSessionsByUnit(unitId){switchView('builder');const cards=$$('#savedList .saved-card');cards.forEach((c,i)=>{const s=savedSessions[i];c.classList.toggle('dimmed',s?.unitId!==unitId)})}
 function renderSources(){$('#sourcesList').innerHTML=sources.map(s=>`<div class="source-row"><strong>${esc(s.display)}</strong><small>${esc(s.name)} · ${s.pages} páginas · ${s.type}${s.loaded_games?` · ${s.loaded_games} juegos extraídos`:''}</small></div>`).join('')}
 function switchView(v){$$('.tab').forEach(x=>x.classList.toggle('active',x.dataset.view===v));$('#libraryView').classList.toggle('hidden',v!=='library');$('#builderView').classList.toggle('hidden',v!=='builder');$('#unitsView')?.classList.toggle('hidden',v!=='units');if(v==='units')renderUnits()}
@@ -148,7 +184,9 @@ function buildLocalRecords(){
   const gameRecords=Object.values(overrides).map(g=>({id:g.id,type:'game',data:g,updatedAt:g.updatedAt||now(),deleted:false}));
   const sessionRecords=savedSessions.map(s=>({id:s.id,type:'session',data:s,updatedAt:s.updatedAt||now(),deleted:false}));
   const unitRecords=units.map(u=>({id:u.id,type:'unit',data:u,updatedAt:u.updatedAt||now(),deleted:false}));
-  return [...gameRecords,...sessionRecords,...unitRecords];
+  const deletedSessions=Object.values(read(KEYS.deletedSessions,{})).map(x=>({id:x.id,type:'session',data:null,updatedAt:x.updatedAt,deleted:true}));
+  const deletedUnits=Object.values(read(KEYS.deletedUnits,{})).map(x=>({id:x.id,type:'unit',data:null,updatedAt:x.updatedAt,deleted:true}));
+  return [...gameRecords,...sessionRecords,...unitRecords,...deletedSessions,...deletedUnits];
 }
 function mergeRemote(remote){
   let changed=false;
@@ -172,21 +210,31 @@ function mergeRemote(remote){
     }else if(r.type==='session')remoteSessions.push(r);
     else if(r.type==='unit')remoteUnits.push(r);
   });
+  const deletedSessions=read(KEYS.deletedSessions,{});
+  const deletedUnits=read(KEYS.deletedUnits,{});
   remoteSessions.forEach(r=>{
     const i=savedSessions.findIndex(x=>x.id===r.id);
-    if(i<0||new Date(r.updatedAt)>new Date(savedSessions[i].updatedAt||0)){
-      if(r.deleted){if(i>=0)savedSessions.splice(i,1)}
-      else if(i>=0)savedSessions[i]=r.data;
-      else savedSessions.push(r.data);
+    const tomb=deletedSessions[r.id];
+    const remoteDate=new Date(r.updatedAt);
+    const localDate=i>=0?new Date(savedSessions[i].updatedAt||0):new Date(0);
+    const tombDate=tomb?new Date(tomb.updatedAt):new Date(0);
+    if(tombDate>=remoteDate)return;
+    if(i<0||remoteDate>localDate){
+      if(r.deleted){if(i>=0)savedSessions.splice(i,1);deletedSessions[r.id]={id:r.id,updatedAt:r.updatedAt}}
+      else {if(i>=0)savedSessions[i]=r.data;else savedSessions.push(r.data);delete deletedSessions[r.id]}
       changed=true;
     }
   });
   remoteUnits.forEach(r=>{
     const i=units.findIndex(x=>x.id===r.id);
-    if(i<0||new Date(r.updatedAt)>new Date(units[i].updatedAt||0)){
-      if(r.deleted){if(i>=0)units.splice(i,1)}
-      else if(i>=0)units[i]=r.data;
-      else units.push(r.data);
+    const tomb=deletedUnits[r.id];
+    const remoteDate=new Date(r.updatedAt);
+    const localDate=i>=0?new Date(units[i].updatedAt||0):new Date(0);
+    const tombDate=tomb?new Date(tomb.updatedAt):new Date(0);
+    if(tombDate>=remoteDate)return;
+    if(i<0||remoteDate>localDate){
+      if(r.deleted){if(i>=0)units.splice(i,1);deletedUnits[r.id]={id:r.id,updatedAt:r.updatedAt}}
+      else {if(i>=0)units[i]=r.data;else units.push(r.data);delete deletedUnits[r.id]}
       changed=true;
     }
   });
@@ -194,12 +242,14 @@ function mergeRemote(remote){
     write(KEYS.overrides,override);
     write(KEYS.sessions,savedSessions);
     write(KEYS.units,units);
+    write(KEYS.deletedSessions,deletedSessions);
+    write(KEYS.deletedUnits,deletedUnits);
   }
 }
 function openSyncDialog(){loadSyncSettingsUI();syncDialog.showModal()}
 $('#search').addEventListener('input',renderGames);$('#sort').addEventListener('change',renderGames);$('#filterToggle').onclick=()=>$('#filters').classList.toggle('open');$('#clearFilters').onclick=()=>{$$('.filters input').forEach(x=>x.checked=false);$('#ocrOnly').checked=false;$('#search').value='';renderGames()};$$('.tab').forEach(x=>x.onclick=()=>switchView(x.dataset.view));
 $('#newSessionBtn').onclick=()=>{switchView('builder');session=[];$('#editingSessionId').value='';$('#sessionName').value='';$('#sessionGroup').value='';$('#sessionDate').value=new Date().toISOString().slice(0,10);if($('#sessionUnit'))$('#sessionUnit').value='';if($('#studentCount'))$('#studentCount').value='';if($('#sessionDuration'))$('#sessionDuration').value='';if($('#sessionGrouping'))$('#sessionGrouping').value='Gran grupo';if($('#sessionObjectives'))$('#sessionObjectives').value='';if($('#sessionCompetencies'))$('#sessionCompetencies').value='';if($('#sessionObservations'))$('#sessionObservations').value='';renderSession();$('#sessionCount').textContent=0};
-$('#saveSession').onclick=saveCurrentSession;$('#printSession').onclick=()=>window.print();$('#autoPhaseBtn').onclick=autoPhase;$('#sessionDuration')?.addEventListener('input',updateTotals);$('#sourcesBtn').onclick=()=>sourcesDialog.showModal();$('#newGameBtn').onclick=()=>openGameEditor();$('#newUnitBtn').onclick=createUnit;$('#syncBtn').onclick=()=>syncNow();$('#syncSettingsBtn').onclick=openSyncDialog;
+$('#saveSession').onclick=saveCurrentSession;$('#printSession').onclick=()=>window.print();$('#autoPhaseBtn').onclick=autoPhase;$('#clearSessionBtn')?.addEventListener('click',clearCurrentSession);$('#addGamesBtn')?.addEventListener('click',openLibraryForAdding);$('#newUnitFromSession')?.addEventListener('click',createUnit);$('#sessionDuration')?.addEventListener('input',updateTotals);$('#sourcesBtn').onclick=()=>sourcesDialog.showModal();$('#newGameBtn').onclick=()=>openGameEditor();$('#newUnitBtn').onclick=createUnit;$('#syncBtn').onclick=()=>syncNow();$('#syncSettingsBtn').onclick=openSyncDialog;
 $('#syncForm').onsubmit=e=>{e.preventDefault();const url=$('#apiUrl').value.trim().replace(/\/$/,'');const token=$('#apiToken').value.trim();write(KEYS.settings,{url,token});syncDialog.close();syncNow()};
 document.addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();$('#search').focus()}});
 init();if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});

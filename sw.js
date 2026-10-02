@@ -1,16 +1,9 @@
 const CACHE = 'motorlab-ef-v7';
-
 const ASSETS = [
-  './',
-  './index.html',
-  './styles.css',
-  './app.js',
-  './manifest.webmanifest',
-  './apple-touch-icon.png',
-  './icon-192.png',
-  './icon-512.png',
-  './data/games.json',
-  './data/sources.json'
+  './', './index.html', './styles.css', './app.js',
+  './manifest.webmanifest', './apple-touch-icon.png',
+  './icon-192.png', './icon-512.png',
+  './data/games.json', './data/sources.json'
 ];
 
 self.addEventListener('install', event => {
@@ -24,13 +17,9 @@ self.addEventListener('install', event => {
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys()
-      .then(keys =>
-        Promise.all(
-          keys
-            .filter(k => k !== CACHE)
-            .map(k => caches.delete(k))
-        )
-      )
+      .then(keys => Promise.all(
+        keys.filter(k => k !== CACHE).map(k => caches.delete(k))
+      ))
       .then(() => self.clients.claim())
   );
 });
@@ -40,8 +29,8 @@ self.addEventListener('fetch', event => {
 
   const u = new URL(event.request.url);
 
-  // No interceptar peticiones externas.
-  // Esto permite que /sync llegue directamente al API de UGREEN.
+  // Do NOT intercept external requests such as the MotorLab API
+  // served through Tailscale. Let Safari send them directly to the network.
   if (u.origin !== self.location.origin) return;
 
   if (
@@ -53,12 +42,10 @@ self.addEventListener('fetch', event => {
   ) {
     event.respondWith(
       fetch(event.request, { cache: 'no-store' })
-        .then(response => {
-          const copy = response.clone();
-          caches.open(CACHE).then(c => {
-            c.put(event.request, copy);
-          });
-          return response;
+        .then(r => {
+          const copy = r.clone();
+          caches.open(CACHE).then(c => c.put(event.request, copy));
+          return r;
         })
         .catch(() => caches.match(event.request))
     );
@@ -67,20 +54,13 @@ self.addEventListener('fetch', event => {
 
   event.respondWith(
     caches.match(event.request)
-      .then(cached => {
-        if (cached) return cached;
-
-        return fetch(event.request)
-          .then(response => {
-            const copy = response.clone();
-
-            caches.open(CACHE).then(c => {
-              c.put(event.request, copy);
-            });
-
-            return response;
-          });
-      })
-      .catch(() => caches.match(event.request))
+      .then(cached => cached || fetch(event.request)
+        .then(response => {
+          const copy = response.clone();
+          caches.open(CACHE).then(c => c.put(event.request, copy));
+          return response;
+        })
+        .catch(() => cached)
+      )
   );
 });
