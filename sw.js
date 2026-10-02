@@ -1,4 +1,4 @@
-const CACHE = 'motorlab-ef-v7';
+const CACHE = 'motorlab-ef-v9';
 const ASSETS = [
   './', './index.html', './styles.css', './app.js',
   './manifest.webmanifest', './apple-touch-icon.png',

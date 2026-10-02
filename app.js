@@ -151,9 +151,16 @@ async function syncNow(opts={}){
     const base=s.url.replace(/\/$/,'');
     const getHeaders={'X-MotorLab-Token':s.token};
     const postHeaders={'X-MotorLab-Token':s.token,'Content-Type':'application/json'};
-    const r=await fetch(base+'/sync',{headers:getHeaders,cache:'no-store'});
-    if(!r.ok)throw new Error(`GET /sync ${r.status}`);
-    const remote=(await r.json()).items||[];
+    const fetchRemote=async()=>{
+      const r=await fetch(base+'/sync?ts='+Date.now(),{headers:getHeaders,cache:'no-store'});
+      if(!r.ok)throw new Error(`GET /sync ${r.status}`);
+      const payload=await r.json();
+      return Array.isArray(payload.items)?payload.items:[];
+    };
+
+    // Primera lectura: incorpora inmediatamente sesiones/unidades creadas en
+    // otros dispositivos antes de decidir qué cambios locales enviar.
+    const remote=await fetchRemote();
     mergeRemote(remote);
 
     const local=buildLocalRecords();
@@ -170,6 +177,13 @@ async function syncNow(opts={}){
       });
       if(!wr.ok)throw new Error(`POST /sync ${wr.status}`);
     }
+
+    // Segunda lectura: garantiza que el dispositivo queda alineado con el
+    // estado real del NAS después de los POST, incluso si otro dispositivo
+    // ha creado una sesión justo antes de esta sincronización.
+    const remoteAfter=await fetchRemote();
+    mergeRemote(remoteAfter);
+
     setSyncState('idle');
     write(KEYS.sync,{status:'idle',at:now()});
     renderGames();renderSaved();renderUnits();
