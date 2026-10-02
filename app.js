@@ -152,10 +152,12 @@ async function syncNow(opts={}){
     const getHeaders={'X-MotorLab-Token':s.token};
     const postHeaders={'X-MotorLab-Token':s.token,'Content-Type':'application/json'};
     const fetchRemote=async()=>{
-      const r=await fetch(base+'/sync?ts='+Date.now(),{headers:getHeaders,cache:'no-store'});
+      const r=await fetch(base+'/sync',{headers:getHeaders,cache:'no-store'});
       if(!r.ok)throw new Error(`GET /sync ${r.status}`);
       const payload=await r.json();
-      return Array.isArray(payload.items)?payload.items:[];
+      const items=Array.isArray(payload.items)?payload.items:[];
+      console.info('[MotorLab] /sync recibido:', items.length, 'registros;', items.filter(x=>x.type==='session'&&!x.deleted).length, 'sesiones');
+      return items;
     };
 
     // Primera lectura: incorpora inmediatamente sesiones/unidades creadas en
