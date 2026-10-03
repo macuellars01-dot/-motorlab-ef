@@ -172,7 +172,11 @@ function createUnit(){const name=prompt('Nombre de la unidad didáctica:');if(!n
 function renameUnit(i){const u=units[i],name=prompt('Nuevo nombre de la unidad didáctica:',u.name);if(name&&name.trim()){u.name=name.trim();u.updatedAt=now();write(KEYS.units,units);renderUnits();renderSaved();markPending()}}
 function deleteUnit(i){const u=units[i];if(!u||!confirm(`¿Eliminar la unidad "${u.name}"? Las sesiones no se borrarán.`))return;units.splice(i,1);const deleted=read(KEYS.deletedUnits,{});deleted[u.id]={id:u.id,updatedAt:now()};savedSessions=savedSessions.map(s=>s.unitId===u.id?{...s,unitId:'',updatedAt:now()}:s);write(KEYS.deletedUnits,deleted);write(KEYS.units,units);write(KEYS.sessions,savedSessions);renderUnits();renderSaved();markPending()}
 function filterSessionsByUnit(unitId){switchView('builder');const cards=$$('#savedList .saved-card');cards.forEach((c,i)=>{const s=savedSessions[i];c.classList.toggle('dimmed',s?.unitId!==unitId)})}
-function renderSources(){$('#sourcesList').innerHTML=sources.map(s=>`<div class="source-row"><strong>${esc(s.display)}</strong><small>${esc(s.name)} · ${s.pages} páginas · ${s.type}${s.loaded_games?` · ${s.loaded_games} juegos extraídos`:''}</small></div>`).join('')}
+function renderSources(){
+  const rows=[{display:'Creación propia',name:'Juegos creados manualmente en MotorLab',pages:'—',type:'Fuente del usuario'}];
+  rows.push(...sources);
+  $('#sourcesList').innerHTML=rows.map(s=>`<div class="source-row"><strong>${esc(s.display)}</strong><small>${esc(s.name||'')} · ${s.pages??'—'} páginas · ${esc(s.type||'')}${s.loaded_games?` · ${s.loaded_games} juegos extraídos`:''}</small></div>`).join('');
+}
 function switchView(v){$$('.tab').forEach(x=>x.classList.toggle('active',x.dataset.view===v));$('#libraryView').classList.toggle('hidden',v!=='library');$('#builderView').classList.toggle('hidden',v!=='builder');$('#unitsView')?.classList.toggle('hidden',v!=='units');if(v==='units')renderUnits()}
 function loadSyncSettingsUI(){const s=getSettings();$('#apiUrl').value=s.url;$('#apiToken').value=s.token}
 async function syncNow(opts={}){
@@ -300,4 +304,4 @@ $('#newSessionBtn').onclick=()=>{switchView('builder');session=[];$('#editingSes
 $('#saveSession').onclick=saveCurrentSession;$('#printSession').onclick=()=>window.print();$('#autoPhaseBtn').onclick=autoPhase;$('#clearSessionBtn')?.addEventListener('click',clearCurrentSession);$('#addGamesBtn')?.addEventListener('click',openLibraryForAdding);$('#newUnitFromSession')?.addEventListener('click',createUnit);$('#sessionDuration')?.addEventListener('input',updateTotals);$('#sourcesBtn').onclick=()=>sourcesDialog.showModal();$('#newGameBtn').onclick=()=>openGameEditor();$('#newUnitBtn').onclick=createUnit;$('#syncBtn').onclick=()=>syncNow();$('#syncSettingsBtn').onclick=openSyncDialog;
 $('#syncForm').onsubmit=e=>{e.preventDefault();const url=$('#apiUrl').value.trim().replace(/\/$/,'');const token=$('#apiToken').value.trim();write(KEYS.settings,{url,token});syncDialog.close();syncNow()};
 document.addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();$('#search').focus()}});
-init();if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
+init();if('serviceWorker'in navigator){navigator.serviceWorker.register('sw.js').then(r=>r.update()).catch(()=>{});}
