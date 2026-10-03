@@ -76,29 +76,71 @@ function applyGameLocalState(){
 }
 function persistGame(g){const o=read(KEYS.overrides,{});o[g.id]={...g,updatedAt:g.updatedAt||now()};write(KEYS.overrides,o);markPending()}
 function normalize(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()}
-function materialTag(m){let x=normalize(m);if(x.includes('sin material')||x==='ninguno'||x.includes('ningun'))return'Sin material';if(x.includes('pelot'))return'Pelota';if(x.includes('aro'))return'Aros';if(x.includes('cono'))return'Conos';if(x.includes('cuerda'))return'Cuerdas';if(x.includes('tarjet'))return'Tarjetas';if(x.includes('pañuel')||x.includes('panuel'))return'Pañuelos';return m||'Otros'}
-function inferIntensity(g){let x=normalize((g.description||'')+' '+(g.title||''));if(/velocidad|sprint|resistencia|carrera|perseguir|pillar|relevos|salidas/.test(x))return'Alta';if(/relaj|vuelta a la calma|estir/.test(x))return'Baja';return g.intensity||'Media'}
+function materialTag(m){
+  const x=normalize(m);
+  if(!x||x==='no especificado'||x==='ninguno'||x.includes('sin material')||x.includes('sin materiales')||x.includes('ningun material'))return'Sin material';
+  if(/pelot|balon|balones/.test(x))return'Balones/pelotas';
+  if(x.includes('aro'))return'Aros';
+  if(x.includes('cono'))return'Conos';
+  if(/cuerda|comba/.test(x))return'Cuerdas/combas';
+  if(/pica|picas/.test(x))return'Picas';
+  if(/pañuel|panuel|petos?|chalecos?/.test(x))return'Pañuelos/petos';
+  if(/colchoneta/.test(x))return'Colchonetas';
+  if(/raqueta/.test(x))return'Raquetas';
+  if(/tiza|yeso/.test(x))return'Tizas';
+  if(/globo/.test(x))return'Globos';
+  if(/tarjet|cartulina|cartas/.test(x))return'Tarjetas';
+  if(/banco|vallas?/.test(x))return'Bancos/vallas';
+  if(/variado|diverso|varios materiales|material diverso/.test(x))return'Material variado';
+  return'Otros';
+}
+function inferIntensity(g){
+  const v=normalize(g?.intensity);
+  if(v.includes('baja'))return'Baja';
+  if(v.includes('media'))return'Media';
+  if(v.includes('alta'))return'Alta';
+  return'No especificada';
+}
 function uniqSorted(values){return [...new Set(values.filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),'es',{sensitivity:'base'}))}
 function sourceLabel(g){return g.source||'Fuente no especificada'}
 function groupingValues(g){return Array.isArray(g.groupings)&&g.groupings.length?g.groupings:['No especificado']}
 function objectiveValues(g){return Array.isArray(g.objectives)&&g.objectives.length?g.objectives:['No especificado']}
 function buildFilters(){
-  const sources=uniqSorted(games.map(sourceLabel));
+  const sources=uniqSorted([...games.map(sourceLabel),'Creación propia']);
   const configs=[
-    ['#ageFilters',uniqSorted(games.map(g=>g.age||'No especificada'))],
-    ['#materialFilters',['Sin material','Pelota','Aros','Conos','Cuerdas','Tarjetas','Pañuelos']],
-    ['#spaceFilters',uniqSorted(games.map(g=>g.space||'No especificado'))],
-    ['#intensityFilters',['Baja','Media','Alta']],
-    ['#sourceFilters',sources],
-    ['#groupingFilters',['Individual','Parejas','Pequeños grupos','Gran grupo','No especificado']],
-    ['#objectiveFilters',['Lanzamiento','Saltos','Giros','Desplazamientos y carrera','Equilibrio','Coordinación','Conducción y manejo','Percepción y atención','Ritmo y expresión','Cooperación','Oposición y persecución','Predeporte','Relajación y vuelta a la calma','No especificado']]
+    ['ageFilters',uniqSorted(games.map(g=>g.age||'No especificada'))],
+    ['materialFilters',['Sin material','Balones/pelotas','Aros','Conos','Cuerdas/combas','Picas','Pañuelos/petos','Colchonetas','Raquetas','Tizas','Globos','Tarjetas','Bancos/vallas','Material variado','Otros']],
+    ['spaceFilters',uniqSorted(games.map(g=>g.space||'No especificado'))],
+    ['intensityFilters',['Baja','Media','Alta','No especificada']],
+    ['sourceFilters',sources],
+    ['groupingFilters',['Individual','Parejas','Pequeños grupos','Gran grupo','No especificado']],
+    ['objectiveFilters',['Lanzamiento','Saltos','Giros','Desplazamientos y carrera','Equilibrio','Coordinación','Conducción y manejo','Percepción y atención','Ritmo y expresión','Cooperación','Oposición y persecución','Predeporte','Relajación y vuelta a la calma','No especificado']]
   ];
-  console.info('[MotorLab] Filtros avanzados v13.3:', configs.map(([sel,opts])=>[sel,opts.length]));
-  for(const [sel,opts] of configs){const el=$(sel);if(!el)continue;el.innerHTML=opts.map(o=>`<label class="check"><input type="checkbox" value="${esc(o)}"> ${esc(o)}</label>`).join('')}
-
-  $$('.filters input').forEach(x=>x.addEventListener('change',renderGames));
-  $('#ocrOnly')?.addEventListener('change',renderGames)
+  for(const [id,opts] of configs){
+    const html=opts.map(o=>`<label class="check"><input type="checkbox" value="${esc(o)}"> ${esc(o)}</label>`).join('');
+    const a=$('#'+id), b=$('#'+id+'Dialog');
+    if(a)a.innerHTML=html; if(b)b.innerHTML=html;
+  }
+  $$('#filters input[type="checkbox"], #filterDialog input[type="checkbox"]').forEach(x=>x.addEventListener('change',syncFilterControls));
+  console.info('[MotorLab] Filtros v14.2:',configs.map(([id,opts])=>[id,opts.length]));
 }
+function syncFilterControls(e){
+  const el=e?.target;
+  if(el?.id==='ocrOnly'||el?.id==='ocrOnlyDialog'){const other=el.id==='ocrOnly'?$('#ocrOnlyDialog'):$('#ocrOnly');if(other)other.checked=el.checked}
+  const id=el?.closest('[id]')?.id;
+  if(!id)return;
+  const map={ageFilters:'ageFiltersDialog',materialFilters:'materialFiltersDialog',spaceFilters:'spaceFiltersDialog',intensityFilters:'intensityFiltersDialog',sourceFilters:'sourceFiltersDialog',groupingFilters:'groupingFiltersDialog',objectiveFilters:'objectiveFiltersDialog'};
+  const pair=map[id]||Object.keys(map).find(k=>map[k]===id);
+  if(!pair)return;
+  const a=id.startsWith('age')||id.endsWith('Filters')?$('#'+id):null;
+  const base=id.endsWith('Dialog')?pair:id; const otherId=id.endsWith('Dialog')?pair:id+'Dialog';
+  const other=$('#'+otherId); if(other)other.querySelectorAll('input').forEach(x=>x.checked=el.value===x.value?el.checked:x.checked);
+}
+function clearAllFilters(){
+  $$('#filters input[type="checkbox"], #filterDialog input[type="checkbox"]').forEach(x=>x.checked=false);
+  $('#search').value=''; renderGames();
+}
+
 function selected(sel){return $$(sel+' input:checked').map(x=>x.value)}
 function matches(g){
   const q=normalize($('#search').value);
@@ -296,7 +338,7 @@ function mergeRemote(remote){
   }
 }
 function openSyncDialog(){loadSyncSettingsUI();syncDialog.showModal()}
-$('#search').addEventListener('input',renderGames);$('#sort').addEventListener('change',renderGames);$('#filterToggle').onclick=()=>$('#filters').classList.toggle('open');$('#clearFilters').onclick=()=>{$$('.filters input').forEach(x=>x.checked=false);$('#ocrOnly').checked=false;$('#search').value='';renderGames()};$$('.tab').forEach(x=>x.onclick=()=>switchView(x.dataset.view));
+$('#search').addEventListener('input',renderGames);$('#sort').addEventListener('change',renderGames);$('#filterToggle').onclick=()=>{if($('#filterDialog')?.showModal)$('#filterDialog').showModal();else $('#filters').classList.toggle('open')};$('#clearFilters').onclick=clearAllFilters;$('#clearFiltersDialog').onclick=clearAllFilters;$('#applyFiltersDialog').onclick=()=>{renderGames();filterDialog.close()};$('#closeFilterDialog').onclick=()=>filterDialog.close();$$('.tab').forEach(x=>x.onclick=()=>switchView(x.dataset.view));
 $('#newSessionBtn').onclick=()=>{switchView('builder');session=[];$('#editingSessionId').value='';$('#sessionName').value='';$('#sessionGroup').value='';$('#sessionDate').value=new Date().toISOString().slice(0,10);if($('#sessionUnit'))$('#sessionUnit').value='';if($('#studentCount'))$('#studentCount').value='';if($('#sessionDuration'))$('#sessionDuration').value='';if($('#sessionGrouping'))$('#sessionGrouping').value='Gran grupo';if($('#sessionObjectives'))$('#sessionObjectives').value='';if($('#sessionCompetencies'))$('#sessionCompetencies').value='';if($('#sessionObservations'))$('#sessionObservations').value='';renderSession();$('#sessionCount').textContent=0};
 $('#saveSession').onclick=saveCurrentSession;$('#printSession').onclick=()=>window.print();$('#autoPhaseBtn').onclick=autoPhase;$('#clearSessionBtn')?.addEventListener('click',clearCurrentSession);$('#addGamesBtn')?.addEventListener('click',openLibraryForAdding);$('#newUnitFromSession')?.addEventListener('click',createUnit);$('#sessionDuration')?.addEventListener('input',updateTotals);$('#sourcesBtn').onclick=()=>sourcesDialog.showModal();$('#newGameBtn').onclick=()=>openGameEditor();$('#newUnitBtn').onclick=createUnit;$('#syncBtn').onclick=()=>syncNow();$('#syncSettingsBtn').onclick=openSyncDialog;
 $('#syncForm').onsubmit=e=>{e.preventDefault();const url=$('#apiUrl').value.trim().replace(/\/$/,'');const token=$('#apiToken').value.trim();write(KEYS.settings,{url,token});syncDialog.close();syncNow()};

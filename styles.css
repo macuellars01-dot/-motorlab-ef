@@ -38,3 +38,36 @@ input,textarea,select{font-size:16px;}
 .long-filter{max-height:230px;overflow:auto;padding-right:4px}
 .long-filter::-webkit-scrollbar{width:6px}.long-filter::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:8px}
 .grouping-chip{background:#f0fdf4;color:#166534}.objective-chip{background:#fff7ed;color:#9a3412}
+
+.filter-dialog{width:min(760px,94vw);padding:22px}.filter-dialog-body{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;max-height:65vh;overflow:auto}.filter-dialog-body .filter-group{padding:14px 0}.filter-dialog-body .filter-group h4{font-size:13px}.filter-dialog-actions{display:flex;justify-content:flex-end;gap:10px;border-top:1px solid var(--line);padding-top:15px;margin-top:10px}.filter-dialog .check{min-height:30px}@media(max-width:700px){.filter-dialog{width:94vw}.filter-dialog-body{grid-template-columns:1fr;max-height:68vh}.filter-dialog-actions{position:sticky;bottom:0;background:#fff}}
+
+/* MotorLab v14.1 · panel de filtros con desplazamiento independiente */
+.filters{
+  max-height:calc(100vh - 112px);
+  overflow-y:auto;
+  overflow-x:hidden;
+  scrollbar-width:thin;
+  scrollbar-color:#aebbd0 transparent;
+  overscroll-behavior:contain;
+  -webkit-overflow-scrolling:touch;
+}
+.filters::-webkit-scrollbar{width:8px}
+.filters::-webkit-scrollbar-track{background:transparent;border-radius:10px}
+.filters::-webkit-scrollbar-thumb{background:#aebbd0;border-radius:10px;border:2px solid #fff}
+.filters::-webkit-scrollbar-thumb:hover{background:#8797ae}
+.filter-dialog-body{
+  max-height:calc(100vh - 230px);
+  overflow-y:auto;
+  overflow-x:hidden;
+  scrollbar-width:thin;
+  scrollbar-color:#aebbd0 transparent;
+  overscroll-behavior:contain;
+  -webkit-overflow-scrolling:touch;
+}
+.filter-dialog-body::-webkit-scrollbar{width:8px}
+.filter-dialog-body::-webkit-scrollbar-track{background:transparent}
+.filter-dialog-body::-webkit-scrollbar-thumb{background:#aebbd0;border-radius:10px}
+@media(max-width:760px){
+  .filters{max-height:calc(100vh - 100px);position:fixed;left:12px;right:12px;top:76px;z-index:30;box-shadow:0 18px 50px rgba(15,23,42,.18)}
+  .filter-dialog-body{max-height:calc(100vh - 230px)}
+}
