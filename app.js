@@ -158,65 +158,56 @@ function isGenericOcrRecord(g){return /^ocr\s*(?:—|-|:|pagina|página|$)/i.tes
 function recoveredReviewTitle(g){
   const src=String(g?.source||''),t=String(g?.title||'').trim();
   const d=String(g?.description||'');
+  const generic=isGenericOcrRecord(g);
 
   const clean=x=>{
-    x=String(x||'').trim().replace(/^[-–—:.\\s]+|[\\s.\\-–—|]+$/g,'').replace(/\\s+/g,' ');
-    if(x.length<4||x.length>70||/[<>[\\]|{}@#%]/.test(x)||/\\d/.test(x))return'';
-    if(/^(juego|actividad|parte principal|parte inicial|c[oó]digo|relevos)$/i.test(x))return'';
+    x=String(x||'').trim()
+      .replace(/^[-–—:.\s]+|[\s.\-–—|]+$/g,'')
+      .replace(/\s+/g,' ');
+    if(x.length<4||x.length>70||/[<>[\]|{}@#%]/.test(x)||/\d/.test(x))return'';
+    if(/^(juego|actividad|parte principal|parte inicial|c[oó]digo|relevos|ocr)$/i.test(x))return'';
+    if(/^(larma y elgato|la leña)$/i.test(x))return'';
     return x;
   };
 
-  // 215 Juegos: titles are already extracted from the book; recover only clean entries.
-  if(src.startsWith('215 Juegos')){
+  // Los registros OCR genéricos no deben convertirse en verificados solo
+  // porque el propio título diga "OCR — ...". Primero intentamos recuperar
+  // un nombre explícito desde el texto de la página.
+  if(src==='juegos 6a12anos.pdf' && generic){
+    // Este libro imprime varios juegos por página. Recuperamos únicamente
+    // el primer nombre que aparece detrás de un marcador "Juego n.º ...".
+    const re=/\b(?:juego|juegon|suego)\s*n?[^A-Za-z0-9]{0,8}\d{1,3}\s+([A-ZÁÉÍÓÚÜÑ][A-ZÁÉÍÓÚÜÑ0-9 ,./()'’\-]{2,65})(?=\s+(?:Lugar|Objetivo|Material|Organización|Bloque|Habilidades|Etapa|Gráfico|Juego|Juegon|suego)|[.;]|$)/gi;
+    let m;
+    while((m=re.exec(d))){
+      const x=clean(m[1]);
+      if(x && /[A-ZÁÉÍÓÚÜÑ]{3}/.test(x))return x;
+    }
+    return'';
+  }
+
+  // Si el título importado no es genérico, solo lo recuperamos en fuentes
+  // donde el pipeline ya extrae nombres de juegos de forma fiable.
+  if(!generic && src.startsWith('215 Juegos')){
     let x=clean(t);
     if(x)return x;
-    // One OCR record has the title in the page description.
-    const m=d.match(/—\\s*\\d+\\s+([A-ZÁÉÍÓÚÜÑ][A-ZÁÉÍÓÚÜÑ\\s,-]{3,60})(?:\\s{2,}|Establecer|Se coloca|Libres)/i);
+    const m=d.match(/—\s*\d+\s+([A-ZÁÉÍÓÚÜÑ][A-ZÁÉÍÓÚÜÑ\s,-]{3,60})(?:\s{2,}|Establecer|Se coloca|Libres)/i);
     if(m){x=clean(m[1]);if(x)return x}
     return'';
   }
 
-  // 1001 ejercicios: book titles are reliable; remove occasional OCR numbering noise.
-  if(src.startsWith('1001 ejercicios')){
-    let x=t.replace(/\\s*[|]?[ ]*\\d+\\s*$/,'').trim();
+  if(!generic && src.startsWith('1001 ejercicios')){
+    let x=t.replace(/\s*[|]?[ ]*\d+\s*$/,'').trim();
     if(/^Tirar las banderas invencibles/.test(x))x='Tirar las banderas invencibles';
     if(x==='Los 5 agujeros')return x;
-    x=clean(x);
-    return x;
+    return clean(x);
   }
 
-  // 6-12 years book: each extracted record contains one or two neighbouring
-  // titles. Keep the first title only when OCR gives a plausible title.
-  if(src==='juegos 6a12anos.pdf'){
-    let x=t.split(/\\s+Jueg/i)[0].trim().replace(/^\\d+\\s+/,'');
-    x=x.replace("EL'TELEGRAMA",'EL TELEGRAMA').replace('EL.TEATRO','EL TEATRO')
-      .replace('POR ELSONIDO','POR EL SONIDO').replace('ELLAGO','EL LAGO')
-      .replace('ELMANJAR DE FRUTAS','EL MANJAR DE FRUTAS');
-    x=clean(x);
-    return x;
-  }
+  // En el resto de fuentes, no promovemos una ficha OCR genérica a
+  // verificada a partir de fragmentos entre comillas: suelen ser trozos
+  // de instrucciones y generan falsos nombres. Quedan en revisión manual.
+  if(generic)return'';
 
-  // This book is a session/programming text; its OCR snippets are not reliable
-  // standalone game titles, so keep them in manual review.
-  if(src.startsWith('LIBRO Sesiones'))return'';
-
-  // Other OCR books: only trust an explicit game name quoted or introduced
-  // as "Juego de...", avoiding page fragments.
-  const candidates=[];
-  for(const re of [
-    /[“"]([^”"\\n]{4,70})[”"]/g,
-    /(?:Juego|JUEGO)\\s*(?:de|del|:|-)\\s*[“"]?([^”"\\n.;]{4,70})/g
-  ]){
-    let m;
-    while((m=re.exec(d))){
-      const x=clean(m[1]);
-      if(x)candidates.push(x);
-    }
-  }
-  for(const x of candidates){
-    if(!/\\b(?:de|del|la|el|los|las|con|que|al)$/i.test(x))return x;
-  }
-  return candidates[0]||'';
+  return'';
 }
 function contentState(g){
   // A recovered high-confidence title takes precedence over the imported review flag.
