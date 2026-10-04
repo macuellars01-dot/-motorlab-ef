@@ -91,7 +91,7 @@ function applyGameLocalState(){
 }
 function persistGame(g){const o=read(KEYS.overrides,{});o[g.id]={...g,updatedAt:g.updatedAt||now()};write(KEYS.overrides,o);markPending()}
 function normalize(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()}
-const MOTOR_AGES=['Infantil','Infantil y Primaria','1º-2º Primaria','3º-4º Primaria','5º-6º Primaria','Primaria','Primaria y Secundaria','1º-6º Primaria','No especificada'];
+const MOTOR_AGES=['Infantil','Infantil y Primaria','1º-2º Primaria','3º-4º Primaria','3º-6º Primaria','5º-6º Primaria','Primaria','Primaria y Secundaria','1º-6º Primaria','No especificada'];
 const MOTOR_MATERIALS=['Sin material','Balones/pelotas','Aros','Conos','Cuerdas/combas','Picas','Pañuelos/petos','Colchonetas','Raquetas','Tizas','Globos','Tarjetas','Bancos/vallas','Música','Material variado','Otros','No especificado'];
 const MOTOR_SPACES=['Aula','Pista/gimnasio','Pista/exterior','Patio/exterior','Espacio delimitado','Espacio amplio','Otros','No especificado'];
 const MOTOR_INTENSITIES=['Baja','Media','Alta','No especificada'];
