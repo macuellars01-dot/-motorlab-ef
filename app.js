@@ -110,10 +110,44 @@ function normalizeCatalogRecord(g){
   out.classificationConfidence=out.contentState==='Verificado'?'alta':out.contentState==='Requiere revisión'?'media':'baja';
   return out;
 }
-function ageCategories(g){if(Array.isArray(g?.ageCategories)&&g.ageCategories.length)return g.ageCategories;const x=normalize(g?.age);if(!x)return['No especificada'];if(/12\s*[-a]\s*13/.test(x))return['5º-6º Primaria'];if(/6\s*[-a]\s*12/.test(x))return['1º-6º Primaria'];if(/8\s*[-a]\s*12/.test(x))return['3º-6º Primaria'];if(/6\s*[-a]\s*10/.test(x))return['1º-4º Primaria'];if(/6\s*[-a]\s*8/.test(x))return['1º-2º Primaria'];if(/4\s*[-a]\s*10/.test(x))return['Infantil y Primaria','1º-4º Primaria'];if(/a partir de 5º|5º.*primaria/.test(x))return['5º-6º Primaria'];if(/a partir de 3º|3º.*primaria/.test(x))return['3º-4º Primaria'];if(/infantil.*primaria|primaria.*infantil/.test(x))return['Infantil y Primaria'];if(/primaria.*secundaria|secundaria.*primaria/.test(x))return['Primaria y Secundaria'];if(x==='primaria'||x.startsWith('primaria '))return['Primaria'];if(x.includes('infantil'))return['Infantil'];return['No especificada']}
+function ageCategories(g){
+  if(Array.isArray(g?.ageCategories)&&g.ageCategories.length)return g.ageCategories;
+  const x=normalize(g?.age);
+  if(!x)return['No especificada'];
+  const out=[];
+  const add=v=>{if(v&&!out.includes(v))out.push(v)};
+  if(/12\s*[-a]\s*13/.test(x))add('5º-6º Primaria');
+  if(/6\s*[-a]\s*12/.test(x))add('1º-6º Primaria');
+  if(/8\s*[-a]\s*12/.test(x))add('3º-6º Primaria');
+  if(/6\s*[-a]\s*10/.test(x))add('1º-4º Primaria');
+  if(/6\s*[-a]\s*8/.test(x))add('1º-2º Primaria');
+  if(/4\s*[-a]\s*10/.test(x))add('Infantil y Primaria');
+  if(/a partir de 5º|5º.*primaria/.test(x))add('5º-6º Primaria');
+  if(/a partir de 3º|3º.*primaria/.test(x))add('3º-4º Primaria');
+  if(/1º\s*[-y]?[–-]?\s*2º\s*(?:eso|secundaria)/.test(x)||/primaria y 1º\s*[-y]?[–-]?\s*2º\s*(?:eso|secundaria)/.test(x))add('Primaria y Secundaria');
+  if(/primaria.*secundaria|secundaria.*primaria/.test(x))add('Primaria y Secundaria');
+  if(/infantil.*primaria|primaria.*infantil/.test(x))add('Infantil y Primaria');
+  if(/infantil,?\s*1º.*2º.*primaria/.test(x))add('Infantil y Primaria');
+
+  if(x==='primaria'||x.startsWith('primaria '))add('Primaria');
+  if(x.includes('infantil')&&!out.includes('Infantil y Primaria'))add('Infantil');
+  if(x==='secundaria')add('Secundaria');
+  return out.length?out:['No especificada'];
+}
 function materialCategories(g){if(Array.isArray(g?.materialCategories)&&g.materialCategories.length)return g.materialCategories;const raw=normalize(typeof g==='string'?g:g?.material);if(!raw||raw==='no especificado')return['No especificado'];if(/ningun|sin material|ninguno/.test(raw))return['Sin material'];const out=[];const add=(re,label)=>{if(re.test(raw))out.push(label)};add(/pelot|balon/,'Balones/pelotas');add(/aro/,'Aros');add(/cono/,'Conos');add(/cuerda|comba/,'Cuerdas/combas');add(/pica/,'Picas');add(/pañuel|panuel|peto|chaleco/,'Pañuelos/petos');add(/colchoneta/,'Colchonetas');add(/raqueta/,'Raquetas');add(/tiza|yeso/,'Tizas');add(/globo/,'Globos');add(/tarjet|cartulina|cartas/,'Tarjetas');add(/banco|valla/,'Bancos/vallas');add(/musica/,'Música');add(/variado|diverso|varios materiales|material diverso/,'Material variado');return out.length?out:['Otros']}
 function materialTag(g){return materialCategories(g)[0]||'No especificado'}
-function spaceCategories(g){if(Array.isArray(g?.spaceCategories)&&g.spaceCategories.length)return g.spaceCategories;const x=normalize(typeof g==='string'?g:g?.space);if(!x||x==='no especificado')return['No especificado'];if(x.includes('aula'))return['Aula'];if(x.includes('pista')||x.includes('gimnasio')||x.includes('cancha'))return['Pista/gimnasio'];if(x.includes('patio'))return['Patio/exterior'];if(x.includes('exterior'))return['Pista/exterior'];if(x.includes('delimit'))return['Espacio delimitado'];if(x.includes('amplio'))return['Espacio amplio'];return['Otros']}
+function spaceCategories(g){
+  if(Array.isArray(g?.spaceCategories)&&g.spaceCategories.length)return g.spaceCategories;
+  const x=normalize(typeof g==='string'?g:g?.space);
+  if(!x||x==='no especificado')return['No especificado'];
+  const out=[]; const add=v=>{if(!out.includes(v))out.push(v)};
+  if(x.includes('aula')||x.includes('salón')||x.includes('sala'))add('Aula');
+  if(x.includes('pista')||x.includes('gimnasio')||x.includes('cancha')||x.includes('campo'))add('Pista/gimnasio');
+  if(x.includes('patio')||x.includes('exterior'))add('Patio/exterior');
+  if(x.includes('delimit')||x.includes('cuadrante'))add('Espacio delimitado');
+  if(x.includes('amplio')||x.includes('libre')||x.includes('metros')||x.includes('cuadrad'))add('Espacio amplio');
+  return out.length?out:['Otros'];
+}
 function spaceTag(g){return spaceCategories(g)[0]||'No especificado'}
 function intensityCategory(g){if(g?.intensityCategory)return g.intensityCategory;const x=normalize(g?.intensity);if(x==='baja')return'Baja';if(x==='alta')return'Alta';if(x==='media'&&g?.intensitySource==='manual')return'Media';return'No especificada'}
 function inferIntensity(g){return intensityCategory(g)}
