@@ -5,6 +5,37 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const KEYS={sessions:'motorlab_sessions',units:'motorlab_units',overrides:'motorlab_game_overrides',deleted:'motorlab_deleted_games',deletedSessions:'motorlab_deleted_sessions',deletedUnits:'motorlab_deleted_units',meta:'motorlab_game_meta',settings:'motorlab_sync_settings',sync:'motorlab_sync_meta'};
 const DEFAULT_API='https://ugreen-tailscale.tailfc6c36.ts.net:8443/motorlab';
 const CATALOG_VERSION='2026-10-04T15:45:00.000Z';
+const RECOVERED_J6A12={
+  3:[[1,'El Pelele'],[2,'La Sombra']],
+  29:[[103,'Pies en alto'],[104,'Las Picas'],[105,'Pasar la corriente'],[106,'Tocarse las rodillas']],
+  37:[[135,'Las Muñecas'],[136,'Combate Pirata'],[137,'Los Saquitos'],[138,'La Culebra']],
+  42:[[155,'Lanzamientos de bolos'],[156,'Las Cuatro Porterías'],[157,'De bote en bote'],[158,'Tulipán botando']],
+  64:[[239,'El Enano Saltarín'],[240,'Los Saltadores y los Osos'],[241,'Perros y Gatos'],[242,'Date la vuelta']],
+  74:[[279,'Provocar la palmada'],[281,'El Sobre'],[280,'Tiro al bote'],[282,'El Mareo']],
+  79:[[299,'¿Quién te dio el pelotazo?'],[300,'De campo a campo'],[301,'Los Veleros'],[302,'Perritos falderos']],
+  80:[[303,'Tomadura de pelo'],[305,'Llenar y vaciar'],[304,'Balón cangrejo'],[306,'Balón sprint']],
+  90:[[337,'Seguir a la madre'],[339,'Los Animales'],[338,'Efecto mueble'],[340,'Expresividad']],
+  96:[[361,'El Flautista de Hamelín'],[362,'El Castillo Encantado'],[363,'Yo vi'],[364,'La Familia']],
+  102:[[385,'Los Astronautas'],[386,'El Orador'],[387,'Cuéntame un chiste'],[388,'¿Quién dice la frase?']],
+  103:[[389,'El Charlatán'],[390,'Semana Santa']]
+};
+function applyRecoveredJ6a12(){
+  const pages=new Set(Object.keys(RECOVERED_J6A12).map(Number));
+  games=games.filter(g=>!(g?.source==='juegos 6a12anos.pdf'&&String(g?.title||'').startsWith('OCR')&&pages.has(Number(g?.page))));
+  const existing=new Set(games.map(g=>g.id));
+  Object.entries(RECOVERED_J6A12).forEach(([page,items])=>items.forEach(([num,title])=>{
+    const id=`j6a12-recovered-${String(num).padStart(3,'0')}`;
+    if(existing.has(id))return;
+    games.push(normalizeCatalogRecord({
+      id,title,age:'6-12 años',material:'No especificado',
+      description:'Título recuperado directamente de la ficha original del PDF; descripción pendiente de segmentación individual.',
+      source:'juegos 6a12anos.pdf',page:Number(page),space:'Pista / gimnasio',intensity:'Media',
+      groupings:[],objectives:[],classificationSource:'recuperación directa del título de la ficha PDF',
+      needsReview:true,confidence:'title-recovered',kind:'game'
+    }));
+    existing.add(id);
+  }));
+}
 let syncState='idle', syncTimer=null;
 
 function read(k,f){try{return JSON.parse(localStorage.getItem(k))??f}catch(_){return f}}
@@ -23,6 +54,7 @@ async function init(){
     games=await gameResponse.json();
     if(!Array.isArray(games))throw new Error('games.json no es un array');
     games=games.map(normalizeCatalogRecord);
+    applyRecoveredJ6a12();
     baseCatalogCount=games.length;
     sanitizeLocalGameState();
 
