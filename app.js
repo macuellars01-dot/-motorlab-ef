@@ -152,6 +152,7 @@ async function init(){
     if(!Array.isArray(games))throw new Error('games.json no es un array');
     games=games.map(normalizeCatalogRecord);
     applyRecoveredJ6a12();
+    applyRecoveredJ6a12Extra();
     canonicalizeJ6a12Titles();
     baseCatalogCount=games.length;
     sanitizeLocalGameState();
