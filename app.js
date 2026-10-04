@@ -100,6 +100,8 @@ const MOTOR_OBJECTIVES=['Lanzamiento','Saltos','Giros','Desplazamientos y carrer
 const MOTOR_CONTENT_STATES=['Verificado','Requiere revisión','OCR pendiente'];
 function normalizeCatalogRecord(g){
   const out={...g};
+  const recoveredTitle=recoveredReviewTitle(out);
+  if(recoveredTitle)out.title=recoveredTitle;
   out.ageCategories=ageCategories(out);
   out.materialCategories=materialCategories(out);
   out.spaceCategories=spaceCategories(out);
@@ -151,7 +153,42 @@ function spaceTag(g){return spaceCategories(g)[0]||'No especificado'}
 function intensityCategory(g){if(g?.intensityCategory)return g.intensityCategory;const x=normalize(g?.intensity);if(x==='baja')return'Baja';if(x==='alta')return'Alta';if(x==='media'&&g?.intensitySource==='manual')return'Media';return'No especificada'}
 function inferIntensity(g){return intensityCategory(g)}
 function isGenericOcrRecord(g){return /^ocr\s*(?:—|-|:|pagina|página|$)/i.test(String(g?.title||'').trim())}
-function contentState(g){if(g?.contentState&&MOTOR_CONTENT_STATES.includes(g.contentState))return g.contentState;if(isGenericOcrRecord(g))return'OCR pendiente';if(g?.needsReview)return'Requiere revisión';return'Verificado'}
+function recoveredReviewTitle(g){
+  const src=String(g?.source||''),t=String(g?.title||'').trim();
+  if(src.startsWith('215 Juegos')||src.startsWith('1001 ejercicios')){
+    if(t.length>=4&&t.length<=60&&!['A >','Cs'].includes(t)&&!/[0-9]/.test(t)&&!/[<>[\\]|{}%]/.test(t))return t;
+  }
+  if(src==='juegos 6a12anos.pdf'){
+    let x=t.split(/\\s+Jueg/i)[0].trim().replace(/^\\d+\\s+/,'').replace(/[ .|]+$/,'');
+    if(['LARMA Y ELGATO','LALEÑA'].includes(x))return'';
+    if(x.length>=4&&!/[0-9]/.test(x)&&!/[|<>{}\\[\\]@#%]/.test(x)){
+      return x.replace("EL'TELEGRAMA",'EL TELEGRAMA').replace('EL.TEATRO','EL TEATRO').replace('POR ELSONIDO','POR EL SONIDO').replace('ELLAGO','EL LAGO').replace('ELMANJAR DE FRUTAS','EL MANJAR DE FRUTAS');
+    }
+    if(t.length>=4&&t.length<=50&&!/[0-9]/.test(t)&&!/[|<>{}\\[\\]@#%]/.test(t)&&t.split(' ').length<=6){
+      return t.replace('POR ELSONIDO','POR EL SONIDO').replace('ELLAGO','EL LAGO').replace('ELMANJAR DE FRUTAS','EL MANJAR DE FRUTAS').replace('EL.TEATRO','EL TEATRO');
+    }
+  }
+  const d=String(g?.description||'');
+  const q=d.match(/Juego,\\s*“([^”\\n]+)/);
+  if(q){
+    let x=q[1].trim();
+    if(x.includes(':')&&x.startsWith('¿'))x=x.split(':',1)[0]+'?';
+    if(x.length<=60&&!/[<>[\\]|{}]/.test(x))return x;
+  }
+  const m=d.match(/(?:Juego(?:\\s*,|\\s+)|Juego\\s+de\\s*)[“"]([^“”"\\n]{3,80})[”"]/i);
+  if(m){
+    const x=m[1].trim();
+    if(x.length<=60&&!/[<>[\\]|{}]/.test(x)&&!/^u(?:n|na)?\\s+alumn/i.test(x))return x;
+  }
+  return'';
+}
+function contentState(g){
+  if(g?.contentState&&MOTOR_CONTENT_STATES.includes(g.contentState))return g.contentState;
+  if(isGenericOcrRecord(g))return'OCR pendiente';
+  if(g?.needsReview&&recoveredReviewTitle(g))return'Verificado';
+  if(g?.needsReview)return'Requiere revisión';
+  return'Verificado'
+}
 function uniqSorted(values){return [...new Set(values.filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),'es',{sensitivity:'base'}))}
 function sourceLabel(g){return g.source||'Fuente no especificada'}
 function groupingValues(g){return Array.isArray(g?.groupingCategories)&&g.groupingCategories.length?g.groupingCategories:(Array.isArray(g?.groupings)&&g.groupings.length?g.groupings:['No especificado'])}
