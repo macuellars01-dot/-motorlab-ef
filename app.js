@@ -21,6 +21,7 @@ async function init(){
     if(!gameResponse.ok)throw new Error(`games.json ${gameResponse.status}`);
     games=await gameResponse.json();
     if(!Array.isArray(games))throw new Error('games.json no es un array');
+    games=games.map(normalizeCatalogRecord);
     sanitizeLocalGameState();
 
     // sources.json is optional: if it fails, the game catalog still loads.
@@ -97,6 +98,18 @@ const MOTOR_INTENSITIES=['Baja','Media','Alta','No especificada'];
 const MOTOR_GROUPINGS=['Individual','Parejas','Pequeños grupos','Gran grupo','No especificado'];
 const MOTOR_OBJECTIVES=['Lanzamiento','Saltos','Giros','Desplazamientos y carrera','Equilibrio','Coordinación','Conducción y manejo','Percepción y atención','Ritmo y expresión','Cooperación','Oposición y persecución','Predeporte','Relajación y vuelta a la calma','No especificado'];
 const MOTOR_CONTENT_STATES=['Verificado','Requiere revisión','OCR pendiente'];
+function normalizeCatalogRecord(g){
+  const out={...g};
+  out.ageCategories=ageCategories(out);
+  out.materialCategories=materialCategories(out);
+  out.spaceCategories=spaceCategories(out);
+  out.intensityCategory=intensityCategory(out);
+  out.groupingCategories=groupingValues(out);
+  out.objectiveCategories=objectiveValues(out);
+  out.contentState=contentState(out);
+  out.classificationConfidence=out.contentState==='Verificado'?'alta':out.contentState==='Requiere revisión'?'media':'baja';
+  return out;
+}
 function ageCategories(g){if(Array.isArray(g?.ageCategories)&&g.ageCategories.length)return g.ageCategories;const x=normalize(g?.age);if(!x)return['No especificada'];if(/12\s*[-a]\s*13/.test(x))return['5º-6º Primaria'];if(/6\s*[-a]\s*12/.test(x))return['1º-6º Primaria'];if(/8\s*[-a]\s*12/.test(x))return['3º-6º Primaria'];if(/6\s*[-a]\s*10/.test(x))return['1º-4º Primaria'];if(/6\s*[-a]\s*8/.test(x))return['1º-2º Primaria'];if(/4\s*[-a]\s*10/.test(x))return['Infantil y Primaria','1º-4º Primaria'];if(/a partir de 5º|5º.*primaria/.test(x))return['5º-6º Primaria'];if(/a partir de 3º|3º.*primaria/.test(x))return['3º-4º Primaria'];if(/infantil.*primaria|primaria.*infantil/.test(x))return['Infantil y Primaria'];if(/primaria.*secundaria|secundaria.*primaria/.test(x))return['Primaria y Secundaria'];if(x==='primaria'||x.startsWith('primaria '))return['Primaria'];if(x.includes('infantil'))return['Infantil'];return['No especificada']}
 function materialCategories(g){if(Array.isArray(g?.materialCategories)&&g.materialCategories.length)return g.materialCategories;const raw=normalize(typeof g==='string'?g:g?.material);if(!raw||raw==='no especificado')return['No especificado'];if(/ningun|sin material|ninguno/.test(raw))return['Sin material'];const out=[];const add=(re,label)=>{if(re.test(raw))out.push(label)};add(/pelot|balon/,'Balones/pelotas');add(/aro/,'Aros');add(/cono/,'Conos');add(/cuerda|comba/,'Cuerdas/combas');add(/pica/,'Picas');add(/pañuel|panuel|peto|chaleco/,'Pañuelos/petos');add(/colchoneta/,'Colchonetas');add(/raqueta/,'Raquetas');add(/tiza|yeso/,'Tizas');add(/globo/,'Globos');add(/tarjet|cartulina|cartas/,'Tarjetas');add(/banco|valla/,'Bancos/vallas');add(/musica/,'Música');add(/variado|diverso|varios materiales|material diverso/,'Material variado');return out.length?out:['Otros']}
 function materialTag(g){return materialCategories(g)[0]||'No especificado'}
