@@ -1,9 +1,138 @@
 let games=[], sources=[], session=[], savedSessions=[], units=[];
+let baseCatalogCount=0;
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
 const KEYS={sessions:'motorlab_sessions',units:'motorlab_units',overrides:'motorlab_game_overrides',deleted:'motorlab_deleted_games',deletedSessions:'motorlab_deleted_sessions',deletedUnits:'motorlab_deleted_units',meta:'motorlab_game_meta',settings:'motorlab_sync_settings',sync:'motorlab_sync_meta'};
 const DEFAULT_API='https://ugreen-tailscale.tailfc6c36.ts.net:8443/motorlab';
-const CATALOG_VERSION='2026-10-04T15:45:00.000Z';
+const CATALOG_VERSION='2026-10-05T15:30:00.000Z';
+const J6A12_CANONICAL_TITLES={"1":"El pelele","2":"La sombra","3":"El pañuelo circular","4":"El bosque animado","5":"La cruz roja","6":"Stop","7":"Adivina el número","8":"Cazar al ruidoso","9":"¿Qué produjo el ruido?","10":"La zapatilla por detrás","11":"¿Dónde estás?","12":"Los disparates","13":"El guiño","14":"No te cambies que te pilla","15":"El telegrama","16":"El asesino","17":"Arrancar cebollas","18":"Saltar pilares","19":"El ciempiés","20":"Los nudos","21":"¿Qué me escribes sobre la espalda?","22":"Cosquilleo","23":"¿Qué he pisado?","24":"¿Qué letras son?","25":"Déjate llevar por la música","26":"El objeto invisible","27":"Dibuja con el cuerpo","28":"Haz conmigo lo que desees","29":"Doblar al árbol","30":"Blando y rígido","31":"Las cuatro esquinas","32":"Nos agrupamos","33":"En busca del tesoro","34":"Las posiciones","35":"Fútbol sin balón","36":"La mosca","37":"El maremoto","38":"El canario busca jaula","39":"Dirijo mi caballo","40":"El mundo al revés","41":"¿Qué hemos cambiado?","42":"¿Qué falta?","43":"Adivina quién ha sido","44":"El ruido ciego","45":"Que no se junten","46":"Al refugio","47":"No veo","48":"A juntarse","49":"Se me ha perdido","50":"Ven o vete","51":"Lagarto súbete en alto","52":"Los vehículos","53":"Esquivas","54":"Lo que hace el primero yo lo supero","55":"Memorizo un recorrido","56":"Localiza al animal","57":"Por el sonido","58":"¿Quién lo hizo?","59":"La barrera","60":"¡A la caza de animales!","61":"La película de cine","62":"Pies quietos","63":"Pilla la pelota","64":"Hombre lobo","65":"Buscar el oso","66":"El escondite de sonidos","67":"Traslado de heridos","68":"Agáchate","69":"El minuto","70":"Las palmadas","71":"Blanco y negro","72":"Los animales","73":"El coche de papá","74":"Fuerte y débil","75":"Bota, bota la pelota","76":"Canta con las manos","77":"Haz lo que yo hago","78":"Rodando, rodando","79":"Rueda que te pillo","80":"Atento al color","81":"Acelero","82":"Ve y vuelve","83":"Baila y muévete","84":"Espera a que el balón bote","85":"Haz lo que diga la canción","86":"Reconoce","87":"Recojo rápido","88":"Por gestos","89":"Sigo al balón","90":"Carrera de números","91":"Cruza el río y no te mojes","92":"El zorro","93":"El globo loco","94":"El cazatrén","95":"Las tijeras","96":"El perro asustado","97":"El jefe","98":"La oruga","99":"El parchís","100":"Lo que hace el padre, hacen los niños","101":"El zig-zag","102":"Tres patas","103":"Pies en alto","104":"Las picas","105":"Pasar la corriente","106":"Tocarse las rodillas","107":"Lanza y salta","108":"Carreras de relevos","109":"El túnel redondo","110":"Enredo","111":"Zanahoria, zanahoria","112":"Correr y amagar","113":"Círculo","114":"La hélice","115":"Los fusilamientos","116":"Las gallinas","117":"El número secreto","118":"El cazador","119":"Pisar el charco","120":"El encuentro","121":"Cruzar el precipicio","122":"Un, dos, tres, chocolate inglés","123":"Saquitos equilibrados","124":"El puente","125":"Los cazadores cojos","126":"No te rías que es peor","127":"Punta talón","128":"El péndulo","129":"Cada vez más bajo","130":"El avestruz","131":"El vigilante","132":"Las estatuas","133":"Círculo inmóvil","134":"Las cuevas","135":"Las muñecas","136":"Combate pirata","137":"Los saquitos","138":"La culebra","139":"Los monstruitos","140":"No te muevas","141":"Picas en equilibrio","142":"Pulso a la pata coja","143":"Las cigüeñas","144":"Sillas musicales","145":"Enredos","146":"Saltando juntos","147":"El árbol","148":"Letras y números","149":"El zapatero","150":"Recorridos","151":"Tiro al blanco","152":"La petanca con balón","153":"Cesta móvil","154":"El reloj","155":"Lanzamientos de bolos","156":"Las cuatro porterías","157":"De bote en bote","158":"Tulipán botando","159":"Tortilla de manos","160":"La rata y el gato","161":"Pelota al cuello","162":"El juego de la sortija","163":"El cubo y las pelotas","164":"El gol","165":"Triángulo","166":"Perros y gatos","167":"Slalom","168":"Pelota envenenada","169":"Pelota por el puente","170":"Elevar la pelota","171":"El palmo","172":"El túnel","173":"La frontera","174":"La saca","175":"La diana numerada","176":"Balón prisionero","177":"A por la zapatilla","178":"La raya","179":"A las 21 con aros","180":"Balón torre","181":"Leones y canguros","182":"Transportamos globos","183":"Cangrejo rabioso","184":"La caza del pañuelo","185":"La cadena","186":"Safari de canguros","187":"La bruja piruja","188":"Pillar con manos arriba","189":"Policías y ladrones","190":"Los colores","191":"Ponte el primero","192":"Tocar la cola","193":"La espaldera","194":"Robar colitas","195":"Los patitos","196":"Relevos marchando","197":"Todos contra uno","198":"Que te pilla el gato","199":"La pesca","200":"Carrera de reptiles","201":"El metro","202":"Huida de la serpiente","203":"Globo-papelera","204":"Corro, salto y gateo","205":"La silla de la reina","206":"En busca de tu mirada","207":"El comecocos","208":"El reloj","209":"Los trineos","210":"Paseo en avestruz","211":"Carrera de sacos","212":"La culebrilla","213":"El lago","214":"Salvar el río","215":"Al pasar la barca","216":"Relevos de comba","217":"Busca pies","218":"Salto a las botellas tumbadas","219":"Canguro saltarín","220":"Tablero a pata coja","221":"Juntos lo conseguiremos","222":"Las ranitas","223":"Los charcos","224":"Neumáticos viejos","225":"El sol","226":"El cuadrado","227":"Platillo volador","228":"La rayuela","229":"Canguros y ranas","230":"Caza balones","231":"Saltos de ranas","232":"Respiración del gazapo","233":"Salto de la pulga","234":"Salto la bola","235":"El muro","236":"Bancos suecos","237":"Carrera de liebres","238":"El pañuelo saltarín","239":"El enano saltarín","240":"Los saltadores y los osos","241":"Perros y gatos","242":"Date la vuelta","243":"Las carambolas","244":"Rodamientos de troncos","245":"El vals","246":"El satélite","247":"El molinillo","248":"La peonza","249":"Relevos con giros","250":"Gira-gira","251":"El bailarín","252":"Los toreros","253":"A girar","254":"El tiovivo","255":"La leña","256":"Bailemos el hula hop","257":"Invéntate un giro","258":"Tortugas y cangrejos","259":"Rayos desintegradores","260":"No pares, gira, gira","261":"El carrusel","262":"Yo pego y tu me persigues","263":"El molinete","264":"Carrera de pertiguistas","265":"Las super-volteretas","266":"Relevos de rodamientos","267":"Pilla-pilla con giros","268":"Giramos como...","269":"Girar el aro","270":"Los tubos","271":"Tira y recoge","272":"Achique de balones","273":"El malabarista","274":"Discos voladores","275":"Las patatas calientes","276":"Lluvia de balones","277":"Los números","278":"El derribo de los bolos","279":"Provocar la palmada","280":"Tiro al bote","281":"El sobre","282":"El mareo","283":"Balón al castillo","284":"Los cazadores","285":"Cada vez más bajo","286":"Recoger la lluvia","287":"Balón volante","288":"Los diez pases","289":"El aro que rueda","290":"El balón que no para","291":"Los policías y el ladrón","292":"Carrera de lanzadores","293":"El aro canasta","294":"Tiro al pichón","295":"Tiro de feria","296":"Cesto móvil","297":"Iniciación al béisbol","298":"Asalto al castillo","299":"¿Quién te dio el pelotazo?","300":"De campo a campo","301":"Los veleros","302":"Perritos falderos","303":"Tomadura de pelo","304":"Balón cangrejo","305":"Llenar y vaciar","306":"Balón sprint","307":"Conos voladores","308":"Carreteras peligrosas","309":"Cambia el bolo","310":"Pañuelo atado","311":"Colgantes de colores","312":"Robabalones","313":"Transporte de ladrillos","314":"Relevo del banco","315":"A casa con aro","316":"Balón al nido","317":"Fútbol-rugby","318":"Persiguiendo un balón","319":"El desalojo","320":"Tocar sin ser tocado","321":"Los transportistas locos","322":"La mudanza","323":"Los peones de carretera","324":"Los basureros","325":"Los globos-pala","326":"Los transportistas-equilibristas","327":"Cuidado con las escobas","328":"Carrera de banderines","329":"La escoba doble","330":"Con el sandwich en la mano","331":"El safari fotográfico","332":"El almacén de juguetes","333":"El espejo","334":"La estatua","335":"Pobre gatito","336":"Familia de animales","337":"Seguir a la madre","338":"Efecto mueble","339":"Los animales","340":"Expresividad","341":"Las caras","342":"Acciones cotidianas","343":"Los personajes","344":"La orquesta","345":"Los heridos","346":"Nacimiento de una flor","347":"El manjar de frutas","348":"El muñeco","349":"Las cosas inanimadas","350":"El colegio","351":"Los oficios","352":"Los saludos","353":"El hipnotizador","354":"Adivina quién es","355":"¿Quién canta?","356":"Aprende a tocar","357":"Los deportes","358":"Los sonidos","359":"Los objetos","360":"¿Sabes quién soy?","361":"El flautista de Hamelín","362":"El castillo encantado","363":"Yo vi","364":"La familia","365":"Érase una vez","366":"El circo","367":"Zapping","368":"Los magos","369":"Las regiones","370":"El tráfico","371":"Policías y ladrones","372":"Mini olimpiada","373":"El supermercado","374":"La plaza de toros","375":"La taberna","376":"La boda","377":"El rodaje","378":"El zoo","379":"La excursión","380":"Dibujos animados","381":"Los bomberos","382":"El aerobic","383":"Vuelta a casa","384":"El teatro","385":"Los astronautas","386":"El orador","387":"Cuéntame un chiste","388":"¿Quién dice la frase?","389":"El charlatán","390":"Semana Santa"};
+
+const J6A12_EXTRA_PAGES={
+  11:6,13:6,
+  8:5,10:5,15:7,17:7,19:8,20:8,21:8,22:8,27:10,29:10,31:11,33:11,
+  43:14,45:14,48:15,50:15,56:17,57:17,58:17,62:18,64:19,66:19,67:20,68:20,70:20,
+  75:22,77:22,95:27,97:27,99:28,101:28,112:31,114:31,132:36,134:36,148:40,150:40,
+  152:41,159:43,160:43,161:43,162:43,164:44,166:44,176:47,178:47,187:51,188:51,189:51,190:51,
+  207:56,209:56,213:57,220:59,222:59,228:61,230:61,247:66,248:66,249:66,250:66,
+  252:67,254:67,255:68,256:68,257:68,258:68,259:69,261:69,264:70,266:70,268:71,270:71,
+  275:73,277:73,283:75,285:75,287:76,289:76,295:78,297:78,307:81,308:81,309:81,310:81,
+  312:82,314:82,319:84,321:84,341:91,343:91,344:92,345:92,347:92,354:94,356:94,357:95,359:95,
+  366:97,368:97,373:99,375:99,382:101,384:101
+};
+const J6A12_EXTRA_OCR_IDS=new Set([
+  'ocr-00103','ocr-00104','ocr-00105','ocr-00106','ocr-00107','ocr-00108','ocr-00109','ocr-00110','ocr-00111','ocr-00112',
+  'ocr-00114','ocr-00115','ocr-00116','ocr-00117','ocr-00118','ocr-00119','ocr-00120','ocr-00121','ocr-00122',
+  'ocr-00123','ocr-00125','ocr-00126','ocr-00127','ocr-00128','ocr-00129','ocr-00130','ocr-00131','ocr-00132',
+  'ocr-00133','ocr-00134','ocr-00135','ocr-00136','ocr-00137','ocr-00138','ocr-00139','ocr-00140','ocr-00141',
+  'ocr-00142','ocr-00143','ocr-00144','ocr-00145','ocr-00146','ocr-00147','ocr-00148','ocr-00149','ocr-00150',
+  'ocr-00151','ocr-00152','ocr-00153','ocr-00154','ocr-00155','ocr-00156','ocr-00157','ocr-00158','ocr-00159','ocr-00160','ocr-00161'
+]);
+function applyRecoveredJ6a12Extra(){
+  games=games.filter(g=>!J6A12_EXTRA_OCR_IDS.has(String(g?.id||'')));
+  const existing=new Set(games.map(g=>g.id));
+  Object.entries(J6A12_EXTRA_PAGES).forEach(([num,page])=>{
+    const n=Number(num), id=`j6a12-recovered-${String(n).padStart(3,'0')}`;
+    if(existing.has(id))return;
+    const title=J6A12_CANONICAL_TITLES[String(n)];
+    if(!title)return;
+    games.push(normalizeCatalogRecord({
+      id,title,age:'6-12 años',material:'No especificado',
+      description:'Título recuperado de la ficha OCR original del PDF; descripción y clasificación pendientes de revisión.',
+      source:'juegos 6a12anos.pdf',page,space:'No especificado',intensity:'No especificada',
+      groupings:['No especificado'],objectives:['No especificado'],
+      classificationSource:'recuperación del título a partir de número y texto explícitos en la ficha OCR original',
+      needsReview:true,confidence:'title-recovered-from-explicit-OCR',kind:'game'
+    }));
+    existing.add(id);
+  });
+}
+
+function canonicalizeJ6a12Titles(){games.forEach(g=>{const m=String(g?.id||'').match(/^j6a12-(\d+)$/);if(m&&J6A12_CANONICAL_TITLES[m[1]])g.title=J6A12_CANONICAL_TITLES[m[1]];});}
+const RECOVERED_J6A12={
+  1:['El Pelele','Sin material','Parejas','Conocer el esquema e imagen corporal.','Por parejas, un alumno tumbado recibe movimientos guiados en distintas partes del cuerpo; después se cambian los roles.'],
+  2:['La Sombra','Sin material','Parejas','Conocer el esquema e imagen corporal.','Un alumno se mueve libremente y su compañero imita sus movimientos como si fuera su sombra; después se cambian los roles.'],
+  103:['Pies en alto','Sin material','Gran grupo','Desplazamientos y carrera','El profesor indica posiciones que deben adoptar manteniendo siempre los pies elevados; quien no lo consigue puede ser capturado.'],
+  104:['Las Picas','Picas','Gran grupo','Coordinación','En círculo, cada alumno suelta su pica a una señal y se desplaza para recoger la de su compañero siguiendo una rotación.'],
+  105:['Pasar la corriente','Sin material','Pequeños grupos','Coordinación','En círculo y cogidos de las manos, un alumno inicia una ondulación con el brazo que los demás transmiten de forma coordinada.'],
+  106:['Tocarse las rodillas','Sin material','Gran grupo','Desplazamientos y carrera','Cada alumno intenta tocar las rodillas de otros compañeros evitando que le toquen las suyas.'],
+  135:['Las Muñecas','Sin material','Parejas','Equilibrio','Por parejas, uno representa una muñeca que se mueve y va deteniéndose progresivamente cuando se acaba la cuerda imaginaria.'],
+  136:['Combate Pirata','Bancos/vallas','Parejas','Equilibrio','Dos alumnos sobre un banco sueco intentan empujarse con una mano sin caer.'],
+  137:['Los Saquitos','Otros','Pequeños grupos','Equilibrio','Por relevos, cada alumno transporta un saquito sobre la cabeza hasta una meta y se lo entrega al siguiente.'],
+  138:['La Culebra','Cuerdas/combas','Gran grupo','Equilibrio','Dos grandes cuerdas forman recorridos curvos que los alumnos deben pisar manteniendo el equilibrio.'],
+  155:['Lanzamientos de bolos','Balones/pelotas','Pequeños grupos','Lanzamiento','Se lanzan balones rodando hacia botellas colocadas a distancia y se puntúa según las botellas derribadas.'],
+  156:['Las Cuatro Porterías','Balones/pelotas','Gran grupo','Coordinación','Varios equipos juegan alrededor de cuatro porterías, defendiendo dos e intentando marcar en las otras dos.'],
+  157:['De bote en bote','Balones/pelotas','Pequeños grupos','Conducción y manejo','Los jugadores trasladan el balón botándolo hasta la fila contraria y cambian de grupo al completar el recorrido.'],
+  158:['Tulipán botando','Balones/pelotas','Pequeños grupos','Lanzamiento','Cinco jugadores con balón intentan tocar a los demás; quien es tocado queda en posición de tulipán hasta ser liberado.'],
+  239:['El Enano Saltarín','Sin material','Gran grupo','Saltos','Un perseguidor intenta alcanzar a los demás desplazándose todos mediante saltos o pasos en cuclillas.'],
+  240:['Los Saltadores y los Osos','Sin material','Gran grupo','Saltos','Unos alumnos forman los osos y otros intentan saltar sobre ellos evitando al guardián.'],
+  241:['Perros y Gatos','Sin material','Gran grupo','Giros','Dos equipos se colocan enfrentados y, según se nombre perro o gato, uno persigue al otro hasta una línea.'],
+  242:['Date la vuelta','Sin material','Gran grupo','Giros','Desde cuadrupedia, los alumnos practican el giro levantando simultáneamente mano y pie del mismo lado.'],
+  279:['Provocar la palmada','Balones/pelotas','Pequeños grupos','Lanzamiento','Un jugador situado en el centro lanza el balón a los compañeros, que deben dar una palmada antes de recibirlo.'],
+  280:['Tiro al bote','Balones/pelotas','Pequeños grupos','Lanzamiento','Los jugadores lanzan balones intentando sacar una botella situada dentro de un círculo.'],
+  281:['El Sobre','Balones/pelotas','Gran grupo','Lanzamiento','Desde el centro del círculo se lanza el balón hacia arriba nombrando a un compañero, que debe correr para recibirlo antes de que caiga.'],
+  282:['El Mareo','Balones/pelotas','Gran grupo','Oposición y persecución','Dos grupos se enfrentan: uno mantiene la posesión del balón mientras el otro intenta interceptarlo.'],
+  299:['¿Quién te dio el pelotazo?','Balones/pelotas','Gran grupo','Lanzamiento','Los jugadores se pasan la pelota ocultándola de un compañero situado en el centro, que debe descubrir quién le lanzó.'],
+  300:['De campo a campo','Balones/pelotas','Pequeños grupos','Lanzamiento','Cuatro grupos ocupan tres zonas y los extremos se pasan la pelota evitando que los jugadores centrales la intercepten.'],
+  301:['Los Veleros','Globos','Pequeños grupos','Conducción y manejo','Cada grupo transporta un globo por distintas zonas usando sucesivamente soplidos, pie, manos y cabeza.'],
+  302:['Perritos falderos','Globos','Pequeños grupos','Conducción y manejo','Los alumnos, a cuatro patas, transportan pequeños globos con la boca hasta sus compañeros.'],
+  303:['Tomadura de pelo','Picas','Gran grupo','Conducción y manejo','En círculo se pasan una pica por detrás de la espalda mientras el jugador central intenta descubrir quién la tiene.'],
+  304:['Balón cangrejo','Balones/pelotas','Pequeños grupos','Conducción y manejo','Los equipos sentados en fila se pasan un balón por encima de la cabeza hasta hacerlo llegar al final.'],
+  305:['Llenar y vaciar','Balones/pelotas','Gran grupo','Conducción y manejo','Dos grupos trasladan balones de una caja a otra, pasándolos de uno en uno por todos los jugadores.'],
+  306:['Balón sprint','Balones/pelotas','Individual','Conducción y manejo','Cada jugador conduce un balón hasta una prenda situada al otro extremo, se la pone y regresa conduciendo el balón con el pie.'],
+  337:['Seguir a la madre','Bancos/vallas','Gran grupo','Coordinación','Un alumno realiza un recorrido variado por los aparatos y el resto imita sus movimientos y gestos.'],
+  338:['Efecto mueble','Sin material','Parejas','Ritmo y expresión','Por parejas, uno representa un mueble y el otro imita cómo se utiliza.'],
+  339:['Los Animales','Sin material','Individual','Ritmo y expresión','Los alumnos se desplazan imitando los animales que propone el profesor, incluyendo sus movimientos y sonidos.'],
+  340:['Expresividad','Sin material','Parejas','Ritmo y expresión','Un alumno expresa corporalmente una sensación o estado de ánimo y su compañero debe reaccionar representando lo contrario.'],
+  361:['El Flautista de Hamelín','Sin material','Pequeños grupos','Ritmo y expresión','Los grupos representan mediante mímica el cuento del flautista y sus personajes.'],
+  362:['El Castillo Encantado','Sin material','Pequeños grupos','Ritmo y expresión','Los grupos representan mediante mímica personajes y acciones propias de un castillo encantado.'],
+  363:['Yo vi','Sin material','Pequeños grupos','Ritmo y expresión','Un alumno representa mediante mímica algo que vio de camino al colegio y los demás intentan adivinarlo.'],
+  364:['La Familia','Sin material','Pequeños grupos','Ritmo y expresión','Cada alumno representa a un miembro de una familia y el grupo dramatiza una situación familiar.'],
+  385:['Los Astronautas','Sin material','Pequeños grupos','Ritmo y expresión','Grupos de alumnos representan un viaje a un planeta desconocido asumiendo papeles como astronautas, robots o alienígenas.'],
+  386:['El Orador','Sin material','Parejas','Ritmo y expresión','En parejas, uno habla mientras el otro, situado detrás, mueve los brazos como si fueran los del orador.'],
+  387:['Cuéntame un chiste','Sin material','Pequeños grupos','Ritmo y expresión','Cada grupo cuenta un chiste al resto y después lo representa mediante expresión corporal.'],
+  388:['¿Quién dice la frase?','Sin material','Parejas','Ritmo y expresión','Un alumno inventa una frase y la representa mediante mímica para que su compañero la adivine.'],
+  389:['El Charlatán','Otros','Pequeños grupos','Ritmo y expresión','Cada grupo representa una escena en la que un alumno vende un objeto explicando su utilidad y fabricación.'],
+  390:['Semana Santa','Material variado','Gran grupo','Ritmo y expresión','El grupo representa una procesión de Semana Santa incorporando sus distintos personajes y elementos.']
+};
+function applyRecoveredJ6a12(){
+  const pages=new Set(Object.keys(RECOVERED_J6A12).map(Number));
+  games=games.filter(g=>!(g?.source==='juegos 6a12anos.pdf'&&String(g?.title||'').startsWith('OCR')&&pages.has(Number(g?.page))));
+  const existing=new Set(games.map(g=>g.id));
+  Object.entries(RECOVERED_J6A12).forEach(([num,meta])=>{
+    const id=`j6a12-recovered-${String(num).padStart(3,'0')}`;
+    if(existing.has(id))return;
+    games.push(normalizeCatalogRecord({
+      id,title:meta[0],age:'6-12 años',material:meta[1],description:meta[4],
+      source:'juegos 6a12anos.pdf',page:({
+        1:3,2:3,103:29,104:29,105:29,106:29,135:37,136:37,137:37,138:37,
+        155:42,156:42,157:42,158:42,239:64,240:64,241:64,242:64,
+        279:74,280:74,281:74,282:74,299:79,300:79,301:79,302:79,303:80,304:80,305:80,306:80,
+        337:90,338:90,339:90,340:90,361:96,362:96,363:96,364:96,
+        385:102,386:102,387:102,388:102,389:103,390:103
+      })[num],
+      space:'Pista / gimnasio',intensity:'Media',
+      groupings:[meta[2]],objectives:[meta[3]],classificationSource:'recuperación directa de la ficha original del PDF',
+      needsReview:true,confidence:'title-and-summary-recovered',kind:'game'
+    }));
+    existing.add(id);
+  });
+}function applyRecoveredJ6a12(){
+  const pages=new Set(Object.keys(RECOVERED_J6A12).map(Number));
+  games=games.filter(g=>!(g?.source==='juegos 6a12anos.pdf'&&String(g?.title||'').startsWith('OCR')&&pages.has(Number(g?.page))));
+  const existing=new Set(games.map(g=>g.id));
+  Object.entries(RECOVERED_J6A12).forEach(([page,items])=>items.forEach(([num,title])=>{
+    const id=`j6a12-recovered-${String(num).padStart(3,'0')}`;
+    if(existing.has(id))return;
+    games.push(normalizeCatalogRecord({
+      id,title,age:'6-12 años',material:'No especificado',
+      description:'Título recuperado directamente de la ficha original del PDF; descripción pendiente de segmentación individual.',
+      source:'juegos 6a12anos.pdf',page:Number(page),space:'Pista / gimnasio',intensity:'Media',
+      groupings:[],objectives:[],classificationSource:'recuperación directa del título de la ficha PDF',
+      needsReview:true,confidence:'title-recovered',kind:'game'
+    }));
+    existing.add(id);
+  }));
+}
 let syncState='idle', syncTimer=null;
 
 function read(k,f){try{return JSON.parse(localStorage.getItem(k))??f}catch(_){return f}}
@@ -21,6 +150,10 @@ async function init(){
     if(!gameResponse.ok)throw new Error(`games.json ${gameResponse.status}`);
     games=await gameResponse.json();
     if(!Array.isArray(games))throw new Error('games.json no es un array');
+    games=games.map(normalizeCatalogRecord);
+    applyRecoveredJ6a12();
+    canonicalizeJ6a12Titles();
+    baseCatalogCount=games.length;
     sanitizeLocalGameState();
 
     // sources.json is optional: if it fails, the game catalog still loads.
@@ -90,65 +223,149 @@ function applyGameLocalState(){
 }
 function persistGame(g){const o=read(KEYS.overrides,{});o[g.id]={...g,updatedAt:g.updatedAt||now()};write(KEYS.overrides,o);markPending()}
 function normalize(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()}
-function materialTag(m){
-  const x=normalize(m);
-  if(!x||x==='no especificado'||x==='ninguno'||x.includes('sin material')||x.includes('sin materiales')||x.includes('ningun material'))return'Sin material';
-  if(/pelot|balon|balones/.test(x))return'Balones/pelotas';
-  if(x.includes('aro'))return'Aros';
-  if(x.includes('cono'))return'Conos';
-  if(/cuerda|comba/.test(x))return'Cuerdas/combas';
-  if(/pica|picas/.test(x))return'Picas';
-  if(/pañuel|panuel|petos?|chalecos?/.test(x))return'Pañuelos/petos';
-  if(/colchoneta/.test(x))return'Colchonetas';
-  if(/raqueta/.test(x))return'Raquetas';
-  if(/tiza|yeso/.test(x))return'Tizas';
-  if(/globo/.test(x))return'Globos';
-  if(/tarjet|cartulina|cartas/.test(x))return'Tarjetas';
-  if(/banco|vallas?/.test(x))return'Bancos/vallas';
-  if(/variado|diverso|varios materiales|material diverso/.test(x))return'Material variado';
-  return'Otros';
+const MOTOR_AGES=['Infantil','Infantil y Primaria','1º-2º Primaria','3º-4º Primaria','3º-6º Primaria','5º-6º Primaria','Primaria','Primaria y Secundaria','Secundaria','1º-6º Primaria','1º-4º Primaria','No especificada'];
+const MOTOR_MATERIALS=['Sin material','Balones/pelotas','Aros','Conos','Cuerdas/combas','Picas','Pañuelos/petos','Colchonetas','Raquetas','Tizas','Globos','Tarjetas','Bancos/vallas','Música','Material variado','Otros','No especificado'];
+const MOTOR_SPACES=['Aula','Pista/gimnasio','Pista/exterior','Patio/exterior','Espacio delimitado','Espacio amplio','Otros','No especificado'];
+const MOTOR_INTENSITIES=['Baja','Media','Alta','No especificada'];
+const MOTOR_GROUPINGS=['Individual','Parejas','Pequeños grupos','Gran grupo','No especificado'];
+const MOTOR_OBJECTIVES=['Lanzamiento','Saltos','Giros','Desplazamientos y carrera','Equilibrio','Coordinación','Conducción y manejo','Percepción y atención','Ritmo y expresión','Cooperación','Oposición y persecución','Predeporte','Relajación y vuelta a la calma','No especificado'];
+const MOTOR_CONTENT_STATES=['Verificado','Requiere revisión','OCR pendiente'];
+function normalizeCatalogRecord(g){
+  const out={...g};
+  const recoveredTitle=recoveredReviewTitle(out);
+  if(recoveredTitle)out.title=recoveredTitle;
+  out.ageCategories=ageCategories(out);
+  out.materialCategories=materialCategories(out);
+  out.spaceCategories=spaceCategories(out);
+  out.intensityCategory=intensityCategory(out);
+  out.groupingCategories=groupingValues(out);
+  out.objectiveCategories=objectiveValues(out);
+  out.contentState=contentState(out);
+  out.classificationConfidence=out.contentState==='Verificado'?'alta':out.contentState==='Requiere revisión'?'media':'baja';
+  return out;
 }
-function inferIntensity(g){
-  const v=normalize(g?.intensity);
-  if(v.includes('baja'))return'Baja';
-  if(v.includes('media'))return'Media';
-  if(v.includes('alta'))return'Alta';
-  return'No especificada';
+function ageCategories(g){
+  if(Array.isArray(g?.ageCategories)&&g.ageCategories.length)return g.ageCategories;
+  const x=normalize(g?.age);
+  if(!x)return['No especificada'];
+  const out=[]; const add=v=>{if(v&&!out.includes(v))out.push(v)};
+  if(/12\s*[-a]\s*13/.test(x))add('5º-6º Primaria');
+  if(/6\s*[-a]\s*12/.test(x))add('1º-6º Primaria');
+  if(/8\s*[-a]\s*12/.test(x))add('3º-6º Primaria');
+  if(/6\s*[-a]\s*10/.test(x))add('1º-4º Primaria');
+  if(/6\s*[-a]\s*8/.test(x))add('1º-2º Primaria');
+  if(/4\s*[-a]\s*10/.test(x))add('Infantil y Primaria');
+  if(/a partir de 5º|5º.*primaria/.test(x))add('5º-6º Primaria');
+  if(/a partir de 3º|3º.*primaria/.test(x))add('3º-4º Primaria');
+  if(/primaria.*secundaria|secundaria.*primaria|eso/.test(x))add('Primaria y Secundaria');
+  if(/infantil.*primaria|primaria.*infantil/.test(x))add('Infantil y Primaria');
+  if(x==='primaria')add('Primaria');
+  if(x.includes('infantil')&&!x.includes('primaria'))add('Infantil');
+  if(x==='secundaria')add('Secundaria');
+  return out.length?out:['No especificada'];
+}
+function materialCategories(g){if(Array.isArray(g?.materialCategories)&&g.materialCategories.length)return g.materialCategories;const raw=normalize(typeof g==='string'?g:g?.material);if(!raw||raw==='no especificado')return['No especificado'];if(/ningun|sin material|ninguno/.test(raw))return['Sin material'];const out=[];const add=(re,label)=>{if(re.test(raw)&&!out.includes(label))out.push(label)};add(/pelot|balon|bola\b|baloncesto|futbol/,'Balones/pelotas');add(/aro/,'Aros');add(/cono/,'Conos');add(/cuerda|comba/,'Cuerdas/combas');add(/pica|per[té]iga/,'Picas');add(/pañuel|panuel|peto|chaleco|paliacat/,'Pañuelos/petos');add(/colchoneta/,'Colchonetas');add(/raqueta|pala(s)?\b/,'Raquetas');add(/tiza|yeso|gises?\b/,'Tizas');add(/globo/,'Globos');add(/tarjet|cartulina|cartas?|baraja/,'Tarjetas');add(/banco|valla/,'Bancos/vallas');add(/musica|musical|cd|cassette|cinta musical/,'Música');add(/variado|diverso|varios materiales|material diverso|todo tipo de material/,'Material variado');return out.length?out:['Otros']}
+function materialTag(g){return materialCategories(g)[0]||'No especificado'}
+function spaceCategories(g){
+  if(Array.isArray(g?.spaceCategories)&&g.spaceCategories.length)return g.spaceCategories;
+  const x=normalize(typeof g==='string'?g:g?.space);
+  if(!x||x==='no especificado')return['No especificado'];
+  const out=[]; const add=v=>{if(!out.includes(v))out.push(v)};
+  if(x.includes('aula')||x.includes('salon')||x.includes('sala'))add('Aula');
+  if(x.includes('pista')||x.includes('gimnasio')||x.includes('cancha')||x.includes('campo')){
+    add(x.includes('exterior')||x.includes('aire libre')?'Pista/exterior':'Pista/gimnasio');
+  }
+  if(x.includes('patio'))add('Patio/exterior');
+  if(x.includes('exterior')&&!out.includes('Pista/exterior')&&!out.includes('Patio/exterior'))add('Pista/exterior');
+  if(x.includes('delimit')||x.includes('cuadrante'))add('Espacio delimitado');
+  if(x.includes('amplio')||x.includes('libre')||x.includes('metros')||x.includes('cuadrad'))add('Espacio amplio');
+  return out.length?out:['Otros'];
+}
+function spaceTag(g){return spaceCategories(g)[0]||'No especificado'}
+function intensityCategory(g){if(g?.intensityCategory)return g.intensityCategory;const x=normalize(g?.intensity);if(x==='baja')return'Baja';if(x==='alta')return'Alta';if(x==='media'&&g?.intensitySource==='manual')return'Media';return'No especificada'}
+function inferIntensity(g){return intensityCategory(g)}
+function isGenericOcrRecord(g){return /^ocr\s*(?:—|-|:|pagina|página|$)/i.test(String(g?.title||'').trim())}
+function recoveredReviewTitle(g){
+  const src=String(g?.source||''),t=String(g?.title||'').trim();
+  const d=String(g?.description||'');
+  const generic=isGenericOcrRecord(g);
+
+  const clean=x=>{
+    x=String(x||'').trim()
+      .replace(/^[-–—:.\s]+|[\s.\-–—|]+$/g,'')
+      .replace(/\s+/g,' ');
+    if(x.length<4||x.length>70||/[<>[\]|{}@#%]/.test(x)||/\d/.test(x))return'';
+    if(/^(juego|actividad|parte principal|parte inicial|c[oó]digo|relevos|ocr)$/i.test(x))return'';
+    if(/^(larma y elgato|la leña)$/i.test(x))return'';
+    return x;
+  };
+
+  // Los registros OCR genéricos no deben convertirse en verificados solo
+  // porque el propio título diga "OCR — ...". Primero intentamos recuperar
+  // un nombre explícito desde el texto de la página.
+  if(src==='juegos 6a12anos.pdf' && generic){
+    // Este libro imprime varios juegos por página. Recuperamos únicamente
+    // el primer nombre que aparece detrás de un marcador "Juego n.º ...".
+    const re=/\b(?:juego|juegon|suego)\s*n?[^A-Za-z0-9]{0,8}\d{1,3}\s+([A-ZÁÉÍÓÚÜÑ][A-ZÁÉÍÓÚÜÑ0-9 ,./()'’\-]{2,65})(?=\s+(?:Lugar|Objetivo|Material|Organización|Bloque|Habilidades|Etapa|Gráfico|Juego|Juegon|suego)|[.;]|$)/gi;
+    let m;
+    while((m=re.exec(d))){
+      const x=clean(m[1]);
+      if(x && /[A-ZÁÉÍÓÚÜÑ]{3}/.test(x))return x;
+    }
+    return'';
+  }
+
+  // Si el título importado no es genérico, solo lo recuperamos en fuentes
+  // donde el pipeline ya extrae nombres de juegos de forma fiable.
+  if(!generic && src.startsWith('215 Juegos')){
+    let x=clean(t);
+    if(x)return x;
+    const m=d.match(/—\s*\d+\s+([A-ZÁÉÍÓÚÜÑ][A-ZÁÉÍÓÚÜÑ\s,-]{3,60})(?:\s{2,}|Establecer|Se coloca|Libres)/i);
+    if(m){x=clean(m[1]);if(x)return x}
+    return'';
+  }
+
+  if(!generic && src.startsWith('1001 ejercicios')){
+    let x=t.replace(/\s*[|]?[ ]*\d+\s*$/,'').trim();
+    if(/^Tirar las banderas invencibles/.test(x))x='Tirar las banderas invencibles';
+    if(x==='Los 5 agujeros')return x;
+    return clean(x);
+  }
+
+  // En el resto de fuentes, no promovemos una ficha OCR genérica a
+  // verificada a partir de fragmentos entre comillas: suelen ser trozos
+  // de instrucciones y generan falsos nombres. Quedan en revisión manual.
+  if(generic)return'';
+
+  return'';
+}
+function contentState(g){
+  // A recovered high-confidence title takes precedence over the imported review flag.
+  // Some normalized catalog records already contain contentState="Requiere revisión";
+  // keeping that value first would make the recovery logic invisible in the UI.
+  if(g?.needsReview&&recoveredReviewTitle(g))return'Verificado';
+  if(g?.contentState&&MOTOR_CONTENT_STATES.includes(g.contentState))return g.contentState;
+  if(isGenericOcrRecord(g))return'OCR pendiente';
+  if(g?.needsReview)return'Requiere revisión';
+  return'Verificado'
 }
 function uniqSorted(values){return [...new Set(values.filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),'es',{sensitivity:'base'}))}
 function sourceLabel(g){return g.source||'Fuente no especificada'}
-function groupingValues(g){return Array.isArray(g.groupings)&&g.groupings.length?g.groupings:['No especificado']}
-function objectiveValues(g){return Array.isArray(g.objectives)&&g.objectives.length?g.objectives:['No especificado']}
-function buildFilters(){
-  const sources=uniqSorted([...games.map(sourceLabel),'Creación propia']);
-  const configs=[
-    ['ageFilters',uniqSorted(games.map(g=>g.age||'No especificada'))],
-    ['materialFilters',['Sin material','Balones/pelotas','Aros','Conos','Cuerdas/combas','Picas','Pañuelos/petos','Colchonetas','Raquetas','Tizas','Globos','Tarjetas','Bancos/vallas','Material variado','Otros']],
-    ['spaceFilters',uniqSorted(games.map(g=>g.space||'No especificado'))],
-    ['intensityFilters',['Baja','Media','Alta','No especificada']],
-    ['sourceFilters',sources],
-    ['groupingFilters',['Individual','Parejas','Pequeños grupos','Gran grupo','No especificado']],
-    ['objectiveFilters',['Lanzamiento','Saltos','Giros','Desplazamientos y carrera','Equilibrio','Coordinación','Conducción y manejo','Percepción y atención','Ritmo y expresión','Cooperación','Oposición y persecución','Predeporte','Relajación y vuelta a la calma','No especificado']]
-  ];
-  for(const [id,opts] of configs){
-    const html=opts.map(o=>`<label class="check"><input type="checkbox" value="${esc(o)}"> ${esc(o)}</label>`).join('');
-    const a=$('#'+id), b=$('#'+id+'Dialog');
-    if(a)a.innerHTML=html; if(b)b.innerHTML=html;
-  }
-  $$('#filters input[type="checkbox"], #filterDialog input[type="checkbox"]').forEach(x=>x.addEventListener('change',syncFilterControls));
-  console.info('[MotorLab] Filtros v14.2:',configs.map(([id,opts])=>[id,opts.length]));
-}
+function groupingValues(g){return Array.isArray(g?.groupingCategories)&&g.groupingCategories.length?g.groupingCategories:(Array.isArray(g?.groupings)&&g.groupings.length?g.groupings:['No especificado'])}
+function objectiveValues(g){return Array.isArray(g?.objectiveCategories)&&g.objectiveCategories.length?g.objectiveCategories:(Array.isArray(g?.objectives)&&g.objectives.length?g.objectives:['No especificado'])}
+function buildFilters(){const sources=uniqSorted([...games.map(sourceLabel),'Creación propia']);const configs=[['ageFilters',MOTOR_AGES],['materialFilters',MOTOR_MATERIALS],['spaceFilters',MOTOR_SPACES],['intensityFilters',MOTOR_INTENSITIES],['sourceFilters',sources],['groupingFilters',MOTOR_GROUPINGS],['objectiveFilters',MOTOR_OBJECTIVES],['contentStateFilters',MOTOR_CONTENT_STATES]];for(const [id,opts] of configs){const h=opts.map(o=>`<label class="check"><input type="checkbox" value="${esc(o)}"> ${esc(o)}</label>`).join('');const a=$('#'+id),b=$('#'+id+'Dialog');if(a)a.innerHTML=h;if(b)b.innerHTML=h}$$('input[type="checkbox"]').forEach(x=>x.addEventListener('change',syncFilterControls));console.info('[MotorLab] Filtros v15.0:',configs.map(([id,opts])=>[id,opts.length]))}
 function syncFilterControls(e){
   const el=e?.target;
   if(el?.id==='ocrOnly'||el?.id==='ocrOnlyDialog'){const other=el.id==='ocrOnly'?$('#ocrOnlyDialog'):$('#ocrOnly');if(other)other.checked=el.checked}
   const id=el?.closest('[id]')?.id;
   if(!id)return;
-  const map={ageFilters:'ageFiltersDialog',materialFilters:'materialFiltersDialog',spaceFilters:'spaceFiltersDialog',intensityFilters:'intensityFiltersDialog',sourceFilters:'sourceFiltersDialog',groupingFilters:'groupingFiltersDialog',objectiveFilters:'objectiveFiltersDialog'};
+  const map={ageFilters:'ageFiltersDialog',materialFilters:'materialFiltersDialog',spaceFilters:'spaceFiltersDialog',intensityFilters:'intensityFiltersDialog',sourceFilters:'sourceFiltersDialog',groupingFilters:'groupingFiltersDialog',objectiveFilters:'objectiveFiltersDialog',contentStateFilters:'contentStateFiltersDialog'};
   const pair=map[id]||Object.keys(map).find(k=>map[k]===id);
   if(!pair)return;
   const a=id.startsWith('age')||id.endsWith('Filters')?$('#'+id):null;
   const base=id.endsWith('Dialog')?pair:id; const otherId=id.endsWith('Dialog')?pair:id+'Dialog';
   const other=$('#'+otherId); if(other)other.querySelectorAll('input').forEach(x=>x.checked=el.value===x.value?el.checked:x.checked);
+  renderGames();
 }
 function clearAllFilters(){
   $$('#filters input[type="checkbox"], #filterDialog input[type="checkbox"]').forEach(x=>x.checked=false);
@@ -156,28 +373,15 @@ function clearAllFilters(){
 }
 
 function selected(sel){return $$(sel+' input:checked').map(x=>x.value)}
-function matches(g){
-  const q=normalize($('#search').value);
-  const text=normalize([g.title,g.description,g.material,g.age,g.source,...groupingValues(g),...objectiveValues(g)].join(' '));
-  if(q&&!text.includes(q))return false;
-  const ages=selected('#ageFilters'),mats=selected('#materialFilters'),spaces=selected('#spaceFilters'),ints=selected('#intensityFilters'),srcs=selected('#sourceFilters'),groups=selected('#groupingFilters'),objs=selected('#objectiveFilters');
-  return(!ages.length||ages.some(v=>normalize(g.age||'No especificada').includes(normalize(v))))
-    &&(!mats.length||mats.includes(materialTag(g.material)))
-    &&(!spaces.length||spaces.includes(g.space||'No especificado'))
-    &&(!ints.length||ints.includes(inferIntensity(g)))
-    &&(!srcs.length||srcs.includes(sourceLabel(g)))
-    &&(!groups.length||groups.some(v=>groupingValues(g).includes(v)))
-    &&(!objs.length||objs.some(v=>objectiveValues(g).includes(v)))
-    &&(!$('#ocrOnly')?.checked||g.needsReview)
-}
-function renderGames(){let list=games.filter(matches);const sort=$('#sort').value;if(sort==='az')list.sort((a,b)=>a.title.localeCompare(b.title,'es'));if(sort==='za')list.sort((a,b)=>b.title.localeCompare(a.title,'es'));$('#resultSummary').textContent=`${list.length} juego${list.length===1?'':'s'} encontrados`;const grid=$('#gameGrid');grid.innerHTML='';const tpl=$('#gameCardTemplate');list.forEach(g=>{const n=tpl.content.cloneNode(true),card=n.querySelector('.game-card');card.dataset.id=g.id;card.querySelector('.age').textContent=g.age||'Edad variable';card.querySelector('.ocr-badge').classList.toggle('hidden',!g.needsReview);card.querySelector('.custom-badge').classList.toggle('hidden',!g.manual);card.querySelector('h3').textContent=g.title;card.querySelector('.desc').textContent=g.description;card.querySelector('.material').textContent=materialTag(g.material);card.querySelector('.space').textContent=g.space||'No especificado';card.querySelector('.intensity').textContent=inferIntensity(g);card.querySelector('.source').textContent=`${sourceLabel(g)} · pág. ${g.page||'—'}`;card.querySelector('.chips').insertAdjacentHTML('beforeend',groupingValues(g).slice(0,1).map(v=>`<span class="chip grouping-chip">${esc(v)}</span>`).join(''));card.querySelector('.chips').insertAdjacentHTML('beforeend',objectiveValues(g).slice(0,2).map(v=>`<span class="chip objective-chip">${esc(v)}</span>`).join(''));card.querySelector('.add-btn').onclick=e=>{e.stopPropagation();addToSession(g.id)};card.querySelector('.details').onclick=e=>{e.stopPropagation();openGame(g.id)};card.onclick=()=>openGame(g.id);card.ondragstart=e=>e.dataTransfer.setData('text/plain',g.id);grid.appendChild(n)});$('#empty').classList.toggle('hidden',list.length>0);$('#totalGames').textContent=games.length}
-function openGame(id){const g=games.find(x=>x.id===id);if(!g)return;$('#dialogContent').innerHTML=`<div class="eyebrow">FICHA DE JUEGO</div><h2>${esc(g.title)}</h2><div class="detail-meta"><span class="tag">${esc(g.age||'Edad variable')}</span><span class="chip">${esc(materialTag(g.material))}</span><span class="chip">${esc(g.space||'')}</span><span class="chip">${esc(inferIntensity(g))}</span>${groupingValues(g).map(v=>`<span class="chip">👥 ${esc(v)}</span>`).join('')}${objectiveValues(g).map(v=>`<span class="chip">🎯 ${esc(v)}</span>`).join('')}</div><p class="detail-desc">${esc(g.description||'')}</p><div class="source-box"><strong>Fuente</strong><br>${esc(g.source||'MotorLab')} · página ${esc(g.page||'—')}<br><small>Material original: ${esc(g.material||'')}</small></div><div class="dialog-actions"><button class="primary" id="editGameBtn">✏️ Editar ficha</button><button class="primary secondary" id="addGameSessionBtn">＋ Añadir a sesión</button><button class="ghost" onclick="gameDialog.close()">Cerrar</button></div>`;$('#editGameBtn').onclick=()=>{gameDialog.close();openGameEditor(g.id)};$('#addGameSessionBtn').onclick=()=>{addToSession(g.id);gameDialog.close()};gameDialog.showModal()}
+function matches(g){const q=normalize($('#search').value);const text=normalize([g.title,g.description,g.material,g.age,g.source,...groupingValues(g),...objectiveValues(g)].join(' '));if(q&&!text.includes(q))return false;const ages=selected('#ageFilters'),mats=selected('#materialFilters'),spaces=selected('#spaceFilters'),ints=selected('#intensityFilters'),srcs=selected('#sourceFilters'),groups=selected('#groupingFilters'),objs=selected('#objectiveFilters'),states=selected('#contentStateFilters');const state=contentState(g),reviewOnly=$('#ocrOnly')?.checked;if(reviewOnly){if(!g.needsReview)return false}else if(!states.length&&state==='OCR pendiente')return false;if(states.length&&!states.includes(state))return false;return(!ages.length||ages.some(v=>ageCategories(g).includes(v)))&&(!mats.length||mats.some(v=>materialCategories(g).includes(v)))&&(!spaces.length||spaces.some(v=>spaceCategories(g).includes(v)))&&(!ints.length||ints.includes(intensityCategory(g)))&&(!srcs.length||srcs.includes(sourceLabel(g)))&&(!groups.length||groups.some(v=>groupingValues(g).includes(v)))&&(!objs.length||objs.some(v=>objectiveValues(g).includes(v)))}
+function renderGames(){let list=games.filter(matches);const sort=$('#sort').value;if(sort==='az')list.sort((a,b)=>a.title.localeCompare(b.title,'es'));if(sort==='za')list.sort((a,b)=>b.title.localeCompare(a.title,'es'));const verified=games.filter(g=>contentState(g)==='Verificado').length;const review=games.filter(g=>contentState(g)==='Requiere revisión').length;const pending=games.filter(g=>contentState(g)==='OCR pendiente').length;const manualGames=games.filter(g=>g.manual);const extra=games.length-baseCatalogCount;const extraLabel=extra>0?` · ${extra} añadido${extra===1?'':'s'} manual${extra===1?'':'es'}: ${manualGames.map(g=>String(g.title||g.id)).join(' · ')}`:'';$('#resultSummary').textContent=`${list.length} juego${list.length===1?'':'s'} encontrados · ${verified} verificados · ${review} en revisión · ${pending} OCR pendientes${extraLabel}`;const grid=$('#gameGrid');grid.innerHTML='';const tpl=$('#gameCardTemplate');list.forEach(g=>{const n=tpl.content.cloneNode(true),card=n.querySelector('.game-card');card.dataset.id=g.id;card.querySelector('.age').textContent=ageCategories(g)[0]||'Edad variable';card.querySelector('.ocr-badge').classList.toggle('hidden',contentState(g)==='Verificado');card.querySelector('.ocr-badge').textContent=contentState(g)==='OCR pendiente'?'OCR · pendiente':'Revisar ficha';card.querySelector('.custom-badge').classList.toggle('hidden',!g.manual);card.querySelector('h3').textContent=g.title;card.querySelector('.desc').textContent=g.description;card.querySelector('.material').textContent=materialCategories(g).slice(0,2).join(' · ');card.querySelector('.space').textContent=spaceTag(g);card.querySelector('.intensity').textContent=intensityCategory(g);card.querySelector('.source').textContent=`${sourceLabel(g)} · pág. ${g.page||'—'}`;card.querySelector('.chips').insertAdjacentHTML('beforeend',groupingValues(g).slice(0,1).map(v=>`<span class="chip grouping-chip">${esc(v)}</span>`).join(''));card.querySelector('.chips').insertAdjacentHTML('beforeend',objectiveValues(g).slice(0,2).map(v=>`<span class="chip objective-chip">${esc(v)}</span>`).join(''));card.querySelector('.add-btn').onclick=e=>{e.stopPropagation();addToSession(g.id)};card.querySelector('.details').onclick=e=>{e.stopPropagation();openGame(g.id)};card.onclick=()=>openGame(g.id);card.ondragstart=e=>e.dataTransfer.setData('text/plain',g.id);grid.appendChild(n)});$('#empty').classList.toggle('hidden',list.length>0);$('#totalGames').textContent=games.filter(g=>contentState(g)!=='OCR pendiente').length}
+function openGame(id){const g=games.find(x=>x.id===id);if(!g)return;$('#dialogContent').innerHTML=`<div class="eyebrow">FICHA DE JUEGO</div><h2>${esc(g.title)}</h2><div class="detail-meta"><span class="tag">${esc(g.age||'Edad variable')}</span><span class="chip">${esc(materialTag(g))}</span><span class="chip">${esc(g.space||'')}</span><span class="chip">${esc(inferIntensity(g))}</span>${groupingValues(g).map(v=>`<span class="chip">👥 ${esc(v)}</span>`).join('')}${objectiveValues(g).map(v=>`<span class="chip">🎯 ${esc(v)}</span>`).join('')}</div><p class="detail-desc">${esc(g.description||'')}</p><div class="source-box"><strong>Fuente</strong><br>${esc(g.source||'MotorLab')} · página ${esc(g.page||'—')}<br><small>Material original: ${esc(g.material||'')}</small></div><div class="dialog-actions"><button class="primary" id="editGameBtn">✏️ Editar ficha</button><button class="primary secondary" id="addGameSessionBtn">＋ Añadir a sesión</button><button class="ghost" onclick="gameDialog.close()">Cerrar</button></div>`;$('#editGameBtn').onclick=()=>{gameDialog.close();openGameEditor(g.id)};$('#addGameSessionBtn').onclick=()=>{addToSession(g.id);gameDialog.close()};gameDialog.showModal()}
 function openGameEditor(id=null){const g=id?games.find(x=>x.id===id):{id:uid('manual'),title:'',description:'',age:'Primaria',material:'Sin material',space:'Pista / gimnasio',intensity:'Media',source:'Creación propia',page:'—',manual:true,needsReview:false,updatedAt:now()};if(!g)return;$('#editGameDialogContent').innerHTML=`<div class="dialog-head"><div><div class="eyebrow">${id?'EDITAR FICHA':'NUEVO JUEGO'}</div><h2>${id?'Editar juego':'Añadir juego al repositorio'}</h2></div><button class="icon" onclick="editGameDialog.close()">×</button></div><form id="gameForm" class="form-grid"><label>Nombre*<input name="title" required value="${esc(g.title)}"></label><label>Edad<input name="age" value="${esc(g.age)}"></label><label>Material<input name="material" value="${esc(g.material)}"></label><label>Espacio<input name="space" value="${esc(g.space)}"></label><label>Intensidad<select name="intensity"><option ${g.intensity==='Baja'?'selected':''}>Baja</option><option ${g.intensity==='Media'?'selected':''}>Media</option><option ${g.intensity==='Alta'?'selected':''}>Alta</option></select></label><label>Fuente<input name="source" value="${esc(g.source)}"></label><label>Página<input name="page" value="${esc(g.page||'—')}"></label><label class="full">Descripción / reglas<textarea name="description" rows="7" required>${esc(g.description)}</textarea></label><div class="form-actions full"><button type="button" class="ghost" onclick="editGameDialog.close()">Cancelar</button><button class="primary">Guardar ficha</button></div></form>`;$('#gameForm').onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);const updated={...g,title:f.get('title').trim(),age:f.get('age').trim(),material:f.get('material').trim(),space:f.get('space').trim(),intensity:f.get('intensity'),source:(g.manual||!id)?'Creación propia':(f.get('source').trim()||'Fuente no especificada'),page:f.get('page').trim()||'—',description:f.get('description').trim(),updatedAt:now(),manual:g.manual||!id};games=games.map(x=>x.id===updated.id?updated:x);if(!id)games.push(updated);persistGame(updated);renderGames();editGameDialog.close();openGame(updated.id)};editGameDialog.showModal()}
 function sessionMetaFromUI(){return{name:$('#sessionName').value.trim(),date:$('#sessionDate').value,group:$('#sessionGroup').value.trim(),students:$('#studentCount')?.value||'',duration:$('#sessionDuration')?.value||'',grouping:$('#sessionGrouping')?.value||'Gran grupo',unitId:$('#sessionUnit')?.value||'',objectives:$('#sessionObjectives')?.value.trim()||'',competencies:$('#sessionCompetencies')?.value.trim()||'',observations:$('#sessionObservations')?.value.trim()||''}}
 function addToSession(id){if(!session.some(x=>x.id===id)){session.push({id,phase:'Sin asignar',minutes:'',grouping:$('#sessionGrouping')?.value||'Gran grupo',note:''});markPending()}renderSession();$('#sessionCount').textContent=session.length}
 function removeFromSession(i){session.splice(i,1);renderSession();$('#sessionCount').textContent=session.length;markPending()}
 function phaseOptions(current){return ['Sin asignar','Calentamiento','Parte principal','Vuelta a la calma'].map(p=>`<option ${p===current?'selected':''}>${p}</option>`).join('')}
-function renderSession(){const box=$('#sessionList');box.innerHTML='';if(!session.length){box.innerHTML='<div class="dropzone" id="dropzone">Arrastra aquí juegos para empezar</div>';bindDrop();updateTotals();return}session.forEach((item,i)=>{const g=games.find(x=>x.id===item.id);if(!g)return;const el=document.createElement('div');el.className='session-item';el.draggable=true;el.innerHTML=`<div class="drag">☷</div><div class="session-game-info"><h4>${esc(i+1+'. '+g.title)}</h4><p>${esc(g.age||'')} · ${esc(materialTag(g.material))}</p><div class="session-description">${esc(g.description||'Descripción no disponible.')}</div><div class="session-total">${esc(item.note||'')}</div></div><div class="session-controls"><select class="phase">${phaseOptions(item.phase)}</select><input class="minutes" type="number" min="1" placeholder="min" value="${esc(item.minutes||'')}"><input class="note" placeholder="Variante / observación" value="${esc(item.note||'')}"></div><button class="remove">×</button>`;el.querySelector('.phase').onchange=e=>{item.phase=e.target.value;markPending()};el.querySelector('.minutes').onchange=e=>{item.minutes=e.target.value;updateTotals();markPending()};el.querySelector('.note').oninput=e=>{item.note=e.target.value;el.querySelector('.session-total').textContent=e.target.value;markPending()};el.querySelector('.remove').onclick=()=>removeFromSession(i);el.ondragstart=e=>e.dataTransfer.setData('text/plain',JSON.stringify({id:item.id,from:i}));el.ondragover=e=>e.preventDefault();el.ondrop=e=>{e.preventDefault();try{const d=JSON.parse(e.dataTransfer.getData('text/plain'));if(d.from!==undefined){const moved=session.splice(d.from,1)[0];session.splice(i,0,moved);renderSession();markPending()}else addToSession(d.id||e.dataTransfer.getData('text/plain'))}catch(_){}};box.appendChild(el)});const dz=document.createElement('div');dz.className='dropzone';dz.textContent='Suelta aquí para añadir otro juego';dz.id='dropzone';box.appendChild(dz);bindDrop();updateTotals()}
+function renderSession(){const box=$('#sessionList');box.innerHTML='';if(!session.length){box.innerHTML='<div class="dropzone" id="dropzone">Arrastra aquí juegos para empezar</div>';bindDrop();updateTotals();return}session.forEach((item,i)=>{const g=games.find(x=>x.id===item.id);if(!g)return;const el=document.createElement('div');el.className='session-item';el.draggable=true;el.innerHTML=`<div class="drag">☷</div><div class="session-game-info"><h4>${esc(i+1+'. '+g.title)}</h4><p>${esc(g.age||'')} · ${esc(materialTag(g))}</p><div class="session-description">${esc(g.description||'Descripción no disponible.')}</div><div class="session-total">${esc(item.note||'')}</div></div><div class="session-controls"><select class="phase">${phaseOptions(item.phase)}</select><input class="minutes" type="number" min="1" placeholder="min" value="${esc(item.minutes||'')}"><input class="note" placeholder="Variante / observación" value="${esc(item.note||'')}"></div><button class="remove">×</button>`;el.querySelector('.phase').onchange=e=>{item.phase=e.target.value;markPending()};el.querySelector('.minutes').onchange=e=>{item.minutes=e.target.value;updateTotals();markPending()};el.querySelector('.note').oninput=e=>{item.note=e.target.value;el.querySelector('.session-total').textContent=e.target.value;markPending()};el.querySelector('.remove').onclick=()=>removeFromSession(i);el.ondragstart=e=>e.dataTransfer.setData('text/plain',JSON.stringify({id:item.id,from:i}));el.ondragover=e=>e.preventDefault();el.ondrop=e=>{e.preventDefault();try{const d=JSON.parse(e.dataTransfer.getData('text/plain'));if(d.from!==undefined){const moved=session.splice(d.from,1)[0];session.splice(i,0,moved);renderSession();markPending()}else addToSession(d.id||e.dataTransfer.getData('text/plain'))}catch(_){}};box.appendChild(el)});const dz=document.createElement('div');dz.className='dropzone';dz.textContent='Suelta aquí para añadir otro juego';dz.id='dropzone';box.appendChild(dz);bindDrop();updateTotals()}
 function updateTotals(){const mins=session.reduce((a,x)=>a+(Number(x.minutes)||0),0),target=Number($('#sessionDuration')?.value||0);$('#sessionTotals').textContent=`${session.length} juegos · ${mins} min${target?` / objetivo ${target} min`:''}`}
 function bindDrop(){const dz=$('#dropzone');if(!dz)return;dz.ondragover=e=>e.preventDefault();dz.ondrop=e=>{e.preventDefault();const raw=e.dataTransfer.getData('text/plain');try{const d=JSON.parse(raw);addToSession(d.id)}catch(_){if(raw)addToSession(raw)}}}
 function autoPhase(){if(!session.length)return;const n=session.length;session.forEach((x,i)=>{x.phase=i===0?'Calentamiento':(i===n-1&&n>2?'Vuelta a la calma':'Parte principal');if(!x.minutes)x.minutes=i===0?'10':(i===n-1&&n>2?'5':'10')});renderSession();markPending()}
