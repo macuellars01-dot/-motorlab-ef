@@ -3,7 +3,7 @@ const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
 const KEYS={sessions:'motorlab_sessions',units:'motorlab_units',overrides:'motorlab_game_overrides',deleted:'motorlab_deleted_games',deletedSessions:'motorlab_deleted_sessions',deletedUnits:'motorlab_deleted_units',meta:'motorlab_game_meta',settings:'motorlab_sync_settings',sync:'motorlab_sync_meta'};
 const DEFAULT_API='https://ugreen-tailscale.tailfc6c36.ts.net:8443/motorlab';
-const CATALOG_VERSION='2026-10-01T00:00:00.000Z';
+const CATALOG_VERSION='2026-10-04T15:45:00.000Z';
 let syncState='idle', syncTimer=null;
 
 function read(k,f){try{return JSON.parse(localStorage.getItem(k))??f}catch(_){return f}}
@@ -21,6 +21,7 @@ async function init(){
     if(!gameResponse.ok)throw new Error(`games.json ${gameResponse.status}`);
     games=await gameResponse.json();
     if(!Array.isArray(games))throw new Error('games.json no es un array');
+    sanitizeLocalGameState();
 
     // sources.json is optional: if it fails, the game catalog still loads.
     try{
@@ -57,6 +58,19 @@ function gameContentDiffers(a,b){
   const fields=['title','description','age','material','space','intensity','source','page','needsReview','manual'];
   return fields.some(k=>JSON.stringify(a?.[k])!==JSON.stringify(b?.[k]));
 }
+function sanitizeLocalGameState(){
+  const baseIds=new Set(games.map(g=>g.id));
+  const rawOverrides=read(KEYS.overrides,{});
+  const cleanOverrides={};
+  Object.values(rawOverrides).forEach(g=>{
+    if(!g?.id)return;
+    if(g.manual||baseIds.has(g.id))cleanOverrides[g.id]=g;
+  });
+  if(JSON.stringify(Object.keys(cleanOverrides).sort())!==JSON.stringify(Object.keys(rawOverrides).sort()))write(KEYS.overrides,cleanOverrides);
+  const deleted=read(KEYS.deleted,[]);
+  const validDeleted=Array.isArray(deleted)?deleted.filter(id=>baseIds.has(id)):[];
+  if(JSON.stringify(validDeleted)!==JSON.stringify(deleted))write(KEYS.deleted,validDeleted);
+}
 function cleanGameOverrides(){
   const raw=read(KEYS.overrides,{});
   const clean={};
@@ -64,7 +78,7 @@ function cleanGameOverrides(){
   Object.values(raw).forEach(g=>{
     if(!g?.id)return;
     const base=baseById.get(g.id);
-    if(!base||g.manual||gameContentDiffers(g,base))clean[g.id]=g;
+    if(g.manual || (base && gameContentDiffers(g,base)))clean[g.id]=g;
   });
   if(Object.keys(clean).length!==Object.keys(raw).length)write(KEYS.overrides,clean);
   return clean;
@@ -72,7 +86,7 @@ function cleanGameOverrides(){
 function applyGameLocalState(){
   const overrides=cleanGameOverrides(), deleted=new Set(read(KEYS.deleted,[]));
   games=games.filter(g=>!deleted.has(g.id)).map(g=>({...g,...(overrides[g.id]||{}),updatedAt:(overrides[g.id]?.updatedAt||g.updatedAt||CATALOG_VERSION)}));
-  Object.values(overrides).forEach(g=>{if(!games.some(x=>x.id===g.id)&&!deleted.has(g.id))games.push(g)});
+  Object.values(overrides).forEach(g=>{if(g.manual&&!games.some(x=>x.id===g.id)&&!deleted.has(g.id))games.push(g)});
 }
 function persistGame(g){const o=read(KEYS.overrides,{});o[g.id]={...g,updatedAt:g.updatedAt||now()};write(KEYS.overrides,o);markPending()}
 function normalize(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()}
@@ -288,13 +302,14 @@ function mergeRemote(remote){
       if(r.deleted)return;
       const base=games.find(g=>g.id===r.id);
       const localOverride=override[r.id];
-      // Ignore server copies of untouched catalog games.
-      if(base&&!r.data?.manual&&!gameContentDiffers(r.data,base))return;
+      const remoteIsManual=Boolean(r.data?.manual);
+      if(!base&&!remoteIsManual)return;
+      if(base&&!remoteIsManual&&!localOverride)return;
       const localDate=localOverride?.updatedAt||'';
       if(!localDate||new Date(r.updatedAt)>new Date(localDate)){
         const g={...r.data,updatedAt:r.data?.updatedAt||r.updatedAt};
         const idx=games.findIndex(x=>x.id===g.id);
-        if(idx>=0)games[idx]=g;else games.push(g);
+        if(idx>=0)games[idx]=g;else if(remoteIsManual)games.push(g);
         override[g.id]=g;
         changed=true;
       }
