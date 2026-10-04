@@ -155,32 +155,62 @@ function inferIntensity(g){return intensityCategory(g)}
 function isGenericOcrRecord(g){return /^ocr\s*(?:—|-|:|pagina|página|$)/i.test(String(g?.title||'').trim())}
 function recoveredReviewTitle(g){
   const src=String(g?.source||''),t=String(g?.title||'').trim();
-  if(src.startsWith('215 Juegos')||src.startsWith('1001 ejercicios')){
-    if(t.length>=4&&t.length<=60&&!['A >','Cs'].includes(t)&&!/[0-9]/.test(t)&&!/[<>[\\]|{}%]/.test(t))return t;
-  }
-  if(src==='juegos 6a12anos.pdf'){
-    let x=t.split(/\\s+Jueg/i)[0].trim().replace(/^\\d+\\s+/,'').replace(/[ .|]+$/,'');
-    if(['LARMA Y ELGATO','LALEÑA'].includes(x))return'';
-    if(x.length>=4&&!/[0-9]/.test(x)&&!/[|<>{}\\[\\]@#%]/.test(x)){
-      return x.replace("EL'TELEGRAMA",'EL TELEGRAMA').replace('EL.TEATRO','EL TEATRO').replace('POR ELSONIDO','POR EL SONIDO').replace('ELLAGO','EL LAGO').replace('ELMANJAR DE FRUTAS','EL MANJAR DE FRUTAS');
-    }
-    if(t.length>=4&&t.length<=50&&!/[0-9]/.test(t)&&!/[|<>{}\\[\\]@#%]/.test(t)&&t.split(' ').length<=6){
-      return t.replace('POR ELSONIDO','POR EL SONIDO').replace('ELLAGO','EL LAGO').replace('ELMANJAR DE FRUTAS','EL MANJAR DE FRUTAS').replace('EL.TEATRO','EL TEATRO');
-    }
-  }
   const d=String(g?.description||'');
-  const q=d.match(/Juego,\\s*“([^”\\n]+)/);
-  if(q){
-    let x=q[1].trim();
-    if(x.includes(':')&&x.startsWith('¿'))x=x.split(':',1)[0]+'?';
-    if(x.length<=60&&!/[<>[\\]|{}]/.test(x))return x;
+
+  const clean=x=>{
+    x=String(x||'').trim().replace(/^[-–—:.\\s]+|[\\s.\\-–—|]+$/g,'').replace(/\\s+/g,' ');
+    if(x.length<4||x.length>70||/[<>[\\]|{}@#%]/.test(x)||/\\d/.test(x))return'';
+    if(/^(juego|actividad|parte principal|parte inicial|c[oó]digo|relevos)$/i.test(x))return'';
+    return x;
+  };
+
+  // 215 Juegos: titles are already extracted from the book; recover only clean entries.
+  if(src.startsWith('215 Juegos')){
+    let x=clean(t);
+    if(x)return x;
+    // One OCR record has the title in the page description.
+    const m=d.match(/—\\s*\\d+\\s+([A-ZÁÉÍÓÚÜÑ][A-ZÁÉÍÓÚÜÑ\\s,-]{3,60})(?:\\s{2,}|Establecer|Se coloca|Libres)/i);
+    if(m){x=clean(m[1]);if(x)return x}
+    return'';
   }
-  const m=d.match(/(?:Juego(?:\\s*,|\\s+)|Juego\\s+de\\s*)[“"]([^“”"\\n]{3,80})[”"]/i);
-  if(m){
-    const x=m[1].trim();
-    if(x.length<=60&&!/[<>[\\]|{}]/.test(x)&&!/^u(?:n|na)?\\s+alumn/i.test(x))return x;
+
+  // 1001 ejercicios: book titles are reliable; remove occasional OCR numbering noise.
+  if(src.startsWith('1001 ejercicios')){
+    let x=t.replace(/\\s*[|]?[ ]*\\d+\\s*$/,'').trim();
+    if(x==='Tirar las banderas invencibles ] 1')x='Tirar las banderas invencibles';
+    if(x==='Los 5 agujeros')return x;
+    x=clean(x);
+    return x;
   }
-  return'';
+
+  // 6-12 years book: each extracted record contains one or two neighbouring
+  // titles. Keep the first title only when OCR gives a plausible title.
+  if(src==='juegos 6a12anos.pdf'){
+    let x=t.split(/\\s+Jueg/i)[0].trim().replace(/^\\d+\\s+/,'');
+    x=x.replace("EL'TELEGRAMA",'EL TELEGRAMA').replace('EL.TEATRO','EL TEATRO')
+      .replace('POR ELSONIDO','POR EL SONIDO').replace('ELLAGO','EL LAGO')
+      .replace('ELMANJAR DE FRUTAS','EL MANJAR DE FRUTAS');
+    x=clean(x);
+    return x;
+  }
+
+  // Other OCR books: only trust an explicit game name quoted or introduced
+  // as "Juego de...", avoiding page fragments.
+  const candidates=[];
+  for(const re of [
+    /[“"]([^”"\\n]{4,70})[”"]/g,
+    /(?:Juego|JUEGO)\\s*(?:de|del|:|-)\\s*[“"]?([^”"\\n.;]{4,70})/g
+  ]){
+    let m;
+    while((m=re.exec(d))){
+      const x=clean(m[1]);
+      if(x)candidates.push(x);
+    }
+  }
+  for(const x of candidates){
+    if(!/\\b(?:de|del|la|el|los|las|con|que|al)$/i.test(x))return x;
+  }
+  return candidates[0]||'';
 }
 function contentState(g){
   // A recovered high-confidence title takes precedence over the imported review flag.
