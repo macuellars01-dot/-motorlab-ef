@@ -177,7 +177,7 @@ function recoveredReviewTitle(g){
   // 1001 ejercicios: book titles are reliable; remove occasional OCR numbering noise.
   if(src.startsWith('1001 ejercicios')){
     let x=t.replace(/\\s*[|]?[ ]*\\d+\\s*$/,'').trim();
-    if(x==='Tirar las banderas invencibles ] 1')x='Tirar las banderas invencibles';
+    if(/^Tirar las banderas invencibles/.test(x))x='Tirar las banderas invencibles';
     if(x==='Los 5 agujeros')return x;
     x=clean(x);
     return x;
@@ -193,6 +193,10 @@ function recoveredReviewTitle(g){
     x=clean(x);
     return x;
   }
+
+  // This book is a session/programming text; its OCR snippets are not reliable
+  // standalone game titles, so keep them in manual review.
+  if(src.startsWith('LIBRO Sesiones'))return'';
 
   // Other OCR books: only trust an explicit game name quoted or introduced
   // as "Juego de...", avoiding page fragments.
