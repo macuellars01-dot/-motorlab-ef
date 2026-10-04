@@ -6,20 +6,74 @@ const KEYS={sessions:'motorlab_sessions',units:'motorlab_units',overrides:'motor
 const DEFAULT_API='https://ugreen-tailscale.tailfc6c36.ts.net:8443/motorlab';
 const CATALOG_VERSION='2026-10-04T15:45:00.000Z';
 const RECOVERED_J6A12={
-  3:[[1,'El Pelele'],[2,'La Sombra']],
-  29:[[103,'Pies en alto'],[104,'Las Picas'],[105,'Pasar la corriente'],[106,'Tocarse las rodillas']],
-  37:[[135,'Las Muñecas'],[136,'Combate Pirata'],[137,'Los Saquitos'],[138,'La Culebra']],
-  42:[[155,'Lanzamientos de bolos'],[156,'Las Cuatro Porterías'],[157,'De bote en bote'],[158,'Tulipán botando']],
-  64:[[239,'El Enano Saltarín'],[240,'Los Saltadores y los Osos'],[241,'Perros y Gatos'],[242,'Date la vuelta']],
-  74:[[279,'Provocar la palmada'],[281,'El Sobre'],[280,'Tiro al bote'],[282,'El Mareo']],
-  79:[[299,'¿Quién te dio el pelotazo?'],[300,'De campo a campo'],[301,'Los Veleros'],[302,'Perritos falderos']],
-  80:[[303,'Tomadura de pelo'],[305,'Llenar y vaciar'],[304,'Balón cangrejo'],[306,'Balón sprint']],
-  90:[[337,'Seguir a la madre'],[339,'Los Animales'],[338,'Efecto mueble'],[340,'Expresividad']],
-  96:[[361,'El Flautista de Hamelín'],[362,'El Castillo Encantado'],[363,'Yo vi'],[364,'La Familia']],
-  102:[[385,'Los Astronautas'],[386,'El Orador'],[387,'Cuéntame un chiste'],[388,'¿Quién dice la frase?']],
-  103:[[389,'El Charlatán'],[390,'Semana Santa']]
+  1:['El Pelele','Sin material','Parejas','Conocer el esquema e imagen corporal.','Por parejas, un alumno tumbado recibe movimientos guiados en distintas partes del cuerpo; después se cambian los roles.'],
+  2:['La Sombra','Sin material','Parejas','Conocer el esquema e imagen corporal.','Un alumno se mueve libremente y su compañero imita sus movimientos como si fuera su sombra; después se cambian los roles.'],
+  103:['Pies en alto','Sin material','Gran grupo','Desplazamientos y carrera','El profesor indica posiciones que deben adoptar manteniendo siempre los pies elevados; quien no lo consigue puede ser capturado.'],
+  104:['Las Picas','Picas','Gran grupo','Coordinación','En círculo, cada alumno suelta su pica a una señal y se desplaza para recoger la de su compañero siguiendo una rotación.'],
+  105:['Pasar la corriente','Sin material','Pequeños grupos','Coordinación','En círculo y cogidos de las manos, un alumno inicia una ondulación con el brazo que los demás transmiten de forma coordinada.'],
+  106:['Tocarse las rodillas','Sin material','Gran grupo','Desplazamientos y carrera','Cada alumno intenta tocar las rodillas de otros compañeros evitando que le toquen las suyas.'],
+  135:['Las Muñecas','Sin material','Parejas','Equilibrio','Por parejas, uno representa una muñeca que se mueve y va deteniéndose progresivamente cuando se acaba la cuerda imaginaria.'],
+  136:['Combate Pirata','Bancos/vallas','Parejas','Equilibrio','Dos alumnos sobre un banco sueco intentan empujarse con una mano sin caer.'],
+  137:['Los Saquitos','Otros','Pequeños grupos','Equilibrio','Por relevos, cada alumno transporta un saquito sobre la cabeza hasta una meta y se lo entrega al siguiente.'],
+  138:['La Culebra','Cuerdas/combas','Gran grupo','Equilibrio','Dos grandes cuerdas forman recorridos curvos que los alumnos deben pisar manteniendo el equilibrio.'],
+  155:['Lanzamientos de bolos','Balones/pelotas','Pequeños grupos','Lanzamiento','Se lanzan balones rodando hacia botellas colocadas a distancia y se puntúa según las botellas derribadas.'],
+  156:['Las Cuatro Porterías','Balones/pelotas','Gran grupo','Coordinación','Varios equipos juegan alrededor de cuatro porterías, defendiendo dos e intentando marcar en las otras dos.'],
+  157:['De bote en bote','Balones/pelotas','Pequeños grupos','Conducción y manejo','Los jugadores trasladan el balón botándolo hasta la fila contraria y cambian de grupo al completar el recorrido.'],
+  158:['Tulipán botando','Balones/pelotas','Pequeños grupos','Lanzamiento','Cinco jugadores con balón intentan tocar a los demás; quien es tocado queda en posición de tulipán hasta ser liberado.'],
+  239:['El Enano Saltarín','Sin material','Gran grupo','Saltos','Un perseguidor intenta alcanzar a los demás desplazándose todos mediante saltos o pasos en cuclillas.'],
+  240:['Los Saltadores y los Osos','Sin material','Gran grupo','Saltos','Unos alumnos forman los osos y otros intentan saltar sobre ellos evitando al guardián.'],
+  241:['Perros y Gatos','Sin material','Gran grupo','Giros','Dos equipos se colocan enfrentados y, según se nombre perro o gato, uno persigue al otro hasta una línea.'],
+  242:['Date la vuelta','Sin material','Gran grupo','Giros','Desde cuadrupedia, los alumnos practican el giro levantando simultáneamente mano y pie del mismo lado.'],
+  279:['Provocar la palmada','Balones/pelotas','Pequeños grupos','Lanzamiento','Un jugador situado en el centro lanza el balón a los compañeros, que deben dar una palmada antes de recibirlo.'],
+  280:['Tiro al bote','Balones/pelotas','Pequeños grupos','Lanzamiento','Los jugadores lanzan balones intentando sacar una botella situada dentro de un círculo.'],
+  281:['El Sobre','Balones/pelotas','Gran grupo','Lanzamiento','Desde el centro del círculo se lanza el balón hacia arriba nombrando a un compañero, que debe correr para recibirlo antes de que caiga.'],
+  282:['El Mareo','Balones/pelotas','Gran grupo','Oposición y persecución','Dos grupos se enfrentan: uno mantiene la posesión del balón mientras el otro intenta interceptarlo.'],
+  299:['¿Quién te dio el pelotazo?','Balones/pelotas','Gran grupo','Lanzamiento','Los jugadores se pasan la pelota ocultándola de un compañero situado en el centro, que debe descubrir quién le lanzó.'],
+  300:['De campo a campo','Balones/pelotas','Pequeños grupos','Lanzamiento','Cuatro grupos ocupan tres zonas y los extremos se pasan la pelota evitando que los jugadores centrales la intercepten.'],
+  301:['Los Veleros','Globos','Pequeños grupos','Conducción y manejo','Cada grupo transporta un globo por distintas zonas usando sucesivamente soplidos, pie, manos y cabeza.'],
+  302:['Perritos falderos','Globos','Pequeños grupos','Conducción y manejo','Los alumnos, a cuatro patas, transportan pequeños globos con la boca hasta sus compañeros.'],
+  303:['Tomadura de pelo','Picas','Gran grupo','Conducción y manejo','En círculo se pasan una pica por detrás de la espalda mientras el jugador central intenta descubrir quién la tiene.'],
+  304:['Balón cangrejo','Balones/pelotas','Pequeños grupos','Conducción y manejo','Los equipos sentados en fila se pasan un balón por encima de la cabeza hasta hacerlo llegar al final.'],
+  305:['Llenar y vaciar','Balones/pelotas','Gran grupo','Conducción y manejo','Dos grupos trasladan balones de una caja a otra, pasándolos de uno en uno por todos los jugadores.'],
+  306:['Balón sprint','Balones/pelotas','Individual','Conducción y manejo','Cada jugador conduce un balón hasta una prenda situada al otro extremo, se la pone y regresa conduciendo el balón con el pie.'],
+  337:['Seguir a la madre','Bancos/vallas','Gran grupo','Coordinación','Un alumno realiza un recorrido variado por los aparatos y el resto imita sus movimientos y gestos.'],
+  338:['Efecto mueble','Sin material','Parejas','Ritmo y expresión','Por parejas, uno representa un mueble y el otro imita cómo se utiliza.'],
+  339:['Los Animales','Sin material','Individual','Ritmo y expresión','Los alumnos se desplazan imitando los animales que propone el profesor, incluyendo sus movimientos y sonidos.'],
+  340:['Expresividad','Sin material','Parejas','Ritmo y expresión','Un alumno expresa corporalmente una sensación o estado de ánimo y su compañero debe reaccionar representando lo contrario.'],
+  361:['El Flautista de Hamelín','Sin material','Pequeños grupos','Ritmo y expresión','Los grupos representan mediante mímica el cuento del flautista y sus personajes.'],
+  362:['El Castillo Encantado','Sin material','Pequeños grupos','Ritmo y expresión','Los grupos representan mediante mímica personajes y acciones propias de un castillo encantado.'],
+  363:['Yo vi','Sin material','Pequeños grupos','Ritmo y expresión','Un alumno representa mediante mímica algo que vio de camino al colegio y los demás intentan adivinarlo.'],
+  364:['La Familia','Sin material','Pequeños grupos','Ritmo y expresión','Cada alumno representa a un miembro de una familia y el grupo dramatiza una situación familiar.'],
+  385:['Los Astronautas','Sin material','Pequeños grupos','Ritmo y expresión','Grupos de alumnos representan un viaje a un planeta desconocido asumiendo papeles como astronautas, robots o alienígenas.'],
+  386:['El Orador','Sin material','Parejas','Ritmo y expresión','En parejas, uno habla mientras el otro, situado detrás, mueve los brazos como si fueran los del orador.'],
+  387:['Cuéntame un chiste','Sin material','Pequeños grupos','Ritmo y expresión','Cada grupo cuenta un chiste al resto y después lo representa mediante expresión corporal.'],
+  388:['¿Quién dice la frase?','Sin material','Parejas','Ritmo y expresión','Un alumno inventa una frase y la representa mediante mímica para que su compañero la adivine.'],
+  389:['El Charlatán','Otros','Pequeños grupos','Ritmo y expresión','Cada grupo representa una escena en la que un alumno vende un objeto explicando su utilidad y fabricación.'],
+  390:['Semana Santa','Material variado','Gran grupo','Ritmo y expresión','El grupo representa una procesión de Semana Santa incorporando sus distintos personajes y elementos.']
 };
 function applyRecoveredJ6a12(){
+  const pages=new Set(Object.keys(RECOVERED_J6A12).map(Number));
+  games=games.filter(g=>!(g?.source==='juegos 6a12anos.pdf'&&String(g?.title||'').startsWith('OCR')&&pages.has(Number(g?.page))));
+  const existing=new Set(games.map(g=>g.id));
+  Object.entries(RECOVERED_J6A12).forEach(([num,meta])=>{
+    const id=`j6a12-recovered-${String(num).padStart(3,'0')}`;
+    if(existing.has(id))return;
+    games.push(normalizeCatalogRecord({
+      id,title:meta[0],age:'6-12 años',material:meta[1],description:meta[4],
+      source:'juegos 6a12anos.pdf',page:({
+        1:3,2:3,103:29,104:29,105:29,106:29,135:37,136:37,137:37,138:37,
+        155:42,156:42,157:42,158:42,239:64,240:64,241:64,242:64,
+        279:74,280:74,281:74,282:74,299:79,300:79,301:79,302:79,303:80,304:80,305:80,306:80,
+        337:90,338:90,339:90,340:90,361:96,362:96,363:96,364:96,
+        385:102,386:102,387:102,388:102,389:103,390:103
+      })[num],
+      space:'Pista / gimnasio',intensity:'Media',
+      groupings:[meta[2]],objectives:[meta[3]],classificationSource:'recuperación directa de la ficha original del PDF',
+      needsReview:true,confidence:'title-and-summary-recovered',kind:'game'
+    }));
+    existing.add(id);
+  });
+}function applyRecoveredJ6a12(){
   const pages=new Set(Object.keys(RECOVERED_J6A12).map(Number));
   games=games.filter(g=>!(g?.source==='juegos 6a12anos.pdf'&&String(g?.title||'').startsWith('OCR')&&pages.has(Number(g?.page))));
   const existing=new Set(games.map(g=>g.id));
