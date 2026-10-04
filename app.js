@@ -91,7 +91,7 @@ function applyGameLocalState(){
 }
 function persistGame(g){const o=read(KEYS.overrides,{});o[g.id]={...g,updatedAt:g.updatedAt||now()};write(KEYS.overrides,o);markPending()}
 function normalize(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()}
-const MOTOR_AGES=['Infantil','Infantil y Primaria','1º-2º Primaria','3º-4º Primaria','3º-6º Primaria','5º-6º Primaria','Primaria','Primaria y Secundaria','1º-6º Primaria','No especificada'];
+const MOTOR_AGES=['Infantil','Infantil y Primaria','1º-2º Primaria','3º-4º Primaria','3º-6º Primaria','5º-6º Primaria','Primaria','Primaria y Secundaria','Secundaria','1º-6º Primaria','1º-4º Primaria','No especificada'];
 const MOTOR_MATERIALS=['Sin material','Balones/pelotas','Aros','Conos','Cuerdas/combas','Picas','Pañuelos/petos','Colchonetas','Raquetas','Tizas','Globos','Tarjetas','Bancos/vallas','Música','Material variado','Otros','No especificado'];
 const MOTOR_SPACES=['Aula','Pista/gimnasio','Pista/exterior','Patio/exterior','Espacio delimitado','Espacio amplio','Otros','No especificado'];
 const MOTOR_INTENSITIES=['Baja','Media','Alta','No especificada'];
@@ -114,8 +114,7 @@ function ageCategories(g){
   if(Array.isArray(g?.ageCategories)&&g.ageCategories.length)return g.ageCategories;
   const x=normalize(g?.age);
   if(!x)return['No especificada'];
-  const out=[];
-  const add=v=>{if(v&&!out.includes(v))out.push(v)};
+  const out=[]; const add=v=>{if(v&&!out.includes(v))out.push(v)};
   if(/12\s*[-a]\s*13/.test(x))add('5º-6º Primaria');
   if(/6\s*[-a]\s*12/.test(x))add('1º-6º Primaria');
   if(/8\s*[-a]\s*12/.test(x))add('3º-6º Primaria');
@@ -124,13 +123,10 @@ function ageCategories(g){
   if(/4\s*[-a]\s*10/.test(x))add('Infantil y Primaria');
   if(/a partir de 5º|5º.*primaria/.test(x))add('5º-6º Primaria');
   if(/a partir de 3º|3º.*primaria/.test(x))add('3º-4º Primaria');
-  if(/1º\s*[-y]?[–-]?\s*2º\s*(?:eso|secundaria)/.test(x)||/primaria y 1º\s*[-y]?[–-]?\s*2º\s*(?:eso|secundaria)/.test(x))add('Primaria y Secundaria');
-  if(/primaria.*secundaria|secundaria.*primaria/.test(x))add('Primaria y Secundaria');
+  if(/primaria.*secundaria|secundaria.*primaria|eso/.test(x))add('Primaria y Secundaria');
   if(/infantil.*primaria|primaria.*infantil/.test(x))add('Infantil y Primaria');
-  if(/infantil,?\s*1º.*2º.*primaria/.test(x))add('Infantil y Primaria');
-
-  if(x==='primaria'||x.startsWith('primaria '))add('Primaria');
-  if(x.includes('infantil')&&!out.includes('Infantil y Primaria'))add('Infantil');
+  if(x==='primaria')add('Primaria');
+  if(x.includes('infantil')&&!x.includes('primaria'))add('Infantil');
   if(x==='secundaria')add('Secundaria');
   return out.length?out:['No especificada'];
 }
@@ -141,9 +137,12 @@ function spaceCategories(g){
   const x=normalize(typeof g==='string'?g:g?.space);
   if(!x||x==='no especificado')return['No especificado'];
   const out=[]; const add=v=>{if(!out.includes(v))out.push(v)};
-  if(x.includes('aula')||x.includes('salón')||x.includes('sala'))add('Aula');
-  if(x.includes('pista')||x.includes('gimnasio')||x.includes('cancha')||x.includes('campo'))add('Pista/gimnasio');
-  if(x.includes('patio')||x.includes('exterior'))add('Patio/exterior');
+  if(x.includes('aula')||x.includes('salon')||x.includes('sala'))add('Aula');
+  if(x.includes('pista')||x.includes('gimnasio')||x.includes('cancha')||x.includes('campo')){
+    add(x.includes('exterior')||x.includes('aire libre')?'Pista/exterior':'Pista/gimnasio');
+  }
+  if(x.includes('patio'))add('Patio/exterior');
+  if(x.includes('exterior')&&!out.includes('Pista/exterior')&&!out.includes('Patio/exterior'))add('Pista/exterior');
   if(x.includes('delimit')||x.includes('cuadrante'))add('Espacio delimitado');
   if(x.includes('amplio')||x.includes('libre')||x.includes('metros')||x.includes('cuadrad'))add('Espacio amplio');
   return out.length?out:['Otros'];
