@@ -183,9 +183,12 @@ function recoveredReviewTitle(g){
   return'';
 }
 function contentState(g){
+  // A recovered high-confidence title takes precedence over the imported review flag.
+  // Some normalized catalog records already contain contentState="Requiere revisión";
+  // keeping that value first would make the recovery logic invisible in the UI.
+  if(g?.needsReview&&recoveredReviewTitle(g))return'Verificado';
   if(g?.contentState&&MOTOR_CONTENT_STATES.includes(g.contentState))return g.contentState;
   if(isGenericOcrRecord(g))return'OCR pendiente';
-  if(g?.needsReview&&recoveredReviewTitle(g))return'Verificado';
   if(g?.needsReview)return'Requiere revisión';
   return'Verificado'
 }
