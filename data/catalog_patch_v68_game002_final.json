@@ -1,0 +1,28 @@
+[
+  {
+    "op": "update",
+    "id": "j6a12-002",
+    "data": {
+      "title": "LA SOMBRA",
+      "description": "Desarrollo: Los alumnos se sitúan uno detrás de otro. Al oír la señal, el alumno colocado delante comienza a moverse libremente y el que está detrás imita sus movimientos como si fuera su sombra. Al oír nuevamente la señal se cambian los roles. Reglas: No tocar al compañero ni alejarse de él más de un metro. Variantes: Sin variantes.",
+      "age": "6-12 años",
+      "material": "Sin material",
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v68",
+      "sourceRecoveryNote": "El registro estaba contaminado con el juego nº 289. Se recupera aquí como la ficha nº 2 real, comprobada directamente en el PDF fuente."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-2247",
+    "data": {
+      "visibility": "review",
+      "needsReview": true,
+      "auditStatus": "cuarentena-duplicado-fuente-v68",
+      "note": "Registro OCR duplicado/anómalo que reproduce el juego nº 247, El Molinillo. Se conserva sin borrarlo y queda fuera del catálogo visible."
+    }
+  }
+]
