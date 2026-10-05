@@ -1,0 +1,25 @@
+[
+  {
+    "op": "update",
+    "id": "j6a12-001",
+    "data": {
+      "title": "EL PELELE",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Conocer el esquema e imagen corporal.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Por parejas.\nDesarrollo: Uno tumbado en supino, el otro mueve los segmentos y partes del cuerpo que el maestro va citando. El que está tumbado no ofrecerá resistencia. A la señal, cambio.\nReglas: Sin reglas.\nVariantes: Individual. Somos vehículos y corremos. A la señal, adoptamos posturas graciosas. Me autoobservo y compruebo la posición de los segmentos corporales.",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Conocer el esquema e imagen corporal."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  }
+]
