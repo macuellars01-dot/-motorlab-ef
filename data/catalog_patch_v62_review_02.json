@@ -1,0 +1,163 @@
+[
+  {
+    "op": "update",
+    "id": "j6a12-032",
+    "data": {
+      "title": "NOS AGRUPAMOS",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la percepción espacial a través del juego.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Pequeño grupo.\nDesarrollo: Los alumnos deben agruparse según las indicaciones del profesor: agruparse en el menor espacio posible; ocupar el mayor espacio posible; hacer una serpiente lo más larga posible; hacer una serpiente lo más corta posible.\nReglas: Siempre tienen que estar todos los alumnos del grupo en contacto. No se puede cambiar de grupo.\nVariantes: Formar un dado. Formar un balón. Formar un sol. Formar una estrella.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la percepción espacial a través del juego."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-033",
+    "data": {
+      "title": "EN BUSCA DEL TESORO",
+      "age": "Primaria",
+      "material": "Cuerdas, pelotas",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Cuerdas, pelotas.\nObjetivo a desarrollar: Ser capaz de ocupar racionalmente el espacio mayor o menor.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Pequeño grupo.\nDesarrollo: Cada grupo forma un círculo con cuerdas unidas por los extremos. Cada niño coge la cuerda con una mano y, tirando de ella, intentará llegar al tesoro (pelota), situado a unos dos metros de cada niño.\nReglas: No soltarse nunca de la cuerda.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Ser capaz de ocupar racionalmente el espacio mayor o menor."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-037",
+    "data": {
+      "title": "EL MAREMOTO",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Estructurar el espacio y orientarse según los elementos que lo componen.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Individual.\nDesarrollo: Todos libres por el espacio. Las cuatro esquinas de la pista corresponden a una zona determinada: mar, barco, playa, tierra. Se nombra una de estas zonas y deben ir allí lo antes posible. A la voz de «maremoto» deben acudir a una zona segura, playa o tierra, para no ahogarse.\nReglas: Estar atentos a las indicaciones del profesor.\nVariantes: Cambio de lugares.",
+      "groupings": [
+        "Individual"
+      ],
+      "objectives": [
+        "Estructurar el espacio y orientarse según los elementos que lo componen."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-039",
+    "data": {
+      "title": "DIRIJO MI CABALLO",
+      "age": "Primaria",
+      "material": "Cuerdas y pañuelos",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Cuerdas y pañuelos.\nObjetivo a desarrollar: Desarrollar la capacidad de reacción ante estímulos táctiles.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Por parejas.\nDesarrollo: Uno detrás del otro con dos trozos de cuerda, uno en cada mano. El de atrás va dirigiendo al de delante, que lleva los ojos vendados. Cuando tira de la cuerda hacia la izquierda, el de delante debe girar hacia ese lado; igualmente hacia la derecha. Cuando tira de las dos a la vez, hacia delante.\nReglas: El de detrás no puede hablar.\nVariantes: Salir todo el grupo a la vez y establecer una meta. Prefijar un recorrido.",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Desarrollar la capacidad de reacción ante estímulos táctiles."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-040",
+    "data": {
+      "title": "EL MUNDO AL REVÉS",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la velocidad de reacción y agilidad.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Individual.\nDesarrollo: El profesor indica una posición y los alumnos deben adoptar la contraria con rapidez.\nReglas: El último y los que se equivoquen quedan eliminados.\nVariantes: Por parejas, uno indica y el otro ejecuta. Cuando este se equivoca se cambia el orden.",
+      "groupings": [
+        "Individual"
+      ],
+      "objectives": [
+        "Desarrollar la velocidad de reacción y agilidad."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-042",
+    "data": {
+      "title": "¿QUÉ FALTA?",
+      "age": "Primaria",
+      "material": "Objetos diversos",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Objetos diversos.\nObjetivo a desarrollar: Desarrollar la percepción espacial y la memoria visual.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Pequeño grupo.\nDesarrollo: Se colocan varios objetos encima de la mesa, a la vista de cada grupo. Se les dice que cierren los ojos un momento y el profesor esconde uno de los objetos. Cuando abren los ojos deben adivinar qué objeto falta.\nReglas: No abrir los ojos mientras se esconde el objeto.\nVariantes: Cambiar los objetos de disposición.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la percepción espacial y la memoria visual."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-043",
+    "data": {
+      "title": "ADIVINA QUIÉN HA SIDO",
+      "age": "Primaria",
+      "material": "Pañuelos",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Pañuelos.\nObjetivo a desarrollar: Reconocer la distancia con relación a un sonido.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Pequeño grupo.\nDesarrollo: Cinco miembros del grupo forman un círculo y el sexto está en el centro, sentado y con los ojos vendados. Este debe adivinar quién ha realizado el sonido.\nReglas: Si lo adivina, se sienta con el grupo y se queda el que ha sido descubierto.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Reconocer la distancia con relación a un sonido."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  }
+]
