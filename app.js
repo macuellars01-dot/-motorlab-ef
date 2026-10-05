@@ -162,6 +162,9 @@ function syncFilterControls(e){
   const a=id.startsWith('age')||id.endsWith('Filters')?$('#'+id):null;
   const base=id.endsWith('Dialog')?pair:id; const otherId=id.endsWith('Dialog')?pair:id+'Dialog';
   const other=$('#'+otherId); if(other)other.querySelectorAll('input').forEach(x=>x.checked=el.value===x.value?el.checked:x.checked);
+  // En el panel lateral, aplicar el filtro inmediatamente. En el diálogo móvil
+  // se mantiene el botón «Aplicar filtros» como confirmación explícita.
+  if(el.closest('#filters')) renderGames();
 }
 function clearAllFilters(){
   $$('#filters input[type="checkbox"], #filterDialog input[type="checkbox"]').forEach(x=>x.checked=false);
