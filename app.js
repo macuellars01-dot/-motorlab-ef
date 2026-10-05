@@ -121,6 +121,16 @@ function materialTag(m){
   if(/variado|diverso|varios materiales|material diverso/.test(x))return'Material variado';
   return'Otros';
 }
+function ageBucket(g){
+  const x=normalize(Array.isArray(g?.age)?g.age.join(' '):g?.age);
+  if(!x)return'No especificada';
+  if(/infantil|3\s*(?:-|a|hasta)\s*6|4\s*(?:-|a|hasta)\s*6/.test(x))return'Infantil';
+  if(/1\.?\s*(?:º|o)?\s*(?:-|a)\s*2|primer|segundo/.test(x))return'1.º-2.º Primaria';
+  if(/3\.?\s*(?:º|o)?\s*(?:-|a)\s*4|tercer|cuarto/.test(x))return'3.º-4.º Primaria';
+  if(/5\.?\s*(?:º|o)?\s*(?:-|a)\s*6|quinto|sexto/.test(x))return'5.º-6.º Primaria';
+  if(/primaria|todas|cualquier edad/.test(x))return'Primaria';
+  return'No especificada';
+}
 function materialTags(m){return [materialTag(m)]}
 function inferIntensity(g){
   const v=normalize(g?.intensity);
@@ -136,7 +146,7 @@ function objectiveValues(g){return Array.isArray(g.objectives)&&g.objectives.len
 function buildFilters(){
   const sources=uniqSorted([...games.map(sourceLabel),'Creación propia']);
   const configs=[
-    ['ageFilters',uniqSorted(games.map(g=>g.age||'No especificada'))],
+    ['ageFilters',['Infantil','1.º-2.º Primaria','3.º-4.º Primaria','5.º-6.º Primaria','Primaria','No especificada']],
     ['materialFilters',['Sin material','Balones/pelotas','Aros','Conos','Cuerdas/combas','Picas','Pañuelos/petos','Colchonetas','Raquetas','Tizas','Globos','Tarjetas','Bancos/vallas','Material variado','Otros']],
     ['spaceFilters',uniqSorted(games.map(g=>g.space||'No especificado'))],
     ['intensityFilters',['Baja','Media','Alta','No especificada']],
@@ -178,7 +188,7 @@ function matches(g){
   const text=normalize([g.title,g.description,g.material,g.age,g.source,...groupingValues(g),...objectiveValues(g)].join(' '));
   if(q&&!text.includes(q))return false;
   const ages=selected('#ageFilters'),mats=selected('#materialFilters'),spaces=selected('#spaceFilters'),ints=selected('#intensityFilters'),srcs=selected('#sourceFilters'),groups=selected('#groupingFilters'),objs=selected('#objectiveFilters');
-  return(!ages.length||ages.some(v=>normalize(g.age||'No especificada').includes(normalize(v))))
+  return(!ages.length||ages.includes(ageBucket(g)))
     &&(!mats.length||mats.some(v=>materialTags(g.material).includes(v)))
     &&(!spaces.length||spaces.includes(g.space||'No especificado'))
     &&(!ints.length||ints.includes(inferIntensity(g)))
