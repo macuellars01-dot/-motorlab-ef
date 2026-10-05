@@ -1,0 +1,15 @@
+{
+  "version": "v80",
+  "source": "juegos 6a12anos.pdf",
+  "sourcePages": [
+    51,
+    91,
+    97,
+    101
+  ],
+  "correctedCount": 3,
+  "patch": "data/catalog_patch_v80_juegos6a12_integrity.json",
+  "previousVersion": "v79",
+  "status": "completed",
+  "notes": "Revisión directa de páginas escaneadas: ocr-00132 → POLICÍA Y LADRONES (juego 189); ocr-00155 → LA ORQUESTA (juego 344); ocr-00159 → LOS MEGOS (juego 368). Esta última corrige la anterior v77, que había quedado como TEO."
+}
