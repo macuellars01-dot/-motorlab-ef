@@ -139,6 +139,14 @@ function spaceBucket(g){
   if(/agua|piscina/.test(x))return'Acuático';
   return g.space||'No especificado';
 }
+function intensityBucket(g){
+  const x=normalize(g?.intensity);
+  if(!x)return'No especificada';
+  if(/muy\s*baja|baja|suave|ligera/.test(x))return'Baja';
+  if(/muy\s*alta|alta|intensa|elevada/.test(x))return'Alta';
+  if(/media|moderada/.test(x))return'Media';
+  return'No especificada';
+}
 function materialTags(m){return [materialTag(m)]}
 function inferIntensity(g){
   const v=normalize(g?.intensity);
@@ -199,7 +207,7 @@ function matches(g){
   return(!ages.length||ages.includes(ageBucket(g)))
     &&(!mats.length||mats.some(v=>materialTags(g.material).includes(v)))
     &&(!spaces.length||spaces.includes(spaceBucket(g)))
-    &&(!ints.length||ints.includes(inferIntensity(g)))
+    &&(!ints.length||ints.includes(intensityBucket(g)))
     &&(!srcs.length||srcs.includes(sourceLabel(g)))
     &&(!groups.length||groups.some(v=>groupingValues(g).includes(v)))
     &&(!objs.length||objs.some(v=>objectiveValues(g).includes(v)))
