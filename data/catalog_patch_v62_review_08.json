@@ -1,0 +1,278 @@
+[
+  {
+    "op": "update",
+    "id": "j6a12-133",
+    "data": {
+      "title": "CÍRCULO INMÓVIL",
+      "age": "Primaria",
+      "material": "Varias sillas",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Varias sillas.\nObjetivo a desarrollar: Mantener posiciones de equilibrio estático.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: Se colocan los jugadores en un círculo subidos a una silla. A la señal del profesor irán saltando de uno en uno; al caer deben permanecer en posición de equilibrio estático y, a la vez, esquivar a los que ya han saltado.\nReglas: No se puede tocar a los compañeros. Los que se mueven o tocan a algún compañero vuelven a saltar.\nVariantes: Saltar desde un escalón.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Mantener posiciones de equilibrio estático."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-135",
+    "data": {
+      "title": "LAS MUÑECAS",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Mantener posiciones de equilibrio estático y dinámico.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Por parejas.\nDesarrollo: En cada pareja habrá una muñeca y un niño. Este dará cuerda en la espalda a su muñeca, que debe andar con movimientos típicos de este juguete; al ir acabándose la cuerda deberá ir parando hasta quedar inmóvil.\nReglas: Cuando se acabe la cuerda, se cambiarán los roles.\nVariantes: Realizarlo en dos grupos.",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Mantener posiciones de equilibrio estático y dinámico."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-136",
+    "data": {
+      "title": "COMBATE PIRATA",
+      "age": "Primaria",
+      "material": "Banco sueco",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Banco sueco.\nObjetivo a desarrollar: Controlar posiciones de equilibrio estático y dinámico.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Por parejas.\nDesarrollo: Se colocan dos niños encima del banco sueco y con una mano tienen que empujar al pirata sin caerse.\nReglas: Gana el niño que no se caiga del banco.\nVariantes: Variar la posición: de rodillas, en cuclillas.",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Controlar posiciones de equilibrio estático y dinámico."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-137",
+    "data": {
+      "title": "LOS SAQUITOS",
+      "age": "Primaria",
+      "material": "Unos saquitos de arena",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Unos saquitos de arena.\nObjetivo a desarrollar: Controlar posiciones de equilibrio estático y dinámico con objetos.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Pequeño grupo.\nDesarrollo: Se colocan en filas de seis. El primero lleva un saquito de arena en la cabeza y avanzará hasta una línea de meta fijada. Cuando regresa le da el saquito al compañero de su equipo y este hace lo mismo, así hasta que lo realicen los seis.\nReglas: Si el saquito se cae deberá comenzar otra vez.\nVariantes: Con el saquito en el hombro.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Controlar posiciones de equilibrio estático y dinámico con objetos."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-138",
+    "data": {
+      "title": "LA CULEBRA",
+      "age": "Primaria",
+      "material": "Cuerdas",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Cuerdas.\nObjetivo a desarrollar: Mejorar posiciones de equilibrio estático y dinámico.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: Con las cuerdas se forman dos grandes culebras haciendo curvas, en los extremos los dos grupos. Deberán ir pisando la cuerda con ambos pies y guardando el equilibrio sin caerse.\nReglas: No se puede pisar al compañero de delante. Los pies deben ir uno delante de otro, tocándose.\nVariantes: Pisar con los pies juntos pero lateralmente.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Mejorar posiciones de equilibrio estático y dinámico."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-140",
+    "data": {
+      "title": "NO TE MUEVAS",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Mantener posiciones de equilibrio dinámico.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Por parejas.\nDesarrollo: Se agrupan los alumnos por parejas, siendo uno «A» y otro «B». A la señal, A trata de tocar a B, que adopta una postura inmóvil; así no puede ser tocado y obliga al perseguidor a tomar también esa postura. Cuando uno es tocado se cambian los roles.\nReglas: El que adopta la postura no se puede mover.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Mantener posiciones de equilibrio dinámico."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-142",
+    "data": {
+      "title": "PULSO A LA PATA COJA",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Controlar el cuerpo en situaciones de equilibrio dinámico.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Por parejas.\nDesarrollo: Los jugadores se colocan uno frente a otro, a una distancia de 1,5 m. Se mantienen en equilibrio sobre el pie derecho, sujetándose el izquierdo por detrás de la espalda con la mano derecha. A una señal, dan saltos hacia delante tratando de hacer que el contrario pierda el equilibrio, empujándose con la mano libre y haciendo movimientos de despiste.\nReglas: No se pueden agarrar con la mano izquierda.\nVariantes: Cambiar la forma de mantener el equilibrio.",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Controlar el cuerpo en situaciones de equilibrio dinámico."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-144",
+    "data": {
+      "title": "SILLAS MUSICALES",
+      "age": "Primaria",
+      "material": "Varias sillas y música",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Varias sillas y música.\nObjetivo a desarrollar: Controlar el cuerpo en situaciones de equilibrio estático.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: Se colocan las sillas formando un corro, con el respaldo hacia el centro. Todos los jugadores se sitúan por fuera del mismo. Mientras suena una música todos se mueven dando vueltas a las sillas. Cuando la música deja de sonar, todos buscan una en la que subirse. El grupo gana cada vez que todos los jugadores consiguen meterse en las sillas.\nReglas: Cada vez que para la música el juego se reinicia con una silla menos.\nVariantes: Todos los jugadores deben estar sentados.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Controlar el cuerpo en situaciones de equilibrio estático."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-145",
+    "data": {
+      "title": "ENREDOS",
+      "age": "Primaria",
+      "material": "Aros de colores pequeños",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Aros de colores pequeños.\nObjetivo a desarrollar: Mantener posiciones de equilibrio estático y dinámico.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Pequeños grupos.\nDesarrollo: Se colocan en el suelo 16 aros de cuatro colores, ocupando un espacio de unos metros cuadrados. Los jugadores irán ejecutando lo que diga el profesor, por ejemplo: mano izquierda en rojo y pie derecho en azul, etc.\nReglas: El grupo se apunta un punto cada vez que todos los jugadores son capaces de cumplir la orden dada.\nVariantes: Cada jugador realiza, por orden, una prueba distinta. Si todos consiguen superarla, el grupo se anota un punto.",
+      "groupings": [
+        "Pequeños grupos"
+      ],
+      "objectives": [
+        "Mantener posiciones de equilibrio estático y dinámico."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-146",
+    "data": {
+      "title": "SALTANDO JUNTOS",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Mantener posiciones de equilibrio dinámico.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Por parejas.\nDesarrollo: Dos jugadores se ponen de pie, uno frente a otro. Ambos levantan la pierna izquierda hasta dejarla paralela al suelo. Cada uno agarra, por el tobillo, la pierna del compañero, de forma que juntos forman una figura similar a la «H». Una vez que están en equilibrio, intentan saltar juntos, girar, agacharse y levantarse o cualquier otra cosa sin soltarse.\nReglas: No se pueden soltar.\nVariantes: Inventar nuevas formas de agarrarse.",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Mantener posiciones de equilibrio dinámico."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-147",
+    "data": {
+      "title": "EL ÁRBOL",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Mantener posiciones de equilibrio.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: El profesor irá tocando a los niños y estos se convertirán en árboles: de pie, flexionando una pierna y apoyando el pie sobre el muslo de la pierna en apoyo; los brazos representan las ramas. Cuando todos estén convertidos en árboles se agruparán en un bosque pequeño o grande y se moverán por un viento suave o fuerte, etc.\nReglas: No especificadas en la ficha.\nVariantes: Mover solo una parte del árbol.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Mantener posiciones de equilibrio."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-149",
+    "data": {
+      "title": "EL ZAPATERO",
+      "age": "Primaria",
+      "material": "Zapatos de los niños",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Zapatos de los niños.\nObjetivo a desarrollar: Controlar el cuerpo en posiciones de equilibrio estático.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Pequeños grupos.\nDesarrollo: Cada grupo tendrá su zapatero. A una señal se quitarán todos los zapatos y los juntarán en el centro; ellos se quedan alrededor a pata coja en posición de equilibrio. El zapatero de cada grupo tiene que buscar su zapato a pata coja y después buscar el de todos los componentes de su grupo.\nReglas: Gana el grupo que antes tenga todos sus zapatos. No se puede apoyar el pie en el suelo hasta que tenga el zapato.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Pequeños grupos"
+      ],
+      "objectives": [
+        "Controlar el cuerpo en posiciones de equilibrio estático."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  }
+]
