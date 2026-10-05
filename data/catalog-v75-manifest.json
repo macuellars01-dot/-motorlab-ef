@@ -1,0 +1,23 @@
+{
+  "version": "v75",
+  "source": "sexto_compressed.pdf",
+  "sourcePages": [
+    4,
+    98,
+    112,
+    117,
+    120,
+    125,
+    132,
+    183,
+    212
+  ],
+  "correctedCount": 9,
+  "patch": "data/catalog_patch_v75_sexto_fragments.json",
+  "previousVersion": "v74",
+  "status": "completed",
+  "notes": [
+    "Se corrigieron títulos explícitos o recuperables sin ambigüedad en los fragmentos de sexto.",
+    "Se mantienen sin cambios los fragmentos cuya página no permite reconstruir con seguridad el título completo."
+  ]
+}
