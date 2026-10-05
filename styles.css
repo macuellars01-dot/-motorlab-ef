@@ -71,3 +71,18 @@ input,textarea,select{font-size:16px;}
   .filters{max-height:calc(100vh - 100px);position:fixed;left:12px;right:12px;top:76px;z-index:30;box-shadow:0 18px 50px rgba(15,23,42,.18)}
   .filter-dialog-body{max-height:calc(100vh - 230px)}
 }
+
+
+/* MotorLab v16.4-v60 · panel de filtros compacto y por categorías */
+.filter-head>div{min-width:0}.active-filter-count{display:block;margin-top:4px;font-size:10px;font-weight:500;color:var(--muted)}
+.filters{width:100%;}
+.filter-group{padding:0!important;border-top:1px solid var(--line);}
+.filter-group summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:13px 2px;font-size:12px;font-weight:800;color:#25364d;user-select:none;}
+.filter-group summary::-webkit-details-marker{display:none}
+.filter-group summary::after{content:'+';font-size:16px;line-height:1;color:#7b8aa0;font-weight:500}
+.filter-group[open] summary::after{content:'−'}
+.filter-group>div{padding:0 2px 11px}
+.filter-group .check{margin:7px 0}
+.ocr-filter{padding:12px 2px;margin:0!important;border-top:1px solid var(--line)}
+.filter-note{padding:12px 2px 4px!important}
+@media(min-width:761px){.workspace{grid-template-columns:285px 1fr}.filters{padding:16px}.filter-group summary{font-size:12px}}
