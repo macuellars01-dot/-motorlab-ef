@@ -3,7 +3,7 @@ const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
 const KEYS={sessions:'motorlab_sessions',units:'motorlab_units',overrides:'motorlab_game_overrides',deleted:'motorlab_deleted_games',deletedSessions:'motorlab_deleted_sessions',deletedUnits:'motorlab_deleted_units',meta:'motorlab_game_meta',settings:'motorlab_sync_settings',sync:'motorlab_sync_meta'};
 const DEFAULT_API='https://ugreen-tailscale.tailfc6c36.ts.net:8443/motorlab';
-const CATALOG_VERSION='2026-10-06T00:25:00.000Z';
+const CATALOG_VERSION='2026-10-06T00:45:00.000Z';
 let syncState='idle', syncTimer=null, sessionAddMode=false, sessionSelection=new Set();
 
 function read(k,f){try{return JSON.parse(localStorage.getItem(k))??f}catch(_){return f}}
@@ -57,6 +57,8 @@ async function init(){
     correctionsV70.forEach(p=>{const g=catalogById.get(p.id);if(g&&p.op==='update')Object.assign(g,p.data)});
     const correctionsV71=await fetch('data/catalog_patch_v71_tercero_fragments.json',{cache:'no-store'}).then(r=>r.ok?r.json():[]).catch(()=>[]);
     correctionsV71.forEach(p=>{const g=catalogById.get(p.id);if(g&&p.op==='update')Object.assign(g,p.data)});
+    const correctionsV72=await fetch('data/catalog_patch_v72_primero_fragments.json',{cache:'no-store'}).then(r=>r.ok?r.json():[]).catch(()=>[]);
+    correctionsV72.forEach(p=>{const g=catalogById.get(p.id);if(g&&p.op==='update')Object.assign(g,p.data)});
     // Limpieza final de transcripciones de juegos 6a12años: la ficha conserva
     // desarrollo, reglas y variantes, pero no repite los campos bibliográficos.
     catalogById.forEach(g=>{
@@ -73,7 +75,7 @@ async function init(){
       if(parts.length)g.description=parts.join(' ');
     });
     games=[...catalogById.values()];
-    console.info('[MotorLab] Catálogo v16.4-v71 · auditoría OCR:',games.length,'registros');
+    console.info('[MotorLab] Catálogo v16.4-v72 · auditoría OCR:',games.length,'registros');
 
     sanitizeLocalGameState();
 
