@@ -1,1 +1,3104 @@
-The requested file reference is not currently visible. Use files.search or files.list to rediscover the file, then retry with a returned ref_id or file_id.
+[
+  {
+    "op": "update",
+    "id": "j6a12-001",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nCiclo: 1-2.\nLugar: Pista polideportiva o gimnasio.\nObjetivo a desarrollar: Conocer el esquema e imagen corporal.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nDesarrollo: Uno tumbado en supino, el otro mueve los segmentos y partes del cuerpo que el maestro va indicando. A la señal, cambio.\nVariantes: Individual. Somos vehículos y corremos. A la señal, adoptamos posturas graciosas.\nMe autoobservo y compruebo la posición de los segmentos corporales.",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "Conocer el esquema e imagen corporal"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-006",
+    "data": {
+      "age": "Primaria",
+      "material": "Sín material. A",
+      "space": "Pista polideportiva o gimnasio, de",
+      "intensity": "Media",
+      "description": "Etapas Primaria, Gráñico:\nCiclo: 1-2\nLugar: Pista polideportiva o gimnasio, de\nMaterial: Sín material. A\nObjetivo a desarrollar: Controlar la actitud postural. | 107 Ml V\nen diferentes situaciones motrices, ” me\nBloque específico: ELEMENTOS PSICOMOTORES -\nBÁSICOS. %\nOrganización: Gran grupo. dá\nDesarrollo: Todos trotando y uno se la queda. El pro-\nfesor dirá STOP y los alumnos adoptarán una postura\ndeterminada, El que e la queda podrá tocara alguien\nque mo este en esta posición, cambiando de ol\nReglas: Adoptar sólo la posición dicha porel profesor\nVariantes: Sentados, tumibados boca ari, boca abajo.",
+      "groupings": [
+        "Gran grupo. dá"
+      ],
+      "objectives": [
+        "Controlar la actitud postural. | 107 Ml V"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-008",
+    "data": {
+      "age": "Primaria",
+      "material": "Pañuelos para vendar los ojos.",
+      "space": "Pista polideportiva o gimnasio 4",
+      "intensity": "Media",
+      "description": "Etapa: Primaria. Gráfico:\nCiclo: 1-2 >\nLugar: Pista polideportiva o gimnasio 4\nMaterial: Pañuelos para vendar los ojos.\nObjetivo a desarrollar: Conocer el esquema e ima- 1]\ngen corporal A\nBloque específico: ELEMENTOS PSICOMOTORES / E\nBÁSICOS. 1 4\nOrganización: Gran grupo. 1\nDesarrollo; Los jugadores dispersos por una zona de-\nTimitada. Todos menos uno con los ojos vendados. El\noso”. Se desplazará a gatas. Los demás intentarán cazarle siguiendo el ruido, despla\npio",
+      "groupings": [
+        "Gran grupo. 1"
+      ],
+      "objectives": [
+        "Conocer el esquema e ima- 1]"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-010",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio. > 7",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Gráfico:\nCielo: 1-2\nLugar: Pista polideportiva o gimnasio. > 7\nMateria: Una zapatilla. Leda\nE Objetivo a desarllar: Mejorar la velocidad dere- | 22 N /\nBloque específico: ELEMENTOS PSICOMOTORES i y\nV BÁSICOS. LA 4\nOrganización: Gran grupo. K\nun corro, menos uno que se quedará fuera de él con\ntuna zapatilla en la mano. Los que forman el corro cie\ndose de rran los ojos y colocan la cabeza entre las piernas. El que está fuera ha de dar vuelta alrededor y\ncolocar la zapatilla detrás de alguien; éste tiene que cogerla y perseguir. Si le coge antes de sen\ntarse enel sitio libro, él mismo reinicia el juego\nVariantes: La persecución ha de durar una sola vuelta, La persecución puede durar cualquier nú\nmero de vueltas establecido con anterioridad.",
+      "groupings": [
+        "Gran grupo. K"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-011",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Juego ns El ¿DÓNDE ES\nBloque específico: ELEMENTOS PSICOMOTORES j ..\nBÁSICOS. V z\n«el mismo desarrollo, pero con el corro y los jugadores que se persiguen de pie.",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-012",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "| Etapa: Primaria. Gráfico:\n| Ciclo: 1-2-3 Po\n| Lugar: Pista polideportiva o gimnasio. y y\n| oc ri A y\n| Material: Sin material. | =< b\n| Objetivo a desarrollar: Mejorar la atención auditiva. I A\n| Bloque específico: ELEMENTOS PSICOMOTORES N\n| BÁSICOS. N\nOrganización: Gran grupo. Ñ'\nDesarrollo: Todos los niños/as sentados formando un bh y : y\ncorro. Uno cualquiera de los niños/as inicia el juego Á [] dh) be\ntransmitiendo al que está junto a él una palabra al E\noído. Éste, sea lo que sea lo que haya entendido, se lo\ndirá al siguiente, también al oído, y así sucesivamente. El último dirá la palabra en alt\nésta coincide con la que transmitió el primero\nReglas: La palabra debe decirse con rapidez una sola vez.\nVariantes: Pueden transmitirse dos palabras en sentido contrario.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Mejorar la atención auditiva"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-013",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pisa polideportiva o gimnasio. , 4",
+      "intensity": "Media",
+      "description": "Etapa: Primaria Gráfico:\nCiclo: 1-23\ná Lugar: Pisa polideportiva o gimnasio. , 4\nMaterial Sin material, to yl\nObjetivo a desarrollar: Mejorar l tención vial. 42 4\n/ Bloque específico: ELEMENTOS PSICOMOTORES 3 s :\nBÁSICOS. ba ll UN)\n/ Organización: Gran grupo. ñ\nDesarrollo: En círculo, por parejas. Cada pareja, uno CP E\ndearás del oro. En el centro del círculo, un jugador 1\nEl que está solo guiñará el ojo a alguien del círculo.\nste saldrá corriendo a colocarse detrás de él, Su\nElorro compañero de pareja situado detrás, inentará impedírelo atrapándole con los brazos. El que se\n¿quede solo será el que guiñ el ojo.\nReglas: E de detrás de cda pareja colocará las manos detrás de su espalda.\nof: Con Variantes: Con dos jugadores, Sin pareja guinando los dos os demás",
+      "groupings": [
+        "Gran grupo. ñ"
+      ],
+      "objectives": [
+        "Mejorar l tención vial. 42 4"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-014",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria. Gráfico:\nCielo: 1-2-3\nLugar: Pista polideportiva o gimnasio. o\nMaterial: Sin material / Ñ / N\nObjetivo a desarrollar: Desarrollar la atención vi- pi ) SS]\n/ Bloque específico: ELEMENTOS PSICOMOTORES NN o\n1 BÁSICOS. PA | 4\nOrganización: Por parejas. / )\n(\nDesarrollo: Por parejas, uno frente al otro. Cada pa-\nreja se observa detenidamente durante determinado\ntiempo. Se dan la vuelta y, a espaldas uno del otro,\n¡endo si cambian algo de su indumentaria. Vuelven a mirarse y cada uno trata de adivinar lo que el otro ha\ncambiado.\nReglas: No se puede poner ni quitar nada.\nVariantes: En tríos, uno intenta adivinar lo que los otros dos han cambiado.",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Desarrollar la atención visual"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-015",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio o",
+      "intensity": "Media",
+      "description": "1 z\ny\nLugar: Pista polideportiva o gimnasio o\noque especfico: ELEMENTOS PSICOMOTORES | A\nBÁSICOS. A y",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-017",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio.",
+      "intensity": "Media",
+      "description": "' ELEMENTOS PSICOMOTORES BÁSICOS. ESQUEMA CORPORAL 31\n' Etapa: Primaria, Gráfico:\n| Cielo: 23\nr Lugar: Pista polideportiva o gimnasio. -\nObjetivo a desarrolac: Desa pesiónenat | FA GAZÓ\n| Bloque específico: ELEMENTOS PSICOMOTORES OS\nBÁSICOS. V z\nDesarrollo: Un niño se sienta. Abre las piernas y de-\nlante suyo se van sentando con las piernas abiertas,\nmuy apretados, los demás compañeros (si hay mu-\nel nome chos niños, lo mejor os formar más de una hilera). Se cogen todos, uno a uno con fuerza, por la\n«cintura, Después, un niño coge de las manos al primero de ta fla e intenta arrancarlo de sus com-|\npañeros, cuando lo consigue el niño arrancado Se pone detrás de quien los ha arrancado, lo coge\nde la cintura y lo ayuda a arancar alos demás.\nReglas: El juego termina cuando todos los niños han sido arrancados.\nVariantes: Sin variantes,",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-019",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material y",
+      "space": "Pista polideportiva o gimnasio.",
+      "intensity": "Media",
+      "description": "l\n¡e\n| Etapa: Primaria Gráfico:\n| Ciclo: 23 +\n| Lugar: Pista polideportiva o gimnasio.\ntal Material: Sin material y\n| Objetivo a desarrollar: Desarrollar la precisión en el Nes\nBloque específico: ELEMENTOS PSICOMOTORES\nBÁSICOS. A\nOrganización: Pequeño grupo. NAAA\nDesarrollo; Se colocan los niños en filas de seis o\napretados. A la señal todos los niños han de girar len\ntamente hacia la izquierda y quedar con las manos apoyadas en el suelo, el cuerpo\nsuelo y las piernas encima del compañero que antes tenía delante, Sólo el último niño\n| do han de caminar hasta que se rompa el ciempiés.\nReglas: Sin reglas.\nVariantes: Sín variantes",
+      "groupings": [
+        "Pequeño grupo. NAAA"
+      ],
+      "objectives": [
+        "Desarrollar la precisión en el Nes"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-020",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material. 1",
+      "space": "Pista polideportivo gimnasio 4",
+      "intensity": "Media",
+      "description": "Etapas Primaria Grático:\nCielo: 23\nLugar: Pista polideportivo gimnasio 4\nMaterial: Sin material. 1\nObjetivo a desarrollar: Desarrollar la precisión en el\n¿iominio del cuerpo. .\nBloque específico: ELEMENTOS PSICOMOTORES AN AA\nBÁSICOS. PANA\nOrganización: Gran grupo.\nDesarrollo: Los niños se cogen de las mantos for\nimando una fila, excepto uno que se va. Entonces el\nhasta que todos quedan envueltos, sin que en ningún momento sc suelten de las mau\nque ha permanccido fuera vuelve y ha de deshacer el lío sin romper la cadena form\nReglas: Sin reglas.\nVariantes: En lugar de iniciar el juego en il, se hace en corro, todos cogidos de las\nvariantes s para niños mayores.",
+      "groupings": [
+        "Gran grupo."
+      ],
+      "objectives": [
+        "Desarrollar la precisión en el"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-022",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio. 4",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Gráfico:\nCielo: 1-2:3\nLugar: Pista polideportiva o gimnasio. 4\nObjetivo desarrollar: Mejorar el conocimieno y | 44\ncontrol del cuerpo en diferentes siunciones de juego. IS\n' Bloque específico: ELEMENTOS PSICOMOTORES 4 1\nBÁSICOS. nn\nOrganización: Por parejas mm\nDesarrollo: Un alumno coge del brazo al compañero,\ny sin que éste lo mire, con la yema de los dedos. los\nva pasando por todo el antebrazo. El otro trata de ave\nEl niño riguar el momento en que las yemas de los dedos de su compañero llegan la altura del codo.\npor los Reglas: El que no tien los jos cerrados debe realizar el cosquilleo de forma lento.\nVariantes: Percibir el momento en que los dedos del compañero llegan tocar otra parte de nues\ntro cuerpo (muñeca, tobillo, rail, etc.)\nos. Esta",
+      "groupings": [
+        "Por parejas mm"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-024",
+    "data": {
+      "age": "Primaria",
+      "material": "Chapas. - mE",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria Gráfico:\nCiclo: 1-23 ÓN\nLaya Pista polideportiva o gimnasio, e\nMaterial: Chapas. - mE\nObjetivo a desarrollar: Desarrollas las posibilidades ao YA 27 s\nBloque específico: ELEMENTOS PSICOMOTORES\nBÁSICOS. =- 4\nOrganización: Pequeño gropo. pie E\nDesarrollo: Se colocan las chapas formando letras y -\nVartantes: Utilizar otros materiales para formar las palabras. Formar sílabas o pala\nchapas.",
+      "groupings": [
+        "Pequeño gropo. pie E"
+      ],
+      "objectives": [
+        "Desarrollas las posibilidades ao YA 27 s"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-025",
+    "data": {
+      "age": "Primaria",
+      "material": "Cassette y música variada. 7 ba",
+      "space": "Pista polideportiva o gimnasio ; d>- 2%",
+      "intensity": "Media",
+      "description": "'\nEtapa: Primaria Gráfico:\niodo: 1-23\nLugar: Pista polideportiva o gimnasio ; d>- 2%\nMaterial: Cassette y música variada. 7 ba\ne Objetivo desarrollar: Desarrollar la tensión-elaja- ¿ls?\n1] ción a través de diversas situaciones licas Í E E\nÁ loque específico: ELEMENTOS PsICoMOTORES [2] E RE\n1] BÁSICOS, te\nÑ Organización: Gran grupo. FA j Ñ\nDesarrollo: Al son de la música los alumnos se mo- j Ñ /\nverán y bailarán ocupando el espacio que quieran.\nCuando la música deje de sonar se quedarán inmóvi-\ncatan. Los.\nReglas: Sólo se moverán cuando la música suene.\nobjetos Variantes: Seguir el ritmo de la música sin mover los pies. Seguir el ritmo de la música sólo con\nlos brazos.",
+      "groupings": [
+        "Gran grupo. FA j Ñ"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-026",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material, YA",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Grálico:\nCiclo: 1-2\nMaterial: Sin material, YA\n- Objetivo a desarrollar: Desarrolla las diferentes Pe\nMs posibilidades de acción y movimiento del cuerpo y de ] / s\nBloque específico: ELEMENTOS PSICOMOTORES / a\nBÁSICOS. |\nOrganización: Individual.\nDesarrollo: Cada alumno se desplazará por el espa\ncio imaginando que lleva un palo largo de uno de los\ne Reglas: Sólo sc usa la parte cogida para trasladar el palo.\nVariantes: Llevar el palo con diferentes partes del cuerpo (mano, rodilla, pie, etc). Idem, pero\npor parejas.",
+      "groupings": [
+        "Individual."
+      ],
+      "objectives": [
+        "Desarrolla las diferentes Pe"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-027",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio Lo",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Gráfico:\nCiclo: 1-23 _\nLugar: Pista polideportiva o gimnasio Lo\np Material: Sin material\nposibilidades de acción y movimiento del propio vd\nBloque específico: ELEMENTOS PSICOMOTORES\n| BÁSICOS.\nDesarrollo: Por parejas, uno dibuja con alguno de sus\nadivinaro.\nReglas: Realizar los movimientos lentamente\nVariantes: Dibujar palabras, cifras y objetos",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-029",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio s 2",
+      "intensity": "Media",
+      "description": "] | ELEMENTOS PSICOMOTORES BÁSICOS. ESQUEMA CORPORAL. 37\n] Etapa: Primaria, Gráfico:\nHe\n. | Lugar: Pista polideportiva o gimnasio s 2\ntí Materia: Sín materia. 1 PR\n; Objetivo a desarrollar: Identificar y utilizar posturás pa EA\ni corporales diversas Ro » yA\nBloque específico: ELEMENTOS PSICOMOTORES Dú E 7 8\nBÁSICOS. És h ñ NA\nOrganización: Por parejas ÓN /\nDesarrollo: Flxionar y extender en todos los senti | Y\ndos el tronco de un compañero que está sentado y\nofrece cierta resistencia.\nReglas: No realizar movimientos bruscos que puedan causar lesiones,\nVariantes: ¡Doblar las ramas! Flexionar y extender los brazos o las piernas de un compañero que\nopone cierta resistencia.",
+      "groupings": [
+        "Por parejas ÓN /"
+      ],
+      "objectives": [
+        "Identificar y utilizar posturás pa EA"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-030",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin materia 0 Ñ",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapas Primaria Gráfico:\nCiclo: 1-2\nLaugars Pista polideportiva o gimnasio.\nHA Material: Sin materia 0 Ñ\nObjetivo a desarrollar: Inriorzar diferents partes\ncorporales por medio de la relajación de\nBloque específico: ELEMENTOS PSICOMOTORES | / DON\nÑ V BÁSICOS. b á\nOrganización: Gran grupo. / /\nDesarrollo; Nombrar diferentes materials y objetos\ncaracterísticos por su dureza o su blandura e imitar.\nlos: algodón, hierro, muñeco de goma, piedra, goma\nespuma, ete\nReglas: Estar atentos alas indicaciones del profesor\nVariantes Cambiar los objetos imitar.",
+      "groupings": [
+        "Gran grupo. / /"
+      ],
+      "objectives": [
+        "Inriorzar diferents partes"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-032",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material IA da",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria. Gráfico:\nCiclo: 1-2: ————\nMaterial: Sin material IA da\nObjetivo a desarrollar: Desarrollar la percepción es /\npacial através del juego /\nBloque específico: ELEMENTOS PSICOMOTORES\nBÁSICOS.\nOrganización: Pequeño grupo.\nindicaciones del profesor. Vamos a agrupamnos en el\npacio posible. Hacemos una serpiente lo más larga. Hacemos una serpiente lo más co\nReglas: Siempre tienen que estar todos los alumnos del grupo en contacto, No se pl",
+      "groupings": [
+        "Pequeño grupo."
+      ],
+      "objectives": [
+        "Desarrollar la percepción es /"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-033",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio ñ",
+      "intensity": "Media",
+      "description": "] ELEMENTOS PSICOMOTORES BÁSICOS. PERCEPCIÓN ESPACIAL — 39\nEtapas Primaria. Grálico:\nCielo: 1-2\nLagar: Pista polideportiva o gimnasio ñ\nAS Materials Cuerdas, pelotas E\nObjetivo a desarrollar: Ser capaz de ocupar racio- o O\núalmente el espacio mayor o menor. o A\noque específico: ELEMENTOS PSICOMOTORES |. [|\nBÁSICOS. E\nOrganización: Pequeño grupo.\nDesarrollo: Cada grupo con cuerdas unidas por los ,\nextremos formando un círculo, Cada niño coge con\nuna mano la cuerda y, tirando de ell, intentar llegar\nal tesoro (pelota) que estará situado a unos dos metros de cada niño.\nReglas: No soltarse nunca de la cuerda,\nVariantes: Sín variantes,",
+      "groupings": [
+        "Pequeño grupo."
+      ],
+      "objectives": [
+        "Ser capaz de ocupar racio- o O"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-037",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Gráfico:\nCielo: 12 a\nLugar: Pista polideportiva o gimnasio. +\nMaterial: Sin materia, yr 3 D y SS\n. Dijetivo:a dalla aca (E UN\n$ orientarse según los elementos que lo componen. Ef\nBloque específico; ELEMENTOS PSICOMOTORES Lada\n0) BÁSICOS. PATA\n| Organización: Individual. Ñ AM\nDesarrollo; Todos libres por el espacio. Las cuatro [*% ls A\nesquinas de la pisa corresponden a una zona determi-\nnada: mar, barco, playa, tierra, Se nombra una de\nestas zonas y deben ir slIlo antes posible. A a voz de “maremoto” deben acudir a una zona segu-\napio ra, playa o iera para no ahogarse.\nReglas: Estar atentos alas indicaciones del profesor.\nVariantes: Cambio de lugares.",
+      "groupings": [
+        "Individual"
+      ],
+      "objectives": [
+        "Estructurar el espacio y orientarse según los elementos que lo componen."
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-039",
+    "data": {
+      "age": "Primaria",
+      "material": "Cuerdas y pañuelos.",
+      "space": "Pista polideportiva o gimnasio. vi",
+      "intensity": "Media",
+      "description": "42 LOS JUEGOS ENLA EDUCACIÓN FÍSICA DE LOS 6 A LOS 12 AÑ\n| Lugar: Pista polideportiva o gimnasio. vi\nMaterial: Cuerdas y pañuelos.\np al pa\n| reacción ante estímulos tctils nm\nBloque específico: ELEMENTOS PSICOMOTORES\nBÁSICOS. A]\nOrganización: Por parejas. ly\nDesarrollo: Uno detrás del otro con dos trozos de\n«cuerda, uno en cada mano. El de atrás va dirigiendo al\nde la cuerda a izquierdas, el de delante debe girar hacia este lado, e igualmente cuan\nReglas: El de detrás no puede hablar\n] Variantes: Salir odo el grupo a la ve? y establecer una meta. Preijar un recorrido.",
+      "groupings": [
+        "Por parejas. ly"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-040",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material Í 1",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Ciclo: 1-23\nMaterial: Sin material Í 1\nObjetivo a desarrollar: Desarrollar la velocidad de 4 7\nreacción y agilidad. M h\nBloque específico: ELEMENTOS PSICOMOTORES Ñ\nBÁSICOS. Ñ\nOrganización: Individual. V i /\nDesarrollo: El profesor indica una posición y los\nalumnos deben adoptar la contraria con rapidez,\nReglas: El último y los que se equivoquen quedan\neliminados.",
+      "groupings": [
+        "Individual. V i /"
+      ],
+      "objectives": [
+        "Desarrollar la velocidad de 4 7"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-042",
+    "data": {
+      "age": "Primaria",
+      "material": "Objetos diversos. Mm ' 4 ;",
+      "space": "Pista polideportiva o gimnasio a i",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Gráfico:\nCielo: 1-2-3 -\nLugar: Pista polideportiva o gimnasio a i\nMaterial: Objetos diversos. Mm ' 4 ;\nObjetivo a desarrollar: Desarrollar la percepción es h\n4 Bloque específico: ELEMENTOS PSICOMOTORES | '\nBÁSICOS. i á\nÚ Organización: Pequeño grupo. 1] 1]\nDesarrollo: Se colocan varios objetos encima de la\nz mesa, y la vista de cada grupo. Se les dice que cic-\nrren los ojos un momento, y el profesor esconde uno\nde los objetos. Cuando los niños abren los ojos deben de adivinar que objeto falta.\ncid Reglas: No abrir os ojos mientas se esconde el objeto.\nVariantes: Cambiar los objetos de disposición.",
+      "groupings": [
+        "Pequeño grupo. 1] 1]"
+      ],
+      "objectives": [
+        "Desarrollar la percepción es h"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-043",
+    "data": {
+      "age": "Primaria",
+      "material": "Pañuelos. 4 V",
+      "space": "Pista polideportiva o gimnasio, E",
+      "intensity": "Media",
+      "description": "'\n]\n44 LOS JUEGOS ENLA EDUCACIÓN FÍSICA DE LOS 6 A LOS 12 AÑ\ni ESTE ACCION A A\n¿\nCielo: 1-23\n| Lugar: Pista polideportiva o gimnasio, E\n[ Material: Pañuelos. 4 V\nObjetivo a desarrollar: Reconocer la distancia con 1\n| \"oque específico: ELEMENTOS PSICOMOTORES 4\nBÁSICOS.\n| Organización: Pequeño grupo. ] ñ\nl Desarrollo: Cinco miembros del grupo forman un\ncírculo, el sexto está en el centro sentado y con los\n| jos vendados. Este debe adivinar quién ha realizado\nel sonido.\nReglas: Silo adivina se sienta on el grupo y se queda el que ha sido descubierto.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Pequeño grupo. ] ñ"
+      ],
+      "objectives": [
+        "Reconocer la distancia con 1"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-048",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio.",
+      "intensity": "Media",
+      "description": "Etapas Primaria Gráfico:\nCielo: 1-2\n| Lugar: Pista polideportiva o gimnasio.\nObjetivo a desarrollar: Mejorar la percepción espa /\ncial a través del juego. '\noque específico: ELEMENTOS PSICOMOTORES | A.\nBÁSICOS. /\nOrganización: Por parejas.\nestos se separan lo más alejados posible, cuando el\nprofesora diga “a juntarse”, deben andar hacia dean\nle sin chocar hasta llegar a juntarse con el compañcro. Al cambiar la orden “a separa\nVariantes: Realizarlo de espaldas andando hacia atrás.",
+      "groupings": [
+        "Por parejas."
+      ],
+      "objectives": [
+        "Mejorar la percepción espa /"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-050",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio o",
+      "intensity": "Media",
+      "description": "Etapa: Primaria. Gráfico:\nCiclo: 2:\nLugar: Pista polideportiva o gimnasio o\nN Objetivo a desarrollar: Desarrollar la autonomía y V U\nN confianza personal, a á 1\ny Bloque específico: ELEMENTOS PSICOMOTORES\n| BÁSICOS. Ñ /\nOrganización: Pequeño grupo. Lara)\nDesarrollo: Grupos de seis, situados en círculo\nmenos uno que queda fuera. Éste corriendo alrededor\ndel círulo tocará a un compañero diciendo “VEN\" o\nsa VETE”, Al oír “VEN”, el tocado le persigue intentando cogerle antes de llegar al hueco dejado\npor él. Si oye “VETE”, él tocado corre en sentido contrario intentando ocupar el hueco dejado.\nReglas: El que no ocupa el hueco continua el juego\nVariantes: Sin variantes.",
+      "groupings": [
+        "Pequeño grupo. Lara)"
+      ],
+      "objectives": [
+        "Desarrollar la autonomía y V U"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-052",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material og",
+      "space": "Pisa polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapas Primaria Gráfico:\nCiclo: 1-2\nLugar: Pisa polideportiva o gimnasio\nMaterial: Sin material og\nObjetivo a desarrollar: Utilizar los cambios de di-\nrección para dar respuestas motrices adecuadas. 1] /\nBloque específico: ELEMENTOS PSICOMOTORES /\nBÁSICOS. ú I\nOrganización: Individual\nDesarrollo: Los niños son vehículos que se desplazan\nde ellas.\nVariantes: Se puede acelerar, frenar o i marcha atrás.",
+      "groupings": [
+        "Individual"
+      ],
+      "objectives": [
+        "Utilizar los cambios de di"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-053",
+    "data": {
+      "age": "Primaria",
+      "material": "Balones, bancos suecos, colchonetas, ec. z Pa ñ",
+      "space": "Pista polideportiva o gimnasio dá",
+      "intensity": "Media",
+      "description": "]\nEtapa: Primaria. Gráfico:\nCielo: 1-2\nÑ Lugar: Pista polideportiva o gimnasio dá -\n1 Material: Balones, bancos suecos, colchonetas, ec. z Pa ñ\n== ss Ñ á boa! e\nObjetivo a desarrolla: Utilizar los cambios de di- NO RA\nrección para dar respuestas motrices adecuadas. 0\nloque específico: ELEMENTOS PSICOMOTORES |... M 1 2\nBÁSICOS. 1 0 4\ny Organización: Individual l\nringún objeto, ni chocar con un compañero, porel es-\npacio y caminos que éstos delimitan.\nReglas: Todo aquel que toque algún objeto o salte será penalizado con un punto.\nVariantes: Cogidos de las manos por parejas o tíos.",
+      "groupings": [
+        "Individual l"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-054",
+    "data": {
+      "age": "Primaria",
+      "material": "Pelotas la '",
+      "space": "Pista polideportiva o gimnasio. 1]",
+      "intensity": "Media",
+      "description": "Etapas Primaría. Gráfico:\nCielos 1-2\nLugar: Pista polideportiva o gimnasio. 1]\nMaterial: Pelotas la '\nMN 3\nObjetivo a desarrollar: Identifica direcciones y di\ntancias ya percibidas, y, /\ny Bloque específico: ELEMENTOS PSICOMOTORES\nBÁSICOS. ¡ m\nOrganización: Tríos. /\nDesarrollo: Observar el desplazamiento de un com-\npañero. El segundo lo reproduce conduciendo una pe-\nTota con el pic. El tercero lo reproduce botando una\npelota. Cambio de rol\nReglas: Lo importante es que se siga el mismo recorrido.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Tríos. /"
+      ],
+      "objectives": [
+        "Identifica direcciones y di"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-055",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio. E",
+      "intensity": "Media",
+      "description": "Etapas Primaria Gráfico\nCielo: 2-3\nLugar: Pista polideportiva o gimnasio. E\nObjetivo a desarrollar: Identificar direcciones y dis\nBloque específico: ELEMENTOS PSICOMOTORES\nBÁSICOS Ñ\nOrganización: Individual -\nDesarrollo: A cada alumno se le señala un recorrido\npara que lo memorice y lo reproduzca posteriormente\nsobre el terreno. ¿Quién mo se equivoca?\nReglas: Cada alumno deberá memorizar un recorrido diferente.\nVariantes: Intercambiar recorridos.",
+      "groupings": [
+        "Individual"
+      ],
+      "objectives": [
+        "Identificar direcciones y dis"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-057",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio. ARES",
+      "intensity": "Media",
+      "description": "'\nEtapa: Primaria Grálico:\nCiclo: 1-2\nLugar: Pista polideportiva o gimnasio. ARES\n] Marea Serna DRA\nObjeto a desarrollar: Recortes 16 diia da y y te\nrelación a un sonido. dos hd\nl \"oque específico: ELEMENTOS PsiCOMoTORES | ¿1 y |\nS BÁSICOS. WM, Ñ\noril ¡\nDesarrollo: Desplazarse de espalda hacia el lugar 1\ndonde suena la palmada dada por el profesor.\nReglas: No vale mirar, Cada vez que el profesor cam-\nbic de lugar dará una nueva palmada.\nVariantes: El alumno se debe detener cuando crea encontrarse a menos de dos metros de donde.\nse produjo el sonido,",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-058",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio. ,",
+      "intensity": "Media",
+      "description": "Etapas Primaria Gráfico:\nCiclo: 12\ná Lagar: Pista polideportiva o gimnasio. ,\n; Materia: Sin material. 34\nOhjetivo a desarrollar: Reconocer distancias en ve= |, | /\nA lación a un sonido, 1]\nBloque específicos ELEMENTOS PSICOMOTORES /\na BÁSICOS. 1 ya as\nOrganización: Pequeño grupo. i\nDesarrollo: Colocarse en grupos de seis, Cinco están\na dos metros de la sspalda del compañero. Uno pro\nduce un md. El sexto debe adivinar quién lo hizo\nReglas: No vale mirar\nVariantes: Dos han de producir el sonido ala vez.",
+      "groupings": [
+        "Pequeño grupo. i"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-059",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin mateia. Ú",
+      "space": "Pista polideportiva o gimnasio. 4",
+      "intensity": "Media",
+      "description": "Í\n\" Su JPOSIUEGOS EN DA POOCACION ISLA DEA RADOSAA\nEtapas Primaria Gráfico:\nCielo: 1-2-3\n| Lugar: Pista polideportiva o gimnasio. 4\ni Material: Sin mateia. Ú\nnj le a ¡ 1\nbjetivo a desarrollar: Desarrollar la capacidad E:\n' para apreciar diferentes distancias. / Í\n| loque específica: ELEMENTOS PSICOMOTORES EN\nBÁSICOS. /\n' Organización: Gran grupo. 1]\nDesarrollo: Se colocan cuatro o cinco niños sobre la\nlínea central pudiendose desplazar lateralmente sobre\nella. El resto colocados a un lado otro de la misma,\ntratando de pasar por los huecos sin ser tocados, Los cinco primeros tocados se la qued\nReglas: No se puede salir de las Iíacas marcadas para pasar\nVariantes: Aumentar o disminuir el número de los que forma ls barera.",
+      "groupings": [
+        "Gran grupo. 1]"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-060",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio. ¡",
+      "intensity": "Media",
+      "description": "Cielo: 1-2\nLugar: Pista polideportiva o gimnasio. ¡\nObjetivo a desarrollar; Desarrollar diferentes con:\nBloque específico: ELEMENTOS PSICOMOTORES 1] /\nBÁSICOS. 1]\nDesarrollo: Se distribuye por toda la pista el mate\nrial. Los alumnos se desplazan libremente por todo el\nespacio. A la señal “A la caza\", cada alumno deberá\ntintas. Gana el que más puntos acumule\nReglas: Si dos alumnos cogen a la vez el mismo material han de sollarlo e ira busca\npuntuaciones de los objetos se habrán fijado de antemano.",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-061",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio, a",
+      "intensity": "Media",
+      "description": "] | ELEMENTOS PSICOMOTORES BÁSICOS. PERCPECIÓN TEMPORAL 53\nRA Elementos psicomotores básicos\nPercepción temporal\nÑ Etapa: Primaria Gráfico:\nCiclos 1-2\nLugar: Pista polideportiva o gimnasio, a\nMaterial Si muera, p 14\nObjetivo a desarrollar: Desarrollar la percepción AN e P\nmp rurés 0 ju JA Í ¡ s\nBloque específicos ELEMENTOS PSICOMOTORES [2-1 *, ae\nBÁSICOS. 0\nOrganización: Gran grupo, FAY A\nDesarrollo: Realizar mímicamente los gestos de una\nacción de película conocida y propuesta por ls alum-\nmos a diferentes velocidades (Tarzán, por ejemplo),\nReglas: Sin reglas.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Gran grupo, FAY A"
+      ],
+      "objectives": [
+        "Desarrollar la percepción AN e P"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-062",
+    "data": {
+      "age": "Primaria",
+      "material": "Un balón. Ñ",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "ES!\nEtapa: Primaria. Gráfico:\nCielo: 1-23\nMaterial: Un balón. Ñ\nObjetivo a desarrollar: Desarrollar la percepción V\ntemporal a través del juego. , /\nBloque específico: ELEMENTOS PSICOMOTORES | y, / ,\nBÁSICOS. A /\nOrganización: Pequeño grupo. /\nesca Desarrollo: Se lanza la pelota al aire y se dice el\n\"nombre de un compañero que ha de coger el balón y\ndecir \"pies quietos”. Tras dar tres pasos, tiará dar al\notro, Las que se quede más cerca, el cual luego lanzará el balón al ire diciendo otro nombre.\nReglas: No lanzar cl balón ala cara del compañero.\nVariantes: Sín variantes",
+      "groupings": [
+        "Pequeño grupo. /"
+      ],
+      "objectives": [
+        "Desarrollar la percepción V"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-063",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Logars Pista polideportiva o gimnasio. vi\nObjetivo a desarrollar: Desarrollar la percepción 1) :\n\"loque específico: ELEMENTOS PSICOMOTORES 1\nEOS hi4!",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "Desarrollar la percepción 1) :"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-064",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material, 7 Y",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapas Primaria, Gráfico:\nCiclo: 1-2\nMaterial: Sin material, 7 Y\nObjetivo desarrollar: Ser capaz de adaptar el mo- 4\nroca, \" / /\nBloque específico: ELEMENTOS PSICOMOTORES | f '\nBÁSICOS. A\nDesarrollo: Se forman dos grupos. Cuando suene un\ngolpe de pandero un grupo persigue al otro. Al ofrdos\ngolpes se cambinel papel.\nReglas: Sín reglas\nVariantes: Cambio de personajes.",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-065",
+    "data": {
+      "age": "Primaria",
+      "material": "Cascabeles , h",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "] ELEMENTOS PSICOMOTORES BÁSICOS. PERCPECIÓN TEMPORAL — 55\n'\no Etapa: Primaria, Gráfico:\nCiclo: 1-2 -\n: Lusgars Pista poideporiv o gimnasio, 2d\nMaterial: Cascabeles , h\nObjetivo a desarrollar: Desarrollar la percepción /\nsemporal a través de diferentes juegos motrices. -\nBloque específico: ELEMENTOS PsicomororÉs | > $\nBÁSICOS. 4 8 A\nOrganización: Pequeño grupo Y\nDesarrollo: Se establecen grupos de seis y uno hace 0\nde oso, los otros con los ojos vendados. El oso con un\ncascabel. Intentar orientarse y seguir la música del\ncírculo, csscabel del oso\nReglas: Sin reglas.",
+      "groupings": [
+        "Pequeño grupo Y"
+      ],
+      "objectives": [
+        "Desarrollar la percepción /"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-066",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio. A 8",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Gráfico:\nCielo: 1-2\nde Lugar: Pista polideportiva o gimnasio. A 8\nMateria: Sin material fame] 1\nY] Objetivo a desarrollar: Conocer y estructurar el i m\ntiempo y los elementos que lo integran: apreciación ! y\nde velocidades y distancias. 1\nBloque específico: ELEMENTOS PSICOMOTORES y\n. BÁSICOS. 1)\nOrganización: Pequeño grupo. ' V\nDesarrollo: Se esconden los niños y son descubiertos\npor los sonidos que hacen, sin moverse y el que se\nqueda tendrá que buscarles\nReglas: Sin reglas\nVariantes: Sin variantes.",
+      "groupings": [
+        "Pequeño grupo. ' V"
+      ],
+      "objectives": [
+        "Conocer y estructurar el i m"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-067",
+    "data": {
+      "age": "Primaria",
+      "material": "Picas,",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "|\n' 56 LOSJUEGOS EN LA EDUCACIÓN FÍSICA DE LOS 6 A LOS 12 AÑ\nCielo: 1-23\n| Material: Picas,\nObjetivo a desarrollar: Conocer y estructurar el a\nl tiempo y los elementos que lo integran: apreciación\nde velocidades y distancias. .\nBloque específico: ELEMENTOS PSICOMOTORES\nl BÁSICOS.\n| Organización: Tríos .\nDesarrollo: Por tríos, en fila y sujetando dos picas\n| con las manos, Intentar realizar un circuito en el\nmenor tiempo posible\n| Reglas: No soltarse en ningún momento de las picas\nVariantes: Sin variantes.",
+      "groupings": [
+        "Tríos ."
+      ],
+      "objectives": [
+        "Conocer y estructurar el a"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-069",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio. .",
+      "intensity": "Media",
+      "description": "E ELEMENTOS PSICOMOTORES BÁSICOS. PERCPECIÓN TEMPORAL 57\n'\n' Etapas Primario. Gráfico:\n, Lugar: Pista polideportiva o gimnasio. .\nMA temporal. a] e\nBloque específico: ELEMENTOS PSICOMOTORES ¡Ea\nA BÁSICOS. tt a\nAM Organización: Gran grupo. - 15\nIN Desarrollo: Todos tumbados en el suelo con los ojos\ncerrados. El profesor cronometra un minuto. Cada\nalumno debe contar mentalmente un minuto. Ver que\n“lumno se aproxima mís al tiempo establecido, Cuando el alumno cree que ha pasado el minuto,\nse pone en pie\nReglas: Gana el que se aproxima más al minuto.\nVariantes: Sín variantes.",
+      "groupings": [
+        "Gran grupo. - 15"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-070",
+    "data": {
+      "age": "Primaria",
+      "material": "Aros.",
+      "space": "Pista polideportiva gimnasio.",
+      "intensity": "Media",
+      "description": "Ciclo: 2-3\n4 Lagar: Pista polideportiva gimnasio.\nMaterial: Aros.\nObjetivo a desarrollar: Desarrollar la percepción\nBloque específico: ELEMENTOS PSICOMOTORES\nV BÁSICOS.\nOrganización: Por parejas.\nDesarrollo: Uno de la pareja con los ojos cerrados.\nEl otro sti un aro a una distancia determinada y sín\nque lo vea el compañero. El que tiene los ojos tapa:\ndos debe llegar hasta el aro mediante las indicaciones del otro miembro de la pareja. Las palma-\nias ds rápidas Significa que va por buen camino y las palmadas lentas que no lo lleva\nReglas: Estar muy atento a las indicaciones del compañero.\nVariantes: En vez de palmadas, golpeo con otras partes del cuerpo,",
+      "groupings": [
+        "Por parejas."
+      ],
+      "objectives": [
+        "Desarrollar la percepción"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-072",
+    "data": {
+      "age": "Primaria",
+      "material": "Pandero. Ed",
+      "space": "Pista polideportiva o gimnasio.",
+      "intensity": "Media",
+      "description": "Etapas Primaria Gráficos\nCiclo: 1-2\nLugar: Pista polideportiva o gimnasio.\nMaterial: Pandero. Ed\nObjetivo a desarrollar: Identificar el orden creciente\n¿e velocidad y responder con cambios de ritmos. : /\nBloque específico: ELEMENTOS PSICOMOTORES s\nBÁSICOS, 7 N\nOrganización: Gran grupo. o\nDesarrollo; Los alumnos/as se colocan libremente\nEE profesor irá tocando el pandero con diferentes ri\nmos; a ritmo de “blancas”, deberán desplazarse al\nReglas: Sin reglas.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Gran grupo. o"
+      ],
+      "objectives": [
+        "Identificar el orden creciente"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-074",
+    "data": {
+      "age": "Primaria",
+      "material": "Triángulo PA * 1",
+      "space": "Pista polideportiva o gimnasio. %",
+      "intensity": "Media",
+      "description": "Lugar: Pista polideportiva o gimnasio. %\n4 Material: Triángulo PA * 1\ntanda del sol paa ajuar o dp Y y\n> Bloque específico: ELEMENTOS PSICOMOTORES | / E)\nBÁSICOS. /",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-075",
+    "data": {
+      "age": "Primaria",
+      "material": "Balones y pandero. - 7",
+      "space": "Pista polideportiva o gimnasio. bs",
+      "intensity": "Media",
+      "description": "Etapas Primaria Gráfico:\nLagar: Pista polideportiva o gimnasio. bs\nMaterial: Balones y pandero. - 7\nObjetivo a desarrollar: Reconocer la duración de un |, /\nsonido ajustándola a movimientos. a\nBloque específico: ELEMENTOS PSICOMOTORES ;\nBÁSICOS. /\nOrganización: Gran grupo. /\nDesarrollo: Marcar ritmos lentos y rápidos con el >\nbalón, según el sonido escuchado, variando la altura\ndel bote\nReglas: Sin reglas,\nVariantes: Sin variantes.",
+      "groupings": [
+        "Gran grupo. /"
+      ],
+      "objectives": [
+        "Reconocer la duración de un |, /"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-077",
+    "data": {
+      "age": "Primaria",
+      "material": "Si mater 1 » LA",
+      "space": "Pista polideportiva o gimnasio. de",
+      "intensity": "Media",
+      "description": "A\ntapas Primaria. Gráfico:\nCiclo: 23\nLugar: Pista polideportiva o gimnasio. de\nMaterial: Si mater 1 » LA\n: Objetivo a desarrollar: Reproducir secuencias rími= | ¿y AN CBS\nBloque específico: ELEMENTOS PSICOMOTORES Ñ\n0 BÁSICOS. ea 4\nt Organización: Por pareja. rt el\npe Desarrollo: Un alumno/a realiza una estructura rítmi- 1 * Ñ\n¿a con las manos para que su compañero la reproduz-\nca utilizando otra parte de su cuerpo (con los pies,\ngolpeos en los muslos, callos, chasquidos, ete.)\nReglas: Sin reglas.\nVariantes: Utilizar instrumentos musicales.",
+      "groupings": [
+        "Por pareja. rt el"
+      ],
+      "objectives": [
+        "Reproducir secuencias rími= | ¿y AN CBS"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-078",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio,",
+      "intensity": "Media",
+      "description": "Ciclo: 1-2\nLugar: Pista polideportiva o gimnasio,\nMaterial Aros / LA\nObjetivo a desarrollar: Utilizar variaciones en dura- a\nción para adecuar los desplazamientos. Pa 10)\nJ Bloque específico: ELEMENTOS PSICOMOTORES o_ y\nj BÁSICOS.\nOrganización: Pequeño grupo. nt\nDesarrollo: Un componente del equipo rodará el aro,\nmientras éste ueda todos los componentes del equipo\ndarán palmadas. Cuando pare el aro, dejarán de dar\npalmadas.\nSd Reglas: Sin reglas.\nVariantes: Desplazarse mientras rueda el ro, mover piernas o bazas, ec",
+      "groupings": [
+        "Pequeño grupo. nt"
+      ],
+      "objectives": [
+        "Utilizar variaciones en dura- a"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-082",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material e AN)",
+      "space": "Pista polideportiva o gimnasio.",
+      "intensity": "Media",
+      "description": "Etapa: Primaria. Gráfico:\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material e AN)\nrales en duración < .\nBloque específico: ELEMENTOS PSICOMOTORES 1!\nBÁSICOS. / 7\nMN Organización: Individual\nal mismo siguiendo la misma estructura rímica para\nir y volver\nRerlas: Sin reglas.\nVariantes: Caminando, corriendo y saltando.\npul, ale",
+      "groupings": [
+        "Individual"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-085",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pita polideportiva o gimnasio. A",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Gráfico:\nCielo: 1-2\nLugar: Pita polideportiva o gimnasio. A\nE Materials Casete y ina nan |\n| jetivo a desarrollar: Identiiar ritmos y respon- ely” dl\nloque específico: ELEMENTOS PSICOMOTORES | / ES z\n. BÁSICOS. í Ph; de\n> Desarrollo: Expresar las acciones descritas en una A 1 5d\ncanción infantil, cantando simultáneamente\nReglas Sin sega\nVariantes: Cambiar de canciones",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-088",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Gráfico:\nCielos 1-2\nLugar: Pista polideportiva o gimnasio\nObjetivo a desarrollar: Sceuenciar gestos motrices V\n«on estructuras temporales repetitivas\nBÁSICOS. Ñ\nOrganización: Gran grupo.\ntar la primera vez, con todas las palabras, A la siguien\nde vez se elimina una palabra sustituyendola por un\nVariantes: Sin variantes",
+      "groupings": [
+        "Gran grupo."
+      ],
+      "objectives": [
+        "Sceuenciar gestos motrices V"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-089",
+    "data": {
+      "age": "Primaria",
+      "material": "Balones. E JS",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "S ELEMENTOS PSICOMOTORES BÁSICOS. PERCPECIÓN TEMPORAL 67\nDo | [ Juegon89 SIGO AL BALÓN\nEtapas Primaria. Gráfico:\nCiclo: 1\nz i Loogar: Pista polideportiva o gimnasio. n\na Material: Balones. E JS\n1] Objetivo desarrollar: Adecuar la velocidad de des- LM A\nÁ úplazamiento la que nos marca un objeto dado. 2 a\n: Bloque específico: ELEMENTOS PSICOMOTORES E o\nde BÁSICOS. / dd\n+ Organización: I08ividual ¿ do .\n5 Desarrollo: Cada alumno lanzará su balón rodando y\nde una banda a otra. Una vez que se suelta el balón se\ndeberá correr adecuando la velocidad de desplaza-\nvez habrá miento para llegar antes que, después de, al mismo tiempo que, etc\nReglas: Cada vez sele dará más impulso al balón,\nVariantes: Igual, pero por parejas marcando el compañero a velocidad.",
+      "groupings": [
+        "I08ividual ¿ do ."
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-091",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio %.",
+      "intensity": "Media",
+      "description": "Agilidad\nEtapas Primaria. Gráfico:\nCiclo: 1-2\nLugar: Pista polideportiva o gimnasio %.\nObjetivo a desarrollar: Desarrollar la agilidad «tra DN\nvés de diferentes formas de desplazamiento\nloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\ntamaños formando un camino (de piedras) no recto y\nhay que ir pasando de piedra en piedra sin caer al río\nEl que se caiga se moja.\nReglas: No se puede salir del ao.\nVariantes: A mavor velocidad. a pata coja, con los dos pies juntos, poniendo obsiá",
+      "groupings": [
+        "Gran grupo."
+      ],
+      "objectives": [
+        "Desarrollar la agilidad «tra DN"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-092",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin materia",
+      "space": "Pista polideportiva o gimnasio,",
+      "intensity": "Media",
+      "description": "Etapas Primaria Gráfico:\nLugar: Pista polideportiva o gimnasio,\nMaterial: Sin materia\nObjetivo a desarrollar: Desarrollar la agilidad a tra |\nvés de diferentes formas de desplazamiento. ” AN) /\nBloque específico: COORDINACIÓN MOTRIZ. mi A\nOrganización: Gran grupo, 1]\nDesarrollo; Todos los alumnos excepto uno (que es-\niará en el centro de la pisa) se sitúan en el fondo de\n¿e un alurmno todos corcerán hacia el ot fondo. El\nque ca tocado se quedará también en l centro para capturar alos demás compañer\ndesplazar por la línea central\nVariantes Los alumnos del centro pueden coger de la mano.",
+      "groupings": [
+        "Gran grupo, 1]"
+      ],
+      "objectives": [
+        "Desarrollar la agilidad a tra"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-093",
+    "data": {
+      "age": "Primaria",
+      "material": "Globos y cuerdas, AÑ 4 . z",
+      "space": "Pista polideportiva o gimnasio. El",
+      "intensity": "Media",
+      "description": "IS COORDINACIÓN MOTRIZ. AGILIDAD 69\nEtapa: Primaria Gráfico:\nCielo: 1-23\nLugar: Pista polideportiva o gimnasio. El\n)JES Material: Globos y cuerdas, AÑ 4 . z\nObicivo a desarolr;Desacotar la sisas y1a | 4 Ad ph\ncoordinación dinámica-general. il / SS 9 o\nBloque específico: COORDINACIÓN MOTRIZ. 1] E\nDesarrollo: Cada jugador se ata cuatro globos (dos | NY oh\n“en las muñecas y dos en los tobillos). Se reparten los Y\n= jugadores de los dos equipos por todo el campo y a la\n= señal todos los jugadores intentarán explotar los glo-\n< bos delos del equipo contrario. Gana el equipo que antes explote los globos del otro equipo.\nReglas: No vale salirse del campo marcado para el juego.\nVariantes: Un equipo sin globos y el otro con globos. Cambiar el número de participantes.\nCambiar la colocación delos globos.\n$, los aros",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-095",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin materia. 1",
+      "space": "Pista polideportiva o gimnasio.",
+      "intensity": "Media",
+      "description": "Etapa: Primaria Gráfico:\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin materia. 1\nObjetivo a desarrollar: Desarrollar la agilidad y la V My\nevordinación dinámico general a través de distintas J\nBloque específico: COORDINACIÓN MOTRIZ. ' /\nOrganización: Por pareja. CA\nDesarrollo: Un alumno sentado en el suelo se en ;\ncuenta abriendo y cerrando las piernas mientras otro\nalumno de pie junto a él, ha de saltar de modo alter\n\"ativo ene las piermas de su compatero que las abre y las ciera para no pisarlo.\nReglas: Coordinar los movimientos con los del compañero.\nVariantes: Un alumno con las piernas en el suelo con las piernas juntas y extendidas\nhacía uno y otro lado mientras el compañero las salta con los pies juntos.",
+      "groupings": [
+        "Por pareja. CA"
+      ],
+      "objectives": [
+        "Desarrollar la agilidad y la V My"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-097",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material Ñ E %",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Ss COORDINACIÓN MOTRIZ. AGILIDAD m\ntapas Primaria Gráfico:\nCiclo: 1-23 ”\npr Leger Ps ca PE\na) Material: Sin material Ñ E %\nUN Objetivo a desarrollar: Desarrollar la agilidad y la Ñ AN\n' Cseiación dámico gnc aia dos. | 2 $e\n9 Auegos moirices. El ER\n15] Bloque específico: COORDINACIÓN MOTRIZ. o Pt\ny Oreanicacións Pee, po, PA\nDesarrollo: Los alumnos colocados en grupos se van: dl\n¿desplazando libremente por el campo. Uno del grupo\n+s el jefe. A la señal dl profesor el je se desplaza\nhasta un determinado lugar sentándose en l suelo y todos los demás deben ir inmediatamente 2\nsentarse detrás, posteriormente van cambiando los papeles del jefe.\nea Reglas: Estar siempre ateos a los movimientos del jee.\nVariantes: Sin variames.",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "Desarrollar la agilidad y la Ñ AN"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-098",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material gaEcón",
+      "space": "Pista polideportiva o gimnasio. .",
+      "intensity": "Media",
+      "description": "Etapas Primaria Gráfico:\nCiclos 1-2\nLugar: Pista polideportiva o gimnasio. .\nMaterial: Sin material gaEcón\n| coordinación dinámica ona através de diferents AEPIPA .\nOrganización: Pequeño grupo. NN,\nDesarrollo: Los grupos forman una fila y deberán ir Ñ\nagarrados de los tobillos del compañero que tenemos\ndaa mación de oruga. ¿Qué grupo consigue recorrer la mayor distancia sin romperse?\nReglas: No soltar munca al compañero de delante.",
+      "groupings": [
+        "Pequeño grupo. NN,"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-100",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin materia.",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria Gráfico:\nCiclo: 1-2\nMaterial: Sin materia.\nObjetivo a desarrollar: Desarrollar la agilidad y el |\ncurp ERA\nBloque específico: COORDINACIÓN MOTRIZ.\nDesarrollo: Se colocan todos los alumnos en fila\nReglas: Es obligatorio estar siempre en movimiento. Hay que procurar que todo\npasen por la cabeza de la fila\nVariantes: Las que adopten los alumnos que hacen de padres,",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "Desarrollar la agilidad y el"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-102",
+    "data": {
+      "age": "Primaria",
+      "material": "Cuerdas y plvotes. TT",
+      "space": "Pista polideportiva o gimnasio, dd",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Gráfico:\nCielo: 1\nLugar: Pista polideportiva o gimnasio, dd\nMaterial: Cuerdas y plvotes. TT\nObjetivo a desarrollar: Desarrollar la agilidad y la Mm\ncoordinación dinámica general a través de distintas\ne Formas de desplazamiento. 2\n(4 Bloque específico: COORDINACIÓN MOTRIZ. TAO $\nOrganización: Por parejas.\nDesarrollo: Se colocan dos filas de dos alumnos/as\ndetrás de una línea a una distancia de 15 metros apro.\nximadamente y frente a cada una de las filas se colo\ndas. Cuando se realiza el recorrido y se traspasa la línea saldrá la pareja siguiente.\nReglas: Si se desata la cuerda tendrán que parar y volverla a atar\nVariantes: Sin variantes",
+      "groupings": [
+        "Por parejas."
+      ],
+      "objectives": [
+        "Desarrollar la agilidad y la Mm"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-103",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio,",
+      "intensity": "Media",
+      "description": "Etapa: Primaria Gráfico:\nCiclo: 1-2 O\nLugar: Pista polideportiva o gimnasio,\nMaterial: Sin material\nObjetivo a desarrollar: Desarrollar la agilidad y la | 4\n:oordinación dinámica general 2 -\nBloque específico: COORDINACIÓN MOTRIZ Ys\nOrganización: Gran grupo. -\nDesarrollo: El profesor indicará distintas posiciones SÍ\nque deberán adoptar los alumnos/as. Siempre en mo- ce sa\nvimiento, el prolesor podrá decir: “sentados”, “de ro-\ndillas”, “boca abajo”, “de espalda”, et, Mientras que\nlos aluinnos se encuentran en alguna de estas posiciones, deberá tener los pies en\nace así, podrá ser cogido por un alumno que se “queda * ocupando el lugar de éste\nReglas: No se puede estar quieto con los pies en el suelo.\nVariantes: Las partes que se deben mantener en alto, en vez de ser los pics, pueden",
+      "groupings": [
+        "Gran grupo."
+      ],
+      "objectives": [
+        "Desarrollar la agilidad y la | 4"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-104",
+    "data": {
+      "age": "Primaria",
+      "material": "Picas. Ani",
+      "space": "Pista polideportiva o gimnasio. ¡",
+      "intensity": "Media",
+      "description": "Etapa: Primaria Gráfico:\nCielo: 1-2\nLugar: Pista polideportiva o gimnasio. ¡\nMaterial: Picas. Ani\nBloque espeílico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo. 1\nDesarrollo: Se colocan en clculo con una pica en la Prada\nmano en sentido vertical. A una voz determinada del\nReglas: Hay que evitar que la pica del compañero toque el suelo.\nVariantes: Ir cambiando la orden \"derecha\" e \"izquierda",
+      "groupings": [
+        "Gran grupo. 1"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-105",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin materia ¿",
+      "space": "Pa poliócpontiva o gimnasio ION",
+      "intensity": "Media",
+      "description": "s COORDINACIÓN MOTRIZ. AGILIDAD. 75\nEtapas Primaria. Gráfico:\nCielo: 1-2 =—Á\nLugar: Pa poliócpontiva o gimnasio ION\nMaterial: Sin materia ¿\ncoordinación dinámica general AE V 15)\nS y oque específico: COORDINACIÓN MOTRIZ. AA í '¡\nse Organización: Pequeño grupo. a |\nDesarrollos En cícoo, cogidos de las manos uno de MNAE\nJos alumnos inicia un movimiento de ondulación con\nuno de sus brazos, y el que está asu lado transmite el\nmovimiento al compañero siguiente.\nsino lo Reglas: Realizar los movimientos de Forma coordinada.\nVariantes: Ir aumentando los segmentos que se mueven. Vaiar la velocidad del movimiento\ntras las",
+      "groupings": [
+        "Pequeño grupo. a"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-106",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin materia. EXFO A",
+      "space": "Pista polideportiva o gimnasio. 6 7",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Gráfico:\nCielo: 1-2\nd Lugar: Pista polideportiva o gimnasio. 6 7\n4 Material: Sin materia. EXFO A\n¡ Objetivo a desarrollar: Desastollar la agilidad y la\ncoordinación dinámica general a través de distintas\nFormas de desplazamientos. 2\n1] Bloque específico: COORDINACIÓN MOTRIZ. A | 1]\nDesarrollo: Cada alumno deberá tocar las rodillas a\n¿tro compañero y evitar que se las toquen a él\nReglas: Contabiliza el número de rodillas que tocas.\nVariantes: Otras partes del cuerpo. Por parejas, enlazados de las manos.",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "Desastollar la agilidad y la"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-107",
+    "data": {
+      "age": "Primaria",
+      "material": "Balones",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "¡ A AAA AA\nh\nEtapa: Primaria. Gráfico:\nCiclo: 1\nl Lugar: Pista polideportiva o gimnasio. l |\nMaterial: Balones. |\n|\nObjetivo a desarrollar: Desarrollar la agilidad y la\ncoordinación dinámica general Qe V\nBloque específico: COORDINACIÓN MOTRIZ. / . l 0\nOrganización: Individual. 1]\n| Desarrollo: Lanzando una pelota contra la pared, sal-\n| tarla cuando de un bote en el suelo. ¿De cuántas for- +\nmas puedes saltarla? Ahora lanzamos contra la pared\nl e intentamos dar un giro antes de cogerla. ¿Cuántos\ngiros puedes dar?, ¿qué otras acciones se pueden realizar?\n! Reglas: Sin reglas.\nVariantes: Ver desarrollo.\n|\n|",
+      "groupings": [
+        "Individual"
+      ],
+      "objectives": [
+        "Desarrollar la agilidad y la coordinación dinámica general"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-108",
+    "data": {
+      "age": "Primaria",
+      "material": "Balones. A]",
+      "space": "Pista polideportiva o gimnasio, 4",
+      "intensity": "Media",
+      "description": "Etapa: Primaria. Gráfico:\nCielo: 1-23 NS\nLugar: Pista polideportiva o gimnasio, 4\nMaterial: Balones. A]\nObjetivo a desarrollar: Desarrollar la agilidad y la\nformas de desplazamientos.\nBloque específico: COORDINACIÓN MOTRIZ. va\nDesarrollo: Carreras de relevos llevando un balón.\nparte del cuerpo distinta ala utilizada por el compañero anterior\nVariantes: Sin variantes.",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "Desarrollar la agilidad y la"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-111",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio. 4",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Gráfico\nCiclo: 1-2\nLugar: Pista polideportiva o gimnasio. 4\nObjetivo a desarrollar: Desarollar la coordinación 4\nBloque específico: COORDINACIÓN MOTRIZ. Ó ;\nOrganización: Gran grupo. 4\nan a unos metros de él. El que se la queda dice\n“Zanahoria, zanahoria, color o lugar... (un color un\nlugar cualquiera)” corriendo detrás del resto de los\nqueda toca alguno se intercambia el papel.\nReglas: Si el que se la queda no toca a nadie vuelve a empezar\nVariantes: Varia lu forma en que se desplazan los jugadores. Partir de diferentes pos",
+      "groupings": [
+        "Gran grupo. 4"
+      ],
+      "objectives": [
+        "Desarollar la coordinación 4"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-112",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria Gráfico:\nCiclo: 1-23 z\nObjetivo a desarrollar: Mejorar la coordinación di-\n\"loque específico: COORDINACIÓN MOTRIZ '\nOrganización: Gran grupo.\nperal: Los jueves ronrras | ELA: A» Y\nde tocar al otro, corriendo alrededor del círeuto. El. 21222\nperseguido para salvarse debe agacharse detrás de un\nReglas: Si es capturado se cambian los papeles\nVariantes: Vaiar la forma de desplazarse ola posición de parida del círeulo",
+      "groupings": [
+        "Gran grupo."
+      ],
+      "objectives": [
+        "Mejorar la coordinación di"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-113",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Ss COORDINACIÓN MOTRIZ. AGILIDAD 79\nEtapas Primaria. Gráfico:\nCiclo: 1-2 —\nagar: Pista polideportiva o gimnasio. AN\nmn Materials Un balón AO:\nPE e A Va Al\nY y control dl cuerpo, YAA,\nloque específico: COORDINACIÓN MOTRZ 101% A\nOrganización: Gran gropo. O |\nDesarrollo; Los jugadores se dividen en dos grupos. FAS AAS\nUn grupo se coloca en el exterior de un círculo gran- da AA ñ\nde pintado en el suelo, el otro grupo en el interior -\nLos de fuera tratan de dar con el balón a cualquiera\nqueseta de los que están dentro. Cuando alguno lo consigue, intercambia su puesto con\nReglas: Los de dentro tienen que cvitar ser tocados\nVariante: Jugar con varios balones, Si alguno de los jugadores de dentro intercepta el balón tan-\nnes zado, evitando que toque el sueo, los dos grupos intercambian sus papeles.",
+      "groupings": [
+        "Gran gropo. O"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-114",
+    "data": {
+      "age": "Primaria",
+      "material": "Cuerda larga. saco blando o dos balones de",
+      "space": "Pista polideportiva gimnasio, BRA Ú",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Gráfico:\nCielo: 2-3 m\nLugar: Pista polideportiva gimnasio, BRA Ú\nMaterial: Cuerda larga. saco blando o dos balones de\nomacespuma con red. ¡ A\nBloque específico: COORDINACIÓN MOTRIZ.\nV Organización: Gran grupo. bh 4 1]\nDesarrollo: Los jugadores se colocan formando un\ncírculo amplio. Desde el centro el profesor hará girar\npersegul. Cuando el profesor diga “entramos”, todos los alumnos intentarán entrar al centro sn ser tocados\nporel saco, al decir \"saliros” lo inverso. Gana el último en ser eliminado.\nReglas: El último que entre o salga queda eliminado. Todos los tocados por el saco también\nVariantes: Formas de entrar y sali: de espaldas, lateralmente,",
+      "groupings": [
+        "Gran grupo. bh 4 1]"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-115",
+    "data": {
+      "age": "Primaria",
+      "material": "Balones blandos. S",
+      "space": "Pista polideportiva o gimnasio,",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Gráfico:\nCielo: 23\nLugar: Pista polideportiva o gimnasio,\nMaterial: Balones blandos. S\nObjetivo a desarrollar: Mejorar la coordinación y el birras\ncontrol del cuerpo. Nil\nBloque específico: COORDINACIÓN MOTRIZ,\nOrganización: Pequeño grupo,\nDesarrollo: Diez alumnos se colocan pegados a una\n(uno con el pie y otro con la mano) dos balones imen\ntando dar a los fusilados, si te dan quedas eliminado,\nLos dos últimos serán los siguientes en lanzar.\nReglas: Hay que moverse, salar gira... pura evitar scr dado.\nVariantes: Aumenta el número de los que lanzan",
+      "groupings": [
+        "Pequeño grupo,"
+      ],
+      "objectives": [
+        "Mejorar la coordinación y el birras"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-116",
+    "data": {
+      "age": "Primaria",
+      "material": "Globos no",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "tapas Primaria, Gráfico:\nCiclo: 1-2\nLaugar: Pista polideportiva o gimnasio ¡\nMaterial: Globos no\nObjetivo desarrollar: Desarrollar la destreza coor o\ndinativa y el control del cuerpo, \" / y\nBloque específico: COORDINACIÓN MOTRIZ,\nDesarrollo; Cada alumno se desplaza con un globo\nentre las picrnas, intentando quitar cl globo a los\nVariantes: Una vez quitado el globo se ha de explotar sentándose encima del globo c",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-117",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio. 24 a.",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Gráfico:\nCiclo: 1-2\nLugar: Pista polideportiva o gimnasio. 24 a.\nMaterial Sin material Plss SN\nObjetivo a desarrollar; Desarrollar la coordinación Me Al a\ny control del cuecpo.\nBloque específico: COORDINACIÓN MOTRIZ. z by\nOrganización: Pequeño grupo. - |\nDesarrollo: Dos jugadores eligen un número secreto RRA\ny se colocan frente a frente, de pie y con las manos ¿\ngurradas. Comienzan a contar en voz alta mientras el\nresto de los jugadores cruzan el pasillo que dejan\nentre sus cuerpos. Cuando los que cuentan llegan al número secreto, bajan los brazos y el que 0\nlos que queden dentro se unen a los que cuentan, colocándose en orro, eligiendo un nuevo núme-\nro secreto y repitiendo el juego de la misma manera hasta que todos son capturados.\nReglas: No se pueden soltar de las manos\nVariantes: Idem pasando por debajo delas piernas de los que se quedan.",
+      "groupings": [
+        "Pequeño grupo."
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-118",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria Grálico:\nCielo: 23\nMaterial UnarpelotaUlanday aos e ASA\nÑÑ Objetivo a desarrollar: Mejorar la coordinación di- ' 1]\nnámica general. 6\nBloque específico: COORDINACIÓN MOTRIZ, id PR! i\nOrganización: Gran grupo.\nDesarrollo: Se distribuyen los aros por todo el espa: Es\ncepto “el cazador” que recibe una pelota blanda y se\ndé la señal, todos deben cambiar de aro, mientras el cazador trata de tocar con la pelota a cual\nReglas: Hay que cambiar de aro cada vez que se dé a señal",
+      "groupings": [
+        "Gran grupo."
+      ],
+      "objectives": [
+        "Mejorar la coordinación di- ' 1]"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-119",
+    "data": {
+      "age": "Primaria",
+      "material": "Aros y picas con Soportes. 1",
+      "space": "Pista polideportiva. / ¿",
+      "intensity": "Media",
+      "description": "Ciclo: 1-2:3\nLugar: Pista polideportiva. / ¿\nMaterial: Aros y picas con Soportes. 1\nObjetivo u desarrollar: Desarrollar la agilidad y la\nBloque específico: COORDINACIÓN MOTRIZ,\nOrganización: Pequeño grupo,\nDesarrollo: Se divide la clase en cuatro grupos, uno. | /\nen cada esquina del campo, equidistantes con el cen\nts0. A la señal del profesor sale el primero de cada fila\naciendo el recorido indicado (salida desde su esquí\nma hacia la pica de su diagonal, con giro previo l aro central). Gana punto para su e\nmero que pisa el aro central (charco)\nVariantes: Colocación en la salida; tambados, sentados... Tipo de recorrido y forma",
+      "groupings": [
+        "Pequeño grupo,"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-121",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "] COORDINACIÓN MOTRIZ. EQUILIBRIO. 33\nco Coordinación motriz\nEquilibrio\nEtapa: Primaria. Gráficos\nCiclo; 1-2\nLasgar: Pista polideportiva o gimnasia y\n¡ Materia: Bancos suecos, picas, pelotas, vallas iia A\nA Objetivo a desarrollar: Mantener posiciones de |] YA ==\ny equilibrio dinámico con y sin objetos. Al Á==\nBloque específico: COORDINACIÓN MOTRIZ. == =W\noe pri Organización: Individual uN\nsimilar al dibujo. Los niños deberán ir pasando por |\nesplaza- ¿ilos manteniendo el equilibrio, saltando o rodeando\nlas dificultades u obstáculos evitando caer enel preci-\npico (suelo),\nReglas: No caerse al precipicio. Hasta que no ha terminado un alumno no empieza el siguiente",
+      "groupings": [
+        "Individual uN"
+      ],
+      "objectives": [
+        "Mantener posiciones de |] YA =="
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-122",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "RO\nEtapa: Primaria Gráfico:\nCielo: 1-2\nLugar: Pista polideportiva o gimnasio\nMaterials Sin material,\nObjetivo a desarrollar: Mantener posiciones de 4\nequilibrio estático y dinámico. to A\nBloque específico: COORDINACIÓN MOTRIZ, hos y\nOrganización: Gran grupo. Í\ntun, dos, tres...\". Los demás mientras dice dicha\ne Frase deberán desplazarse hacia la pared. En el mo.\ndele mento en el que termina de decir la frase éste vuelve la cabeza y los demás deben quedar inmóvi\nTes. Aquellos niños que no se paren deberán comenzar desde el punto de partida\nReglas: No empujar, No seguir desplazándose una vez terminada la frase, El alumno cara a la\npared no puede volverla cabeza antes de terminar la fase.\nVariantes: A la pata coja, en cuadrupedia.",
+      "groupings": [
+        "Gran grupo. Í"
+      ],
+      "objectives": [
+        "Mantener posiciones de 4"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-123",
+    "data": {
+      "age": "Primaria",
+      "material": "Pequeños sacos rellenos de arena, vallas",
+      "space": "Pista polideportiva o gimaasio,",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Gráfico:\nCiclo; 1-2\nLugar: Pista polideportiva o gimaasio,\nMaterial: Pequeños sacos rellenos de arena, vallas\nbancos, picas. 1]\nObjetivo a desarrollar: Mantener posiciones de\nequilibrio dinámico con objetos. ir\nRoque específico: COORDINACIÓN MOTRIZ '\nDesarrollo: Cada alumno con un saquito de arena\nque deberá colocar en la cabeza tendrá que realizar un\ncircuito con diversos obstáculos sin que esté se le\ncaiga,\nReglas: Hacer todo el cirevito despacio,\nVariantes: Cambia el lugar de transporte del saquito (cabeza, hombro, mano).",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "Mantener posiciones de"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-125",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio. ¡ ES Y",
+      "intensity": "Media",
+      "description": "g COORDINACIÓN MOTRIZ. EQUILIBRIO. 85\nEtapas Primaria. Gráfico:\nCiclo: 1-2 ; -\ni Lugar: Pista polideportiva o gimnasio. ¡ ES Y\n»atecil Bos blandos | !\n> Objetivo a desarrollar: Mejorar la autonomía en di- 2] . p.)\ny? frentes desplazamientos con equilibrio. aho tbol\ne) ¡loque específico: COORDINACIÓN MOTRIZ, IS\nA Organización: Gran grupo. ral e\nDesarrollo: Delimitado un espacio (campo de voley), + 1 3\nen el interior estarán diez niños desplazándose libre ¡ E:\nmente; por el contorno se stóan los restates que son\nlos cazadores, a la pata coja y con una pelota blanda\nenla mano. A la señal tratan de dar con la pelota alos del interior que sn on dados se van sen-\ntando; cuando todos son dados otos diez ocupan su lugar.\nReglas: Tira de cuello hacia abajo. Lanzar siempre 4 pata coja.\nVariantes: Los tocados sustituyen inmediatamente al cazador que les ha dado. Los conejos pue-\n¿ln tirar los balones sueltos los cazadores ques son dados se sentarán.",
+      "groupings": [
+        "Gran grupo. ral e"
+      ],
+      "objectives": [
+        "Mejorar la autonomía en di- 2] . p.)"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-126",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapas Primaria Gráfico:\nCielo: 1-2-3\nIN] Material: Sin material\nObjetivo a desarrollar: Mantener posiciones de |\nVA ¿quilt estáico sin pbjetos 2\nBloque específico: COORDINACIÓN MOTRIZ. FA Al\nVA Organización: Por parejas. |\nDesarrollo: Uno adopta una posición de equilibrio y\nel otro trata de desequilibrarle haciéndole reír me\nrol\nReglas: No vale empujar\nVariantes: Cambiar las posiciones de equilibrio.",
+      "groupings": [
+        "Por parejas."
+      ],
+      "objectives": [
+        "Mantener posiciones de"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-129",
+    "data": {
+      "age": "Primaria",
+      "material": "Dos saltómetros y una cuerda. ml > TN",
+      "space": "Pita polideportiva o gimnasio.",
+      "intensity": "Media",
+      "description": "? ,\nJS le] COORDINACIÓN MOTRIZ, EQUILIBRIO. 87\nFtapa: Primaria Gráfico:\nCiclo: 1-24\nÑ Lagar: Pita polideportiva o gimnasio.\nA Material: Dos saltómetros y una cuerda. ml > TN\né Objetivo a desarrollar: Mantener posiciones de A\nel esuilbrio dinámico sin objetos. ho 4 PET Ve\nY ¡loque específico: COORDINACIÓN MOTRIZ. La,?+ NA\nSE Organización: Gran grupo. 1 7 dd f\ny Desarrollo: Los alumnos se colocan en fila india y de ad\nA “uno en uno deben pasar por debajo de un listón colo- A\ncado frente a ellos, Es obligatorio pasar siempre de\nfrente al lisón.\nReglas: El listón se irá bajando progresivamente, ganando el alumno que menos veces deribe el\nlistón.\na quedan Variantes: Pasar bajo el listón por parejas con las manos cogidas",
+      "groupings": [
+        "Gran grupo. 1 7 dd f"
+      ],
+      "objectives": [
+        "Mantener posiciones de A"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-133",
+    "data": {
+      "age": "Primaria",
+      "material": "Varias sllas ta A ! de",
+      "space": "Pista polideportiva o gimnasio ¿E dd",
+      "intensity": "Media",
+      "description": "S COORDINACIÓN MOTRIZ. EQUILIBRIO 89\nEtapa: Primaria. Gráfico:\nCielo: 1-2 ma\nLugar: Pista polideportiva o gimnasio ¿E dd\n+4 Material: Varias sllas ta A ! de\n/ Danos nea MRE ¿0 MEA\nj ecpilibrio estático, di r\n, Bloque específico: COORDINACIÓN MOTRIZ. Gi 1] Ñ\nOrganización: Gran grupo. AA ¡05\nDesarrollo: Se colocan los jugadores en un círculo Ha, on H\nsubidos a una silla, a la señal del profesor, irán saltan- A]\ndo de uno en uno, al cacr deben permanecer en posi-\nción de equilibrio estático, 4 la vez deben de esquivar\nsará aser los que ya han saltado\nReglas: No sc puedo tocara los compañeros. Los que se mueven o tocan a algún compañero vucl-\nven asaltar\nVariantes: Saltar desde un escalón",
+      "groupings": [
+        "Gran grupo. AA ¡05"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-135",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material.",
+      "space": "Pista polideportiva o gimnasio. 2i ¡",
+      "intensity": "Media",
+      "description": "Cielo: 1-2\nLugar: Pista polideportiva o gimnasio. 2i ¡\nMaterial: Sin material.\nObjetivo a desarrollar: Mantener posiciones de A\nequilibrio estático y dinámico, Na\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Por parejas ,\nDesarrollo: En cada parejo habrá una muñeca y un ' /\nnido, este dará cuerda en la espalda u su muñeca que\ndebe andar con movimientos típicos de este juguete\nal ir acabándose la cuerda deberá ir parando hasta\nquedar inmóvil\nReglas: Cuando se acabe la cuerda, se cambiarán os roles.\nVariantes: Realizarlo en dos grupos.",
+      "groupings": [
+        "Por parejas ,"
+      ],
+      "objectives": [
+        "Mantener posiciones de A"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-136",
+    "data": {
+      "age": "Primaria",
+      "material": "Banco sueco",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria. Gráfico:\n| Ciclo: 2-3\n| Lugar: Pista polideportiva o gimnasio. 0 /\n| Material: Banco sueco. / ] pe\n| Objetivo a desarrollar: Controlar posiciones de í + ñ\nequilibrio estático y dinámico. / 1] NES\nBloque específico: COORDINACIÓN MOTRIZ. Lal E\nOrganización: Por parejas. / / lÉ / A\nDesarrollo: Se colocan dos niños encima del banco >\nsueco y con una mano tienen que empujar al pirata\nsin caerse.\nReglas: Gana el niño que no se caiga del banco.\nVariantes: Variar la posición, de rodillas, en cuclillas.",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Controlar posiciones de equilibrio estático y dinámico"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-137",
+    "data": {
+      "age": "Primaria",
+      "material": "Unos saquitos de arena. bra d7 1",
+      "space": "Pista polideportiva o gimnasio. 4D. 5",
+      "intensity": "Media",
+      "description": "Ss COORDINACIÓN MOTRIZ. EQUILIBRIO 91\ntapa: Primaria Gráfico:\nCiclo: 1-2\nLugar: Pista polideportiva o gimnasio. 4D. 5\nMaterial: Unos saquitos de arena. bra d7 1\nObjetivo a desarrollar: Controlar posiciones de Nola EN J\n5 equilibrio estático y dinámico con objetos Ps ne]\n% Bloque específico: COORDINACIÓN MOTRIZ. LA, E / ZA\nOrganización: Pequeño grupo. E Í p\ny A Es |\n/ rá un saquito de arena en la cabeza y avanzará hasta E\nvna línea de meta fijada, cuando regresa le del sa-\nquito al compañero de su equipo y este hace lo\nmismo, as hasta quelo realicen los 6\nReglas: Sie saquito se cae deberá comenzar ota vez\nVariantes: Con el saquito en el hombro.",
+      "groupings": [
+        "Pequeño grupo. E Í p"
+      ],
+      "objectives": [
+        "Controlar posiciones de Nola EN J"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-138",
+    "data": {
+      "age": "Primaria",
+      "material": "Cuerdas,",
+      "space": "Pista polideportiva o giras",
+      "intensity": "Media",
+      "description": "Ciclo: 1\nLugar: Pista polideportiva o giras\nJ Material: Cuerdas,\nObjetivo a desarrollar: Mejorar posiciones de equi:\nñ lirio estático y dinámico.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo\nculebras haciendo curvas, en los extremos los dos\ngrupos. Deberán ir pisando la cuerda con ambos pies\nReglas: No se puede pisar al compañero de delante. Los pies deben ir uo delante de otro tocán\nVariantes: Pisar con os pies juntos pero laterales",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Mejorar posiciones de equi:"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-140",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material. HR /",
+      "space": "Pista polideportiva o gimnasio. /",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Gráfico:\nCiclo: 1-23\nLugar: Pista polideportiva o gimnasio. /\nMaterial: Sin material. HR /\nObjetivo a desarrollar: Mantener posiciones de 1\nequilibrio dinámico,\nBloque específicos COORDINACIÓN MOTRIZ. FR\nOrganización: Por parejas / i\nDesarrollo: Se agrupan los alumnos por parejas sien d\n¿do uno “A” y otro “E”. A la señal “A” trata de tocara\n43\" que adopta una postura inmóvil, así no puede ser\nReglas: El que adopta la postura no se pueden mover\nVariantes: Sin variantes.",
+      "groupings": [
+        "Por parejas / i"
+      ],
+      "objectives": [
+        "Mantener posiciones de 1"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-142",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio. \" ? y",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Gráfico:\nCiclo: 2-3\n: Lugar: Pista polideportiva o gimnasio. \" ? y\nObjetivo a desarrollar: Controlar el cuerpo en situa b\nciones de equilibrio dinámico. PA YN\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Por parejas ha PA\ny) Desarrollo: Los jugadores se colocan uno frente a\nñ ¿tto, a una distancia de 1,5 m. se mantienen en equil\nbro sobre el pie derecho, sujetándose el izquierdo por\ndetrás de la espalda con la mano derecha. A una señal\nduda, dan saltos hacía delante tratando de hacer que el contrario pierda el equilibrio, empujándose\n¿on la mano libre, haciendo movimientos de despiste\nReglas: No se pueden agarrar con la mano izquierda.",
+      "groupings": [
+        "Por parejas ha PA"
+      ],
+      "objectives": [
+        "Controlar el cuerpo en situa b"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-144",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria Grálico:\nCiclo: 1-23\nLasgar: Pita polideportiva o gimnasio. ya\nObjetivo a desarrollar: Controlar el cuerpo en situa: A 1\nBloque específico: COORDINACIÓN MOTRIZ. Hi\nOrganización: Gran grupo. pus id\nDesarrollo: Se colocan las sillas formando un corro,\nse sitúan por fuera del mismo. Mientras suena una\nmúsica todos se mueven dando vueltas a las sillas\nCuando la música deja de sonar todos buscan una en la que subirse. El grupo gana",
+      "groupings": [
+        "Gran grupo. pus id"
+      ],
+      "objectives": [
+        "Controlar el cuerpo en situa: A 1"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-145",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pita polideportiva o gimnasio. a '",
+      "intensity": "Media",
+      "description": "s COORDINACIÓN MOTRIZ. EQUILIBRIO. 95\nVAS E uegonc 145 ENREDOS\ntapas Primaria Gráfico:\nciao 123 -\nLagar: Pita polideportiva o gimnasio. a '\ne Por N\nequilirio esco y dinámico. . AE\nÑ Bloque específico: COORDINACIÓN MOTRIZ, / > .\nII orense: rocio gos Epa\nDesarrollo: Se colocan e el suelo 16 aros de curo. | ETS\ncolores, ocupando un espacio de unos metros cuadra- |< = 2” =\ndos. Los jugadores irán ejecutando lo que diga el pro-\nfosos porejemplo: mano izquierda en rojo y pi dere\nMES\nRegla: El grupo se apunta un punto cada vezque todos los jugadores son capaces de cumplirla\neden dada.\nVariantes: Cada jugador realiza, por orden una prueba distinta, Si todos consiguen superarla, el",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-146",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio.",
+      "intensity": "Media",
+      "description": "Etapas Primaria Grático:\nCielo: 2-3\nLugar: Pista polideportiva o gimnasio.\nMaterials Sin material\no Objetivo a desarrollar: Mantener posiciones de\ni equilibrio dinámico,\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Por parejas.\nDesarrollo: Dos jugadores se ponen de pie, uno fren\nte a otro, Ambos levantan la pierna izquierda hasta\ndejasta paralela al suelo. Cada uno agarra, porel tobí-\nll, a pierna del compañero de forma que juntos for\nla vez que iman un figura similar a la “HI”. Una vez que están en equilibrio, intentar saltar juntos, rar aga\necharse y levantarse o cualquier otr cosa sin soltarse,\nReglas: No se pueden soltar.",
+      "groupings": [
+        "Por parejas."
+      ],
+      "objectives": [
+        "Mantener posiciones de"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-147",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "96 LOS JUEGOS ENLA EDUCACIÓN FÍSICA DE LOS 6 A LOS 124\nEtapas Primaria, Gráfico:\nCielo: 1-2 o j\nObjetivo a desarrollar: Mantener posiciones de\nequilibrio. b A\nloque específico: COORDINACIÓN MOTRIZ. \" .\nOrganización: Gran grupo.\nestos se convertirán en árboles (de pic, Mexionando\nuna pierna y apoyando el pie sobre el muslo de la\npierna en apoyo; los brazos representan las ramas),\nrán por un viento suave o fuerte, ete. según las instrucciones que se den.\nReglas: El niño que no mantenga el equilibrio será eliminado.\nVariantes: Mover solo una pure del árbol",
+      "groupings": [
+        "Gran grupo."
+      ],
+      "objectives": [
+        "Mantener posiciones de"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-149",
+    "data": {
+      "age": "Primaria",
+      "material": "Zapatos de los niños. eo. y PR",
+      "space": "Pista polideportiva o gimnasio. pOr",
+      "intensity": "Media",
+      "description": "ss. ' COORDINACIÓN MOTRIZ, EQUILIBRIO 97\nEtapa: Primaria. Gráfico:\nCiclo: 12 —=\n$ Lugar: Pista polideportiva o gimnasio. pOr\n1] Material: Zapatos de los niños. eo. y PR\n? Objetivo a desarrollar: Controlar el cuerpo en posi |... || PA\n2 Bloque específico: COORDINACIÓN MOTRIZ. ls pp ?\n/ Organización: Pequeños grupos. pr, '\ni Deseienor con puja aa | Y 4\nseñal se quitarán todos los zapatos y los juntarán en el. | k\nconto, ellos se quedan alrededor a pata coja en post-\nción de equilibrio. El zapatero de cada grupo tiene\nPa que buscar su zapato u pata coja y después buscar cl de todos los componentes de su grupo.\nReglas: Gana el grupo que antes tenga todos us zapatos. No se puede apoyar el pie en el suelo\nhasta que tenga el zapat.\nVariantes: Cambiar la forma de mantener el equilibrio.",
+      "groupings": [
+        "Pequeños grupos. pr, '"
+      ],
+      "objectives": [
+        "Controlar el cuerpo en posi |... || PA"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-151",
+    "data": {
+      "age": "Primaria",
+      "material": "Botes y balones. N á",
+      "space": "Pista polideportiva o gimnasio. /",
+      "intensity": "Media",
+      "description": "98 — LOSJUEGOS EN LA EDUCACIÓN FÍSICA DE LOS 6 ALOS 12 A\nCoordinación óculo-segmentaria\nEtapas Primaria. Gráfico:\nCiclo: 1-2\nLugar: Pista polideportiva o gimnasio. /\nMaterial: Botes y balones. N á\nObjetivo a desarrollar: Desarrollar la coordinación |, %\nBloque específico: COORDINACIÓN MOTRIZ. Ú ' » |\nOrganización: Por parejas.\npesarrollo; Uno frente otro a unos seis metros de /\ndistancia: en el centro se coloca un bote, bolo 0 simi-\nlar tratan de deribaro alternativamente.\nVariantes: Aumentar distancias. Lanzar con las dos manos, con la derecha, con\near eran rasadales pomo porelemplá aa picos.",
+      "groupings": [
+        "Por parejas."
+      ],
+      "objectives": [
+        "Desarrollar la coordinación |, %"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-153",
+    "data": {
+      "age": "Primaria",
+      "material": "Papelera o bote y balones pequeños. A",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "s COORDINACIÓN MOTRIZ. COORDINACIÓN ÓCULO-SEGMENTARIA 99\na E_ARKRA EEE\nEtapa: Primaria. Gráfico:\nCiclo: 1-2 -\nE. impar Pola aldo ci yA\nco Material: Papelera o bote y balones pequeños. A\nObjetivo a desarrollar: Desarrollar la coordinación e 1] A\nde acciones y movimientos, LS i Ú Í hh 4\n: Bloque específico: COORDINACIÓN MOTRIZ. j ' /\nA pesseralor Doscoa ura censcpparen nea: | PA |\nOS (papelera o bote), en continuo. movimiento, Los Led hor\ndemás con pelotas pequeñas atan de encestar. Cuan-\ndo todas las pelotas están on las cestas, cambio de rol\n(se la quedan otros dos).\nReglas: Los que llevan la cesta no pueden correr\nVariantes: Sin variantes.\naquierda.",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación e 1] A"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-155",
+    "data": {
+      "age": "Primaria",
+      "material": "Botellas de plástico y balones. 4 al y",
+      "space": "Pista polideportiva o gimnasio. A",
+      "intensity": "Media",
+      "description": "Etapas Primaria Gráfico:\nCiclo: 1-23\nLagar: Pista polideportiva o gimnasio. A\nMaterial: Botellas de plástico y balones. 4 al y\nObjetivo a desarrollar: Ser capaz de lanzar, recep- ñ\ncionar y desplazarse con objetos conocidos compo:\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Pequeño grupo.\nDesarrollo: Se colocan las botellas en el centro de la\npista, los jugadores sc colocarán de 8 a 10 metros de\nlas botellas. Lanzaran un balón de forma rodada hacia\nlas botella, cada botella que drriben será un punto.\nReglas: La última botella valdrá dos puntos. No vale traspasar la línea de tirada. Esta\nde tirada\nVariantes: Varar las distancias y situación de las botellas",
+      "groupings": [
+        "Pequeño grupo."
+      ],
+      "objectives": [
+        "Ser capaz de lanzar, recep- ñ"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-156",
+    "data": {
+      "age": "Primaria",
+      "material": "Balones blandos y portería o similar",
+      "space": "Pista polideportiva o gimnasio ¡",
+      "intensity": "Media",
+      "description": "Etapas Primaria Gráfico:\nCielo: 1-2\nLugar: Pista polideportiva o gimnasio ¡\nMaterial: Balones blandos y portería o similar\nObjetivo a desarrollar: Desarrollar la coordinación\ndiera y acia ' 1 ¡ '\nBloque específico: COORDINACIÓN MOTRIZ,\nOrganización: Gran grupo. m e\nDesarrollo: Clase dividida en grupos. Las porterías /\ncolocadas en cada esquina del campo, cada grupo :\nReglas: Lanzar los balones con cuidado.\nVariantes: Con muchos balones.",
+      "groupings": [
+        "Gran grupo. m e"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-157",
+    "data": {
+      "age": "Primaria",
+      "material": "Balones. 200 y TE",
+      "space": "Pista polideportiva o gimmasio.",
+      "intensity": "Media",
+      "description": "S F COORDINACIÓN MOTRIZ. COORDINACIÓN ÓCULO-SEGMENTARIA 101\nEtapa: Primaria Gráfico:\n0 Cicosl\nLugar: Pista polideportiva o gimmasio.\n. Material: Balones. 200 y TE\nhe hjstivo a desarrollar Dosarotlata cordinación | 4 HA 7 TA\ni Organización: Pequeño grupo. TA! 4 A\nDesarrollo: Se sitúan los grupos cada uno dividido [14H AAN\nen dos grupos de cuatro, que se colocan en los extre- t\nmos de la pista. Deben llevar el balón botando de uno\nen uno al otro compañero de la otra fla, quedándose\nen esa fila, el compañero sale hacia la otra. Gana el equipo que primero cambie todos sus miem\nsoto bros de fil\nReglas: Cuando se pierde el balón hay que empezar desde el principio.\nVariantes: Se puede llevar el balón de distintas formas, con una u otra mano. Poner obstáculos.",
+      "groupings": [
+        "Pequeño grupo. TA! 4 A"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-158",
+    "data": {
+      "age": "Primaria",
+      "material": "Balones de psicomotricidad",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria. Gráfico:\nCiclo; 2-3\nLugar: Pista polideportiva o gimnasio. o. ÑN b\nLA Material: Balones de psicomotricidad. / ] k A\n¡ ad\nZe Objetivo a desarrollar: Ser capaz de lanzar, recep- J ai\ndí cionar y desplazarse con objetos conocidos compo- ya (]\nniendo gestos coordinados. / 1] a\nu Bloque específico: COORDINACIÓN MOTRIZ. — \" AA A\nV | Organización: Pequeño grupo. RX A A\n) e Desarrollo: Cinco niños con pelota tratan de dar a los l l\ndemás. El que es dado se queda en posición de tuli-\npán (de pie, con los brazos en cruz y con las piernas\nabiertas). Para ser liberado, otro compañero sin balón debe pasar por debajo de las piernas.\nDespués se intercambian los papeles, quedandose otros cinco a dar con el balón.\nReglas: No quitarse de la posición de tulipán hasta ser salvado por un compañero\nVariantes: Variar el número inicial de los que pillan.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Ser capaz de lanzar, recepcionar y desplazarse con objetos conocidos componiendo gestos coordinados"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-159",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin materia. >",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria Gráfico:\nCielo: 1\nLugar: Pista polideportiva o gimnasio\nMaterial: Sin materia. > -\nObjetivo a desarrollar: Desarrollar la coordinación o\nBloque específico: COORDINACIÓN MOTRIZ >\nOrganización: Por parejas. e Ea\nDesarrollos Por parejas, frente u frente, tendidos en pe\nposición de pronación, intentar aplastar la mano del\nReglas: Establecer tuenos de tirada.\nVariantes: Una mano 0 l otra",
+      "groupings": [
+        "Por parejas. e Ea"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación o"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-160",
+    "data": {
+      "age": "Primaria",
+      "material": "Una pelota grande y una pequeña. yoo",
+      "space": "Pista polideportiva o gimnasio, i",
+      "intensity": "Media",
+      "description": "Etapa: Primaria. Gráfico:\nCielo: 1-2\nLugar: Pista polideportiva o gimnasio, i\nMaterial: Una pelota grande y una pequeña. yoo\nObjetivo a desarrollar: Desarrollar la coordinación Ú\nvisomotiz\nBloque específico: COORDINACIÓN MOTRIZ, y\nOrganización: Gran grupo. V\nDesarrollo: Se forma un círculo. A un niño se le da TT]\nvana pelota grande que será el gato. A. otro niño, situ:\nuierda del anterior, se le da la pelota pequeña que\n¿e intenta atrapar a la rta, es decir, la pelota pequeña que Lambién estará en circula\nVariantes: Se puede introducir una tercera pelota, mediana o de un color determina",
+      "groupings": [
+        "Gran grupo. V"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación Ú"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-161",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "S i COORDINACIÓN MOTRIZ. COORDINACIÓN ÓCULO-SEGMENTARIA 103\napa: Pimara Gráfico:\nCiclo; 1-2 -\nLaugars Pista polideportiva o gimnasio. AOS\n- Matera: Dos o ts petts no muy duras que pue- NT\n¿dan cogerse entre la barbilla y el cuello e li\nObjetivo a desarrollar: Desarrollar la coordinación ¡dl 2\nvisomotiz a través de distintos juegos motrices. pl A\nSe Bloque específico: COORDINACIÓN MOTRIZ. hs 7!\nOrganización: Gran grapo. AA A\nDesarrollo: Se forma un corro. Un niño se coloca AMÑKE\nvna pelota entre la barbilla y el pecho y sin tocarla\ncon las manos pasa a su compañero mas cercano que\nse la coloca en el cuello cogiéndola únicamente con la barbilla y el pecho. La pelota va pasando\nde cuelo en cuello hasta regresar 1 punto de origen\nReglas: Sin seglas\nVariantes: Se puede inventar por tumos otras formas de pasarla pelota: con a axila y un dedo,\n«on la parte posterior dela rodilla y una mano.",
+      "groupings": [
+        "Gran grapo. AA A"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación ¡dl 2"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-163",
+    "data": {
+      "age": "Primaria",
+      "material": "Un cubo, pelotas no muy grandes. '",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria. Gráfico:\nCielo: 1-2\nMaterial: Un cubo, pelotas no muy grandes. '\nObjetivo a desarrollar: Desarrollar la coordinación\nVisomotriz a través de distintos juegos motrices, E] ñ\nBloque específico: COORDINACIÓN MOTRIZ 1\nOrganización: Gran grupo. /\nDesarrollo: El profesor pone en un cubo tantas pelo: Los\ntas como jugadores, menos una. De golpe vacía el\ncubo y cada niño ha de coger una pelota. El niño que\nse quede sin pelota será el encargado de vaciar el\nReglas: Sin reglas.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Gran grupo. /"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-165",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista ideporitós o gimmasio +",
+      "intensity": "Media",
+      "description": "Is COORDINACIÓN MOTRIZ. COORDINACIÓN ÓCULO-SEGMENTARIA _105\nEtapas Primaria. Gráfico:\nCiclo: 2-3\n. DS Lugar: Pista ideporitós o gimmasio +\n4 Material Balones RA\nN Objetivo a desarrollar: Desarrollar la coordinación |, Po q $\n¿culo-pádica a trav de diferents situaciones túdi- [4 AN 7 7\ny Bloque específico: COORDINACIÓN MOTRIZ. 44 A\nOrganización: Pequeño grupo. ll 0]\nl Desarrollo: Grupos de cuatro, Tres de ellos se colo- Ñ\ncan formando un triángulo. Realizan entre ellos pases\ncon el pie. En el centro se colocará el otro alumno\nque intentará interceptar el balón.\nReglas: Al que le inerceptan el balón o da un mal pase se la queda dentro del triángulo.\n\"Variantes: Poner otro balón a los pasadores.",
+      "groupings": [
+        "Pequeño grupo. ll 0]"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación |, Po q $"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-170",
+    "data": {
+      "age": "Primaria",
+      "material": "Una pelota que no sea muy pesada o un globo gigante",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria. Gráfico:\nCiclo: 1-2-3\nLugar: Pista polideportiva o gimnasio. 0 l a á\nD Material: Una pelota que no sea muy pesada o un h Ñ S 1] b h\nh globo gigante. Pg. q / ( o\nyl Objetivo a desarrollar: Desarrollar la coordinación 1] / Load (\nvisomotriz a través de distintos juegos motrices. 1) 1) pS\n| y Bloque específico: COORDINACIÓN MOTRIZ. V Ja Va b\nl Organización: Gran grupo. uz A MS\nDesarrollo: Para jugar se ha de formar un grupo de\ndiez personas como máximo. El juego consiste en\nelevar la pelota evitando que caiga al suelo. Se puede\ntocar con cualquier parte del cuerpo, sin establecer ningún tipo de orden entre los jugadores aun-\nque una misma persona no puede tocar la pelota dos veces consecutivas. Se cuentan las veces que\nla pelota es golpeada para saber cuánto tiempo se consigue mantenerla en el aire\nReglas: Sin reglas.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación visomotriz a través de distintos juegos motrices"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-174",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapas Primaria Gráfico:\nCiclo: 1-2:\n2 Materials Canicas. A]\nal Objetivo a desarrollar: Mejorar la coordinación de A o\ny acciones y movimientos. 1h\n4 -\n) Bloque específico: COORDINACIÓN MOTRIZ. 4\nOrganización: Pequeño grupo.\nDesarrollo: Se hace un círculo en el suelo y se coo\nalumnos se sitúan a una distancia del círculo y con\nuna canica cada uno, El juego consiste en sacar todas\nxo, Así sue las canicas del círculo.\nVariantes; En vez de con canicas con chapas otros materiales",
+      "groupings": [
+        "Pequeño grupo."
+      ],
+      "objectives": [
+        "Mejorar la coordinación de A o"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-175",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio. »",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Gráfico:\nCiclo: 1-23 ——\nLugar: Pista polideportiva o gimnasio. »\n; A]\nObjetivo a desarrollar: Desarrollar la coordinación\nFloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Pequeño grupo.\nDesarrollo: Se dibuja en el suelo una diana con dife\nrentes puntuaciones. A cierta distancia se colocan los\nalumnos detrás de una línea con una canica cada uno\nen su poder. ¿Qué alumno conseguirá mayor puntua\nción en tres lanzamientos?\nReglas: Ganará el que más puntos tenga tras realizar sus lanzamientos.\nVariantes: Incluir puntuaciones negativas que reten puntos. Lanzar otos objetos",
+      "groupings": [
+        "Pequeño grupo."
+      ],
+      "objectives": [
+        "Desarrollar la coordinación"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-177",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "os COORDINACIÓN MOTRIZ. COORDINACIÓN ÓCULO-SEGMENTARIA 111\nEtapa: Primaria. Gráfico:\nCiclo: 1-23\nLagar Pista polideportiva gina. ys\nMaterials Pelotas y una zapatilla. %e Ñ ¡\nñi Objetivo desarrollar: Desarrollar la coordinación OLA\nMo llomcade diran del Juego E a A\nAO loque específico: COORDINACIÓN MOTRIZ. US de: qe\nMa Organización: Pequeño grupo. E\nsitúan uno en frente de otro, colocando entre ellos una 1\nE zapatilla. la señal del profesor, los componentes de\nno y otro equipo lanzarán las pelotas conta la zapa-\n(lt para hacerla llegar al campo del equipo contrario.\nReglas: Ganará el equipo que consiga hacer llegar la zapatilla al campo contrario, o el que una\nvez finalizado el juego tenga la zapatilla más alejada de su campo.\n\"Variantes: Colocar la zapatilla dentro de un círculo para ver que equipo consigue sacarla antes.\nUtilizar dos o más zapatillas en el desarrollo del juego.",
+      "groupings": [
+        "Pequeño grupo. E"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-178",
+    "data": {
+      "age": "Primaria",
+      "material": "Monedas.",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria. Gráfico:\nCielo: 1-2:\nMaterial: Monedas.\nh Objetivo a desarrollar: Desarrollar el control de ob-\njetos en diferentes acciones motrices.\nBloque específico: COORDINACIÓN MOTRIZ.\ni Organización: Pequeño grupo.\nDesarrollo: Todos los alumnos con una moneda en su\npoder se sitúan a una cierta distancia de una raya dí\nmonedas,\nor. Los pr Reglas: Gana el que se acerca más a a ray\nVariantes: Lanzar la moneda con un ojo cerrado.\nurario,",
+      "groupings": [
+        "Pequeño grupo."
+      ],
+      "objectives": [
+        "Desarrollar el control de ob"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-181",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio. h MN",
+      "intensity": "Media",
+      "description": "a Habilidades básicas\nDesplazamientos\nEtapa: Primaria Gráfico:\nE Lugar: Pista polideportiva o gimnasio. h MN\nMaterial: Sin material K] 23 Mi\nObjetivo a desarrollar: Utilizar formas de desplazar gl 1 104)\n'miento no habituales TA Ñg\nBloque específico: HABILIDADES BÁSICAS. l yr ld ql\nDesarrollo: El profesor explica 1 los alumnos que uo [7 TE 1\ngrupo serán “los leones” debiendose desplazar en |\n«uadrupedia; los otros serán “canguros” que se des-\nplazaran dando saltos con los pies juntos. A la señal\ndel profesor los leones tendrán que pillar alos canguros, llevandolos 4 un lugar indicado previa-\n\"mente, Posteriormente cambio de ro.",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "Utilizar formas de desplazamiento no habituales"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-188",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "| Etapa: Primaria. Gráfico:\n| Ciclo: 1-2-3 E\n| Lugar: Pista polideportiva o gimnasio. 7\n| Material: Sin material. - V\nObjetivo a desarrollar: Utilizar formas de desplaza- Ñ Ñ -0 3\nmiento no habituales. 1] /\nBloque específico: HABILIDADES BÁSICAS. ANS\nOrganización: Gran grupo. Ñ SS +\nDesarrollo: Se enumera a toda la clase del 1 al 4 ( N\nTodos los alumnos desplazándose por el Lerreno,\ncuando el profesor dice un número los que lo tienen\ndeben ir con la mano levantada a pillar a los demás, el\npillado también se queda a pillar\nReglas: No olvidar llevar la mano levantada para pillar.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Utilizar formas de desplazamiento no habituales"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-189",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio. e V E y",
+      "intensity": "Media",
+      "description": "Ss HABILIDADES BÁSICAS. DESPLAZAMIENTOS. 119\nsupiera Grito:\no: 1-23 -\nLugar: Pista polideportiva o gimnasio. e V E y\nñ Objetivo u desarrollar: Desarrollar la velocidad de | ¿Y de ES\"\ny det loan y alla, IFA?\n> ÓN Bloque específico: HABILIDADES BÁSICAS. LM AASA\nbo Organización: Gran grupo. 2 Í AA SR\n4 Desarollo Los policias deben persegulr alos ladro= | TN\nA nes, y llevarlos a su zona. Los ladrones deben intentar 1 dio As\nofls CR e IIS LC\nsai rene Ciao un dr SU YI UG\nSes han sd eistidos se mise los pps\nPAR: LSO O EUR.",
+      "groupings": [
+        "Gran grupo. 2 Í AA SR"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-190",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material V",
+      "space": "Pista polideportiva o gimnasio.",
+      "intensity": "Media",
+      "description": "Etapa: Primaria. Grálico:\nCiclos 1-2\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material V\n| Objetivo a desarrollar: Desarrollar la velocidad de 1] o 7\n¡ rencción \" PAN /\nBloque específico: HABILIDADES BÁSICAS /\n1 Desarrollo; El profesor indica un color, Todos deben || /\ntocar algún objeto de ese color\nReglas: El último en hacerlo queda eliminado.\nVariantes: Decir cosas, nombres de alumnos, et",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "Desarrollar la velocidad de 1] o 7"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-191",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio.",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Gráfico:\nCiclo: 1-2\nLagar: Pista polideportiva o gimnasio.\nMaterial: Sin material\nObjetivo a desarrollar: Mejorar la capacidad de des\nplazarse através de diferente juegos motrices. 1 4\nOrganización: Gran grupo. /\nDesarrollo; La clase en fla de uno, irú dando vueltas\ncorriendo alrededor de la pista. A la señal determina\nda, el último correrá hasta colocarse el primero y así\nsucesivamente,\nReglas: Nadie saldrá coriendo antes de oír la señal\nVariantes: Correr en zigzag sorteando a los compañeros.",
+      "groupings": [
+        "Gran grupo. /"
+      ],
+      "objectives": [
+        "Mejorar la capacidad de des"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-192",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material, ERA N",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Gráfico:\nCiclo: 2-3\nMaterial: Sin material, ERA N\nObjetivo a desarrollar: Utilizar formas de desplaza\nBloque específico: HABILIDADES BÁSICAS.\nDesarrollo: Cada grupo cn fla y cogidos por la cin\ntura. Uno en frente de la fila deberá intentar pillar al 4\núltimo (la cola). Los demás deben evitar quelo consi\nReglas: La fla no se puede soltar. No vale agarrar al que intenta tocar la. cola.\nVariantes: Sin variantes.",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "Utilizar formas de desplaza"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-193",
+    "data": {
+      "age": "Primaria",
+      "material": "Espalderas. =",
+      "space": "Gimnasio.",
+      "intensity": "Media",
+      "description": "Ss HABILIDADES BÁSICAS. DESPLAZAMIENTOS 121\nEtapa: Primaría. Gráfico:\nm Ciclo: 23\nS Lugar: Gimnasio.\nMaterial: Espalderas. =\nm Objetivo a desarrollar: Mejorar la capacidad de des- | E= 3\nHd plazars en situaciones inhabituals. »\nIN Bloque específico: HABILIDADES BÁSICAS. 4 4 m7\ná Organización: Pequeño grupo. di de ¡ do\ner la distancia, trepar por la espalra (palo por | CIA\npalo) hasta la máxima altura y realiza el recorrido in-\nverso para dar el relevo al compañero\nReglas: No saltarse palos.\nVariantes: De dos en dos, de tres en tos, eto, De espaldas la espaldera.",
+      "groupings": [
+        "Pequeño grupo. di de ¡ do"
+      ],
+      "objectives": [
+        "Mejorar la capacidad de des- | E= 3"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-195",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin materia. EIA",
+      "space": "Pista polideportiva o gimnasio. cas",
+      "intensity": "Media",
+      "description": "tl\ny\nÑ Etapas: Primaria. Gráfico;\nCiclo: 1 —=\nLugar: Pista polideportiva o gimnasio. cas\nMaterial: Sin materia. EIA\n| Objetivo a desarrollar: Desplazarse de diferentes\nformas no habieualos CarAr\nBloque específico: HABILIDADES BÁSICAS.\nPr Pequeño grup EA\nDesarrollo; En fila india, cogidos de la mano por de-\nbajo de las piernas, desplazamiento a la voz del profe .\n! sor: Hacia delante, atrá, derecha, i2quierda.\nReglas: No separarse durante los desplazamientos\nVariantes: Poner obstáculos en el recorrido delos alumnos.",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "Desplazarse de diferentes"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-197",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material. A",
+      "space": "Pista polideportiva o gimnasio. md",
+      "intensity": "Media",
+      "description": "J ha HABILIDADES BÁSICAS. DESPLAZAMIENTOS. 13\nEtapas Primaria. Gráfico:\nCielo: 1-2 E\nAlo] Lugar: Pista polideportiva o gimnasio. md\nV Material: Sin material. A | -\nrección y enión PAPI RA\nBloque específico: HABILIDADES BÁSICAS. las Mi ANA\nOrganización: Gran grupo y E Es As\nDesarrol: Se dice el nombre de uno y todos e per | $\nsiguen. Rápidamente se dice otro nombre y van todos | /) ¡\ntas él\nReglas: Emplear ritmos: lento, marcha y carrera rápi-\nde\nVariantes: Jugar a colores de la camiseta, color de pelo, tc",
+      "groupings": [
+        "Gran grupo y E Es As"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-198",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio.",
+      "intensity": "Media",
+      "description": "Etapa: Primaria Gráfico:\nCiclo: 1-2\nLugar: Pista polideportiva o gimnasio.\nObjetivo a desarrollar: Controlar las conductas mo- N o =\ntries habituales, / NN\nE) Bloque específico: HABILIDADES BÁSICAS. A ==\nOrganización: Gran grupo. V 14 /\n, Desarrollo: Un niño es el gato, Los demás son rato > o\na salvo si consiguen entrar en su ratonera (debajo de\nelementos preparados al efecto: mesas, colchonetas,\netc.). Aquel ratón que es atrapado se convierte en gato\nReglas: No se puede permanecer todo el rato enla misma ratonera,\nl\n|",
+      "groupings": [
+        "Gran grupo. V 14 /"
+      ],
+      "objectives": [
+        "Controlar las conductas mo- N o ="
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-199",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio. PHIA",
+      "intensity": "Media",
+      "description": "|\nm E Ñ\n!\n¡\nLugar: Pista polideportiva o gimnasio. PHIA\n\"oque específicos HABILIDADES BÁSICAS , /\nl de los pescadores tienen a todos sus componentes",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-200",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material 4",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria. Gráfico:\nCiclo: 1-2\n| Material: Sin material 4\nmiento no habituales. % \"\nBloque específico: HABILIDADES BÁSICAS. N 4\nOrganización: Pequeño grupo, /\nequipo avanzarán entre las piernas de sus compañe=\nequipo que antes recorra una distancia determinada.\nReglas: No salir antes de que el compañero termine su recorrido.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Pequeño grupo, /"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-202",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria. Gráfico:\nCiclo: 1-2\nLugar: Pista polideportiva o gimnasio. 6\n( \" Material: Sin material. A o\n1) Objetivo a desarrollar: Utilizar diferentes formas de e en 3\ny) A desplazarse. Sa A | pe\nla Bloque específico: HABILIDADES BÁSICAS ' (\n| Organización: Gran grupo. A Ñ >\na\nDesarrollo: Tendidos sobre el vientre, apoyados en Da -— PA\nlos codos, los niños se imaginan que son serpientes. A\nuna señal convenida, un ave de rapiña cae sobre ellos,\n| y entonces hay que escapar dentro del espacio de\nGana el | juego.\n| Reglas: No se pueden levantar de la posición indicada.\n| Variantes: Los niños se pasean por el espacio de juego pero de repente una bruja malvada, al to-\n| carlos, los transforma en ranitas que saltan por todas partes.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Utilizar diferentes formas de desplazarse"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-203",
+    "data": {
+      "age": "Primaria",
+      "material": "Dos papeleras y dos globos",
+      "space": "Pista polideportiva o gimnasio. á",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Grálico:\nCielo: 1-2 E\nLugar: Pista polideportiva o gimnasio. á\nObjetivo a desarrollar: Mejorar la velocidad de re- | 4\ncrió / Ñ\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Gran grupo. t\nDesarrollo: Se dividen los alumnos en dos grupos, 4 t\nsin que lo sepan los jugadores del equipo contrario.\n«ada uno se coloca en un extremo del campo uno al\nlado de otro. En el centro se colocan dos papeleras con un globo dentro cado una. El\nun número, los jugadores que tengan dicho número deberán salir coriendo a su pap\nVariantes: Poner obstáculos para que los jugadores tengan que rodearlos, Aumentar",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Mejorar la velocidad de reacción"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-206",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material / ' PA Í NV",
+      "space": "Pista polideportiva o gimnasio. Ñ",
+      "intensity": "Media",
+      "description": "Etapa: Primaria Gráfico:\nCielo: 1-23\nLugar: Pista polideportiva o gimnasio. Ñ\nMaterial: Sin material / ' PA Í NV\nreacción e imitar formas de desplazamiento.\nBloque específico: HABILIDADES BÁSICAS. O 6\nOrganización: Por parejas. ' nr\nDesarrollo: Uno trata de mirar los ojos u su compa. ' a\nfero, éste trata de evitarlo agachando la cabeza, gi\ntando el cuerpo, desplazandose, ete, Cuando las mira\ndas se encuentran intercambian los papeles.\n5 con los Reglas: No está permitido cerar los ojos.\nVariantes: Desplazarso de una forma determinada.\n|",
+      "groupings": [
+        "Por parejas. ' nr"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-209",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin materia A NR",
+      "space": "Pista polideportiva o gimnasio ¿A zÁl",
+      "intensity": "Media",
+      "description": "ys HABILIDADES BÁSICAS. DESPLAZAMIENTOS 129\n1 tapas Primaria. Gráfico:\n0 Cidos123\nLagar: Pista polideportiva o gimnasio ¿A zÁl\nSE Material: Sin materia A NR\n9] Objetivo a desarrollar: Practicar formas de despla-— | AG mM\núzamiento pasivo, x Mi >\nENT Bloque específico: HABILIDADES BÁSICAS. o\n¿ Organización: Tros. á ¿44\n>] Desarrollo: Un alumno se coloca en cutillas con tos | 2 4\npies paralelos y el gluteo casi rozando el suelo, Los\notros dos o cogen cada uno de un brazo y tiran de él\nhaciendo que éste se deslice como un trineo.\nma so pa Desplazándolo libremente por la pita a distintas velocidades. Cambio de rol.\n> todos los Reglas: Es importante la compenetración de los dos que tiran y la buena colocación de los pies\ndel deslizado.\nVariantes: Carreras de relevos.\n5, ete p",
+      "groupings": [
+        "Tros. á ¿44"
+      ],
+      "objectives": [
+        "Practicar formas de despla-— | AG mM"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-210",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio. /",
+      "intensity": "Media",
+      "description": "Etapas Primaria. Gráfico:\nCiclo: 2-3\nLugar: Pista polideportiva o gimnasio. /\n1 vacrit Simat, A A\n1] zamiento pasivo, \" AN\nBloque específico: HABILIDADES BÁSICAS, añ\nOrganización: Tos. /\n«hado cogiendo a su compañero por la cintura (for- A\nmando un avestruz). El otr salt al lomo del compa\nhero y se agarra a los hombros del primero. Han de\nidamente a desplazarse libremente por la pista sin cuerse, Cambio de rol\nReglas: El que es desplazado indica la velocidad\nnás vueltas Variantes: Carteras de relevos",
+      "groupings": [
+        "Tos. /"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-212",
+    "data": {
+      "age": "Primaria",
+      "material": "Cuerda de 2 m y medio aproximadamente",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapas Primaria Gráfico:\nCiclos 12\nMaterial: Cuerda de 2 m y medio aproximadamente. (\nObjetivo a desarrollar: Desarrollar la capacidad de y\nsalto en sus diferentes aspecto. /\nloque específico: HABILIDADES BÁSICAS.\nOrganización: Pequeño grupo. Ú\nmienza a mover la cuerda simulando los movimientos\nVariantes: Sin variantes",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la capacidad de salto en sus diferentes aspectos"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-216",
+    "data": {
+      "age": "Primaria",
+      "material": "Cuerdas. 1074",
+      "space": "Pista polideportiva o gimnasio.",
+      "intensity": "Media",
+      "description": "Etapa: Primaria Gráfico:\nLugar: Pista polideportiva o gimnasio.\nMaterial: Cuerdas. 1074\nObjetivo a desarrollar: Desarrollar la capacidad de\nBloque específico: HABILIDADES BÁSICAS. .\nOrganización: Pequeño grupo, WAN\nDesarrollo: Realizar un recorrido intentando saltar 4\nla comba dando el relevo. Gana el equipo que antes\nReglas: Sin reglas.\nVariantes: Sin variantes",
+      "groupings": [
+        "Pequeño grupo, WAN"
+      ],
+      "objectives": [
+        "Desarrollar la capacidad de"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-218",
+    "data": {
+      "age": "Primaria",
+      "material": "Sío material, ANN",
+      "space": "Pista polideportiva o gimnasio, ha A",
+      "intensity": "Media",
+      "description": "Etapa: Primaria Gráfico:\nCiclo: 1-23\nLugar: Pista polideportiva o gimnasio, ha A\ná Material: Sío material, ANN\nObjetivo a desarrollar: Desarrollar la velocidad de S\n| desplazamiento y la coordinación y agilidad en el A\nsalt, a ÓN\nj Bloque específico: HABILIDADES BÁSICAS. ON\nDesarrollo: Tumbados boca arriba formando una fila\ny dejando un espacio entr ellos de un meto. El úl\nel primero, saliendo en este momento el siguiente.\nReglas: Gana el grupo que antes llegue a una mota determinada. Hasta que el ejecutante no se\nVariantes: Saltando con un sólo pie. Haciendo eses entre los compañeros.",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "Desarrollar la velocidad de S"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-224",
+    "data": {
+      "age": "Primaria",
+      "material": "Neumáticos",
+      "space": "Pista polideportiva o gimnasio.",
+      "intensity": "Media",
+      "description": "Ciclo: 1-23\nLagar: Pista polideportiva o gimnasio.\nMaterials Neumáticos. ii\nObjetivo a desarrollar: Desarrollar la coordinación 1) Í\nBloque específico: HABILIDADES BÁSICAS 4\nOrganización: Gran grupo. |\nDesarrollo: Se hacen dos filas de neumáticos unidos j\nen rigrag y dos filas de alumnos en un extremo de\ntendrán que ir saltando de uno en uno todos los neu\nReglas: No se puede empujar al de delante, hasta que no ha salido del neumático n\n1roducir otro niño. Gana el equipo que llegue antes ala meta (final de las ruedas)",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-225",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio, e",
+      "intensity": "Media",
+      "description": "z HABILIDADES BÁSICAS. SALTOS 137\nEtapa: Primaria. Gráfico:\nCiclo: 1-2-3\ne Lugar: Pista polideportiva o gimnasio, e\nhe Objetivo a desarrollar: Mejorar la aílidad y coordi- a dd)\n/2 Bloque específico: HABILIDADES BÁSICAS. A o\n=] Organización: Gran gropo. a NS)\nñ Desarrollo: Se colocan os niños en círculo sentados E ]\na con las piernas abieras y unidas los compañeros de\nsus lados Formando los rayos del sol. Dos niños de\nextremos opuestos se levamtarán y la vez empezarán\ncss: a saltar los rayos, cuando terminen sus compañeros de la derecha lo harán igual y así hasta que lo\nhagan todos.\nReglas: No se puede chocar con el compañero, hay que esquivarlo.\nVariantes: Ir saltando con los pies juntos.",
+      "groupings": [
+        "Gran gropo. a NS)"
+      ],
+      "objectives": [
+        "Mejorar la aílidad y coordi- a dd)"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-226",
+    "data": {
+      "age": "Primaria",
+      "material": "Cuerdas. y A]",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria. Gráfico:\nCiclo: 1-2-3\n77] Material: Cuerdas. y A]\nObjetivo a desarrollar: Desarrolla la capacidad del YA\nle salto en sus diferentes aspectos. ; ]\nBloque específico: HABILIDADES BÁSICAS. HibA ¡\nN Organización: Pequeño grupo. d Ú\nDesarrollo: Se colocan las cuerdas formando un gran w\ncuadrado, en cada extremo se dispone cada equipo en\nfila, a la voz de “ya”, cada grupo pasará por su trozo\nde cuadrado hasta llegar al otro extremo. Un grupo\nsaltara de lado con los pies juntos, otro a pata coja, otra con salitos pisando la cuerda y otro con\nPo saltos dejando la cuerda entre ls pies\nReglas: Al pasar por cada lado hay que salar de la misma forma todos los grupos, El profesor\ndebe explicar claramente el salto de cada lado.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Pequeño grupo. d Ú"
+      ],
+      "objectives": [
+        "Desarrolla la capacidad del YA"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-227",
+    "data": {
+      "age": "Primaria",
+      "material": "Aros. 4",
+      "space": "Pista polideportiva o gimnasio, ¡",
+      "intensity": "Media",
+      "description": "Ciclo: 1-2 E\nLugar: Pista polideportiva o gimnasio, ¡\nMaterial: Aros. 4\nObjetivo a desarrollar: Desarrollar la velocidad y z\nagilidad enel salto ll ¡\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Pequeño grupo,\n“grupos, uno de cilos pasa al centro. Cada alumno d\npone un aro delante de él. A la voz de “platillo vola\ndor”, van saltando a pics juntos de aro en aro; el\nalumno que esta en centro tratará de ocupar uno de los aros\nReglas: Los del círculo siempre tendrán que ira saltos, el del centro puede corre\nTugar. El jugador que queda sin lugar pasa al centro.",
+      "groupings": [
+        "Pequeño grupo,"
+      ],
+      "objectives": [
+        "Desarrollar la velocidad y z"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-230",
+    "data": {
+      "age": "Primaria",
+      "material": "Balones. a 0:",
+      "space": "Pista polideportiva o gimnasio. a",
+      "intensity": "Media",
+      "description": "Etapas Primarña. Gráfico:\nCiclo: 1-2-3\nLugar: Pista polideportiva o gimnasio. a\nMaterial: Balones. a 0:\nObjetivo a desarrollar: Desarollala coordinación | Y Ap)\nÁ y agilidad enel alo,\nBloque específico: HABILIDADES BÁSICAS\ncia de 3 6 4 metros. El tercer componente se coloca\nen medio de sus compañeros, Éstos se pasan el balón\non las dos manos por encima del que esta en medio\nue saltando tratara de coger el balón . Si coge el balón pasará a ocupar el puesto del quelo había\nlanzado.\nVariantes: Tocar el balón en lugar de cogerlo. Lanzar el balón con la mano derechaizquierda.",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "Desarollala coordinación | Y Ap)"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-241",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin materia ¡",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "IS HABILIDADES BÁSICAS. GIROS. 145\nRÍN Habilidades básicas\nGiros\nEtapa: Primaria. Gráfico:\n: Cielo: 1-23\nE Material: Sin materia ¡\nObjetivo a desarrollar: Ser capaz de realizar distin- Ao\nos giros sobre el propio cuerpo. 1) p!\nBloque específico: HABILIDADES BÁSICAS. |\nseguir que Organización: Gran grupo. AA ie 1,\nDesarrollo: Dos equipos situados de espalda a dos A\nmetros de distancia. A la voz de perro o gato, los\n.. miembros del equipo no nombrado persiguen a los\ndel otro tratando de ocar a sus componentes antes de\nque lleguen a una línea establecida de antemano.\nReglas: Triunfa cl equipo que más contrarios climine en un número dado de intentos",
+      "groupings": [
+        "Gran grupo. AA ie 1,"
+      ],
+      "objectives": [
+        "Ser capaz de realizar distin- Ao"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-245",
+    "data": {
+      "age": "Primaria",
+      "material": "No especificado",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "] 1 HABILIDADES BÁSICAS. GIROS. 147\ntapas Primaria. Gráfico:\nCiclo: 12\nLasgar: Pita polideportiva o gimnasio s : Ss\n: Materias Case y nta. Ha YM\n4 Objetivo a desarrollar: Conocer y desarrollar la ca- AJA El 'N\nls pacidad de giro, y >\nloque específico: HABILIDADES BÁSICAS, de A]\nOrganización: Por parejas. Ed sn i\nhc O A | Hi\nDesarrollo; Por parejas bailan y giran sin parar. Se A h\nmueven al ritmo de la música. . z\nReglas: Sin reglas.\nVariante: Sin variantes",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Conocer y desarrollar la capacidad de giro"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-246",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio.",
+      "intensity": "Media",
+      "description": "Etapas Primaria Gráfico:\nCielo: 1\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material\nObjetivo a desarrollar: Conocer y desarrollar dife-\nBloque especílico: HABILIDADES BÁSICAS.\n4 Organización: Por parejas.\nh Desarrollo: Uno se mueve libremente por el patio o\npista y el otro gira alrededor como si fuera un satélite\nsuyo.\nReglas: Sin reglas\nVariantes: Vasar la forma de girar\nA",
+      "groupings": [
+        "Por parejas."
+      ],
+      "objectives": [
+        "Conocer y desarrollar dife"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-247",
+    "data": {
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "A SI IN o as o AAA AAA\nEtapa: Primaria Gráfico:\nCiclo; 1-2\nLugar: Pista polideportiva o gimnasio. ) ll\nMaterial: Sin material k / ES sd\nObjetivo a desarrollar: Conocer y desarrollar dife- ba V\nrentes formas de giro. 1] A\nBloque específico: HABILIDADES BÁSICAS. 1 | Ú <\nOrganización: Gran grupo. 1\nDesarrollo: Un alumno se la queda y trata de dar al bh |\nresto, si uno es dado cambio de rol. Para salvarse el | l)\nperseguido, antes de ser dado dirá “molinillo” y que-\ndará en el sitio dando tres giros completos, tras los\ncuales quedará libre. El perseguidor se dirigirá hacia otra presa.\nReglas: Hay que dar las tres vueltas completas para salvarse.\nVariantes: Más o menos vueltas.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Conocer y desarrollar diferentes formas de giro"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-249",
+    "data": {
+      "age": "Primaria",
+      "material": "Balones",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nCiclo: 1-2-3\nLugar: Pista polideportiva o gimnasio.\nMaterial: Balones.\nObjetivo a desarrollar: Conocer y practicar diferentes formas de giro.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Pequeño grupo.\nDesarrollo: Cada grupo se sitúa en un lateral de la pista; en el otro lateral y frente al grupo hay un balón. A la señal, sale el primer miembro de cada grupo, corre hacia el balón, lo recoge y lanza al aire girando mientras cae; la recepciona y la vuelve a dejar en el suelo, regresa a su grupo y da el relevo.\nReglas: El compañero no sale hasta que el anterior no le dé una palmada.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Conocer y practicar diferentes formas de giro"
+      ],
+      "needsReview": true,
+      "kind": "source-transcription",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "transcripción directa de ficha fuente v62"
+    }
+  }
+]
