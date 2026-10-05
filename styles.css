@@ -88,3 +88,11 @@ input,textarea,select{font-size:16px;}
 @media(min-width:761px){.workspace{grid-template-columns:285px 1fr}.filters{padding:16px}.filter-group summary{font-size:12px}}
 
 .session-add-mode{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 14px;padding:12px 14px;border:1px solid #bfdbfe;border-radius:12px;background:#eff6ff;color:#1e3a8a}.session-add-mode span{font-size:13px;color:#64748b;flex:1}.session-add-mode.hidden{display:none}.session-add-mode .small{padding:8px 12px}
+
+
+/* v61.0 — selección múltiple para añadir juegos a una sesión */
+.session-add-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 16px;padding:12px 14px;border:1px solid var(--border,#dfe4ea);border-radius:14px;background:var(--panel,#fff);position:sticky;top:8px;z-index:5;box-shadow:0 4px 14px rgba(0,0,0,.06)}
+.session-add-bar>div:first-child{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.session-add-bar span{font-size:.85rem;color:var(--muted,#667085)}
+.game-card.session-selected{outline:2px solid var(--accent,#2563eb);outline-offset:2px}
+.game-card .add-btn.selected{font-weight:800}
