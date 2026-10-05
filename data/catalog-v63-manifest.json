@@ -1,5 +1,5 @@
 {
-  "catalogVersion": "v16.4-v63",
+  "catalogVersion": "v16.4-v63.1",
   "records": 2724,
   "uniqueIds": 2724,
   "deletions": 0,
@@ -8,6 +8,6 @@
   "ocrDuplicateLinks": 11,
   "ocrFragmentsResolved": 252,
   "auditQuarantineV62": 31,
-  "sourceCorrectionsV63": 2,
+  "sourceCorrectionsV63": 19,
   "manualGamesPreserved": true
 }
