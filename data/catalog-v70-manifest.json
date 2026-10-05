@@ -1,0 +1,33 @@
+{
+  "version": "v70",
+  "generatedAt": "2026-10-06T00:05:00+02:00",
+  "source": "cuarto.pdf",
+  "originalPdfReceived": "cuarto(2).pdf",
+  "pages": 158,
+  "scope": "OCR fragment title correction against original scanned pages",
+  "correctedFragments": 16,
+  "sourcePages": [
+    8,
+    21,
+    36,
+    68,
+    79,
+    81,
+    116,
+    118,
+    119,
+    128,
+    133,
+    135,
+    153,
+    156
+  ],
+  "notes": [
+    "Correcciones basadas en la página escaneada original.",
+    "No se eliminaron ni fusionaron registros.",
+    "Los fragmentos duplicados permanecen como registros independientes y siguen fuera de la vista pública.",
+    "Los fragmentos que no permiten confirmar un título de juego completo se conservan para revisión."
+  ],
+  "previous": "v69",
+  "status": "ready"
+}
