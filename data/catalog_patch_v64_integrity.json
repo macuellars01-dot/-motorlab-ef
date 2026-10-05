@@ -28,5 +28,51 @@
       "auditStatus": "corregida-integridad-v64",
       "auditNote": "Corrección de integridad: se elimina el salto de línea incrustado en el título por el procesamiento del catálogo. La ficha fuente identifica el juego como Conducir el balón."
     }
+  },
+  {
+    "id": "j6a12-009",
+    "op": "update",
+    "data": {
+      "title": "¿Qué produjo el ruido?",
+      "description": "Varios jugadores se sientan. Uno se coloca de pie a sus espaldas y produce ruidos con diferentes objetos; los demás deben adivinar con qué objeto se ha producido cada sonido. Quien acierta pasa a realizar los ruidos. Se sigue un orden para responder y, como variante, pueden producirse dos sonidos a la vez.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v64",
+      "auditNote": "Descripción reconstruida a partir de la ficha fuente del juego nº 9; se elimina la contaminación OCR procedente de los juegos 8 y 10.",
+      "descriptionRecoveryStatus": "recuperada-verificada",
+      "recoverySource": "Los juegos en la Educación Física de los 6 a los 12 años — ficha nº 9",
+      "descriptionRecoveryMethod": "reconstrucción fiel de desarrollo, reglas y variantes de la fuente"
+    }
+  },
+  {
+    "id": "j6a12-051",
+    "op": "update",
+    "data": {
+      "title": "Lagarto Súbete en Alto",
+      "description": "Es un juego de pillar: un jugador persigue a los demás y estos se salvan subiéndose a algún elemento elevado. Quien es pillado pasa a pillar. Antes de comenzar a pillar se dice en alto: «Lagarto, súbete en alto». No se puede pillar a quien está en alto; puede aumentarse el número de perseguidores como variante.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v64",
+      "auditNote": "Descripción reconstruida a partir de la ficha fuente del juego nº 51; se elimina la contaminación OCR procedente de los juegos 52-54.",
+      "descriptionRecoveryStatus": "recuperada-verificada",
+      "recoverySource": "Los juegos en la Educación Física de los 6 a los 12 años — ficha nº 51",
+      "descriptionRecoveryMethod": "reconstrucción fiel de desarrollo, reglas y variante de la fuente"
+    }
+  },
+  {
+    "id": "j6a12-154",
+    "op": "update",
+    "data": {
+      "title": "El Reloj",
+      "material": "Balones",
+      "description": "Los alumnos se colocan en círculos separados y uno se sienta en el centro con los ojos cerrados para contar. Al llegar a 10 levanta la mano derecha, a 20 la izquierda y a 30 da una palmada por encima de la cabeza. Mientras tanto, los demás se pasan una pelota de mano en mano. Al oír la palmada, quien tenga el balón se sienta con una pierna flexionada. El juego continúa y los demás deben saltar a quienes están sentados hasta que queda un solo jugador en pie, que pasa al centro.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v64",
+      "auditNote": "Descripción reconstruida a partir de la ficha fuente del juego nº 154; se elimina la contaminación OCR procedente del juego 152 y del texto de la ficha.",
+      "descriptionRecoveryStatus": "recuperada-verificada",
+      "recoverySource": "Los juegos en la Educación Física de los 6 a los 12 años — ficha nº 154",
+      "descriptionRecoveryMethod": "reconstrucción fiel de desarrollo, reglas y variante de la fuente"
+    }
   }
 ]
