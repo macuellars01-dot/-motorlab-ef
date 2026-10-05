@@ -204,7 +204,11 @@ function updateTotals(){
   const parts=phases.map(([name,cls])=>{
     const total=session.filter(x=>x.phase===name).reduce((a,x)=>a+(Number(x.minutes)||0),0);
     return total?`<span class="phase-summary-item ${cls}">${name} · ${total} min</span>`:''}).filter(Boolean);
-  parts.push(target&&mins===target?`<span class="phase-summary-item total">✓ Total · ${mins}/${target} min</span>`:`<span class="phase-summary-item total">Total · ${mins}${target?`/${target}`:''} min</span>`);
+  let statusClass='total',statusText=`Total · ${mins}${target?`/${target}`:''} min`;
+  if(target&&mins===target){statusClass='total ok';statusText=`✓ Total · ${mins}/${target} min`;}
+  else if(target&&mins<target){statusClass='total short';statusText=`⚠ Faltan ${target-mins} min · ${mins}/${target}`;}
+  else if(target&&mins>target){statusClass='total over';statusText=`⚠ Sobran ${mins-target} min · ${mins}/${target}`;}
+  parts.push(`<span class="phase-summary-item ${statusClass}">${statusText}</span>`);
   summary.innerHTML=parts.join('');
 }
 function bindDrop(){const dz=$('#dropzone');if(!dz)return;dz.ondragover=e=>e.preventDefault();dz.ondrop=e=>{e.preventDefault();const raw=e.dataTransfer.getData('text/plain');try{const d=JSON.parse(raw);addToSession(d.id)}catch(_){if(raw)addToSession(raw)}}}
