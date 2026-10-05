@@ -1,0 +1,25 @@
+{
+  "version": "v72",
+  "generatedAt": "2026-10-06T00:45:00+02:00",
+  "source": "primero.pdf",
+  "originalPdfReceived": "primero(1).pdf",
+  "pages": 158,
+  "scope": "OCR fragment title correction against original scanned pages",
+  "correctedFragments": 7,
+  "sourcePages": [
+    17,
+    44,
+    84,
+    106,
+    129,
+    146,
+    150
+  ],
+  "notes": [
+    "Solo se han corregido títulos confirmados por el texto recuperado del PDF original.",
+    "Los fragmentos cuyo título completo no queda inequívocamente respaldado se mantienen para revisión y no se inventa el nombre.",
+    "No se eliminan ni fusionan registros."
+  ],
+  "previous": "v71",
+  "status": "ready"
+}
