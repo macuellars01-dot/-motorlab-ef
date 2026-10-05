@@ -1,0 +1,45 @@
+[
+  {
+    "op": "update",
+    "id": "j6a12-013",
+    "data": {
+      "title": "EL GUIÑO",
+      "auditStatus": "corregida-titulo-fuente-v67",
+      "sourceRecoveryNote": "Título comprobado directamente en la ficha nº 13 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-329",
+    "data": {
+      "title": "LA ESCOBA DOBLE",
+      "description": "Desarrollo: Los jugadores se colocan de pie en círculo. Hay dos escobas que se van pasando, una gira hacia la derecha y la otra hacia la izquierda. El jugador al que le coincidan las dos escobas queda eliminado. Ganan los dos últimos jugadores que queden. Reglas: La escoba debe pasarse con el cepillo hacia abajo y verticalmente. Variantes: Utilizar otros objetos: aros, balones, etc.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v67",
+      "sourceRecoveryNote": "Descripción comprobada directamente en la ficha nº 329 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-331",
+    "data": {
+      "title": "EL SAFARI FOTOGRÁFICO",
+      "description": "Desarrollo: La clase se distribuye en tres grandes grupos: uno imita animales (diferentes grupos y tipos), otro representa a los miembros del safari (fotógrafos, curiosos, etc.) y otro representa a los grupos indígenas (danzan, cazan, etc.). Reglas: Sin reglas. Variantes: Cambios de rol.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v67",
+      "sourceRecoveryNote": "Descripción comprobada directamente en la ficha nº 331 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-2247",
+    "data": {
+      "visibility": "review",
+      "needsReview": true,
+      "auditStatus": "cuarentena-duplicado-fuente-v67",
+      "note": "Registro OCR duplicado/anómalo que reproduce el juego nº 247, El Molinillo. Se conserva sin borrarlo y queda fuera del catálogo visible."
+    }
+  }
+]
