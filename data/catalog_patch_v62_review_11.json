@@ -1,0 +1,347 @@
+[
+  {
+    "op": "update",
+    "id": "j6a12-199",
+    "data": {
+      "title": "LA PESCA",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desplazarse por el espacio colectivamente.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Gran grupo.\nDesarrollo: La clase, dividida en dos grupos, uno de «pescadores» y otro de «peces». El equipo de los pescadores tiene a todos sus componentes agarrados de la mano (es la red). Los demás jugadores deberán evitar quedar encerrados dentro del círculo de la red.\nReglas: No se puede soltar la red.\nVariantes: Los peces se convierten en pescadores.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desplazarse por el espacio colectivamente."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-200",
+    "data": {
+      "title": "CARRERA DE REPTILES",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Utilizar formas de desplazamiento no habituales.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Pequeño grupo.\nDesarrollo: Los miembros del grupo se colocan en hilera, cogidos por las caderas y con las piernas abiertas. Cuando se da la señal, los últimos de cada equipo avanzarán entre las piernas de sus compañeros, poniéndose en pie cuando llegan al principio y voceando para que salga el siguiente. Gana el equipo que recorra antes una distancia determinada.\nReglas: No salir antes de que el compañero termine su recorrido.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Utilizar formas de desplazamiento no habituales."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-202",
+    "data": {
+      "title": "HUIDA DE LA SERPIENTE",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Utilizar diferentes formas de desplazarse.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Gran grupo.\nDesarrollo: Tendidos sobre el vientre, apoyados en los codos, los niños se imaginan que son serpientes. A una señal convenida, un ave de rapiña cae sobre ellos y entonces hay que escapar dentro del espacio de juego.\nReglas: No se pueden levantar de la posición indicada.\nVariantes: Los niños se pasean por el espacio de juego pero, de repente, una bruja malvada, al tocarlos, los transforma en ranitas que saltan por todas partes.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Utilizar diferentes formas de desplazarse."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-203",
+    "data": {
+      "title": "GLOBO-PAPELERA",
+      "age": "Primaria",
+      "material": "Dos globos y dos papeleras",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Dos globos y dos papeleras.\nObjetivo a desarrollar: Mejorar la velocidad de reacción.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Gran grupo.\nDesarrollo: Se dividen los alumnos en dos grupos, a los que se da un número a cada uno de los niños, sin que lo sepan los jugadores del equipo contrario. Cada grupo se coloca en un extremo del campo uno al lado de otro. En el centro se colocan dos papeleras con un globo dentro cada una. El profesor dirá un número; los jugadores que tengan dicho número deberán salir corriendo hacia la papelera del equipo contrario, coger el globo y colocarlo en la papelera de su equipo, ganando el que lo consiga antes.\nReglas: Cada jugador debe ir hacia su papelera correspondiente.\nVariantes: Poner obstáculos para que los jugadores tengan que rodearlos. Aumentar el número de grupos y papeleras-globos.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Mejorar la velocidad de reacción."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-206",
+    "data": {
+      "title": "EN BUSCA DE TU MIRADA",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la velocidad de reacción e imitar formas de desplazamiento.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Por parejas.\nDesarrollo: Uno trata de mirar a los ojos a su compañero; este trata de evitarlo agachando la cabeza, girando el cuerpo, desplazándose, etc. Cuando las miradas se encuentran intercambian los papeles.\nReglas: No está permitido cerrar los ojos.\nVariantes: Desplazarse de forma determinada.",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Desarrollar la velocidad de reacción e imitar formas de desplazamiento."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-209",
+    "data": {
+      "title": "LOS TRINEOS",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Practicar formas de desplazamiento pasivo.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Tríos.\nDesarrollo: Un alumno se coloca en cuclillas con los pies paralelos y el glúteo casi rozando el suelo. Los otros dos lo cogen cada uno de un brazo y tiran de él haciendo que se deslice como un trineo. Desplazándolo libremente por la pista a distintas velocidades. Cambio de rol.\nReglas: Es importante la compensación de los dos que tiran y la buena colocación de los pies del deslizado.\nVariantes: Carreras de relevos.",
+      "groupings": [
+        "Tríos"
+      ],
+      "objectives": [
+        "Practicar formas de desplazamiento pasivo."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-210",
+    "data": {
+      "title": "PASEO EN AVESTRUZ",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Practicar formas de desplazamiento pasivo.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Tríos.\nDesarrollo: Un alumno se coloca de pie y otro agachado cogiendo a su compañero por la cintura (formando un avestruz). El otro salta al lomo del compañero y se agarra a los hombros del primero. Han de desplazarse libremente por la pista sin caerse. Cambio de rol.\nReglas: El que es desplazado indica la velocidad.\nVariantes: Carreras de relevos.",
+      "groupings": [
+        "Tríos"
+      ],
+      "objectives": [
+        "Practicar formas de desplazamiento pasivo."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-212",
+    "data": {
+      "title": "LA CULEBRILLA",
+      "age": "Primaria",
+      "material": "Cuerda de 2 m y medio aproximadamente",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Cuerda de 2 m y medio aproximadamente.\nObjetivo a desarrollar: Desarrollar la capacidad de salto en sus diferentes aspectos.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Pequeño grupo.\nDesarrollo: Cada grupo se coloca en círculo excepto uno, que se coloca en medio sujetando un extremo de la cuerda y en cuclillas. A una señal, el del medio comienza a mover la cuerda simulando los movimientos de una culebrilla. Los demás saltarán por encima de la cuerda para evitar ser tocados por ella.\nReglas: Si alguien es tocado por la cuerda pasa al centro.\nVariantes: Cambiar la forma de saltar.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la capacidad de salto en sus diferentes aspectos."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-216",
+    "data": {
+      "title": "RELEVOS DE COMBA",
+      "age": "Primaria",
+      "material": "Cuerdas",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Cuerdas.\nObjetivo a desarrollar: Desarrollar la capacidad de salto en sus diferentes aspectos.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Pequeño grupo.\nDesarrollo: Realizar un recorrido intentando saltar a la comba dando el relevo. Gana el equipo que antes consigue que todos sus miembros realicen el recorrido.\nReglas: Sin reglas.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la capacidad de salto en sus diferentes aspectos."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-218",
+    "data": {
+      "title": "SALTO A LAS BOTELLAS TUMBADAS",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la velocidad de desplazamiento y la coordinación y agilidad en el salto.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Pequeño grupo.\nDesarrollo: Tumbados boca arriba formando una fila y dejando un espacio entre ellos de un metro. El último de la fila salta a todos los compañeros y se coloca el primero, saliendo en ese momento el siguiente.\nReglas: Gana el grupo que antes llegue a una meta determinada. Hasta que el ejecutante no se tumbe no sale el siguiente.\nVariantes: Saltando con un solo pie. Haciendo eses entre los compañeros.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la velocidad de desplazamiento y la coordinación y agilidad en el salto."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-224",
+    "data": {
+      "title": "NEUMÁTICOS VIEJOS",
+      "age": "Primaria",
+      "material": "Neumáticos",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Neumáticos.\nObjetivo a desarrollar: Desarrollar la coordinación y agilidad saltando objetos.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Gran grupo.\nDesarrollo: Se hacen dos filas de neumáticos unidos en zigzag y dos filas de alumnos en un extremo de cada grupo de ruedas. Al gritar el profesor «adelante», tendrán que ir saltando de uno en uno todos los neumáticos.\nReglas: No se puede empujar al de delante; hasta que no ha salido del neumático no se puede introducir otro niño. Gana el equipo que llegue antes a la meta (final de las ruedas).\nVariantes: Saltar pisando los neumáticos.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación y agilidad saltando objetos."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-225",
+    "data": {
+      "title": "EL SOL",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Mejorar la agilidad y coordinación en el salto.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Gran grupo.\nDesarrollo: Se colocan los niños en círculo sentados con las piernas abiertas y unidas a los compañeros de sus lados, formando los rayos del sol. Dos niños de extremos opuestos se levantarán y a la vez empezarán a saltar los rayos; cuando terminen, sus compañeros de la derecha lo harán igual y así hasta que lo hagan todos.\nReglas: No se puede chocar con el compañero; hay que esquivarlo.\nVariantes: Ir saltando con los pies juntos.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Mejorar la agilidad y coordinación en el salto."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-226",
+    "data": {
+      "title": "EL CUADRADO",
+      "age": "Primaria",
+      "material": "Cuerdas",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Cuerdas.\nObjetivo a desarrollar: Desarrollar la capacidad del salto en sus diferentes aspectos.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Pequeño grupo.\nDesarrollo: Se colocan las cuerdas formando un gran cuadrado, en cada extremo se dispone cada equipo en fila. A la voz de «ya», cada grupo pasará por su trozo de cuadrado hasta llegar al otro extremo. Un grupo saltará de lado con los pies juntos, otro a pata coja, otro con saltitos pisando la cuerda y otro con saltos dejando la cuerda entre los pies.\nReglas: Al pasar por cada lado hay que saltar de la misma forma todos los grupos. El profesor debe explicar claramente el salto de cada lado.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la capacidad del salto en sus diferentes aspectos."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-227",
+    "data": {
+      "title": "PLATILLO VOLADOR",
+      "age": "Primaria",
+      "material": "Aros",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Aros.\nObjetivo a desarrollar: Desarrollar la velocidad y agilidad en el salto.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Pequeño grupo.\nDesarrollo: Los alumnos se colocan en círculo por grupos, uno de ellos pasa al centro. Cada alumno pone un aro delante de él. A la voz de «platillo volador», van saltando a pies juntos de aro en aro; el alumno que está en el centro tratará de ocupar uno de los aros.\nReglas: Los del círculo siempre tendrán que ir a saltos; el del centro puede correr a ocupar el lugar. El jugador que queda sin lugar pasa al centro.\nVariantes: Saltar con un solo pie. Separar más los aros. Cambiar los aros por cuerdas o círculos hechos con tizas.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la velocidad y agilidad en el salto."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-230",
+    "data": {
+      "title": "CAZA BALONES",
+      "age": "Primaria",
+      "material": "Balones",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Balones.\nObjetivo a desarrollar: Desarrollar la coordinación y agilidad en el salto.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Tríos.\nDesarrollo: Se coloca uno frente a otro a una distancia de 3 o 4 metros. El tercer componente se coloca en medio de sus compañeros. Estos se pasan el balón con las dos manos por encima del que está en medio, que saltando tratará de coger el balón. Si coge el balón pasará a ocupar el puesto del que lo había lanzado.\nReglas: Solo se puede pasar el balón por encima.\nVariantes: Tocar el balón en lugar de cogerlo. Lanzar el balón con la mano derecha/izquierda.",
+      "groupings": [
+        "Tríos"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación y agilidad en el salto."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  }
+]
