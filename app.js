@@ -103,23 +103,50 @@ function applyGameLocalState(){
 }
 function persistGame(g){const o=read(KEYS.overrides,{});o[g.id]={...g,updatedAt:g.updatedAt||now()};write(KEYS.overrides,o);markPending()}
 function normalize(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()}
-function materialTag(m){
-  const x=normalize(m);
-  if(!x||x==='no especificado'||x==='ninguno'||x.includes('sin material')||x.includes('sin materiales')||x.includes('ningun material'))return'Sin material';
-  if(/pelot|balon|balones/.test(x))return'Balones/pelotas';
-  if(x.includes('aro'))return'Aros';
-  if(x.includes('cono'))return'Conos';
-  if(/cuerda|comba/.test(x))return'Cuerdas/combas';
-  if(/pica|picas/.test(x))return'Picas';
-  if(/pañuel|panuel|petos?|chalecos?/.test(x))return'Pañuelos/petos';
-  if(/colchoneta/.test(x))return'Colchonetas';
-  if(/raqueta/.test(x))return'Raquetas';
-  if(/tiza|yeso/.test(x))return'Tizas';
-  if(/globo/.test(x))return'Globos';
-  if(/tarjet|cartulina|cartas/.test(x))return'Tarjetas';
-  if(/banco|vallas?/.test(x))return'Bancos/vallas';
-  if(/variado|diverso|varios materiales|material diverso/.test(x))return'Material variado';
-  return'Otros';
+function materialTags(m){
+  const x=normalize(Array.isArray(m)?m.join(' '):m);
+  if(!x||x==='no especificado'||x==='ninguno'||x.includes('sin material')||x.includes('sin materiales')||x.includes('ningun material'))return['Sin material'];
+  const out=[];
+  const add=(re,label)=>{if(re.test(x))out.push(label)};
+  add(/pelot|balon|balones/,'Balones/pelotas'); add(/\baro\b|aros?/,'Aros'); add(/cono/,'Conos');
+  add(/cuerda|comba/,'Cuerdas/combas'); add(/pica/,'Picas'); add(/pañuel|panuel|petos?|chalecos?/,'Pañuelos/petos');
+  add(/colchoneta/,'Colchonetas'); add(/raqueta/,'Raquetas'); add(/tiza|yeso/,'Tizas'); add(/globo/,'Globos');
+  add(/tarjet|cartulina|cartas/,'Tarjetas'); add(/banco|vallas?/,'Bancos/vallas');
+  add(/variado|diverso|varios materiales|material diverso/,'Material variado');
+  return out.length?uniqSorted(out):['Otros'];
+}
+function materialTag(m){return materialTags(m)[0]}
+function ageValues(g){
+  const raw=Array.isArray(g?.age)?g.age.join(' '):String(g?.age||'');
+  const x=normalize(raw);
+  if(!x)return['No especificada'];
+  const out=[];
+  if(/infantil|3\s*(?:-|a|/|\s)\s*6|4\s*(?:-|a|/|\s)\s*6/.test(x))out.push('Infantil');
+  if(/primer|1\.?\s*(?:-|a|/|\s)\s*2|1\.?\s*º?\s*primaria|2\.?\s*º?\s*primaria/.test(x))out.push('1.º-2.º Primaria');
+  if(/3\.?\s*º?\s*primaria|4\.?\s*º?\s*primaria|tercer|cuarto/.test(x))out.push('3.º-4.º Primaria');
+  if(/5\.?\s*º?\s*primaria|6\.?\s*º?\s*primaria|quinto|sexto/.test(x))out.push('5.º-6.º Primaria');
+  if(/todas|cualquier edad|todas las edades|primaria/.test(x)&&!out.length)out.push('Primaria');
+  return out.length?uniqSorted(out):[String(g.age)];
+}
+function groupingValues(g){
+  const raw=Array.isArray(g?.groupings)?g.groupings.join(' '):String(g?.groupings||'');
+  const x=normalize(raw),out=[];
+  if(/individual|uno por|1\s*jugador/.test(x))out.push('Individual');
+  if(/pareja|dos por|2\s*jugadores|duo/.test(x))out.push('Parejas');
+  if(/pequeno|grupos?|equipos?|trios?|3\s*o\s*mas/.test(x))out.push('Pequeños grupos');
+  if(/gran grupo|todos juntos|clase completa|grupo completo/.test(x))out.push('Gran grupo');
+  return out.length?uniqSorted(out):['No especificado'];
+}
+function objectiveValues(g){
+  const raw=Array.isArray(g?.objectives)?g.objectives.join(' '):String(g?.objectives||'');
+  const x=normalize(raw),out=[];
+  const add=(re,label)=>{if(re.test(x))out.push(label)};
+  add(/lanz|tiro|recepcion/,'Lanzamiento'); add(/salto/,'Saltos'); add(/giro|rotacion/,'Giros');
+  add(/correr|carrera|desplaz|locomoc/,'Desplazamientos y carrera'); add(/equilib/,'Equilibrio');
+  add(/coordin/,'Coordinación'); add(/conduccion|manejo|bote|drib/,'Conducción y manejo'); add(/percepcion|atencion|reaccion/,'Percepción y atención');
+  add(/ritmo|expresion|danza/,'Ritmo y expresión'); add(/cooper|colabor/,'Cooperación'); add(/oposicion|persecucion|pilla/,'Oposición y persecución');
+  add(/predeport|deport|baloncesto|futbol|voleibol|balonmano|bádminton|badminton/,'Predeporte'); add(/relaj|vuelta a la calma|respiracion/,'Relajación y vuelta a la calma');
+  return out.length?uniqSorted(out):['No especificado'];
 }
 function inferIntensity(g){
   const v=normalize(g?.intensity);
@@ -135,7 +162,7 @@ function objectiveValues(g){return Array.isArray(g.objectives)&&g.objectives.len
 function buildFilters(){
   const sources=uniqSorted([...games.map(sourceLabel),'Creación propia']);
   const configs=[
-    ['ageFilters',uniqSorted(games.map(g=>g.age||'No especificada'))],
+    ['ageFilters',uniqSorted(games.flatMap(ageValues))],
     ['materialFilters',['Sin material','Balones/pelotas','Aros','Conos','Cuerdas/combas','Picas','Pañuelos/petos','Colchonetas','Raquetas','Tizas','Globos','Tarjetas','Bancos/vallas','Material variado','Otros']],
     ['spaceFilters',uniqSorted(games.map(g=>g.space||'No especificado'))],
     ['intensityFilters',['Baja','Media','Alta','No especificada']],
@@ -178,7 +205,7 @@ function matches(g){
   if(q&&!text.includes(q))return false;
   const ages=selected('#ageFilters'),mats=selected('#materialFilters'),spaces=selected('#spaceFilters'),ints=selected('#intensityFilters'),srcs=selected('#sourceFilters'),groups=selected('#groupingFilters'),objs=selected('#objectiveFilters');
   return(!ages.length||ages.some(v=>normalize(g.age||'No especificada').includes(normalize(v))))
-    &&(!mats.length||mats.includes(materialTag(g.material)))
+    &&(!mats.length||mats.some(v=>materialTags(g.material).includes(v)))
     &&(!spaces.length||spaces.includes(g.space||'No especificado'))
     &&(!ints.length||ints.includes(inferIntensity(g)))
     &&(!srcs.length||srcs.includes(sourceLabel(g)))
