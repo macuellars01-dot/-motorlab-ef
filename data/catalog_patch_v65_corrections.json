@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j6a12-148",
+    "op": "update",
+    "data": {
+      "title": "LETRAS Y NÚMEROS",
+      "description": "Los alumnos inventan posiciones de equilibrio para representar letras y números; el profesor puede indicar la figura que deben formar.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v65",
+      "auditNote": "Corrección de contaminación OCR: el registro mezclaba el juego 148 con la referencia al juego 150. Se restaura la ficha 148 a partir de la descripción recuperada y verificada de la fuente.",
+      "descriptionRecoveryStatus": "recuperada-verificada",
+      "recoverySource": "juegos 6a12anos.pdf · ficha nº 148",
+      "descriptionRecoveryMethod": "paráfrasis fiel de la ficha fuente"
+    }
+  },
+  {
+    "id": "j6a12-194",
+    "op": "update",
+    "data": {
+      "title": "Robar Colitas",
+      "description": "Por parejas, un alumno persigue al otro para intentar quitarle la cuerda que lleva colocada en la parte trasera del pantalón. Si consigue cogerla, cambian los papeles. Como variante, todos llevan una «colita» e intentan robársela entre sí.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v65",
+      "auditNote": "Corrección de título y descripción: el OCR había sustituido el contenido de la ficha 194 por texto ilegible. Se restaura a partir de la recuperación verificada de la fuente.",
+      "descriptionRecoveryStatus": "recuperada-verificada",
+      "recoverySource": "juegos 6a12anos.pdf · ficha nº 194",
+      "descriptionRecoveryMethod": "paráfrasis fiel de la ficha fuente"
+    }
+  },
+  {
+    "id": "j6a12-196",
+    "op": "update",
+    "data": {
+      "title": "RELEVOS MARCHANDO",
+      "description": "En relevos, cada jugador recorre una distancia hasta una señal y vuelve andando para entregar el relevo al siguiente; no se permite correr.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v65",
+      "auditNote": "Corrección de contaminación OCR: el registro mezclaba el juego 196 con el juego 198. Se restaura la ficha 196 a partir de la recuperación verificada de la fuente.",
+      "descriptionRecoveryStatus": "recuperada-verificada",
+      "recoverySource": "juegos 6a12anos.pdf · ficha nº 196",
+      "descriptionRecoveryMethod": "paráfrasis fiel de la ficha fuente"
+    }
+  },
+  {
+    "id": "j6a12-204",
+    "op": "update",
+    "data": {
+      "title": "CORRO, SALTO Y GATEO",
+      "description": "Se forman tríos y se establece una calle de ida y vuelta. El primero corre hasta la meta y regresa, el segundo repite el recorrido saltando con los pies juntos y el tercero lo hace desplazándose a cuatro patas. Gana el equipo que termina antes.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v65",
+      "auditNote": "Corrección de OCR en el título y recuperación de la descripción de la ficha 204. Se conserva el registro, sin eliminar ni fusionar.",
+      "descriptionRecoveryStatus": "recuperada-verificada",
+      "recoverySource": "juegos 6a12anos.pdf · ficha nº 204",
+      "descriptionRecoveryMethod": "paráfrasis fiel de la ficha fuente"
+    }
+  }
+]
