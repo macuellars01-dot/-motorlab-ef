@@ -1,0 +1,11 @@
+{
+  "catalogVersion": "v16.4-v61",
+  "records": 2724,
+  "uniqueIds": 2724,
+  "deletions": 0,
+  "physicalMerges": 0,
+  "ocrGamesProcessed": 404,
+  "ocrDuplicateLinks": 11,
+  "ocrFragmentsResolved": 252,
+  "manualGamesPreserved": true
+}
