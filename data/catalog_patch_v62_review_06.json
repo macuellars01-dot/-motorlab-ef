@@ -1,0 +1,485 @@
+[
+  {
+    "op": "update",
+    "id": "j6a12-102",
+    "data": {
+      "title": "TRES PATAS",
+      "age": "Primaria",
+      "material": "Cuerdas y pivotes",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Cuerdas y pivotes.\nObjetivo a desarrollar: Desarrollar la agilidad y la coordinación dinámica general a través de distintas formas de desplazamiento.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Por parejas.\nDesarrollo: Se colocan dos filas de dos alumnos/as detrás de una línea, a unos 15 metros de los pivotes. El juego consiste en hacer el recorrido de dos en dos con las piernas centrales atadas. Cuando se realiza el recorrido y se traspasa la línea sale la pareja siguiente.\nReglas: Si se desata la cuerda tendrán que parar y volverla a atar.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Desarrollar la agilidad y la coordinación dinámica general a través de distintas formas de desplazamiento."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-103",
+    "data": {
+      "title": "PIES EN ALTO",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la agilidad y la coordinación dinámica general.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: El profesor indicará distintas posiciones que deberán adoptar los alumnos/as. Siempre en movimiento, podrá decir: «sentados», «de rodillas», «boca abajo», «de espalda», etc. Mientras los alumnos se encuentran en alguna de estas posiciones, deberán tener los pies en alto. Si no lo hacen así, podrán ser cogidos por un alumno que se la queda, ocupando el lugar de este.\nReglas: No se puede estar quieto con los pies en el suelo.\nVariantes: Las partes que se deben mantener en alto, en vez de ser los pies, pueden ser otras: manos, brazos, rodillas, etc.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la agilidad y la coordinación dinámica general."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-104",
+    "data": {
+      "title": "LAS PICAS",
+      "age": "Primaria",
+      "material": "Picas",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Picas.\nObjetivo a desarrollar: Desarrollar la agilidad y la coordinación dinámica general.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: Se colocan en círculo con una pica en la mano en sentido vertical. A una voz determinada del profesor cada alumno soltará su pica y se dirigirá a la que ha dejado su compañero a la derecha, siguiendo siempre la misma rotación.\nReglas: Hay que evitar que la pica del compañero toque el suelo.\nVariantes: Ir cambiando la orden «derecha» e «izquierda».",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la agilidad y la coordinación dinámica general."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-105",
+    "data": {
+      "title": "PASAR LA CORRIENTE",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la agilidad y la coordinación dinámica general.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Pequeño grupo.\nDesarrollo: En círculo, cogidos de las manos, uno de los alumnos inicia un movimiento de ondulación con uno de sus brazos, y el que está a su lado transmite el movimiento al compañero siguiente.\nReglas: Realizar los movimientos de forma coordinada.\nVariantes: Ir aumentando los segmentos que se mueven. Variar la velocidad del movimiento.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la agilidad y la coordinación dinámica general."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-106",
+    "data": {
+      "title": "TOCARSE LAS RODILLAS",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la agilidad y la coordinación dinámica general a través de distintas formas de desplazamientos.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: Cada alumno deberá tocar las rodillas a otro compañero y evitar que se las toquen a él.\nReglas: Contabilizar el número de rodillas que tocas. No vale salir corriendo.\nVariantes: Otras partes del cuerpo. Por parejas, enlazados de las manos.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la agilidad y la coordinación dinámica general a través de distintas formas de desplazamientos."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-107",
+    "data": {
+      "title": "LANZA Y SALTA",
+      "age": "Primaria",
+      "material": "Balones",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Balones.\nObjetivo a desarrollar: Desarrollar la agilidad y la coordinación dinámica general.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Individual.\nDesarrollo: Lanzando una pelota contra la pared, saltarla cuando dé un bote en el suelo. ¿De cuántas formas puedes saltarla? Ahora lanzamos contra la pared e intentamos dar un giro antes de cogerla. ¿Cuántos giros puedes dar? ¿Qué otras acciones se pueden realizar?\nReglas: Sin reglas.\nVariantes: Ver desarrollo.",
+      "groupings": [
+        "Individual"
+      ],
+      "objectives": [
+        "Desarrollar la agilidad y la coordinación dinámica general."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-108",
+    "data": {
+      "title": "CARRERAS DE RELEVOS",
+      "age": "Primaria",
+      "material": "Balones",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Balones.\nObjetivo a desarrollar: Desarrollar la agilidad y la coordinación dinámica general a través de distintas formas de desplazamientos.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Pequeño grupo.\nDesarrollo: Carreras de relevos llevando un balón, pero cada jugador deberá transportarlo de una forma diferente sin utilizar las manos, y cada vez con una parte del cuerpo distinta a la utilizada por el compañero.\nReglas: Quien repita la acción de su compañero volverá a iniciar la salida.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la agilidad y la coordinación dinámica general a través de distintas formas de desplazamientos."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-111",
+    "data": {
+      "title": "ZANAHORIA, ZANAHORIA",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la coordinación y dinámica general.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: Un jugador se la queda; los otros se sitúan a unos metros de él. El que se la queda dice: «Zanahoria, zanahoria, color o lugar...», indicando un color o un lugar cualquiera, y corre detrás del resto. Estos deben tocar algo de ese color o del lugar indicado para estar a salvo. Si el que se la queda toca a alguno, se intercambia el papel.\nReglas: Si el que se la queda no toca a nadie vuelve a empezar.\nVariantes: Variar la forma en que se desplazan los jugadores. Partir de diferentes posiciones.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación y dinámica general."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-112",
+    "data": {
+      "title": "CORRER Y AMAGAR",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Mejorar la coordinación dinámica general.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: Los jugadores forman un círculo y dos jugadores están fuera de él; uno se la queda y trata de tocar al otro, corriendo alrededor del círculo. El perseguido, para salvarse, debe agacharse detrás de un jugador del círculo y este debe salir corriendo para que el perseguidor no lo capture. El perseguidor también puede agacharse detrás de un jugador, el cual saldrá corriendo a perseguirle.\nReglas: Si es capturado se cambian los papeles.\nVariantes: Variar la forma de desplazarse o la posición de partida del círculo.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Mejorar la coordinación dinámica general."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-113",
+    "data": {
+      "title": "CÍRCULO",
+      "age": "Primaria",
+      "material": "Un balón",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Un balón.\nObjetivo a desarrollar: Desarrollar la coordinación y control del cuerpo.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: Los jugadores se dividen en dos grupos. Un grupo se coloca en el exterior de un círculo grande pintado en el suelo y el otro en el interior. Los de fuera tratan de dar con el balón a cualquiera de los que están dentro. Cuando alguno lo consigue, intercambia su puesto con él.\nReglas: Los de dentro tienen que evitar ser tocados.\nVariantes: Jugar con varios balones. Si alguno de los jugadores de dentro intercepta el balón lanzado, evitando que toque el suelo, los dos grupos intercambian sus papeles.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación y control del cuerpo."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-114",
+    "data": {
+      "title": "LA HÉLICE",
+      "age": "Primaria",
+      "material": "Cuerda larga, saco blando o dos balones de goma-espuma con red",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Cuerda larga, saco blando o dos balones de goma-espuma con red.\nObjetivo a desarrollar: Desarrollar la coordinación y velocidad de reacción.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: Los jugadores se colocan formando un círculo amplio. Desde el centro el profesor hará girar un saco a modo de hélice (saltando la cuerda). Cuando el profesor diga «entramos», todos los alumnos intentarán entrar al centro sin ser tocados por el saco; al decir «salimos», lo inverso. Gana el último en ser eliminado.\nReglas: El último que entre o salga queda eliminado. Todos los tocados por el saco también.\nVariantes: Formas de entrar y salir: de espaldas, lateralmente.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación y velocidad de reacción."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-115",
+    "data": {
+      "title": "LOS FUSILAMIENTOS",
+      "age": "Primaria",
+      "material": "Balones blandos",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Balones blandos.\nObjetivo a desarrollar: Mejorar la coordinación y el control del cuerpo.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Pequeño grupo.\nDesarrollo: Diez alumnos se colocan pegados a una red. Dos alumnos libres lanzarán simultáneamente, uno con el pie y otro con la mano, dos balones intentando dar a los «fusilados». Si te dan, quedas eliminado. Los dos últimos serán los siguientes en lanzar.\nReglas: Hay que moverse, saltar, girar... para evitar ser dado.\nVariantes: Aumentar el número de los que lanzan.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Mejorar la coordinación y el control del cuerpo."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-116",
+    "data": {
+      "title": "LAS GALLINAS",
+      "age": "Primaria",
+      "material": "Globos",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Globos.\nObjetivo a desarrollar: Desarrollar la destreza coordinativa y el control del cuerpo.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: Cada alumno se desplaza con un globo entre las piernas, intentando quitar el globo a los demás sin que se lo quiten a él. Gana quien consiga quitar más globos.\nReglas: Quien pierda el globo queda eliminado.\nVariantes: Una vez quitado el globo se ha de explotar sentándose encima del globo capturado.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la destreza coordinativa y el control del cuerpo."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-117",
+    "data": {
+      "title": "EL NÚMERO SECRETO",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la coordinación y control del cuerpo.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Pequeño grupo.\nDesarrollo: Dos jugadores eligen un número secreto y se colocan frente a frente, de pie y con las manos agarradas. Comienzan a contar en voz alta mientras el resto cruza el pasillo que dejan entre sus cuerpos. Cuando los que cuentan llegan al número secreto, bajan los brazos y el que o los que queden dentro se unen a los que cuentan, colocándose en corro, eligiendo un nuevo número secreto y repitiendo el juego hasta que todos son capturados.\nReglas: No se pueden soltar de las manos.\nVariantes: Ídem, pasando por debajo de las piernas de los que se quedan.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación y control del cuerpo."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-118",
+    "data": {
+      "title": "EL CAZADOR",
+      "age": "Primaria",
+      "material": "Una pelota blanda y aros",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Una pelota blanda y aros.\nObjetivo a desarrollar: Mejorar la coordinación dinámica general.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: Se distribuyen los aros por todo el espacio de juego. Todos se colocan dentro de un aro, excepto «el cazador», que recibe una pelota blanda y se pasea con ella por todo el espacio. Cuando el profesor dé la señal, todos deben cambiar de aro, mientras el cazador trata de tocar con la pelota a cualquiera de sus compañeros. Si alguno es tocado mientras se encuentra fuera del aro, intercambia su puesto con el cazador.\nReglas: Hay que cambiar de aro cada vez que se dé la señal.\nVariantes: Los tocados se convierten en nuevos cazadores, incrementándose así el número de cazadores a medida que avanza el juego.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Mejorar la coordinación dinámica general."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-119",
+    "data": {
+      "title": "PISAR EL CHARCO",
+      "age": "Primaria",
+      "material": "Aros y picas con soportes",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Aros y picas con soportes.\nObjetivo a desarrollar: Desarrollar la agilidad y la velocidad de reacción.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Pequeño grupo.\nDesarrollo: Se divide la clase en cuatro grupos, uno en cada esquina del campo, equidistantes con el centro. A la señal del profesor sale el primero de cada fila haciendo el recorrido indicado: desde su esquina hacia la pica de su diagonal, con giro previo al aro central. Gana un punto para su equipo el primero que pisa el aro central (charco).\nReglas: Seguir correctamente el recorrido.\nVariantes: Colocación en la salida: tumbados, sentados... Tipo de recorrido y forma de desplazamiento.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la agilidad y la velocidad de reacción."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-121",
+    "data": {
+      "title": "CRUZAR EL PRECIPICIO",
+      "age": "Primaria",
+      "material": "Bancos suecos, picas, pelotas, vallas",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Bancos suecos, picas, pelotas, vallas.\nObjetivo a desarrollar: Mantener posiciones de equilibrio dinámico con y sin objetos.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Individual.\nDesarrollo: Se colocan los bancos suecos de forma similar al dibujo. Los niños deberán ir pasando por ellos manteniendo el equilibrio, saltando o rodeando las dificultades u obstáculos, evitando caer en el precipicio (suelo).\nReglas: No caerse al precipicio. Hasta que no ha terminado un alumno no empieza el siguiente.\nVariantes: Cambiar la posición de los bancos y obstáculos.",
+      "groupings": [
+        "Individual"
+      ],
+      "objectives": [
+        "Mantener posiciones de equilibrio dinámico con y sin objetos."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-122",
+    "data": {
+      "title": "UN, DOS, TRES, CHOCOLATE INGLÉS",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Mantener posiciones de equilibrio estático y dinámico.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: Un niño situado de cara a la pared y de espalda a los demás compañeros irá diciendo la frase «un, dos, tres...». Los demás, mientras dice dicha frase, deberán desplazarse hacia la pared. En el momento en que termina la frase, se vuelve y los demás deben quedar inmóviles. Aquellos que no se paren deberán comenzar desde el punto de partida.\nReglas: No empujar. No seguir desplazándose una vez terminada la frase. El alumno que mira a la pared no puede volver la cabeza antes de terminar la frase.\nVariantes: A la pata coja, en cuadrupedia...",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Mantener posiciones de equilibrio estático y dinámico."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-123",
+    "data": {
+      "title": "SAQUITOS EQUILIBRADOS",
+      "age": "Primaria",
+      "material": "Pequeños sacos rellenos de arena, vallas, bancos, picas",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Pequeños sacos rellenos de arena, vallas, bancos, picas.\nObjetivo a desarrollar: Mantener posiciones de equilibrio dinámico con objetos.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Individual.\nDesarrollo: Cada alumno, con un saquito de arena que debe colocar en la cabeza, tendrá que realizar un circuito con diversos obstáculos sin que este se le caiga.\nReglas: Hacer todo el circuito despacio.\nVariantes: Cambiar el lugar de transporte del saquito (cabeza, hombro, mano).",
+      "groupings": [
+        "Individual"
+      ],
+      "objectives": [
+        "Mantener posiciones de equilibrio dinámico con objetos."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-125",
+    "data": {
+      "title": "LOS CAZADORES COJOS",
+      "age": "Primaria",
+      "material": "Balones blandos",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Balones blandos.\nObjetivo a desarrollar: Mejorar la autonomía en diferentes desplazamientos con equilibrio.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: Delimitado un espacio (campo de voleibol), en el interior estarán diez niños desplazándose libremente; por el contorno se sitúan los restantes, que son los cazadores, a la pata coja y con una pelota blanda en la mano. A la señal tratan de dar con la pelota a los del interior que, según son dados, se van sentando; cuando todos son dados, los cazadores cambian su papel.\nReglas: Tirar de cuello hacia abajo. Lanzar siempre a pata coja.\nVariantes: Los cazados sustituyen inmediatamente al cazador que les ha dado. Los conejos pueden tirar los balones sueltos a los cazadores que, si son dados, se sentarán.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Mejorar la autonomía en diferentes desplazamientos con equilibrio."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-126",
+    "data": {
+      "title": "NO TE RÍAS QUE ES PEOR",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Mantener posiciones de equilibrio estático sin objetos.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Por parejas.\nDesarrollo: Uno adopta una posición de equilibrio y el otro trata de desequilibrarle haciéndole reír mediante chistes, monerías, cosquillas, etc. Cambio de rol.\nReglas: No vale empujar.\nVariantes: Cambiar las posiciones de equilibrio.",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Mantener posiciones de equilibrio estático sin objetos."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  }
+]
