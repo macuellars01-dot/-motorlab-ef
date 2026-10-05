@@ -3,7 +3,7 @@ const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
 const KEYS={sessions:'motorlab_sessions',units:'motorlab_units',overrides:'motorlab_game_overrides',deleted:'motorlab_deleted_games',deletedSessions:'motorlab_deleted_sessions',deletedUnits:'motorlab_deleted_units',meta:'motorlab_game_meta',settings:'motorlab_sync_settings',sync:'motorlab_sync_meta'};
 const DEFAULT_API='https://ugreen-tailscale.tailfc6c36.ts.net:8443/motorlab';
-const CATALOG_VERSION='2026-10-05T19:05:00.000Z';
+const CATALOG_VERSION='2026-10-05T20:55:00.000Z';
 let syncState='idle', syncTimer=null, sessionAddMode=false, sessionSelection=new Set();
 
 function read(k,f){try{return JSON.parse(localStorage.getItem(k))??f}catch(_){return f}}
@@ -37,8 +37,10 @@ async function init(){
       if(p.op==='add') catalogById.set(p.id,p.data);
       else if(p.op==='update'&&catalogById.has(p.id)) catalogById.set(p.id,{...catalogById.get(p.id),...p.data});
     });
-    games=[...catalogById.values()];
-    console.info('[MotorLab] Catálogo v16.4-v62 (141 fichas verificadas):',games.length,'registros');
+    // Auditoría de calidad: las fichas OCR pendientes o fragmentarias no deben aparecer como fichas utilizables.
+    // Se conservan en el catálogo de datos para su revisión posterior, pero quedan fuera de la biblioteca visible.
+    games=[...catalogById.values()].filter(g=>g.visibility!=='review'&&g.kind!=='page-review'&&g.needsReview!==true);
+    console.info('[MotorLab] Catálogo v16.4-v62 · biblioteca visible sin OCR pendiente:',games.length,'registros');
 
     sanitizeLocalGameState();
 
