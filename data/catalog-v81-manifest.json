@@ -1,0 +1,17 @@
+{
+  "version": "v81",
+  "source": "LIBRO Sesiones de Educación Física 12 a 13 Años Lopez y varios mas.pdf",
+  "sourcePages": [
+    60,
+    156,
+    292,
+    371,
+    372,
+    375
+  ],
+  "correctedCount": 6,
+  "patch": "data/catalog_patch_v81_libro_integrity.json",
+  "previousVersion": "v80",
+  "status": "completed",
+  "notes": "Se revisaron los 362 registros OCR marcados para revisión de esta fuente mediante comprobación de presencia del título en la página y lectura de las páginas problemáticas. Solo un registro correspondía claramente a un juego mal titulado (ocr-00356 → Carrera de lecheras); los otros cinco eran fragmentos de introducciones/teoría y se reclasificaron como page-review para que no aparezcan como juegos."
+}
