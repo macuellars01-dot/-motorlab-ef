@@ -44,9 +44,11 @@ async function init(){
     const integrityV64=await fetch('data/catalog_patch_v64_integrity.json',{cache:'no-store'}).then(r=>r.ok?r.json():[]).catch(()=>[]);
     integrityV64.forEach(p=>{const g=catalogById.get(p.id);if(g&&p.op==='update')Object.assign(g,p.data)});
     const correctionsV65=await fetch('data/catalog_patch_v65_corrections.json',{cache:'no-store'}).then(r=>r.ok?r.json():[]).catch(()=>[]);
-    correctionsV65.forEach(p=>{const g=catalogById.get(p.id);if(g&&p.op==='update')Object.assign(g,p.data);
+    correctionsV65.forEach(p=>{const g=catalogById.get(p.id);if(g&&p.op==='update')Object.assign(g,p.data)});
+    const correctionsV66=await fetch('data/catalog_patch_v66_source_block_148_205.json',{cache:'no-store'}).then(r=>r.ok?r.json():[]).catch(()=>[]);
+    correctionsV66.forEach(p=>{const g=catalogById.get(p.id);if(g&&p.op==='update')Object.assign(g,p.data)});
     games=[...catalogById.values()];
-    console.info('[MotorLab] Catálogo v16.4-v65 · auditoría OCR:',games.length,'registros');
+    console.info('[MotorLab] Catálogo v16.4-v66 · auditoría OCR:',games.length,'registros');
 
     sanitizeLocalGameState();
 
