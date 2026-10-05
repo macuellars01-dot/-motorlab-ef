@@ -1,0 +1,12 @@
+{
+  "version": "v79",
+  "source": "infantil.pdf",
+  "sourcePages": [
+    10
+  ],
+  "correctedCount": 1,
+  "patch": "data/catalog_patch_v79_infantil_integrity.json",
+  "previousVersion": "v78",
+  "status": "completed",
+  "notes": "La entrada ocr-00102 no correspondía a un juego: la página 10 del PDF es un cuadro de unidades/contenidos. Se reclasifica como page-review y queda fuera del catálogo visible."
+}
