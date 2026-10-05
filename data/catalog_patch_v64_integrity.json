@@ -8,5 +8,25 @@
       "auditStatus": "corregida-integridad-v64",
       "auditNote": "Corrección de integridad: el catálogo v60 contenía la clave de título rota (ti\\ntle) aunque la ficha fuente identifica claramente el juego como Pídola. Se conserva el registro y su contenido."
     }
+  },
+  {
+    "id": "j6a12-004",
+    "op": "update",
+    "data": {
+      "title": "EL BOSQUE ANIMADO",
+      "visibility": "visible",
+      "auditStatus": "corregida-integridad-v64",
+      "auditNote": "Corrección de integridad: se elimina el salto de línea insertado en el título por el procesamiento OCR. El título de la ficha fuente es EL BOSQUE ANIMADO."
+    }
+  },
+  {
+    "id": "ext-cotan-114",
+    "op": "update",
+    "data": {
+      "title": "Conducir el balón.",
+      "visibility": "visible",
+      "auditStatus": "corregida-integridad-v64",
+      "auditNote": "Corrección de integridad: se elimina el salto de línea incrustado en el título por el procesamiento del catálogo. La ficha fuente identifica el juego como Conducir el balón."
+    }
   }
 ]
