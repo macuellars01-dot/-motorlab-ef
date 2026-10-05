@@ -1,0 +1,232 @@
+[
+  {
+    "op": "update",
+    "id": "j6a12-181",
+    "data": {
+      "title": "LEONES Y CANGUROS",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Utilizar formas de desplazamiento no habituales.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Gran grupo.\nDesarrollo: El profesor explica a los alumnos que un grupo serán «los leones», debiéndose desplazar en cuadrupedia; los otros serán «canguros», que se desplazarán dando saltos con los pies juntos. A la señal del profesor los leones tendrán que pillar a los canguros, llevándolos a un lugar indicado previamente. Posteriormente cambian de rol.\nReglas: Basta con tocar al compañero. Los desplazamientos han de hacerse correctamente.\nVariantes: Cambiar los animales y formas de desplazamiento.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Utilizar formas de desplazamiento no habituales."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-188",
+    "data": {
+      "title": "PILLAR CON MANOS ARRIBA",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Utilizar formas de desplazamiento no habituales.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Gran grupo.\nDesarrollo: Se enumera a toda la clase del 1 al 4. Todos los alumnos se desplazan por el terreno; cuando el profesor dice un número, los que lo tienen deben ir con la mano levantada a pillar a los demás, el pillado también se queda a pillar.\nReglas: No olvidar llevar la mano levantada para pillar.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Utilizar formas de desplazamiento no habituales."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-189",
+    "data": {
+      "title": "POLICÍAS Y LADRONES",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la velocidad de reacción, de locomoción y agilidad.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Gran grupo.\nDesarrollo: Los policías deben perseguir a los ladrones y llevarlos a su zona. Los ladrones deben intentar rescatar a sus compañeros.\nReglas: Cuando un policía toca a un ladrón, este se considera detenido. Cuando un ladrón toca a un detenido, este puede huir. Cuando todos los ladrones han sido detenidos se invierten los papeles.\nVariantes: Los ladrones cogidos se convierten en policías. Cambiar el número de los que pillan.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la velocidad de reacción, de locomoción y agilidad."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-190",
+    "data": {
+      "title": "LOS COLORES",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la velocidad de reacción.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Gran grupo.\nDesarrollo: El profesor indica un color. Todos deben tocar algún objeto de ese color.\nReglas: El último en hacerlo queda eliminado.\nVariantes: Decir cosas, nombres de alumnos, etc.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la velocidad de reacción."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-191",
+    "data": {
+      "title": "PONTE EL PRIMERO",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Mejorar la capacidad de desplazarse a través de diferentes juegos motrices.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Gran grupo.\nDesarrollo: La clase en fila de uno irá dando vueltas corriendo alrededor de la pista. A la señal determinada, el último correrá hasta colocarse el primero y así sucesivamente.\nReglas: Nadie saldrá corriendo antes de oír la señal.\nVariantes: Correr en zigzag sorteando a los compañeros.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Mejorar la capacidad de desplazarse a través de diferentes juegos motrices."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-192",
+    "data": {
+      "title": "TOCAR LA COLA",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Utilizar formas de desplazamientos en diversas situaciones lúdicas.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Pequeño grupo.\nDesarrollo: Cada grupo en fila y cogidos por la cintura. Uno enfrente de la fila debe intentar pillar al último (la cola). Los demás deben evitar que lo consiga.\nReglas: La fila no se puede soltar. No vale agarrar al que intenta tocar la cola.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Utilizar formas de desplazamientos en diversas situaciones lúdicas."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-193",
+    "data": {
+      "title": "LA ESPALDERA",
+      "age": "Primaria",
+      "material": "Espalderas",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Espalderas.\nObjetivo a desarrollar: Mejorar la capacidad de desplazarse en situaciones inhabituales.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Pequeño grupo.\nDesarrollo: Por grupos, frente a una espaldera, recorrer la distancia, trepar por la espaldera (palo por palo) hasta la máxima altura y realizar el recorrido inverso para dar el relevo al compañero.\nReglas: No saltarse palos.\nVariantes: De dos en dos, de tres en tres, etc. De espaldas a la espaldera.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Mejorar la capacidad de desplazarse en situaciones inhabituales."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-195",
+    "data": {
+      "title": "LOS PATITOS",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desplazarse de diferentes formas no habituales.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Pequeño grupo.\nDesarrollo: En fila india, cogidos de la mano por debajo de las piernas, desplazarse a la voz del profesor: hacia delante, atrás, derecha, izquierda...\nReglas: No separarse durante los desplazamientos.\nVariantes: Poner obstáculos en el recorrido de los alumnos.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desplazarse de diferentes formas no habituales."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-197",
+    "data": {
+      "title": "TODOS CONTRA UNO",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la velocidad de reacción y atención.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Gran grupo.\nDesarrollo: Se dice el nombre de uno y todos le persiguen. Rápidamente se dice otro nombre y van todos tras él.\nReglas: Emplear ritmos: lento, marcha y carrera rápida.\nVariantes: Jugar a colores de la camiseta, color de pelo, etc.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la velocidad de reacción y atención."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-198",
+    "data": {
+      "title": "QUE TE PILLE EL GATO",
+      "age": "Primaria",
+      "material": "Colchonetas, mesas, etc.",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Colchonetas, mesas, etc..\nObjetivo a desarrollar: Controlar las conductas motrices habituales.\nBloque específico: HABILIDADES BÁSICAS.\nOrganización: Gran grupo.\nDesarrollo: Un niño es el gato. Los demás son ratones. El gato trata de coger a los ratones. Estos quedan a salvo si consiguen entrar en su ratonera (debajo de elementos preparados al efecto: mesas, colchonetas, etc.). Aquel ratón que es atrapado se convierte en gato.\nReglas: No se pueden permanecer todo el rato en la misma ratonera.\nVariantes: Variar el número de gatos, dos o tres.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Controlar las conductas motrices habituales."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  }
+]
