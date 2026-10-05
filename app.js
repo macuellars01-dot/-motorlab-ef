@@ -121,6 +121,7 @@ function materialTag(m){
   if(/variado|diverso|varios materiales|material diverso/.test(x))return'Material variado';
   return'Otros';
 }
+function materialTags(m){return [materialTag(m)]}
 function inferIntensity(g){
   const v=normalize(g?.intensity);
   if(v.includes('baja'))return'Baja';
