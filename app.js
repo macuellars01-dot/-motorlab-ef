@@ -121,8 +121,8 @@ function ageValues(g){
   const x=normalize(raw);
   if(!x)return['No especificada'];
   const out=[];
-  if(/infantil|3\s*(?:-|a|/|\s)\s*6|4\s*(?:-|a|/|\s)\s*6/.test(x))out.push('Infantil');
-  if(/primer|1\.?\s*(?:-|a|/|\s)\s*2|1\.?\s*º?\s*primaria|2\.?\s*º?\s*primaria/.test(x))out.push('1.º-2.º Primaria');
+  if(/infantil|3\\s*(?:-|a|\\/|\\s)\\s*6|4\\s*(?:-|a|\\/|\\s)\\s*6/.test(x))out.push('Infantil');
+  if(/primer|1\\.?\\s*(?:-|a|\\/|\\s)\\s*2|1\.?\s*º?\s*primaria|2\.?\s*º?\s*primaria/.test(x))out.push('1.º-2.º Primaria');
   if(/3\.?\s*º?\s*primaria|4\.?\s*º?\s*primaria|tercer|cuarto/.test(x))out.push('3.º-4.º Primaria');
   if(/5\.?\s*º?\s*primaria|6\.?\s*º?\s*primaria|quinto|sexto/.test(x))out.push('5.º-6.º Primaria');
   if(/todas|cualquier edad|todas las edades|primaria/.test(x)&&!out.length)out.push('Primaria');
