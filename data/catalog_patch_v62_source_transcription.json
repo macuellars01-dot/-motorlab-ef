@@ -469,18 +469,18 @@
       "material": "Sin material",
       "space": "Pista polideportiva o gimnasio",
       "intensity": "Media",
-      "description": "Etapas Primaria. Gráfico:\nCielo: 12 a\nLugar: Pista polideportiva o gimnasio. +\nMaterial: Sin materia, yr 3 D y SS\n. Dijetivo:a dalla aca (E UN\n$ orientarse según los elementos que lo componen. Ef\nBloque específico; ELEMENTOS PSICOMOTORES Lada\n0) BÁSICOS. PATA\n| Organización: Individual. Ñ AM\nDesarrollo; Todos libres por el espacio. Las cuatro [*% ls A\nesquinas de la pisa corresponden a una zona determi-\nnada: mar, barco, playa, tierra, Se nombra una de\nestas zonas y deben ir slIlo antes posible. A a voz de “maremoto” deben acudir a una zona segu-\napio ra, playa o iera para no ahogarse.\nReglas: Estar atentos alas indicaciones del profesor.\nVariantes: Cambio de lugares.",
+      "description": "Etapa: Primaria.\nCiclo: 1-2.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Estructurar el espacio y orientarse según los elementos que lo componen.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Individual.\nDesarrollo: Todos libres por el espacio. Las cuatro esquinas de la pista corresponden a una zona determinada: mar, barco, playa, tierra. Se nombra una de estas zonas y deben ir allí lo antes posible. A la voz de «maremoto» deben acudir a una zona segura, playa o tierra, para no ahogarse.\nReglas: Estar atentos a las indicaciones del profesor.\nVariantes: Cambio de lugares.",
       "groupings": [
         "Individual"
       ],
       "objectives": [
-        "Estructurar el espacio y orientarse según los elementos que lo componen."
+        "Estructurar el espacio y orientarse según los elementos que lo componen"
       ],
-      "needsReview": true,
-      "kind": "source-transcription",
+      "needsReview": false,
+      "kind": "source-transcription-verified",
       "visibility": "visible",
       "catalogVersion": "v16.4-v62",
-      "catalogAudit": "transcripción directa de ficha fuente v62"
+      "catalogAudit": "transcripción directa y verificación visual de la ficha fuente v62"
     }
   },
   {
