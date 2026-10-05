@@ -47,8 +47,25 @@ async function init(){
     correctionsV65.forEach(p=>{const g=catalogById.get(p.id);if(g&&p.op==='update')Object.assign(g,p.data)});
     const correctionsV66=await fetch('data/catalog_patch_v66_source_block_148_205.json',{cache:'no-store'}).then(r=>r.ok?r.json():[]).catch(()=>[]);
     correctionsV66.forEach(p=>{const g=catalogById.get(p.id);if(g&&p.op==='update')Object.assign(g,p.data)});
+    const correctionsV67=await fetch('data/catalog_patch_v67_integrity_final.json',{cache:'no-store'}).then(r=>r.ok?r.json():[]).catch(()=>[]);
+    correctionsV67.forEach(p=>{const g=catalogById.get(p.id);if(g&&p.op==='update')Object.assign(g,p.data)});
+    // Limpieza final de transcripciones de juegos 6a12años: la ficha conserva
+    // desarrollo, reglas y variantes, pero no repite los campos bibliográficos.
+    catalogById.forEach(g=>{
+      if(!String(g.id||'').startsWith('j6a12-'))return;
+      const d=String(g.description||'');
+      if(!/Desarrollo:/i.test(d))return;
+      const parts=[];
+      const md=d.match(/Desarrollo:\\s*(.*?)(?=\\nReglas?:|\\nVariantes:|$)/is);
+      const mr=d.match(/Reglas?:\\s*(.*?)(?=\\nVariantes:|$)/is);
+      const mv=d.match(/Variantes:\\s*(.*)$/is);
+      if(md)parts.push('Desarrollo: '+md[1].replace(/\\s+/g,' ').trim());
+      if(mr)parts.push('Reglas: '+mr[1].replace(/\\s+/g,' ').trim());
+      if(mv)parts.push('Variantes: '+mv[1].replace(/\\s+/g,' ').trim());
+      if(parts.length)g.description=parts.join(' ');
+    });
     games=[...catalogById.values()];
-    console.info('[MotorLab] Catálogo v16.4-v66 · auditoría OCR:',games.length,'registros');
+    console.info('[MotorLab] Catálogo v16.4-v67 · auditoría OCR:',games.length,'registros');
 
     sanitizeLocalGameState();
 
