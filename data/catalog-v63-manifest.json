@@ -1,5 +1,5 @@
 {
-  "catalogVersion": "v16.4-v64.1",
+  "catalogVersion": "v16.4-v64.2",
   "records": 2724,
   "uniqueIds": 2724,
   "deletions": 0,
@@ -15,10 +15,13 @@
   "remainingQuarantineIds": [
     "j6a12-002"
   ],
-  "integrityCorrectionsV64": 3,
+  "integrityCorrectionsV64": 6,
   "integrityCorrectionIdsV64": [
     "ext-cotan-056",
     "j6a12-004",
-    "ext-cotan-114"
+    "ext-cotan-114",
+    "j6a12-009",
+    "j6a12-051",
+    "j6a12-154"
   ]
 }
