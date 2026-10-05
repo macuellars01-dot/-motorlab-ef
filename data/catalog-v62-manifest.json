@@ -9,5 +9,7 @@
   "ocrFragmentsResolved": 252,
   "manualGamesPreserved": true,
   "sourceTranscriptionsCompleted": 141,
-  "sourceTranscriptionPending": 0
+  "sourceTranscriptionPending": 0,
+  "verificationMethod": "revisión visual de las páginas originales del PDF",
+  "productionPatch": "data/catalog_patch_v62_verified_141.json"
 }
