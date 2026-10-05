@@ -1,0 +1,13 @@
+{
+  "version": "v82",
+  "source": "juegos 6a12anos.pdf",
+  "sourcePages": [
+    97,
+    110
+  ],
+  "correctedCount": 1,
+  "patch": "data/catalog_patch_v82_juegos6a12_magos.json",
+  "previousVersion": "v81",
+  "status": "completed",
+  "notes": "Auditoría cruzada de v77/v80: el juego 368 aparece en la ficha escaneada como LOS MAGOS y en el listado de juegos de la misma fuente como 368 Los magos. Se corrige la cadena previa TEO → LOS MEGOS → LOS MAGOS."
+}
