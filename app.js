@@ -147,6 +147,17 @@ function intensityBucket(g){
   if(/media|moderada/.test(x))return'Media';
   return'No especificada';
 }
+function groupingTags(g){
+  const values=Array.isArray(g?.groupings)?g.groupings:[g?.groupings];
+  const x=normalize(values.filter(Boolean).join(' '));
+  if(!x)return['No especificado'];
+  const out=[];
+  if(/individual|solo|uno\s*a\s*uno/.test(x))out.push('Individual');
+  if(/pareja|parejas|dos\s*a\s*dos/.test(x))out.push('Parejas');
+  if(/pequeno|pequenos\s*grupos|grupo\s*pequeno/.test(x))out.push('Pequeños grupos');
+  if(/gran\s*grupo|todos|grupo\s*grande/.test(x))out.push('Gran grupo');
+  return out.length?out:['No especificado'];
+}
 function materialTags(m){return [materialTag(m)]}
 function inferIntensity(g){
   const v=normalize(g?.intensity);
@@ -209,7 +220,7 @@ function matches(g){
     &&(!spaces.length||spaces.includes(spaceBucket(g)))
     &&(!ints.length||ints.includes(intensityBucket(g)))
     &&(!srcs.length||srcs.includes(sourceLabel(g)))
-    &&(!groups.length||groups.some(v=>groupingValues(g).includes(v)))
+    &&(!groups.length||groups.some(v=>groupingTags(g).includes(v)))
     &&(!objs.length||objs.some(v=>objectiveValues(g).includes(v)))
     &&(!$('#ocrOnly')?.checked||g.needsReview)
 }
