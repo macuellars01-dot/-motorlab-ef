@@ -1,0 +1,492 @@
+[
+  {
+    "op": "update",
+    "id": "j6a12-148",
+    "data": {
+      "id": "j6a12-148",
+      "title": "LETRAS Y NÚMEROS",
+      "description": "Los alumnos deben inventar posiciones de equilibrio representando letras y números. Se pueden agrupar según la letra inventada. Como variante, el profesor dice la letra o número que deben representar.",
+      "material": "Sin material",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 148 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-155",
+    "data": {
+      "id": "j6a12-155",
+      "title": "LANZAMIENTOS DE BOLOS",
+      "description": "Se colocan las botellas en el centro de la pista y los jugadores se sitúan a 8-10 metros. Lanzan un balón rodando hacia las botellas y cada una que derriben vale un punto. La última botella vale dos puntos y no se puede traspasar la línea de lanzamiento. Se establecen turnos. Como variantes, se cambian las distancias y la situación de las botellas.",
+      "material": "Botellas de plástico y balones.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 155 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-156",
+    "data": {
+      "id": "j6a12-156",
+      "title": "LAS CUATRO PORTERÍAS",
+      "description": "La clase se divide en grupos. Se colocan cuatro porterías, una en cada esquina del campo. Cada grupo tiene dos porterías que debe defender y dos en las que intenta marcar, situándose los jugadores en las esquinas del campo. Los balones se lanzan con cuidado. Como variante, se utilizan muchos balones.",
+      "material": "Balones blandos y porterías o similar.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 156 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-157",
+    "data": {
+      "id": "j6a12-157",
+      "title": "DE BOTE EN BOTE",
+      "description": "Los grupos se dividen en dos filas de cuatro jugadores colocadas en los extremos de la pista. Los jugadores deben llevar el balón botando, de uno en uno, hasta un compañero de la otra fila y quedarse en esa fila; el compañero sale hacia la otra. Gana el equipo que primero consigue cambiar a todos sus miembros de fila. Si se pierde el balón, hay que empezar desde el principio. Como variantes, se puede llevar de distintas formas, con una u otra mano, y añadir obstáculos.",
+      "material": "Balones.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 157 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-158",
+    "data": {
+      "id": "j6a12-158",
+      "title": "TULIPÁN BOTANDO",
+      "description": "Cinco niños con pelota intentan dar a los demás. Quien es tocado queda en posición de tulipán, de pie, con los brazos en cruz y las piernas abiertas. Para liberarlo, otro compañero sin balón debe pasar por debajo de sus piernas. Después se intercambian los papeles y otros cinco pasan a dar con el balón. No se puede abandonar la posición de tulipán hasta ser salvado. Como variante, se cambia el número inicial de jugadores que pillan.",
+      "material": "Balones de psicomotricidad.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 158 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-159",
+    "data": {
+      "id": "j6a12-159",
+      "title": "TORTILLA DE MANOS",
+      "description": "Por parejas, frente a frente y tendidos en posición de pronación, cada jugador intenta aplastar la mano del compañero con la suya. Se establecen turnos de tirada. Como variante, se utiliza una mano u otra.",
+      "material": "Sin material.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 159 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-160",
+    "data": {
+      "id": "j6a12-160",
+      "title": "LA RATA Y EL GATO",
+      "description": "Se forma un círculo. A un niño se le da una pelota grande, que será el gato, y a otro, situado cinco o seis puestos a la derecha o izquierda, una pelota pequeña, que será la rata. A la voz de «atrapa», ambas pelotas pasan de mano en mano y la grande intenta alcanzar a la pequeña. Como variante, se introduce una tercera pelota, que representa la casa de la rata; si la rata llega a su casa, queda salvada.",
+      "material": "Una pelota grande y una pequeña.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 160 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-161",
+    "data": {
+      "id": "j6a12-161",
+      "title": "PELOTA AL CUELLO",
+      "description": "Se forma un corro. Un niño coloca una pelota entre la barbilla y el pecho y, sin tocarla con las manos, la pasa al compañero más cercano, que la recibe únicamente con la barbilla y el pecho. La pelota va pasando de cuello en cuello hasta regresar al punto de origen. Como variantes, se inventan otras formas de pasarla, por ejemplo con la axila y un dedo o con la parte posterior de la rodilla y una mano.",
+      "material": "Dos o tres pelotas no muy duras que puedan cogerse entre la barbilla y el cuello.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 161 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-163",
+    "data": {
+      "id": "j6a12-163",
+      "title": "EL CUBO Y LAS PELOTAS",
+      "description": "El profesor pone en un cubo tantas pelotas como jugadores, menos una. De golpe vacía el cubo y cada niño debe coger una pelota. El niño que se queda sin pelota será el encargado de vaciar el cubo en la siguiente jugada. No hay reglas ni variantes.",
+      "material": "Un cubo y pelotas no muy grandes.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 163 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-164",
+    "data": {
+      "id": "j6a12-164",
+      "title": "EL GOL",
+      "description": "Por parejas, uno frente a otro y a una distancia determinada, un jugador intenta meter gol al compañero que permanece con las piernas abiertas. El jugador que está con las piernas abiertas no puede moverse. Como variante, se aumenta progresivamente la distancia de lanzamiento.",
+      "material": "Balones.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 164 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-165",
+    "data": {
+      "id": "j6a12-165",
+      "title": "TRIÁNGULO",
+      "description": "Se forman grupos de cuatro. Tres jugadores se colocan formando un triángulo y realizan pases con el pie entre ellos. El cuarto jugador se sitúa en el centro e intenta interceptar el balón. Si intercepta el balón o un jugador realiza un mal pase, este último pasa al centro. Como variante, se añade otro balón a los pasadores.",
+      "material": "Balones.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 165 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-167",
+    "data": {
+      "id": "j6a12-167",
+      "title": "SLALOM",
+      "description": "Los miembros del grupo se colocan en fila, separados unos de otros por dos metros. El último, con un balón, realiza un zigzag entre los compañeros conduciendo el balón con los pies. Al llegar al principio se coloca a dos metros del primer compañero y sale el siguiente. Gana el equipo que antes llegue al lugar establecido. Como variantes, se conduce con el pie derecho o con el izquierdo.",
+      "material": "Balones.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 167 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-168",
+    "data": {
+      "id": "j6a12-168",
+      "title": "PELOTA ENVENENADA",
+      "description": "Se forman dos equipos en dos campos opuestos. Un jugador intenta tocar con la pelota a un jugador del otro equipo. Si lo toca, este pasa a pertenecer al equipo contrario. El juego termina cuando todos los jugadores están en el mismo bando. No hay variantes.",
+      "material": "Un balón y una tiza.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 168 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-169",
+    "data": {
+      "id": "j6a12-169",
+      "title": "PELOTA POR EL PUENTE",
+      "description": "Los niños forman un corro con las piernas abiertas y los pies tocando los de los compañeros. Un jugador lanza una pelota arrastrándola por el suelo e intenta hacerla pasar entre las piernas de algún compañero. Este, sin mover los pies, golpea la pelota con las manos para evitar el gol e intenta enviarla entre las piernas de otro. Después se pueden introducir más pelotas. Quien recibe un gol sale del corro y espera para ocupar el lugar de otro eliminado. No vale agacharse.",
+      "material": "Pelotas grandes que no boten ni pesen mucho (3 o 4).",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 169 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-170",
+    "data": {
+      "id": "j6a12-170",
+      "title": "ELEVAR LA PELOTA",
+      "description": "Se forma un grupo de diez personas como máximo. El juego consiste en mantener la pelota en el aire evitando que caiga al suelo. Se puede tocar con cualquier parte del cuerpo, sin establecer un orden, pero una misma persona no puede tocarla dos veces consecutivas. Se cuentan los golpes para saber cuánto tiempo se consigue mantenerla en el aire.",
+      "material": "Una pelota que no sea muy pesada o un globo gigante.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 170 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-171",
+    "data": {
+      "id": "j6a12-171",
+      "title": "EL PALMO",
+      "description": "Los alumnos depositan las canicas en el suelo, separadas unas de otras. El juego consiste en lanzar las canicas sobre otra canica rival y dejarla a un palmo o menos de esta para eliminarla. Gana el jugador que elimine a todos los demás. Como variante, se mide con el pie.",
+      "material": "Canicas.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 171 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-172",
+    "data": {
+      "id": "j6a12-172",
+      "title": "EL TÚNEL",
+      "description": "Se forman equipos de seis jugadores colocados en hilera, agachados y con las piernas abiertas. El primero lleva una pelota y la pasa hacia atrás rodándola entre las piernas de los compañeros. Cuando llega al último, este la coge y corre con ella hasta colocarse el primero. Se repite sucesivamente. Vence el equipo que antes llegue al final de la pista. Como variante, en vez de rodar la pelota se pasa de mano en mano.",
+      "material": "Una pelota por grupo.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 172 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-174",
+    "data": {
+      "id": "j6a12-174",
+      "title": "LA SACA",
+      "description": "Se hace un círculo en el suelo y se colocan tantas canicas como participantes haya. Los alumnos se sitúan a una distancia del círculo, cada uno con una canica, e intentan sacar todas las canicas del interior. Gana el jugador que más canicas saque. Como variante, se utilizan chapas u otros materiales en lugar de canicas.",
+      "material": "Canicas.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 174 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-175",
+    "data": {
+      "id": "j6a12-175",
+      "title": "LA DIANA NUMERADA",
+      "description": "Se dibuja en el suelo una diana con diferentes puntuaciones. A cierta distancia, los alumnos se colocan detrás de una línea, cada uno con una canica. Realizan tres lanzamientos y gana quien consigue mayor puntuación. Como variantes, se incluyen puntuaciones negativas que resten puntos o se lanzan otros objetos.",
+      "material": "Canicas.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 175 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-176",
+    "data": {
+      "id": "j6a12-176",
+      "title": "BALÓN PRISIONERO",
+      "description": "Se forman dos grupos, uno frente a otro, y detrás de cada equipo se sitúan sus prisioneros. El objetivo es lanzar la pelota para golpear a un rival sin que este la coja; si la atrapa, el prisionero pasa a ser lanzador. Los prisioneros pueden combinar y pasarse la pelota con sus compañeros. Gana el equipo que capture a todos los componentes del contrario. Como variantes, se puede lanzar con bote previo o cambiar el material por aros, frisbee, etc.",
+      "material": "Una pelota blanda.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 176 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-177",
+    "data": {
+      "id": "j6a12-177",
+      "title": "A POR LA ZAPATILLA",
+      "description": "Se forman dos equipos con balones y se sitúan uno frente a otro, colocando una zapatilla entre ellos. A la señal del profesor, ambos equipos lanzan las pelotas contra la zapatilla para intentar hacerla llegar al campo contrario. Gana el equipo que consiga llevarla al campo contrario o que, al terminar, la tenga más alejada de su campo. Como variantes, se coloca la zapatilla dentro de un círculo o se utilizan dos o más zapatillas.",
+      "material": "Pelotas y una zapatilla.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 177 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-178",
+    "data": {
+      "id": "j6a12-178",
+      "title": "LA RAYA",
+      "description": "Todos los alumnos, con una moneda, se sitúan a cierta distancia de una raya dibujada en el suelo y lanzan sus monedas, uno a uno. Gana quien consigue acercarse más a la raya. Como variante, se lanza la moneda con un ojo cerrado.",
+      "material": "Monedas.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 178 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-179",
+    "data": {
+      "id": "j6a12-179",
+      "title": "A LAS 21 CON AROS",
+      "description": "Cada grupo tiene una pica pequeña con su soporte. El objetivo es encestar el aro en la pica desde cuatro zonas de lanzamiento. La primera está a un metro y medio y las siguientes a un metro de distancia; las puntuaciones son 1, 2, 3 y 4 según la proximidad. Cuando se llega a la última línea se empieza de nuevo. Gana el primer jugador que llegue a 21. No se puede pasar de línea sin encestar y, si se falla, cambia el jugador. Como variantes, se cambia la distancia o se permite elegir libremente la línea de tiro.",
+      "material": "Picas con soporte y aros pequeños.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 179 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-180",
+    "data": {
+      "id": "j6a12-180",
+      "title": "BALÓN TORRE",
+      "description": "Se forman dos grupos. Un jugador de cada grupo se sitúa dentro de un círculo en campos contrarios y los demás en la otra mitad. El jugador torre realiza un saque a uno de sus compañeros para que se lo devuelva sin que toque el suelo; debe recuperar la pelota sin salir del círculo, mientras los contrarios intentan interceptarla para pasársela a su torre. Si el balón toca el suelo durante el pase, pasa al contrario. Vence el equipo que antes realice diez pases a su jugador torre.",
+      "material": "Pelotas.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 180 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-182",
+    "data": {
+      "id": "j6a12-182",
+      "title": "TRANSPORTAMOS GLOBOS",
+      "description": "Por parejas, los alumnos transportan un globo utilizando diferentes partes del cuerpo, como cabeza, hombro, pecho o manos. El globo no puede tocar el suelo ni se debe explotar. Como variante, se cambia el material y las formas de desplazamiento.",
+      "material": "Globos.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 182 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-183",
+    "data": {
+      "id": "j6a12-183",
+      "title": "CANGREJO RABIOSO",
+      "description": "Cinco alumnos se cogen de la mano formando un círculo y otro se coloca dentro imitando a un cangrejo en cuadrupedia invertida. A la señal, el cangrejo intenta tocar a alguno de los componentes del círculo, que tratan de evitarlo sin romperlo. Cuando toca a uno, se cambian los roles. No se puede romper el círculo.",
+      "material": "Sin material.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 183 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-184",
+    "data": {
+      "id": "j6a12-184",
+      "title": "LA CAZA DEL PAÑUELO",
+      "description": "Cada jugador se coloca un pañuelo colgado detrás del pantalón. Todos deben andar o correr en cuadrupedia, intentando quitar pañuelos y evitar que les quiten el suyo. Como variante, unos jugadores llevan pañuelos y otros no, y se pueden variar las formas de desplazamiento.",
+      "material": "Pañuelos.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 184 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-185",
+    "data": {
+      "id": "j6a12-185",
+      "title": "LA CADENA",
+      "description": "Uno se la queda y, a la señal, intenta tocar a los demás. Cuando toca a uno, ambos se cogen de la mano y continúan la persecución, formando una cadena con los tocados. No pueden soltarse de la cadena. Cuando la cadena tiene más de seis componentes, como variante se divide en otra cadena.",
+      "material": "Sin material.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 185 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-186",
+    "data": {
+      "id": "j6a12-186",
+      "title": "SAFARI DE CANGUROS",
+      "description": "Cada alumno coloca una pelota entre los pies. Tres jugadores se la quedan y, desplazándose en cuadrupedia, intentan quitar la pelota a los canguros, que huyen saltando. Cuando un cazador consigue sacar la pelota de los pies de un canguro, se produce un cambio de rol. Si al canguro se le cae la pelota, también cambia de rol.",
+      "material": "Balones.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 186 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-187",
+    "data": {
+      "id": "j6a12-187",
+      "title": "LA BRUJA PIRUJA",
+      "description": "Distribuidos por el terreno, uno se la queda de bruja y, con un par de hojas de periódico enrolladas, trata de tocar a los demás. El tocado pasa a ser la bruja. No se debe golpear fuerte con el periódico. Como variante, el tocado se convierte en el animal que quiera la bruja y se desplaza como tal.",
+      "material": "Hojas de periódico.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 187 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-194",
+    "data": {
+      "id": "j6a12-194",
+      "title": "ROBAR COLITAS",
+      "description": "Un alumno corre tras su compañero para quitarle la cuerda que lleva metida detrás del pantalón. Si consigue coger la cuerda, cambian los roles. Como variante, todos llevan una colita y se las roban unos a otros.",
+      "material": "Cuerdas.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 194 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-196",
+    "data": {
+      "id": "j6a12-196",
+      "title": "RELEVOS MARCHANDO",
+      "description": "Delante de cada equipo, a 15 metros, se coloca una señalización. A la voz de «YA», el primero de cada equipo se dirige hacia la señalización dando la vuelta y regresa hasta el primero de su equipo, que extiende la mano para recibir el relevo. No se puede correr y el siguiente no sale hasta que recibe el toque. Como variantes, se cambian las distancias y las formaciones.",
+      "material": "Balones o postes.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 196 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-201",
+    "data": {
+      "id": "j6a12-201",
+      "title": "EL METRO",
+      "description": "Los alumnos imaginan que caminan por los pasillos del metro a una hora punta. Mientras caminan rápidamente no deben golpearse ni tocarse, aunque el espacio de juego se vaya haciendo cada vez más pequeño. Como variantes, se puede imaginar que se filma el juego y después verlo al revés, andando hacia atrás, o simular una avería eléctrica, caminando con los ojos cerrados sin tocarse.",
+      "material": "Sin material.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 201 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-204",
+    "data": {
+      "id": "j6a12-204",
+      "title": "CORRO, SALTO Y GATEO",
+      "description": "Se establecen calles de un lado a otro de la pista. En cada trío, el primero es el corredor, el segundo el saltador y el tercero el que gatea. A la señal, el primero corre hasta la meta y vuelve, toca al segundo, que realiza el mismo recorrido dando saltos con los pies juntos, y finalmente el tercero lo hace a cuatro patas. Gana el equipo que termina antes. Cada jugador debe respetar su forma de desplazarse. Como variantes, se cambia la forma de desplazarse, por ejemplo a pata coja o en cuclillas.",
+      "material": "Sin material.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 204 de juegos 6a12anos.pdf."
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-205",
+    "data": {
+      "id": "j6a12-205",
+      "title": "LA SILLA DE LA REINA",
+      "description": "Por tríos, dos alumnos cruzan las manos y el tercero se sienta sobre ellas, agarrándose a los hombros de sus compañeros. Los dos transportan al compañero según sus indicaciones. A la señal se cambia de rol. La «reina» indica el lugar al que quiere ser transportada y la velocidad de desplazamiento. Como variante, se buscan otras formas de transporte en las que intervenga la pareja.",
+      "material": "Sin material.",
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v66",
+      "sourceRecoveryNote": "Recuperada directamente de la ficha nº 205 de juegos 6a12anos.pdf."
+    }
+  }
+]
