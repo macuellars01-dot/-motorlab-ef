@@ -1,0 +1,140 @@
+[
+  {
+    "op": "update",
+    "id": "j6a12-072",
+    "data": {
+      "title": "LOS ANIMALES",
+      "age": "Primaria",
+      "material": "Pandero",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Pandero.\nObjetivo a desarrollar: Identificar el orden creciente de velocidad y responder con cambios de ritmos.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Gran grupo.\nDesarrollo: Los alumnos se colocan libremente. El profesor va tocando el pandero con diferentes ritmos: a ritmo de blancas, se desplazan como las tortugas; a ritmo de negras, saltan como los canguros; a ritmo de corcheas, simulan el trote de un caballo.\nReglas: Sin reglas.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Identificar el orden creciente de velocidad y responder con cambios de ritmos."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-074",
+    "data": {
+      "title": "FUERTE Y DÉBIL",
+      "age": "Primaria",
+      "material": "Triángulo",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Triángulo.\nObjetivo a desarrollar: Reconocer los grados de intensidad del sonido para ajustar los desplazamientos.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Gran grupo.\nDesarrollo: Los alumnos caminarán o se pararán de acuerdo con las características del sonido de un triángulo: sonido fuerte, caminar; sonido débil, pararse.\nReglas: Sin reglas.\nVariantes: Cambiar las órdenes: caminar hacia delante o hacia detrás, etc.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Reconocer los grados de intensidad del sonido para ajustar los desplazamientos."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-075",
+    "data": {
+      "title": "BOTA, BOTA LA PELOTA",
+      "age": "Primaria",
+      "material": "Balones y pandero",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Balones y pandero.\nObjetivo a desarrollar: Reconocer la duración de un sonido ajustándola a movimientos.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Gran grupo.\nDesarrollo: Marcar ritmos lentos y rápidos con el balón, según el sonido escuchado, variando la altura del bote.\nReglas: Sin reglas.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Reconocer la duración de un sonido ajustándola a movimientos."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-077",
+    "data": {
+      "title": "HAZ LO QUE YO HAGO",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Reproducir secuencias rítmicas sencillas.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Por parejas.\nDesarrollo: Un alumno realiza una estructura rítmica con las manos para que su compañero la reproduzca utilizando otra parte de su cuerpo: con los pies, golpeos en los muslos, carrillos, chasquidos, etc.\nReglas: Sin reglas.\nVariantes: Utilizar instrumentos musicales.",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Reproducir secuencias rítmicas sencillas."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-078",
+    "data": {
+      "title": "RODANDO, RODANDO",
+      "age": "Primaria",
+      "material": "Aros",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Aros.\nObjetivo a desarrollar: Utilizar variaciones en duración para adecuar los desplazamientos.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Pequeño grupo.\nDesarrollo: Un componente del equipo rodará el aro. Mientras este rueda, todos los componentes del equipo darán palmadas. Cuando pare el aro, dejarán de dar palmadas.\nReglas: Sin reglas.\nVariantes: Desplazarse mientras rueda el aro, mover piernas o brazos, etc.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Utilizar variaciones en duración para adecuar los desplazamientos."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-082",
+    "data": {
+      "title": "VE Y VUELVE",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Utilizar variaciones temporales en duración.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Individual.\nDesarrollo: Alejarse de un punto de partida y volver siguiendo la misma estructura rítmica para ir y volver.\nReglas: Sin reglas.\nVariantes: Caminando, corriendo y saltando.",
+      "groupings": [
+        "Individual"
+      ],
+      "objectives": [
+        "Utilizar variaciones temporales en duración."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  }
+]
