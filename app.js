@@ -3,7 +3,7 @@ const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
 const KEYS={sessions:'motorlab_sessions',units:'motorlab_units',overrides:'motorlab_game_overrides',deleted:'motorlab_deleted_games',deletedSessions:'motorlab_deleted_sessions',deletedUnits:'motorlab_deleted_units',meta:'motorlab_game_meta',settings:'motorlab_sync_settings',sync:'motorlab_sync_meta'};
 const DEFAULT_API='https://ugreen-tailscale.tailfc6c36.ts.net:8443/motorlab';
-const CATALOG_VERSION='2026-10-05T07:45:00.000Z';
+const CATALOG_VERSION='2026-10-05T17:55:00.000Z';
 let syncState='idle', syncTimer=null, sessionAddMode=false, sessionSelection=new Set();
 
 function read(k,f){try{return JSON.parse(localStorage.getItem(k))??f}catch(_){return f}}
@@ -22,17 +22,20 @@ async function init(){
     games=await gameResponse.json();
     if(!Array.isArray(games))throw new Error('games.json no es un array');
 
-    // MotorLab v16.4-v60: aplicar el parche incremental sobre el catálogo base.
+    // MotorLab v16.4-v61: aplicar v60 y, después, las 141 fichas recuperadas que faltaban del PDF 6-12 años.
     const patchResponse=await fetch('data/catalog_patch_v60.json',{cache:'no-store'});
     if(!patchResponse.ok)throw new Error(`catalog_patch_v60.json ${patchResponse.status}`);
     const catalogPatch=await patchResponse.json();
+    const additionsResponse=await fetch('data/catalog_patch_v61_additions.json',{cache:'no-store'});
+    if(!additionsResponse.ok)throw new Error(`catalog_patch_v61_additions.json ${additionsResponse.status}`);
+    const catalogAdditions=await additionsResponse.json();
     const catalogById=new Map(games.map(g=>[g.id,g]));
-    catalogPatch.forEach(p=>{
+    [...catalogPatch,...catalogAdditions].forEach(p=>{
       if(p.op==='add') catalogById.set(p.id,p.data);
       else if(p.op==='update'&&catalogById.has(p.id)) catalogById.set(p.id,{...catalogById.get(p.id),...p.data});
     });
     games=[...catalogById.values()];
-    console.info('[MotorLab] Catálogo v16.4-v60:',games.length,'registros');
+    console.info('[MotorLab] Catálogo v16.4-v61:',games.length,'registros');
 
     sanitizeLocalGameState();
 
