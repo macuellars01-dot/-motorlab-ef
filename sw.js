@@ -1,6 +1,6 @@
-const CACHE = 'motorlab-ef-v16.4-v60';
+const CACHE = 'motorlab-ef-v16.4-v60.1';
 const ASSETS = [
-  './', './index.html', './styles.css', './app.js?v=16.4-v60',
+  './', './index.html', './styles.css', './app.js?v=16.4-v60.1',
   './manifest.webmanifest', './apple-touch-icon.png',
   './icon-192.png', './icon-512.png',
   './data/games.json', './data/catalog_patch_v60.json', './data/sources.json'
