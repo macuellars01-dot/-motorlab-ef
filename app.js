@@ -157,6 +157,9 @@ function inferIntensity(g){
 }
 function uniqSorted(values){return [...new Set(values.filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),'es',{sensitivity:'base'}))}
 function sourceLabel(g){return g.source||'Fuente no especificada'}
+function sourceKey(v){
+  return normalize(String(v||'').split('/').pop().trim());
+}
 function groupingValues(g){return Array.isArray(g.groupings)&&g.groupings.length?g.groupings:['No especificado']}
 function objectiveValues(g){return Array.isArray(g.objectives)&&g.objectives.length?g.objectives:['No especificado']}
 function buildFilters(){
@@ -208,7 +211,7 @@ function matches(g){
     &&(!mats.length||mats.some(v=>materialTags(g.material).includes(v)))
     &&(!spaces.length||spaces.includes(spaceBucket(g)))
     &&(!ints.length||ints.includes(intensityBucket(g)))
-    &&(!srcs.length||srcs.includes(sourceLabel(g)))
+    &&(!srcs.length||srcs.some(v=>sourceKey(v)===sourceKey(sourceLabel(g))))
     &&(!groups.length||groups.some(v=>groupingValues(g).includes(v)))
     &&(!objs.length||objs.some(v=>objectiveValues(g).includes(v)))
     &&(!$('#ocrOnly')?.checked||g.needsReview)
