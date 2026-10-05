@@ -1,0 +1,3668 @@
+[
+  {
+    "op": "add",
+    "id": "j6a12-001",
+    "data": {
+      "id": "j6a12-001",
+      "title": "EL PELELE",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 1: EL PELELE. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 3,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-006",
+    "data": {
+      "id": "j6a12-006",
+      "title": "STOP",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 6: STOP. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 4,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-008",
+    "data": {
+      "id": "j6a12-008",
+      "title": "CAZAR AL RUIDOSO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 8: CAZAR AL RUIDOSO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 5,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-010",
+    "data": {
+      "id": "j6a12-010",
+      "title": "LA ZAPATILLA POR DETRÁS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 10: LA ZAPATILLA POR DETRÁS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 5,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-011",
+    "data": {
+      "id": "j6a12-011",
+      "title": "¿DÓNDE ESTÁS?",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 11: ¿DÓNDE ESTÁS?. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 6,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-012",
+    "data": {
+      "id": "j6a12-012",
+      "title": "LOS DISPARATES",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 12: LOS DISPARATES. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 6,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-013",
+    "data": {
+      "id": "j6a12-013",
+      "title": "¿GUIÑO?",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 13: ¿GUIÑO?. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 6,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-014",
+    "data": {
+      "id": "j6a12-014",
+      "title": "NO TE CAMBIES QUE TE PILLA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 14: NO TE CAMBIES QUE TE PILLA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 6,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-015",
+    "data": {
+      "id": "j6a12-015",
+      "title": "EL TELEGRAMA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 15: EL TELEGRAMA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 7,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-017",
+    "data": {
+      "id": "j6a12-017",
+      "title": "ARRANCAR CEBOLLAS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 17: ARRANCAR CEBOLLAS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 7,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-019",
+    "data": {
+      "id": "j6a12-019",
+      "title": "EL CIEMPIÉS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 19: EL CIEMPIÉS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 8,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-020",
+    "data": {
+      "id": "j6a12-020",
+      "title": "LOS NUDOS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 20: LOS NUDOS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 8,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-022",
+    "data": {
+      "id": "j6a12-022",
+      "title": "COSQUILLEO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 22: COSQUILLEO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 8,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-024",
+    "data": {
+      "id": "j6a12-024",
+      "title": "¿QUÉ LETRAS SON?",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 24: ¿QUÉ LETRAS SON?. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 9,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-025",
+    "data": {
+      "id": "j6a12-025",
+      "title": "DÉJATE LLEVAR POR LA MÚSICA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 25: DÉJATE LLEVAR POR LA MÚSICA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 9,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-026",
+    "data": {
+      "id": "j6a12-026",
+      "title": "EL OBJETO INVISIBLE",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 26: EL OBJETO INVISIBLE. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 9,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-027",
+    "data": {
+      "id": "j6a12-027",
+      "title": "DIBUJA CON EL CUERPO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 27: DIBUJA CON EL CUERPO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 10,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-029",
+    "data": {
+      "id": "j6a12-029",
+      "title": "DOBLAR AL ÁRBOL",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 29: DOBLAR AL ÁRBOL. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 10,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-030",
+    "data": {
+      "id": "j6a12-030",
+      "title": "BLANDO Y RÍGIDO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 30: BLANDO Y RÍGIDO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 10,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-032",
+    "data": {
+      "id": "j6a12-032",
+      "title": "NOS AGRUPAMOS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 32: NOS AGRUPAMOS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 11,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-033",
+    "data": {
+      "id": "j6a12-033",
+      "title": "EN BUSCA DEL TESORO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 33: EN BUSCA DEL TESORO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 11,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-037",
+    "data": {
+      "id": "j6a12-037",
+      "title": "EL MAREMOTO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 37: EL MAREMOTO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 12,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-039",
+    "data": {
+      "id": "j6a12-039",
+      "title": "DIRIJO MI CABALLO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 39: DIRIJO MI CABALLO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 13,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-040",
+    "data": {
+      "id": "j6a12-040",
+      "title": "EL MUNDO AL REVÉS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 40: EL MUNDO AL REVÉS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 13,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-042",
+    "data": {
+      "id": "j6a12-042",
+      "title": "¿QUÉ FALTA?",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 42: ¿QUÉ FALTA?. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 13,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-043",
+    "data": {
+      "id": "j6a12-043",
+      "title": "ADIVINA QUIÉN HA SIDO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 43: ADIVINA QUIÉN HA SIDO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 14,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-048",
+    "data": {
+      "id": "j6a12-048",
+      "title": "A JUNTARSE",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 48: A JUNTARSE. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 15,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-050",
+    "data": {
+      "id": "j6a12-050",
+      "title": "VEN O VETE",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 50: VEN O VETE. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 15,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-052",
+    "data": {
+      "id": "j6a12-052",
+      "title": "LOS VEHÍCULOS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 52: LOS VEHÍCULOS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 16,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-053",
+    "data": {
+      "id": "j6a12-053",
+      "title": "ESQUIVAS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 53: ESQUIVAS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 16,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-054",
+    "data": {
+      "id": "j6a12-054",
+      "title": "LO QUE HACE EL PRIMERO YO LO SUPERO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 54: LO QUE HACE EL PRIMERO YO LO SUPERO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 16,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-055",
+    "data": {
+      "id": "j6a12-055",
+      "title": "MEMORIZO UN RECORRIDO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 55: MEMORIZO UN RECORRIDO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 17,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-057",
+    "data": {
+      "id": "j6a12-057",
+      "title": "POR EL SONIDO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 57: POR EL SONIDO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 17,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-058",
+    "data": {
+      "id": "j6a12-058",
+      "title": "¿QUIÉN LO HIZO?",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 58: ¿QUIÉN LO HIZO?. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 17,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-059",
+    "data": {
+      "id": "j6a12-059",
+      "title": "LA BARRERA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 59: LA BARRERA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 18,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-060",
+    "data": {
+      "id": "j6a12-060",
+      "title": "¡A LA CAZA DE ANIMALES!",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 60: ¡A LA CAZA DE ANIMALES!. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 18,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-061",
+    "data": {
+      "id": "j6a12-061",
+      "title": "LA PELÍCULA DE CINE",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 61: LA PELÍCULA DE CINE. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 18,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-062",
+    "data": {
+      "id": "j6a12-062",
+      "title": "PIES QUIETOS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 62: PIES QUIETOS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 18,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-063",
+    "data": {
+      "id": "j6a12-063",
+      "title": "PILLA LA PELOTA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 63: PILLA LA PELOTA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 19,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-064",
+    "data": {
+      "id": "j6a12-064",
+      "title": "HOMBRE LOBO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 64: HOMBRE LOBO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 19,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-065",
+    "data": {
+      "id": "j6a12-065",
+      "title": "BUSCAR EL OSO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 65: BUSCAR EL OSO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 19,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-066",
+    "data": {
+      "id": "j6a12-066",
+      "title": "EL ESCONDITE DE SONIDOS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 66: EL ESCONDITE DE SONIDOS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 19,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-067",
+    "data": {
+      "id": "j6a12-067",
+      "title": "TRASLADO DE HERIDOS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 67: TRASLADO DE HERIDOS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 20,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-069",
+    "data": {
+      "id": "j6a12-069",
+      "title": "EL MINUTO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 69: EL MINUTO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 20,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-070",
+    "data": {
+      "id": "j6a12-070",
+      "title": "LAS PALMADAS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 70: LAS PALMADAS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 20,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-072",
+    "data": {
+      "id": "j6a12-072",
+      "title": "LOS ANIMALES",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 72: LOS ANIMALES. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 21,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-074",
+    "data": {
+      "id": "j6a12-074",
+      "title": "FUERTE Y DÉBIL",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 74: FUERTE Y DÉBIL. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 21,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-075",
+    "data": {
+      "id": "j6a12-075",
+      "title": "BOTA, BOTA LA PELOTA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 75: BOTA, BOTA LA PELOTA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 22,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-077",
+    "data": {
+      "id": "j6a12-077",
+      "title": "HAZ LO QUE YO HAGO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 77: HAZ LO QUE YO HAGO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 22,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-078",
+    "data": {
+      "id": "j6a12-078",
+      "title": "RODANDO, RODANDO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 78: RODANDO, RODANDO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 22,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-082",
+    "data": {
+      "id": "j6a12-082",
+      "title": "VE Y VUELVE",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 82: VE Y VUELVE. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 23,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-085",
+    "data": {
+      "id": "j6a12-085",
+      "title": "HAZ LO QUE DIGA LA CANCIÓN",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 85: HAZ LO QUE DIGA LA CANCIÓN. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 24,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-088",
+    "data": {
+      "id": "j6a12-088",
+      "title": "POR GESTOS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 88: POR GESTOS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 25,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-089",
+    "data": {
+      "id": "j6a12-089",
+      "title": "SIGO AL BALÓN",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 89: SIGO AL BALÓN. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 25,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-091",
+    "data": {
+      "id": "j6a12-091",
+      "title": "CRUZA EL RÍO Y NO TE MOJES",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 91: CRUZA EL RÍO Y NO TE MOJES. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 26,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-092",
+    "data": {
+      "id": "j6a12-092",
+      "title": "EL ZORRO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 92: EL ZORRO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 26,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-093",
+    "data": {
+      "id": "j6a12-093",
+      "title": "EL GLOBO LOCO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 93: EL GLOBO LOCO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 26,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-095",
+    "data": {
+      "id": "j6a12-095",
+      "title": "LAS TIJERAS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 95: LAS TIJERAS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 27,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-097",
+    "data": {
+      "id": "j6a12-097",
+      "title": "EL JEFE",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 97: EL JEFE. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 27,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-098",
+    "data": {
+      "id": "j6a12-098",
+      "title": "LA ORUGA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 98: LA ORUGA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 27,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-100",
+    "data": {
+      "id": "j6a12-100",
+      "title": "LO QUE HACE EL PADRE, HACEN LOS NIÑOS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 100: LO QUE HACE EL PADRE, HACEN LOS NIÑOS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 28,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-102",
+    "data": {
+      "id": "j6a12-102",
+      "title": "TRES PATAS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 102: TRES PATAS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 28,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-103",
+    "data": {
+      "id": "j6a12-103",
+      "title": "PIES EN ALTO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 103: PIES EN ALTO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 29,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-104",
+    "data": {
+      "id": "j6a12-104",
+      "title": "LAS PICAS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 104: LAS PICAS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 29,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-105",
+    "data": {
+      "id": "j6a12-105",
+      "title": "PASAR LA CORRIENTE",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 105: PASAR LA CORRIENTE. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 29,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-106",
+    "data": {
+      "id": "j6a12-106",
+      "title": "TOCARSE LAS RODILLAS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 106: TOCARSE LAS RODILLAS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 29,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-107",
+    "data": {
+      "id": "j6a12-107",
+      "title": "LANZA Y SALTA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 107: LANZA Y SALTA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 30,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-108",
+    "data": {
+      "id": "j6a12-108",
+      "title": "CARRERAS DE RELEVOS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 108: CARRERAS DE RELEVOS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 30,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-111",
+    "data": {
+      "id": "j6a12-111",
+      "title": "ZANAHORIA, ZANAHORIA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 111: ZANAHORIA, ZANAHORIA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 31,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-112",
+    "data": {
+      "id": "j6a12-112",
+      "title": "CORRER Y AMAGAR",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 112: CORRER Y AMAGAR. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 31,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-113",
+    "data": {
+      "id": "j6a12-113",
+      "title": "CÍRCULO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 113: CÍRCULO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 31,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-114",
+    "data": {
+      "id": "j6a12-114",
+      "title": "LA HÉLICE",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 114: LA HÉLICE. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 31,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-115",
+    "data": {
+      "id": "j6a12-115",
+      "title": "LOS FUSILAMIENTOS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 115: LOS FUSILAMIENTOS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 32,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-116",
+    "data": {
+      "id": "j6a12-116",
+      "title": "LAS GALLINAS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 116: LAS GALLINAS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 32,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-117",
+    "data": {
+      "id": "j6a12-117",
+      "title": "EL NÚMERO SECRETO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 117: EL NÚMERO SECRETO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 32,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-118",
+    "data": {
+      "id": "j6a12-118",
+      "title": "EL CAZADOR",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 118: EL CAZADOR. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 32,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-119",
+    "data": {
+      "id": "j6a12-119",
+      "title": "PISAR EL CHARCO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 119: PISAR EL CHARCO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 33,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-121",
+    "data": {
+      "id": "j6a12-121",
+      "title": "CRUZAR EL PRECIPICIO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 121: CRUZAR EL PRECIPICIO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 33,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-122",
+    "data": {
+      "id": "j6a12-122",
+      "title": "UN, DOS, TRES, CHOCOLATE INGLÉS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 122: UN, DOS, TRES, CHOCOLATE INGLÉS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 33,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-123",
+    "data": {
+      "id": "j6a12-123",
+      "title": "SALTOS EQUILIBRADOS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 123: SALTOS EQUILIBRADOS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 34,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-125",
+    "data": {
+      "id": "j6a12-125",
+      "title": "LOS CAZADORES COJOS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 125: LOS CAZADORES COJOS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 34,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-126",
+    "data": {
+      "id": "j6a12-126",
+      "title": "NO TE RÍAS QUE ES PEOR",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 126: NO TE RÍAS QUE ES PEOR. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 34,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-129",
+    "data": {
+      "id": "j6a12-129",
+      "title": "CADA VEZ MÁS BAJO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 129: CADA VEZ MÁS BAJO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 35,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-133",
+    "data": {
+      "id": "j6a12-133",
+      "title": "CÍRCULO INMÓVIL",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 133: CÍRCULO INMÓVIL. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 36,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-135",
+    "data": {
+      "id": "j6a12-135",
+      "title": "LAS MUÑECAS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 135: LAS MUÑECAS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 37,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-136",
+    "data": {
+      "id": "j6a12-136",
+      "title": "COMBATE PIRATA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 136: COMBATE PIRATA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 37,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-137",
+    "data": {
+      "id": "j6a12-137",
+      "title": "LOS SAQUITOS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 137: LOS SAQUITOS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 37,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-138",
+    "data": {
+      "id": "j6a12-138",
+      "title": "LA CULEBRA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 138: LA CULEBRA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 37,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-140",
+    "data": {
+      "id": "j6a12-140",
+      "title": "NO TE MUEVAS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 140: NO TE MUEVAS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 38,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-142",
+    "data": {
+      "id": "j6a12-142",
+      "title": "PULSO A LA PATA COJA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 142: PULSO A LA PATA COJA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 38,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-144",
+    "data": {
+      "id": "j6a12-144",
+      "title": "SILLAS MUSICALES",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 144: SILLAS MUSICALES. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 39,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-145",
+    "data": {
+      "id": "j6a12-145",
+      "title": "ENREDOS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 145: ENREDOS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 39,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-146",
+    "data": {
+      "id": "j6a12-146",
+      "title": "SALTANDO JUNTOS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 146: SALTANDO JUNTOS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 39,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-147",
+    "data": {
+      "id": "j6a12-147",
+      "title": "EL ÁRBOL",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 147: EL ÁRBOL. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 40,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-149",
+    "data": {
+      "id": "j6a12-149",
+      "title": "EL ZAPATERO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 149: EL ZAPATERO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 40,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-151",
+    "data": {
+      "id": "j6a12-151",
+      "title": "TIRO AL BLANCO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 151: TIRO AL BLANCO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 41,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-153",
+    "data": {
+      "id": "j6a12-153",
+      "title": "CESTA MÓVIL",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 153: CESTA MÓVIL. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 41,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-155",
+    "data": {
+      "id": "j6a12-155",
+      "title": "LANZAMIENTOS DE BOLOS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 155: LANZAMIENTOS DE BOLOS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 42,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-156",
+    "data": {
+      "id": "j6a12-156",
+      "title": "LAS CUATRO PORTERÍAS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 156: LAS CUATRO PORTERÍAS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 42,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-157",
+    "data": {
+      "id": "j6a12-157",
+      "title": "DE BOTE EN BOTE",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 157: DE BOTE EN BOTE. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 42,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-158",
+    "data": {
+      "id": "j6a12-158",
+      "title": "TULIPÁN BOTANDO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 158: TULIPÁN BOTANDO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 42,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-159",
+    "data": {
+      "id": "j6a12-159",
+      "title": "TORTILLA DE MANOS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 159: TORTILLA DE MANOS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 43,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-160",
+    "data": {
+      "id": "j6a12-160",
+      "title": "LA RATA Y EL GATO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 160: LA RATA Y EL GATO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 43,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-161",
+    "data": {
+      "id": "j6a12-161",
+      "title": "PELOTA AL CUELLO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 161: PELOTA AL CUELLO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 43,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-163",
+    "data": {
+      "id": "j6a12-163",
+      "title": "EL CUBO Y LAS PELOTAS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 163: EL CUBO Y LAS PELOTAS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 44,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-165",
+    "data": {
+      "id": "j6a12-165",
+      "title": "TRIÁNGULO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 165: TRIÁNGULO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 44,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-170",
+    "data": {
+      "id": "j6a12-170",
+      "title": "ELEVAR LA PELOTA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 170: ELEVAR LA PELOTA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 45,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-174",
+    "data": {
+      "id": "j6a12-174",
+      "title": "LA SACA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 174: LA SACA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 46,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-175",
+    "data": {
+      "id": "j6a12-175",
+      "title": "LA DIANA NUMERADA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 175: LA DIANA NUMERADA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 47,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-177",
+    "data": {
+      "id": "j6a12-177",
+      "title": "A POR LA ZAPATILLA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 177: A POR LA ZAPATILLA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 47,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-178",
+    "data": {
+      "id": "j6a12-178",
+      "title": "LA RAYA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 178: LA RAYA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 47,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-181",
+    "data": {
+      "id": "j6a12-181",
+      "title": "LEONES Y CANGUROS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 181: LEONES Y CANGUROS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 48,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-188",
+    "data": {
+      "id": "j6a12-188",
+      "title": "PILLAR CON MANOS ARRIBA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 188: PILLAR CON MANOS ARRIBA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 50,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-189",
+    "data": {
+      "id": "j6a12-189",
+      "title": "POLICÍAS Y LADRONES",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 189: POLICÍAS Y LADRONES. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 50,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-190",
+    "data": {
+      "id": "j6a12-190",
+      "title": "LOS COLORES",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 190: LOS COLORES. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 50,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-191",
+    "data": {
+      "id": "j6a12-191",
+      "title": "PONTE EL PRIMERO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 191: PONTE EL PRIMERO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 51,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-192",
+    "data": {
+      "id": "j6a12-192",
+      "title": "TOCAR LA COLA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 192: TOCAR LA COLA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 51,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-193",
+    "data": {
+      "id": "j6a12-193",
+      "title": "LA ESPALDERA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 193: LA ESPALDERA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 51,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-195",
+    "data": {
+      "id": "j6a12-195",
+      "title": "LOS PATITOS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 195: LOS PATITOS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 52,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-197",
+    "data": {
+      "id": "j6a12-197",
+      "title": "TODOS CONTRA UNO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 197: TODOS CONTRA UNO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 52,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-198",
+    "data": {
+      "id": "j6a12-198",
+      "title": "QUE TE PILLE EL GATO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 198: QUE TE PILLE EL GATO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 52,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-199",
+    "data": {
+      "id": "j6a12-199",
+      "title": "LA PESCA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 199: LA PESCA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 53,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-200",
+    "data": {
+      "id": "j6a12-200",
+      "title": "CARRERA DE REPTILES",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 200: CARRERA DE REPTILES. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 53,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-202",
+    "data": {
+      "id": "j6a12-202",
+      "title": "HUIDA DE LA SERPIENTE",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 202: HUIDA DE LA SERPIENTE. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 53,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-203",
+    "data": {
+      "id": "j6a12-203",
+      "title": "GLOBO-PAPELERA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 203: GLOBO-PAPELERA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 54,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-206",
+    "data": {
+      "id": "j6a12-206",
+      "title": "EN BUSCA DE TU MIRADA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 206: EN BUSCA DE TU MIRADA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 54,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-209",
+    "data": {
+      "id": "j6a12-209",
+      "title": "LOS TRINEOS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 209: LOS TRINEOS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 55,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-210",
+    "data": {
+      "id": "j6a12-210",
+      "title": "PASEO EN AVESTRUZ",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 210: PASEO EN AVESTRUZ. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 55,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-212",
+    "data": {
+      "id": "j6a12-212",
+      "title": "LA CULEBRILLA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 212: LA CULEBRILLA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 56,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-216",
+    "data": {
+      "id": "j6a12-216",
+      "title": "RELEVOS DE COMBA",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 216: RELEVOS DE COMBA. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 57,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-218",
+    "data": {
+      "id": "j6a12-218",
+      "title": "SALTO A LAS BOTELLAS TUMBADAS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 218: SALTO A LAS BOTELLAS TUMBADAS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 57,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-224",
+    "data": {
+      "id": "j6a12-224",
+      "title": "NEUMÁTICOS VIEJOS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 224: NEUMÁTICOS VIEJOS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 59,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-225",
+    "data": {
+      "id": "j6a12-225",
+      "title": "EL SOL",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 225: EL SOL. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 59,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-226",
+    "data": {
+      "id": "j6a12-226",
+      "title": "EL CUADRADO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 226: EL CUADRADO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 59,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-227",
+    "data": {
+      "id": "j6a12-227",
+      "title": "PLATILLO VOLADOR",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 227: PLATILLO VOLADOR. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 60,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-230",
+    "data": {
+      "id": "j6a12-230",
+      "title": "CAZA BALONES",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 230: CAZA BALONES. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 60,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-241",
+    "data": {
+      "id": "j6a12-241",
+      "title": "PERROS Y GATOS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 241: PERROS Y GATOS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 63,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-245",
+    "data": {
+      "id": "j6a12-245",
+      "title": "EL VALLS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 245: EL VALLS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 64,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-246",
+    "data": {
+      "id": "j6a12-246",
+      "title": "EL SATÉLITE",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 246: EL SATÉLITE. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 64,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-247",
+    "data": {
+      "id": "j6a12-247",
+      "title": "EL MOLINILLO",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 247: EL MOLINILLO. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 65,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  },
+  {
+    "op": "add",
+    "id": "j6a12-249",
+    "data": {
+      "id": "j6a12-249",
+      "title": "RELEVOS CON GIROS",
+      "age": "6-12 años",
+      "material": "No especificado",
+      "description": "Juego n.º 249: RELEVOS CON GIROS. Ficha recuperada del PDF fuente; descripción y variantes pendientes de transcripción completa.",
+      "source": "juegos 6a12anos.pdf",
+      "page": 65,
+      "space": "Pista / gimnasio",
+      "intensity": "Media",
+      "groupings": [
+        "No especificado"
+      ],
+      "objectives": [
+        "No especificado"
+      ],
+      "needsReview": true,
+      "kind": "recovered-game",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v61",
+      "catalogAudit": "recuperación directa de fichas faltantes del PDF v61"
+    }
+  }
+]
