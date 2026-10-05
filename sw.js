@@ -1,9 +1,9 @@
-const CACHE = 'motorlab-ef-v14.5';
+const CACHE = 'motorlab-ef-v16.4-v60';
 const ASSETS = [
-  './', './index.html', './styles.css', './app.js?v=14.5',
+  './', './index.html', './styles.css', './app.js?v=16.4-v60',
   './manifest.webmanifest', './apple-touch-icon.png',
   './icon-192.png', './icon-512.png',
-  './data/games.json', './data/sources.json'
+  './data/games.json', './data/catalog_patch_v60.json', './data/sources.json'
 ];
 
 self.addEventListener('install', event => {
@@ -35,6 +35,7 @@ self.addEventListener('fetch', event => {
 
   if (
     u.pathname.endsWith('/data/games.json') ||
+    u.pathname.endsWith('/data/catalog_patch_v60.json') ||
     u.pathname.endsWith('/data/sources.json') ||
     u.pathname.endsWith('/app.js') ||
     u.pathname.endsWith('/index.html') ||
