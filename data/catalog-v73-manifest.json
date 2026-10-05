@@ -1,0 +1,20 @@
+{
+  "version": "v73",
+  "source": "primero B.pdf",
+  "sourcePages": [
+    44,
+    46,
+    127,
+    140,
+    168
+  ],
+  "correctedCount": 5,
+  "patch": "data/catalog_patch_v73_primeroB_fragments.json",
+  "previousVersion": "v72",
+  "status": "completed",
+  "notes": [
+    "Correcciones realizadas únicamente cuando el título pudo recuperarse de forma directa del texto de la página original escaneada.",
+    "ocr-00051 ya tenía el título correcto «Vamos de caza» y no se modificó.",
+    "ocr-00053 y ocr-00054 se mantienen sin cambios por no poder confirmar con seguridad un título independiente a partir del fragmento."
+  ]
+}
