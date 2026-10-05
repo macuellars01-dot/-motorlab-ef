@@ -178,7 +178,7 @@ function matches(g){
   if(q&&!text.includes(q))return false;
   const ages=selected('#ageFilters'),mats=selected('#materialFilters'),spaces=selected('#spaceFilters'),ints=selected('#intensityFilters'),srcs=selected('#sourceFilters'),groups=selected('#groupingFilters'),objs=selected('#objectiveFilters');
   return(!ages.length||ages.some(v=>normalize(g.age||'No especificada').includes(normalize(v))))
-    &&(!mats.length||mats.includes(materialTag(g.material)))
+    &&(!mats.length||mats.some(v=>materialTags(g.material).includes(v)))
     &&(!spaces.length||spaces.includes(g.space||'No especificado'))
     &&(!ints.length||ints.includes(inferIntensity(g)))
     &&(!srcs.length||srcs.includes(sourceLabel(g)))
