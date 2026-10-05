@@ -253,7 +253,23 @@ function toggleSessionSelection(id){if(sessionSelection.has(id))sessionSelection
 function finishAddingSelected(){sessionSelection.forEach(id=>addToSession(id));sessionAddMode=false;sessionSelection.clear();switchView('builder');renderSession();window.scrollTo({top:0,behavior:'smooth'})}
 function cancelAddingSelected(){sessionAddMode=false;sessionSelection.clear();renderGames()}
 function openLibraryForAdding(){sessionAddMode=true;sessionSelection.clear();switchView('library');renderGames();window.scrollTo({top:0,behavior:'smooth'})}
-function renderSaved(){const el=$('#savedList');el.innerHTML=savedSessions.length?'':'<p class="muted">Aún no hay sesiones guardadas.</p>';savedSessions.forEach((s,i)=>{const d=document.createElement('div');d.className='saved-card';const u=units.find(x=>x.id===s.unitId);d.innerHTML=`<strong>${esc(s.name||'Sesión sin nombre')}</strong><small>${esc(s.date||'')} · ${esc(s.group||'Sin grupo')}${u?` · 📚 ${esc(u.name)}`:''} · ${(s.games||[]).length} juegos</small><div class="card-actions"><button data-act="load">Abrir</button><button data-act="duplicate">Duplicar</button><button data-act="rename">Renombrar</button><button data-act="delete">Eliminar</button></div>`;d.querySelector('[data-act=load]').onclick=()=>loadSession(i);d.querySelector('[data-act=duplicate]').onclick=()=>duplicateSession(i);d.querySelector('[data-act=rename]').onclick=()=>renameSession(i);d.querySelector('[data-act=delete]').onclick=()=>deleteSession(i);el.appendChild(d)})}
+function renderSaved(){
+  const el=$('#savedList');
+  el.innerHTML=savedSessions.length?'':'<p class="muted">Aún no hay sesiones guardadas.</p>';
+  savedSessions.forEach((s,i)=>{
+    const d=document.createElement('div');
+    d.className='saved-card';
+    const u=units.find(x=>x.id===s.unitId);
+    const mins=(s.games||[]).reduce((a,x)=>a+(Number(x.minutes)||0),0);
+    const duration=s.duration?(`${mins} / objetivo ${s.duration} min`):(`${mins} min`);
+    d.innerHTML=`<strong>${esc(s.name||'Sesión sin nombre')}</strong><small>${esc(s.date||'')} · ${esc(s.group||'Sin grupo')}${u?` · 📚 ${esc(u.name)}`:''} · ${(s.games||[]).length} juegos · ${duration}</small><div class="card-actions"><button data-act="load">Abrir</button><button data-act="duplicate">Duplicar</button><button data-act="rename">Renombrar</button><button data-act="delete">Eliminar</button></div>`;
+    d.querySelector('[data-act=load]').onclick=()=>loadSession(i);
+    d.querySelector('[data-act=duplicate]').onclick=()=>duplicateSession(i);
+    d.querySelector('[data-act=rename]').onclick=()=>renameSession(i);
+    d.querySelector('[data-act=delete]').onclick=()=>deleteSession(i);
+    el.appendChild(d);
+  })
+}
 function loadSession(i){const s=savedSessions[i];$('#editingSessionId').value=s.id||'';session=(s.games||[]).map(x=>typeof x==='string'?{id:x,phase:'Sin asignar',minutes:'',grouping:s.grouping||'Gran grupo',note:''}:x);fillSessionMeta(s);renderSession();$('#sessionCount').textContent=session.length;switchView('builder')}
 function fillSessionMeta(s){$('#sessionName').value=s.name||'';$('#sessionDate').value=s.date||'';$('#sessionGroup').value=s.group||'';if($('#studentCount'))$('#studentCount').value=s.students||'';if($('#sessionDuration'))$('#sessionDuration').value=s.duration||'';if($('#sessionGrouping'))$('#sessionGrouping').value=s.grouping||'Gran grupo';if($('#sessionUnit'))$('#sessionUnit').value=s.unitId||'';if($('#sessionObjectives'))$('#sessionObjectives').value=s.objectives||'';if($('#sessionCompetencies'))$('#sessionCompetencies').value=s.competencies||'';if($('#sessionObservations'))$('#sessionObservations').value=s.observations||''}
 function saveCurrentSession(){const meta=sessionMetaFromUI();if(!meta.name){alert('Pon un nombre a la sesión antes de guardarla.');return}const existingId=$('#editingSessionId').value||uid('session');const s={...meta,id:existingId,games:[...session],updatedAt:now()};const idx=savedSessions.findIndex(x=>x.id===existingId);if(idx>=0)savedSessions[idx]=s;else savedSessions.unshift(s);write(KEYS.sessions,savedSessions);$('#editingSessionId').value=existingId;renderSaved();markPending();alert('Sesión guardada.')}
