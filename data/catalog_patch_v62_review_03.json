@@ -1,0 +1,439 @@
+[
+  {
+    "op": "update",
+    "id": "j6a12-048",
+    "data": {
+      "title": "A JUNTARSE",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Mejorar la percepción espacial a través del juego.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Por parejas.\nDesarrollo: Se dividen los jugadores por parejas y se separan lo más alejados posible. Cuando el profesor diga «a juntarse», deben andar hacia delante sin chocar hasta llegar a juntarse con el compañero. Al cambiar la orden a «separarse», se alejarán.\nReglas: No se puede chocar ni correr.\nVariantes: Realizarlo de espaldas andando hacia atrás.",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Mejorar la percepción espacial a través del juego."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-050",
+    "data": {
+      "title": "VEN O VETE",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la autonomía y confianza personal.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Pequeño grupo.\nDesarrollo: Grupos de seis, situados en círculo, menos uno que queda fuera. Este corre alrededor del círculo, toca a un compañero y dice «VEN» o «VETE». Al oír «VEN», el tocado le persigue intentando cogerle antes de llegar al hueco dejado por él. Si oye «VETE», el tocado corre en sentido contrario intentando ocupar el hueco dejado.\nReglas: El que no ocupa el hueco continúa el juego.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la autonomía y confianza personal."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-052",
+    "data": {
+      "title": "LOS VEHÍCULOS",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Utilizar los cambios de dirección para dar respuestas motrices adecuadas.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Individual.\nDesarrollo: Los niños son vehículos que se desplazan por encima de las líneas del campo, sin poder salirse de ellas.\nReglas: No vale salirse; solo cambiar de dirección cuando haya un cruce de líneas.\nVariantes: Se puede acelerar, frenar o ir marcha atrás.",
+      "groupings": [
+        "Individual"
+      ],
+      "objectives": [
+        "Utilizar los cambios de dirección para dar respuestas motrices adecuadas."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-053",
+    "data": {
+      "title": "ESQUIVAS",
+      "age": "Primaria",
+      "material": "Balones, bancos suecos, colchonetas, etc.",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Balones, bancos suecos, colchonetas, etc..\nObjetivo a desarrollar: Utilizar los cambios de dirección para dar respuestas motrices adecuadas.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Individual.\nDesarrollo: Correr por el gimnasio sin tocar ni saltar ningún objeto, ni chocar con un compañero, por el espacio y caminos que estos delimitan.\nReglas: Todo aquel que toque algún objeto o salte será penalizado con un punto.\nVariantes: Cogidos de las manos por parejas o tríos.",
+      "groupings": [
+        "Individual"
+      ],
+      "objectives": [
+        "Utilizar los cambios de dirección para dar respuestas motrices adecuadas."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-054",
+    "data": {
+      "title": "LO QUE HACE EL PRIMERO YO LO SUPERO",
+      "age": "Primaria",
+      "material": "Pelotas",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Pelotas.\nObjetivo a desarrollar: Identificar direcciones y distancias ya percibidas.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Tríos.\nDesarrollo: Observar el desplazamiento de un compañero. El segundo lo reproduce conduciendo una pelota con el pie. El tercero lo reproduce botando una pelota. Cambio de rol.\nReglas: Lo importante es que se siga el mismo recorrido.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Tríos"
+      ],
+      "objectives": [
+        "Identificar direcciones y distancias ya percibidas."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-055",
+    "data": {
+      "title": "MEMORIZO UN RECORRIDO",
+      "age": "Primaria",
+      "material": "Aros, picas, bancos y planos de recorrido",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Aros, picas, bancos y planos de recorrido.\nObjetivo a desarrollar: Identificar direcciones y distancias ya percibidas.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Individual.\nDesarrollo: A cada alumno se le señala un recorrido para que lo memorice y lo reproduzca posteriormente sobre el terreno. ¿Quién no se equivoca?\nReglas: Cada alumno deberá memorizar un recorrido diferente.\nVariantes: Intercambiar recorridos.",
+      "groupings": [
+        "Individual"
+      ],
+      "objectives": [
+        "Identificar direcciones y distancias ya percibidas."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-057",
+    "data": {
+      "title": "POR EL SONIDO",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Reconocer la distancia con relación a un sonido.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Gran grupo.\nDesarrollo: Desplazarse de espalda hacia el lugar donde suena la palmada dada por el profesor.\nReglas: No vale mirar. Cada vez que el profesor cambie de lugar dará una nueva palmada.\nVariantes: El alumno se debe detener cuando crea encontrarse a menos de dos metros de donde se produjo el sonido.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Reconocer la distancia con relación a un sonido."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-058",
+    "data": {
+      "title": "¿QUIÉN LO HIZO?",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Reconocer distancias en relación a un sonido.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Pequeño grupo.\nDesarrollo: Colocarse en grupos de seis. Cinco están a dos metros de la espalda del compañero. Uno produce un ruido. El sexto debe adivinar quién lo hizo.\nReglas: No vale mirar.\nVariantes: Dos han de producir el sonido a la vez.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Reconocer distancias en relación a un sonido."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-059",
+    "data": {
+      "title": "LA BARRERA",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la capacidad para apreciar diferentes distancias.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Gran grupo.\nDesarrollo: Se colocan cuatro o cinco niños sobre la línea central, pudiéndose desplazar lateralmente sobre ella. El resto se coloca a un lado u otro de la misma, tratando de pasar por los huecos sin ser tocados. Los cinco primeros tocados se la quedan.\nReglas: No se puede salir de las líneas marcadas para pasar.\nVariantes: Aumentar o disminuir el número de los que forman la barrera.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la capacidad para apreciar diferentes distancias."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-060",
+    "data": {
+      "title": "¡A LA CAZA DE ANIMALES!",
+      "age": "Primaria",
+      "material": "Picas, aros, pelotas y cuerdas",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Picas, aros, pelotas y cuerdas.\nObjetivo a desarrollar: Desarrollar diferentes conceptos espaciales: cerca, lejos, etc.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Individual.\nDesarrollo: Se distribuye por toda la pista el material. Los alumnos se desplazan libremente por todo el espacio. A la señal «A la caza», cada alumno deberá recoger el máximo número de objetos (animales) del suelo. Cada animal tendrá puntuaciones distintas. Gana el que más puntos acumule.\nReglas: Si dos alumnos cogen a la vez el mismo material han de soltarlo e ir a buscar otro. Las puntuaciones de los objetos se habrán fijado de antemano.\nVariantes: Igual, pero con parejas cogidas de las manos.",
+      "groupings": [
+        "Individual"
+      ],
+      "objectives": [
+        "Desarrollar diferentes conceptos espaciales: cerca, lejos, etc."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-061",
+    "data": {
+      "title": "LA PELÍCULA DE CINE",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la percepción temporal a través del juego.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Gran grupo.\nDesarrollo: Realizar mímicamente los gestos de una acción de película conocida y propuesta por los alumnos a diferentes velocidades (Tarzán, por ejemplo).\nReglas: Sin reglas.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la percepción temporal a través del juego."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-062",
+    "data": {
+      "title": "PIES QUIETOS",
+      "age": "Primaria",
+      "material": "Un balón",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Un balón.\nObjetivo a desarrollar: Desarrollar la percepción temporal a través del juego.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Pequeño grupo.\nDesarrollo: Se lanza la pelota al aire y se dice el nombre de un compañero que ha de coger el balón y decir «pies quietos». Tras dar tres pasos, tirará a dar al que se quede más cerca, el cual luego lanza el balón al aire diciendo otro nombre.\nReglas: No lanzar el balón a la cara del compañero.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la percepción temporal a través del juego."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-063",
+    "data": {
+      "title": "PILLA LA PELOTA",
+      "age": "Primaria",
+      "material": "Pelotas de psicomotricidad",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Pelotas de psicomotricidad.\nObjetivo a desarrollar: Desarrollar la percepción temporal a través de diferentes actividades lúdicas.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Pequeño grupo.\nDesarrollo: Grupos de ocho colocados en círculo. Una pelota por grupo. Uno se sitúa fuera del círculo a la altura del balón. A la señal corre por fuera tratando de llegar al mismo punto antes que la pelota, que se la van pasando los que forman el círculo. Después, cambio de rol.\nReglas: Pasarse la pelota sin saltarse a ningún compañero.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la percepción temporal a través de diferentes actividades lúdicas."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-064",
+    "data": {
+      "title": "HOMBRE LOBO",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Ser capaz de adaptar el movimiento a referencias temporales: duración, ritmo, velocidad, etc.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Gran grupo.\nDesarrollo: Se forman dos grupos. Cuando suene un golpe de pandero un grupo persigue al otro. Al oír dos golpes se cambia el papel.\nReglas: No especificadas en la ficha.\nVariantes: Cambio de personajes.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Ser capaz de adaptar el movimiento a referencias temporales: duración, ritmo, velocidad, etc."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-065",
+    "data": {
+      "title": "BUSCAR EL OSO",
+      "age": "Primaria",
+      "material": "Cascabeles",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Cascabeles.\nObjetivo a desarrollar: Desarrollar la percepción temporal a través de diferentes juegos motrices.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Pequeño grupo.\nDesarrollo: Se establecen grupos de seis y uno hace de oso, los otros con los ojos vendados. El oso lleva un cascabel. Intentar orientarse y seguir el sonido del cascabel del oso.\nReglas: Sin reglas.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la percepción temporal a través de diferentes juegos motrices."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-066",
+    "data": {
+      "title": "EL ESCONDITE DE SONIDOS",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Conocer y estructurar el tiempo y los elementos que lo integran: apreciación de velocidades y distancias.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Pequeño grupo.\nDesarrollo: Se esconden los niños y son descubiertos por los sonidos que hacen, sin moverse, y el que se la queda tendrá que buscarles.\nReglas: Sin reglas.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Conocer y estructurar el tiempo y los elementos que lo integran: apreciación de velocidades y distancias."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-067",
+    "data": {
+      "title": "TRASLADO DE HERIDOS",
+      "age": "Primaria",
+      "material": "Picas",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Picas.\nObjetivo a desarrollar: Conocer y estructurar el tiempo y los elementos que lo integran: apreciación de velocidades y distancias.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Tríos.\nDesarrollo: Por tríos, en fila y sujetando dos picas con las manos. Intentar realizar un circuito en el menor tiempo posible.\nReglas: No soltarse en ningún momento de las picas.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Tríos"
+      ],
+      "objectives": [
+        "Conocer y estructurar el tiempo y los elementos que lo integran: apreciación de velocidades y distancias."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-069",
+    "data": {
+      "title": "EL MINUTO",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la percepción temporal.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Gran grupo.\nDesarrollo: Todos tumbados en el suelo con los ojos cerrados. El profesor cronometra un minuto. Cada alumno debe contar mentalmente un minuto. Se comprueba qué alumno se aproxima más al tiempo establecido. Cuando el alumno cree que ha pasado el minuto, se pone en pie.\nReglas: Gana el que se aproxima más al minuto.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la percepción temporal."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-070",
+    "data": {
+      "title": "LAS PALMADAS",
+      "age": "Primaria",
+      "material": "Aros",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Aros.\nObjetivo a desarrollar: Desarrollar la percepción temporal a través del juego.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Por parejas.\nDesarrollo: Uno de la pareja, con los ojos cerrados. El otro sitúa un aro a una distancia determinada y sin que lo vea el compañero. El que tiene los ojos tapados debe llegar hasta el aro mediante las indicaciones del otro miembro de la pareja. Las palmadas rápidas significan que va por buen camino y las palmadas lentas que no lo lleva.\nReglas: Estar muy atento a las indicaciones del compañero.\nVariantes: En vez de palmadas, golpeo con otras partes del cuerpo.",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Desarrollar la percepción temporal a través del juego."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  }
+]
