@@ -302,5 +302,213 @@
       "auditStatus": "corregida-fuente-v63",
       "auditNote": "Ficha reconstruida a partir de la fuente escaneada para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
     }
+  },
+  {
+    "id": "j6a12-021",
+    "op": "update",
+    "data": {
+      "title": "¿Qué me escribes sobre la espalda?",
+      "description": "Etapa: Primaria. Lugar: Pista polideportiva o gimnasio. Material: Sin material. Objetivo: Mejorar el conocimiento y control del propio cuerpo a través de diferentes juegos motrices. Bloque: ELEMENTOS PSICOMOTORES BÁSICOS. Organización: Por parejas. Desarrollo: Un alumno con el dedo escribe de forma imaginaria sobre la espalda del compañero. El otro debe adivinar lo que escribe. Reglas: El que está escribiendo debe hacerlo despacio. Variantes: Sin variantes.",
+      "material": "Sin material",
+      "groupings": [
+        "Por parejas"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Reconstruida directamente a partir de la fuente para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-049",
+    "op": "update",
+    "data": {
+      "title": "Se me ha perdido",
+      "description": "Etapa: Primaria. Ciclo: 1-2. Lugar: Pista polideportiva o gimnasio. Material: Objetos diferentes. Objetivo: Desarrollar la percepción espacial a través del juego. Bloque: ELEMENTOS PSICOMOTORES BÁSICOS. Organización: Por parejas. Desarrollo: Un componente de cada pareja coge un objeto y lo esconde. Al regresar dirá “se me ha perdido...” y nombrará el objeto escondido; su pareja ha de ir a buscarlo. Cuando lo encuentre cambiarán los papeles. Reglas: Quien busque el objeto se sentará con los ojos tapados. Variantes: Poner los objetos muy cerca y hacerlo con los ojos tapados.",
+      "material": "Objetos diferentes",
+      "groupings": [
+        "Por parejas"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Reconstruida directamente a partir de la fuente para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-073",
+    "op": "update",
+    "data": {
+      "title": "El coche de papá",
+      "description": "Etapa: Primaria. Ciclo: 1-2. Lugar: Pista polideportiva o gimnasio. Material: Aros pequeños. Objetivo: Identificar el orden creciente de velocidad y responder con movimientos a la variación. Bloque: ELEMENTOS PSICOMOTORES BÁSICOS. Organización: Gran grupo. Desarrollo: Cada alumno con un aro pequeño, simulando un volante. A la señal del profesor, acelera progresivamente imitando los cambios de marcha de un vehículo. Con dos toques de silbato, se detiene. Reglas: Los vehículos no pueden chocar. Variantes: Sin variantes.",
+      "material": "Aros pequeños",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Reconstruida directamente a partir de la fuente para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-086",
+    "op": "update",
+    "data": {
+      "title": "Reconoce",
+      "description": "Etapa: Primaria. Ciclo: 2-3. Lugar: Pista polideportiva o gimnasio. Material: Sin material. Objetivo: Identificar diferentes tipos de velocidades. Bloque: ELEMENTOS PSICOMOTORES BÁSICOS. Organización: Por parejas. Desarrollo: De espaldas a un compañero que corre, identificar la velocidad de su carrera por medio del oído e intentar reproducirla después. Reglas: Sin reglas. Variantes: Colectivamente.",
+      "material": "Sin material",
+      "groupings": [
+        "Por parejas"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Reconstruida directamente a partir de la fuente para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-162",
+    "op": "update",
+    "data": {
+      "title": "El juego de la sortija",
+      "description": "Etapa: Primaria. Ciclo: 1. Lugar: Pista polideportiva o gimnasio. Material: Una sortija. Objetivo: Desarrollar la coordinación visomotriz. Bloque: COORDINACIÓN MOTRIZ. Organización: Gran grupo. Desarrollo: Los niños se colocan en círculo con las manos juntas. El maestro pasa sus manos entre las de los niños y deja caer sin que lo noten una sortija en las manos de alguno. Tras dos o tres vueltas, se pregunta a un niño quién tiene la sortija. Si acierta, será él quien la pase; si no, continúa la misma persona. Reglas: Sin reglas. Variantes: Sin variantes.",
+      "material": "Una sortija",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Reconstruida directamente a partir de la fuente para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-166",
+    "op": "update",
+    "data": {
+      "title": "Perros y gatos",
+      "description": "Etapa: Primaria. Ciclo: 1-2. Lugar: Pista polideportiva o gimnasio. Material: Una pelota por cada 2 jugadores. Objetivo: Desarrollar la coordinación óculo-pédica. Bloque: COORDINACIÓN MOTRIZ. Organización: Gran grupo. Desarrollo: Se forman dos equipos, perros y gatos. Se marca un campo con línea divisoria y una pelota por pareja. El maestro nombra un grupo y sus miembros cogen la pelota e intentan tocar con ella a sus parejas, que huyen. Después la pelota vuelve a la línea divisoria y se reinicia. Variantes: El cambio se produce de forma sucesiva, invirtiendo los papeles tras cada lanzamiento.",
+      "material": "Una pelota por cada 2 jugadores",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Reconstruida directamente a partir de la fuente para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-180",
+    "op": "update",
+    "data": {
+      "title": "Balón torre",
+      "description": "Etapa: Primaria. Ciclo: 2-3. Lugar: Pista polideportiva o gimnasio. Material: Pelotas. Objetivo: Controlar objetos con precisión en diferentes situaciones lúdicas. Bloque: COORDINACIÓN MOTRIZ. Organización: Pequeño grupo. Desarrollo: Dos grupos; un jugador de cada grupo se sitúa dentro de un círculo y actúa como torre. Debe recibir y devolver pases sin que la pelota toque el suelo y sin salir del círculo; los contrarios intentan interceptarla. Reglas: Si toca tierra, pasa al contrario. Vence quien haga diez pases a su torre. Variantes: Sin variantes.",
+      "material": "Pelotas",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Reconstruida directamente a partir de la fuente para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-205",
+    "op": "update",
+    "data": {
+      "title": "La silla de la reina",
+      "description": "Etapa: Primaria. Ciclo: 1-2. Lugar: Pista polideportiva o gimnasio. Material: Sin material. Objetivo: Practicar formas de desplazamiento pasivo: transportes. Bloque: HABILIDADES BÁSICAS. Organización: Tríos. Desarrollo: Dos alumnos cruzan las manos y otro se sienta sobre ellas y se agarra a sus hombros. Lo transportan según sus indicaciones y a la señal cambian de rol. Reglas: La reina indica lugar y velocidad. Variantes: Buscar otras formas de transporte.",
+      "material": "Sin material",
+      "groupings": [
+        "Tríos"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Reconstruida directamente a partir de la fuente para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-278",
+    "op": "update",
+    "data": {
+      "title": "El derribo de los bolos",
+      "description": "Etapa: Primaria. Ciclo: 1-2-3. Lugar: Pista polideportiva o gimnasio. Material: Pelotas, bolos y bancos. Objetivo: Desarrollar la capacidad de lanzamiento. Bloque: HABILIDADES BÁSICAS. Organización: Pequeño grupo. Desarrollo: Un equipo dentro de un círculo defiende ante el equipo atacante, que desde fuera lanza una pelota para derribar bolos colocados sobre dos bancos suecos. Reglas: El atacante no puede entrar en el círculo y los bolos derribados no se colocan de nuevo. Variantes: Con dos pelotas o con un tiempo determinado.",
+      "material": "Pelotas, bolos y bancos",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Reconstruida directamente a partir de la fuente para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "src-02581",
+    "op": "update",
+    "data": {
+      "title": "ZONA PROHIBIDA",
+      "description": "Objetivo: Desarrollar el salto. Material: Periódicos o tiza. Desarrollo: Establecer zonas diferenciadas con colores o periódicos; una no se puede pisar. Uno se la queda y debe coger a algún compañero. Se persigue y huye sin pisar las zonas. Si alguien es cogido o pisa la zona prohibida, la queda. Variantes: Saltando, en cuadrupedia, etc.",
+      "material": "Periódicos o tiza.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Reconstruida directamente a partir de la fuente para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "src-02611",
+    "op": "update",
+    "data": {
+      "title": "PALOMITAS DE MAÍZ",
+      "description": "Objetivo: Desarrollar la capacidad de salto y la cooperación. Material: Ninguno. Desarrollo: Libres por el espacio, todos van saltando. Si chocan con alguien, se cogen de las manos y saltan juntos. El juego acaba cuando todos están unidos. Variantes: A pie cojito; indicando la dirección del salto (solo hacia atrás, de lado, etc.).",
+      "material": "Ninguno.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Reconstruida directamente a partir de la fuente para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "1213-0199",
+    "op": "update",
+    "data": {
+      "title": "¿Dime qué soy?",
+      "description": "Edad: 12-13 años. Material: Pelotas de diversos tamaños, picas, cuerdas, aros y conos. Espacio: Pista / gimnasio. Organización: Pequeños grupos. Desarrollo: Grupos de 5-6 forman un círculo y colocan en el centro distintos materiales. El profesor pide dar a cada material una utilidad no habitual y representarla; por ejemplo, un ángel con un aro, un soldado con un cono y una pica como fusil, o un jugador de golf con la pica como palo. Variantes: Representar al resto los personajes creados por cada grupo.",
+      "material": "Pelotas, picas, cuerdas, aros y conos",
+      "groupings": [
+        "Pequeños grupos"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Reconstruida directamente a partir de la fuente para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "1213-0205",
+    "op": "update",
+    "data": {
+      "title": "¿Dónde estoy?",
+      "description": "Edad: 12-13 años. Material: Tarjetas con situaciones escritas. Espacio: Pista / gimnasio. Organización: Pequeños grupos. Desarrollo: Grupos de 6-7 reciben tarjetas con una situación que deben escenificar. Se da un tiempo para prepararla y después la representan al resto de compañeros. Variantes: Sin variantes indicadas en la fuente.",
+      "material": "Tarjetas con situaciones escritas",
+      "groupings": [
+        "Pequeños grupos"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Reconstruida directamente a partir de la fuente para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
   }
 ]
