@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ext-cotan-056",
+    "op": "update",
+    "data": {
+      "title": "Pídola.",
+      "visibility": "visible",
+      "auditStatus": "corregida-integridad-v64",
+      "auditNote": "Corrección de integridad: el catálogo v60 contenía la clave de título rota (ti\\ntle) aunque la ficha fuente identifica claramente el juego como Pídola. Se conserva el registro y su contenido."
+    }
+  }
+]
