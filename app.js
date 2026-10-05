@@ -58,12 +58,12 @@ async function init(){
       const d=String(g.description||'');
       if(!/Desarrollo:/i.test(d))return;
       const parts=[];
-      const md=d.match(/Desarrollo:\\s*(.*?)(?=\\nReglas?:|\\nVariantes:|$)/is);
-      const mr=d.match(/Reglas?:\\s*(.*?)(?=\\nVariantes:|$)/is);
-      const mv=d.match(/Variantes:\\s*(.*)$/is);
-      if(md)parts.push('Desarrollo: '+md[1].replace(/\\s+/g,' ').trim());
-      if(mr)parts.push('Reglas: '+mr[1].replace(/\\s+/g,' ').trim());
-      if(mv)parts.push('Variantes: '+mv[1].replace(/\\s+/g,' ').trim());
+      const md=d.match(/Desarrollo:\s*(.*?)(?=\nReglas?:|\nVariantes:|$)/is);
+      const mr=d.match(/Reglas?:\s*(.*?)(?=\nVariantes:|$)/is);
+      const mv=d.match(/Variantes:\s*(.*)$/is);
+      if(md)parts.push('Desarrollo: '+md[1].replace(/\s+/g,' ').trim());
+      if(mr)parts.push('Reglas: '+mr[1].replace(/\s+/g,' ').trim());
+      if(mv)parts.push('Variantes: '+mv[1].replace(/\s+/g,' ').trim());
       if(parts.length)g.description=parts.join(' ');
     });
     games=[...catalogById.values()];
