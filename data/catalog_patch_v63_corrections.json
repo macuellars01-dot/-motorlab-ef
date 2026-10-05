@@ -1,0 +1,30 @@
+[
+  {
+    "id": "j6a12-009",
+    "op": "update",
+    "data": {
+      "title": "¿Qué produjo el ruido?",
+      "description": "Etapa: Primaria. Ciclo: 1-2. Lugar: Pista polideportiva o gimnasio. Material: Cualquier tipo de objetos. Objetivo a desarrollar: Desarrollar la atención auditiva. Bloque específico: ELEMENTOS PSICOMOTORES BÁSICOS. Organización: Gran grupo. Desarrollo: Varios jugadores sentados. Uno, a sus espaldas y de pie, ha de realizar ruidos con diferentes objetos y los que están sentados deberán adivinar con qué lo ha hecho. El que acierte será el que realice los ruidos. Reglas: Se establecerá un orden para adivinar el objeto. Variantes: Realizar ruidos con dos objetos a la vez.",
+      "material": "Cualquier tipo de objetos",
+      "groupings": ["Gran grupo"],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Reconstruida directamente a partir de la página 5 de la fuente escaneada; se elimina la contaminación OCR y se conserva la ficha original."
+    }
+  },
+  {
+    "id": "j6a12-046",
+    "op": "update",
+    "data": {
+      "title": "Al refugio",
+      "description": "Etapa: Primaria. Ciclo: 1-2. Lugar: Pista polideportiva o gimnasio. Material: Tizas de colores. Objetivo a desarrollar: Orientarse en el espacio según los diferentes lugares. Bloque específico: ELEMENTOS PSICOMOTORES BÁSICOS. Organización: Gran grupo. Desarrollo: Se dibujan varios círculos con tizas de colores, que serán los refugios. Si el profesor grita “nieve” o “granizo”, los jugadores podrán moverse, saltar, etc., dentro de los refugios. Pero si dice “aire” y “sol”, los jugadores tienen que salir fuera de los refugios. Reglas: Según la palabra se está dentro o fuera del círculo. Variantes: Sin variantes.",
+      "material": "Tizas de colores",
+      "groupings": ["Gran grupo"],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Reconstruida directamente a partir de la página 44-45 de la fuente escaneada; se elimina la contaminación OCR y se conserva la ficha original."
+    }
+  }
+]
