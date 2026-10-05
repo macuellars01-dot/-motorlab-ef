@@ -6,7 +6,9 @@
       "title": "¿Qué produjo el ruido?",
       "description": "Etapa: Primaria. Ciclo: 1-2. Lugar: Pista polideportiva o gimnasio. Material: Cualquier tipo de objetos. Objetivo a desarrollar: Desarrollar la atención auditiva. Bloque específico: ELEMENTOS PSICOMOTORES BÁSICOS. Organización: Gran grupo. Desarrollo: Varios jugadores sentados. Uno, a sus espaldas y de pie, ha de realizar ruidos con diferentes objetos y los que están sentados deberán adivinar con qué lo ha hecho. El que acierte será el que realice los ruidos. Reglas: Se establecerá un orden para adivinar el objeto. Variantes: Realizar ruidos con dos objetos a la vez.",
       "material": "Cualquier tipo de objetos",
-      "groupings": ["Gran grupo"],
+      "groupings": [
+        "Gran grupo"
+      ],
       "visibility": "visible",
       "needsReview": false,
       "auditStatus": "corregida-fuente-v63",
@@ -20,11 +22,285 @@
       "title": "Al refugio",
       "description": "Etapa: Primaria. Ciclo: 1-2. Lugar: Pista polideportiva o gimnasio. Material: Tizas de colores. Objetivo a desarrollar: Orientarse en el espacio según los diferentes lugares. Bloque específico: ELEMENTOS PSICOMOTORES BÁSICOS. Organización: Gran grupo. Desarrollo: Se dibujan varios círculos con tizas de colores, que serán los refugios. Si el profesor grita “nieve” o “granizo”, los jugadores podrán moverse, saltar, etc., dentro de los refugios. Pero si dice “aire” y “sol”, los jugadores tienen que salir fuera de los refugios. Reglas: Según la palabra se está dentro o fuera del círculo. Variantes: Sin variantes.",
       "material": "Tizas de colores",
-      "groupings": ["Gran grupo"],
+      "groupings": [
+        "Gran grupo"
+      ],
       "visibility": "visible",
       "needsReview": false,
       "auditStatus": "corregida-fuente-v63",
       "auditNote": "Reconstruida directamente a partir de la página 44-45 de la fuente escaneada; se elimina la contaminación OCR y se conserva la ficha original."
+    }
+  },
+  {
+    "id": "j6a12-031",
+    "op": "update",
+    "data": {
+      "title": "Las Cuatro Esquinas",
+      "description": "Etapa: Primaria. Lugar: Pista polideportiva o gimnasio. Material: Aros. Objetivo a desarrollar: Desarrollar la percepción espacial a través del juego. Bloque específico: ELEMENTOS PSICOMOTORES BÁSICOS. Organización: Gran grupo. Desarrollo: Se colocan cuatro aros en las esquinas y un jugador en el centro. A la señal, los jugadores deben cambiar de esquina cruzando siempre hacia otra esquina. El jugador del centro intenta ocupar una esquina libre; quien se quede sin esquina pasa al centro. Reglas: Hay que cruzar siempre hacia otra esquina. Variantes: No existe límite de esquinas y puede haber varios jugadores libres a la vez.",
+      "material": "Aros",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Ficha reconstruida a partir de la fuente escaneada para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-034",
+    "op": "update",
+    "data": {
+      "title": "Las Posiciones",
+      "description": "Etapa: Primaria. Lugar: Pista polideportiva o gimnasio. Material: Sin material. Objetivo a desarrollar: Desarrollar la autonomía personal a través de la confianza y seguridad en sí mismo. Bloque específico: ELEMENTOS PSICOMOTORES BÁSICOS. Organización: Individual. Desarrollo: Según el profesor va diciendo diferentes posiciones, los niños las adoptan: sentado, de pie, tumbado, a pata coja. Reglas: Sin reglas. Variantes: Sin variantes.",
+      "material": "Sin material",
+      "groupings": [
+        "Individual"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Ficha reconstruida a partir de la fuente escaneada para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-041",
+    "op": "update",
+    "data": {
+      "title": "¿Qué hemos cambiado?",
+      "description": "Etapa: Primaria. Lugar: Pista polideportiva o gimnasio. Material: Sin material. Objetivo a desarrollar: Desarrollar la percepción espacial a través de diferentes juegos motrices. Bloque específico: ELEMENTOS PSICOMOTORES BÁSICOS. Organización: Pequeño grupo. Desarrollo: Los niños se colocan delante de uno que se la queda. Este observa a los compañeros y después se vuelve de espaldas. Los compañeros cambian alguna prenda o la posición en la que estaban. Al volver a mirar, debe averiguar quién ha cambiado. Reglas: No vale hacer demasiados cambios dentro del grupo. Variantes: Realizar la actividad con todo el grupo, quedándose 4 o 5 alumnos.",
+      "material": "Sin material",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Ficha reconstruida a partir de la fuente escaneada para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-081",
+    "op": "update",
+    "data": {
+      "title": "Acelero",
+      "description": "Etapa: Primaria. Lugar: Pista polideportiva o gimnasio. Material: Sin material. Objetivo a desarrollar: Utilizar variaciones de la velocidad para provocar respuestas motoras. Bloque específico: ELEMENTOS PSICOMOTORES BÁSICOS. Organización: Gran grupo. Desarrollo: Los alumnos caminan siguiendo diferentes velocidades: muy lento, lento, rápido y muy rápido. Reglas: A cada palmada del profesor se aumenta progresivamente la velocidad. Variantes: Hacerlo sobre las puntas de los pies, sobre los talones, sobre el borde externo del pie o sin doblar las rodillas.",
+      "material": "Sin material",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Ficha reconstruida a partir de la fuente escaneada para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-096",
+    "op": "update",
+    "data": {
+      "title": "El Perro Asustado",
+      "description": "Etapa: Primaria. Lugar: Pista polideportiva o gimnasio. Material: Sin material. Objetivo a desarrollar: Desarrollar el control corporal, el movimiento global y segmentario. Bloque específico: COORDINACIÓN MOTRIZ. Organización: Gran grupo. Desarrollo: En un círculo se dispone media clase con las piernas abiertas y la otra mitad, los perros, se sienta delante de cada uno. Al sonar un pitido, los perros se asustan, pasan bajo las piernas de su compañero, dan una vuelta alrededor del círculo y vuelven a su sitio, dando una palmada. Después se cambian los roles. Reglas: Sin reglas. Variantes: Pillando a los compañeros que hay delante y evitando que te pille el compañero que viene por detrás.",
+      "material": "Sin material",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Ficha reconstruida a partir de la fuente escaneada para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-109",
+    "op": "update",
+    "data": {
+      "title": "El Túnel Redondo",
+      "description": "Etapa: Primaria. Lugar: Pista polideportiva o gimnasio. Material: Aros. Objetivo a desarrollar: Desarrollar la agilidad y la coordinación dinámica general. Bloque específico: COORDINACIÓN MOTRIZ. Organización: Pequeño grupo. Desarrollo: Dos equipos. Los componentes de un equipo sujetan un aro. A la señal, los miembros del otro grupo pasan por entre los aros. Reglas: No tocar los aros mientras se está pasando por ellos. Variantes: Distintas formas de paso por los aros.",
+      "material": "Aros",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Ficha reconstruida a partir de la fuente escaneada para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-110",
+    "op": "update",
+    "data": {
+      "title": "Enredo",
+      "description": "Etapa: Primaria. Lugar: Pista polideportiva o gimnasio. Material: Sin material. Objetivo a desarrollar: Desarrollar la agilidad y la coordinación dinámica general. Bloque específico: COORDINACIÓN MOTRIZ. Organización: Pequeño grupo. Desarrollo: Cogidos por las manos, los jugadores se desplazan intentando pasar por entre los brazos y piernas de sus compañeros. Gana el equipo que más se enrede. Reglas: No soltarse nunca del compañero. Variantes: Enredarse junto a otros cuartetos.",
+      "material": "Sin material",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Ficha reconstruida a partir de la fuente escaneada para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-141",
+    "op": "update",
+    "data": {
+      "title": "Picas en equilibrio",
+      "description": "Etapa: Primaria. Lugar: Pista polideportiva o gimnasio. Material: Picas. Objetivo a desarrollar: Mantener posiciones de equilibrio dinámico con objetos. Bloque específico: COORDINACIÓN MOTRIZ. Organización: Pequeños grupos. Desarrollo: Los grupos se colocan en columnas a la misma distancia de la meta. Sale el primero con una pica apoyada en el dedo corazón hasta el otro extremo, donde un compañero lo espera y realiza el mismo recorrido. Reglas: Gana el equipo que realice el recorrido antes. Si cae la pica, el jugador debe pararse y colocársela de nuevo en el dedo. Variantes: Realizar el recorrido con dos picas, una en cada mano, o llevar la pica entre las rodillas.",
+      "material": "Picas",
+      "groupings": [
+        "Pequeños grupos"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Ficha reconstruida a partir de la fuente escaneada para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-143",
+    "op": "update",
+    "data": {
+      "title": "Las Cigüeñas",
+      "description": "Etapa: Primaria. Lugar: Pista polideportiva o gimnasio. Material: Sin material. Objetivo a desarrollar: Mantener posiciones de equilibrio dinámico. Bloque específico: COORDINACIÓN MOTRIZ. Organización: Pequeños grupos. Desarrollo: Se forman filas de cinco jugadores. Cada jugador agarra con su mano derecha el hombro del que tiene delante y con la izquierda el pie izquierdo del de delante. Todas las filas se desplazan de este modo. Reglas: Gana la fila que llegue antes a la meta. Variantes: Cambiar la forma de desplazarse o variar el número de jugadores de la fila.",
+      "material": "Sin material",
+      "groupings": [
+        "Pequeños grupos"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Ficha reconstruida a partir de la fuente escaneada para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-173",
+    "op": "update",
+    "data": {
+      "title": "La Frontera",
+      "description": "Etapa: Primaria. Lugar: Pista polideportiva o gimnasio. Material: Pelotas de balonmano y de baloncesto. Objetivo a desarrollar: Desarrollar la coordinación de acciones y movimientos. Bloque específico: COORDINACIÓN MOTRIZ. Organización: Pequeño grupo. Desarrollo: En el centro de la pista se delimita una franja de 2 metros de anchura. Dentro habrá cinco niños botando un balón de baloncesto. El resto estará en un lado de la pista botando balones de balonmano. El juego consiste en pasar de un lado a otro sin ser tocados por los jugadores de la franja central. Los primeros eliminados pasan al centro. Reglas: Los jugadores del centro no pueden salir de la franja. No se puede dejar de botar el balón ni permanecer quieto más de 15 segundos. Variantes: Cambiar las formas de desplazamiento o los tipos de balón.",
+      "material": "Pelotas de balonmano y de baloncesto",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Ficha reconstruida a partir de la fuente escaneada para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-186",
+    "op": "update",
+    "data": {
+      "title": "Safari de Canguros",
+      "description": "Etapa: Primaria. Lugar: Pista polideportiva o gimnasio. Material: Balones. Objetivo a desarrollar: Utilizar formas de desplazamiento con objetos. Bloque específico: HABILIDADES BÁSICAS. Organización: Gran grupo. Desarrollo: Cada alumno coloca una pelota entre los pies. Tres jugadores se la quedan y, en cuadrupedia, tratan de quitar la pelota a los canguros, que huyen saltando. Cuando un cazador saca la pelota de los pies de un canguro, se cambia el rol. Reglas: Si al canguro se le cae la pelota, cambia de rol. Variantes: Sin variantes.",
+      "material": "Balones",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Ficha reconstruida a partir de la fuente escaneada para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-201",
+    "op": "update",
+    "data": {
+      "title": "El Metro",
+      "description": "Etapa: Primaria. Lugar: Pista polideportiva o gimnasio. Material: Sin material. Objetivo a desarrollar: Desplazarse por un espacio reducido respetando las distancias entre unos y otros. Bloque específico: HABILIDADES BÁSICAS. Organización: Gran grupo. Desarrollo: Los alumnos imaginan que caminan por los pasillos del metro en hora punta. Mientras caminan rápidamente no deben golpearse ni tocarse, aunque el espacio de juego se vaya haciendo cada vez más pequeño. Reglas: No se puede tocar al compañero. Variantes: Imaginar que se está filmando el juego y hacerlo después al revés; simular una avería eléctrica caminando con los ojos cerrados sin tocarse.",
+      "material": "Sin material",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Ficha reconstruida a partir de la fuente escaneada para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-238",
+    "op": "update",
+    "data": {
+      "title": "El Pañuelo Saltarín",
+      "description": "Etapa: Primaria. Lugar: Pista polideportiva o gimnasio. Material: Un pañuelo. Objetivo a desarrollar: Mejorar la agilidad y coordinación en el salto. Bloque específico: HABILIDADES BÁSICAS. Organización: Gran grupo. Desarrollo: El profesor sujeta un pañuelo en el centro del campo. A ambos lados se colocan dos equipos de igual número y se numeran sus componentes. Al decir un número, los jugadores correspondientes saltan en cuclillas hasta el pañuelo e intentan llevárselo sin ser tocados por el contrario. Reglas: No se puede invadir el campo contrario antes de coger el pañuelo. Variantes: Saltar a pata coja o con los pies juntos.",
+      "material": "Un pañuelo",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Ficha reconstruida a partir de la fuente escaneada para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-292",
+    "op": "update",
+    "data": {
+      "title": "Carrera de Lanzadores",
+      "description": "Etapa: Primaria. Lugar: Pista polideportiva o gimnasio. Material: Neumáticos. Objetivo a desarrollar: Practicar el lanzamiento de objetos. Bloque específico: HABILIDADES BÁSICAS. Organización: Pequeños grupos. Desarrollo: Cada grupo tiene un neumático. Se trata de recorrer una distancia determinada lanzándolo. El primero lanza, después el segundo y así sucesivamente hasta que todos lancen. Gana el equipo que llegue antes a la meta. Reglas: No se puede lanzar el neumático hasta que esté parado. Variantes: Cambiar los objetos lanzados o las formas de lanzamiento.",
+      "material": "Neumáticos",
+      "groupings": [
+        "Pequeños grupos"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Ficha reconstruida a partir de la fuente escaneada para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-326",
+    "op": "update",
+    "data": {
+      "title": "Los Transportistas-Equilibristas",
+      "description": "Etapa: Primaria. Lugar: Pista polideportiva o gimnasio. Material: Periódicos. Objetivo a desarrollar: Utilizar diferentes procedimientos para transportar objetos con eficacia. Bloque específico: HABILIDADES BÁSICAS. Organización: Por parejas. Desarrollo: Se construye una pelota con papel de periódico. Por parejas, cada una coge otra hoja por las esquinas y coloca sobre ella la pelota. Deben desplazarse, sentarse o arrodillarse sin que caiga la pelota ni se rompa la hoja. Reglas: No se puede tocar la bola con la mano. Variantes: Aumentar progresivamente el número de pelotas sobre la hoja.",
+      "material": "Periódicos",
+      "groupings": [
+        "Por parejas"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Ficha reconstruida a partir de la fuente escaneada para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-331",
+    "op": "update",
+    "data": {
+      "title": "El Safari Fotográfico",
+      "description": "Etapa: Primaria. Lugar: Pista polideportiva o gimnasio. Material: Sin material. Objetivo a desarrollar: Lograr respuestas motrices mediante la imitación. Bloque específico: EXPRESIÓN CORPORAL. Organización: Pequeño grupo. Desarrollo: La clase se distribuye en tres grandes grupos: uno imita animales; otro representa a los miembros del safari, como fotógrafos o curiosos; y otro representa a grupos indígenas que danzan, cazan, etc. Reglas: Sin reglas Variantes: Cambios de rol",
+      "material": "Sin material",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Ficha reconstruida a partir de la fuente escaneada para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
+    }
+  },
+  {
+    "id": "j6a12-355",
+    "op": "update",
+    "data": {
+      "title": "¿Quién Canta?",
+      "description": "Etapa: Primaria. Lugar: Pista polideportiva o gimnasio. Material: Sin material. Objetivo a desarrollar: Desarrollar las posibilidades expresivas mediante movimientos corporales de imitación. Bloque específico: EXPRESIÓN CORPORAL. Organización: Gran grupo. Desarrollo: Se propone un cantante y algún voluntario sale para imitarlo ante sus compañeros. La fuente propone, entre otros, a Julio Iglesias, Raphael, Azúcar Moreno, Los Panchos y Mecano. Reglas: Se debe imitar al cantante durante un minuto. Variantes: Imitar otros cantantes o grupos musicales diferentes a los propuestos.",
+      "material": "Sin material",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "visibility": "visible",
+      "needsReview": false,
+      "auditStatus": "corregida-fuente-v63",
+      "auditNote": "Ficha reconstruida a partir de la fuente escaneada para eliminar contaminación OCR; no se elimina ni se fusiona el registro."
     }
   }
 ]
