@@ -200,10 +200,14 @@ function updateTotals(){
   $('#sessionTotals').textContent=`${session.length} juegos · ${mins} min${target?` / objetivo ${target} min`:``}`;
   const summary=$('#sessionPhaseSummary');
   if(!summary)return;
-  const phases=[['Calentamiento','warm'],['Parte principal','main'],['Vuelta a la calma','cool']];
+  const phases=[['Calentamiento','warm'],['Parte principal','main'],['Vuelta a la calma','cool'],['Sin asignar','unassigned']];
   const parts=phases.map(([name,cls])=>{
-    const total=session.filter(x=>x.phase===name).reduce((a,x)=>a+(Number(x.minutes)||0),0);
-    return total?`<span class="phase-summary-item ${cls}">${name} · ${total} min</span>`:''}).filter(Boolean);
+    const items=session.filter(x=>(x.phase||'Sin asignar')===name);
+    if(!items.length)return'';
+    const total=items.reduce((a,x)=>a+(Number(x.minutes)||0),0);
+    const juegos=items.length;
+    return `<span class="phase-summary-item ${cls}">${name} · ${juegos} juego${juegos===1?'':'s'} · ${total} min</span>`;
+  }).filter(Boolean);
   let statusClass='total',statusText=`Total · ${mins}${target?`/${target}`:''} min`;
   if(target&&mins===target){statusClass='total ok';statusText=`✓ Total · ${mins}/${target} min`;}
   else if(target&&mins<target){statusClass='total short';statusText=`⚠ Faltan ${target-mins} min · ${mins}/${target}`;}
