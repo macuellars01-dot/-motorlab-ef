@@ -9,5 +9,10 @@
   "ocrFragmentsResolved": 252,
   "auditQuarantineV62": 31,
   "sourceCorrectionsV63": 32,
-  "manualGamesPreserved": true
+  "manualGamesPreserved": true,
+  "auditQuarantineRemaining": 1,
+  "auditQuarantineResolvedV63": 30,
+  "remainingQuarantineIds": [
+    "j6a12-002"
+  ]
 }
