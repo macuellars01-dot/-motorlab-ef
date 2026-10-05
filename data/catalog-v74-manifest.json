@@ -1,0 +1,26 @@
+{
+  "version": "v74",
+  "source": "quinto.pdf",
+  "sourcePages": [
+    10,
+    48,
+    53,
+    86,
+    90,
+    92,
+    96,
+    119,
+    127,
+    136,
+    142,
+    190
+  ],
+  "correctedCount": 14,
+  "patch": "data/catalog_patch_v74_quinto_fragments.json",
+  "previousVersion": "v73",
+  "status": "completed",
+  "notes": [
+    "Se corrigieron únicamente fragmentos cuyo título aparece de forma explícita en las páginas escaneadas.",
+    "Se mantienen sin cambios los fragmentos de quinto cuya página no permite recuperar con seguridad un título independiente."
+  ]
+}
