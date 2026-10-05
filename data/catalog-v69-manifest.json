@@ -1,0 +1,18 @@
+{
+  "version": "v69",
+  "generatedAt": "2026-10-05T23:32:00+02:00",
+  "source": "120 Juegos.pdf",
+  "auditedPages": "3-123",
+  "auditedGames": 121,
+  "corrections": {
+    "type": "title-only",
+    "patch": "data/catalog_patch_v69_120j_titles.json"
+  },
+  "preservation": [
+    "No se eliminan registros",
+    "No se fusionan registros",
+    "Los juegos manuales se conservan mediante motorlab_game_overrides"
+  ],
+  "previous": "v68",
+  "status": "ready"
+}
