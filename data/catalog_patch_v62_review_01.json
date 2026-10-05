@@ -1,0 +1,416 @@
+[
+  {
+    "op": "update",
+    "id": "j6a12-006",
+    "data": {
+      "title": "STOP",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Controlar la actitud postural en diferentes situaciones motrices.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Gran grupo.\nDesarrollo: Todos trotando y uno se la queda. El profesor dirá «STOP» y los alumnos adoptarán una postura determinada. El que se la queda podrá tocar a alguien que no esté en esta posición, cambiando de rol.\nReglas: Adoptar solo la posición indicada por el profesor.\nVariantes: Sentados, tumbados boca arriba, boca abajo, etc.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Controlar la actitud postural en diferentes situaciones motrices."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-008",
+    "data": {
+      "title": "CAZAR AL RUIDOSO",
+      "age": "Primaria",
+      "material": "Pañuelos para vendar los ojos",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Pañuelos para vendar los ojos.\nObjetivo a desarrollar: Conocer el esquema e imagen corporal.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Gran grupo.\nDesarrollo: Los jugadores están dispersos por una zona delimitada. Todos menos uno tienen los ojos vendados. El jugador que no lleva los ojos vendados hace de «ruidoso» y se desplaza a gatas. Los demás intentarán cazarle siguiendo el ruido y desplazándose de pie.\nReglas: No pueden salirse de la zona establecida.\nVariantes: Introducir más de un «ruidoso». Desplazándose todos a gatas.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Conocer el esquema e imagen corporal."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-010",
+    "data": {
+      "title": "LA ZAPATILLA POR DETRÁS",
+      "age": "Primaria",
+      "material": "Una zapatilla",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Una zapatilla.\nObjetivo a desarrollar: Mejorar la velocidad de reacción.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Gran grupo.\nDesarrollo: Todos los jugadores se sientan en corro, menos uno que se queda fuera con una zapatilla. Los del corro cierran los ojos y colocan la cabeza entre las piernas. El que está fuera da vueltas y coloca la zapatilla detrás de alguien; este debe cogerla y perseguirle. Si le coge antes de sentarse en el sitio libre, él mismo reinicia el juego.\nReglas: Si no le cogen, será el perseguidor quien inicie el juego.\nVariantes: La persecución dura una sola vuelta, o cualquier número de vueltas establecido previamente.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Mejorar la velocidad de reacción."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-011",
+    "data": {
+      "title": "¿DÓNDE ESTÁS?",
+      "age": "Primaria",
+      "material": "Dos pañuelos",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Dos pañuelos.\nObjetivo a desarrollar: Desarrollar la atención auditiva.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Gran grupo.\nDesarrollo: Todos los jugadores se sientan en corro, menos dos, que se quedan dentro con los ojos tapados. Uno intenta cazar al otro preguntando «¿Dónde estás?». El otro debe contestarle para que pueda guiarse. Ambos se desplazan a gatas.\nReglas: No pueden salirse del corro.\nVariantes: Varios corros pequeños para aumentar la participación. Mismo desarrollo con el corro y los jugadores que se persiguen de pie.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la atención auditiva."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-012",
+    "data": {
+      "title": "LOS DISPARATES",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Mejorar la atención auditiva.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Gran grupo.\nDesarrollo: Todos sentados formando un corro. Uno inicia el juego transmitiendo al compañero de al lado una palabra al oído. Este, sea lo que sea lo que haya entendido, se lo dice al siguiente, también al oído, y así sucesivamente. El último dice la palabra en alto para comprobar si coincide con la transmitida por el primero.\nReglas: La palabra debe decirse con rapidez y una sola vez.\nVariantes: Pueden transmitirse dos palabras en sentido contrario.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Mejorar la atención auditiva."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-013",
+    "data": {
+      "title": "¿GUIÑO?",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Mejorar la atención visual.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Gran grupo.\nDesarrollo: En círculo y por parejas, uno detrás del otro. En el centro del círculo hay un jugador solo. Este guiña el ojo a alguien del círculo, que saldrá corriendo para colocarse detrás de él. El compañero que estaba detrás de la persona llamada intentará impedírselo atrapándole con los brazos. El que se quede solo será quien guiñe el ojo.\nReglas: El de detrás de cada pareja coloca las manos detrás de su espalda.\nVariantes: Con dos jugadores sin pareja guiñando los dos a los demás.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Mejorar la atención visual."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-014",
+    "data": {
+      "title": "NO TE CAMBIES QUE TE PILLA",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la atención visual.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Por parejas.\nDesarrollo: Por parejas, uno frente al otro. Cada pareja se observa durante un tiempo determinado. Se dan la vuelta y, a espaldas uno del otro, cambian algo de su indumentaria. Vuelven a mirarse y cada uno trata de adivinar lo que el otro ha cambiado.\nReglas: No se puede poner ni quitar nada.\nVariantes: En tríos, uno intenta adivinar lo que los otros dos han cambiado.",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Desarrollar la atención visual."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-015",
+    "data": {
+      "title": "EL TELEGRAMA",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la atención táctil y visual.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Gran grupo.\nDesarrollo: Todos sentados en círculo. Uno está de pie en el centro. Un niño manda un telegrama a otro. La transmisión se realiza apretando la mano del compañero contiguo, que apretará la del siguiente hasta que sea recibido. Deben conocerse el nombre del emisor y del receptor. El niño del centro intenta interceptar la transmisión.\nReglas: El niño que sea descubierto se cambiará por el del centro.\nVariantes: Variar el número de niños en el centro. Posición de las manos: en alto o por detrás.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la atención táctil y visual."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-017",
+    "data": {
+      "title": "ARRANCAR CEBOLLAS",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la precisión en el dominio del cuerpo.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Pequeño grupo.\nDesarrollo: Un niño se sienta y abre las piernas. Los demás compañeros se cogen, uno a uno y con fuerza, por la cintura. Después, un niño coge de las manos al primero de la fila e intenta arrancarlo de sus compañeros. Cuando lo consigue, el niño arrancado se pone detrás de quien lo ha arrancado, lo coge de la cintura y le ayuda a arrancar a los demás.\nReglas: El juego termina cuando todos los niños han sido arrancados.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la precisión en el dominio del cuerpo."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-019",
+    "data": {
+      "title": "EL CIEMPIÉS",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la precisión en el dominio del cuerpo.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Pequeño grupo.\nDesarrollo: Se colocan los niños en filas de seis o siete, uno detrás de otro, con las piernas abiertas y muy juntos. A la señal, todos giran lentamente hacia la izquierda y quedan con las manos apoyadas en el suelo, el cuerpo paralelo al suelo y las piernas encima del compañero que antes tenían delante. Solo el último apoya manos y pies en el suelo. Se trata de dar media vuelta a la posición inicial y quedar como un ciempiés. Una vez conseguido, caminan hasta que se rompa el ciempiés.\nReglas: Sin reglas.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la precisión en el dominio del cuerpo."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-020",
+    "data": {
+      "title": "LOS NUDOS",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la precisión en el dominio del cuerpo.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Gran grupo.\nDesarrollo: Los niños se cogen de las manos formando una fila, excepto uno que se va. Entonces el primero empieza a pasar por entre los compañeros hasta que todos quedan envueltos, sin soltarse de las manos. El niño que ha permanecido fuera vuelve y ha de deshacer el lío sin romper la cadena formada por los niños.\nReglas: Sin reglas.\nVariantes: En lugar de iniciar el juego en fila, se hace en corro, todos cogidos de las manos. Esta variante es para niños mayores.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la precisión en el dominio del cuerpo."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-022",
+    "data": {
+      "title": "COSQUILLEO",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Mejorar el conocimiento y control del cuerpo en diferentes situaciones de juego.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Por parejas.\nDesarrollo: Un alumno coge del brazo al compañero y, sin que este lo mire, con la yema de los dedos va recorriendo todo el antebrazo. El otro trata de averiguar el momento en que las yemas llegan a la altura del codo.\nReglas: El que realiza el cosquilleo debe hacerlo lentamente.\nVariantes: Percibir el momento en que los dedos llegan a otra parte del cuerpo: muñeca, tobillo, rodilla, etc.",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Mejorar el conocimiento y control del cuerpo en diferentes situaciones de juego."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-024",
+    "data": {
+      "title": "¿QUÉ LETRAS SON?",
+      "age": "Primaria",
+      "material": "Chapas",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Chapas.\nObjetivo a desarrollar: Desarrollar las posibilidades de acción y movimiento del cuerpo.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Pequeño grupo.\nDesarrollo: Se colocan las chapas formando letras y se pide a los alumnos que traten de identificarlas. Los alumnos deberán ir con los ojos cerrados.\nReglas: Prestar mucha atención en el desarrollo del juego.\nVariantes: Utilizar otros materiales para formar las palabras. Formar sílabas o palabras con las chapas.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar las posibilidades de acción y movimiento del cuerpo."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-025",
+    "data": {
+      "title": "DÉJATE LLEVAR POR LA MÚSICA",
+      "age": "Primaria",
+      "material": "Cassette y música variada",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Cassette y música variada.\nObjetivo a desarrollar: Desarrollar la tensión-relajación a través de diversas situaciones lúdicas.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Gran grupo.\nDesarrollo: Al son de la música los alumnos se moverán y bailarán ocupando el espacio que quieran. Cuando la música deje de sonar se quedarán inmóviles.\nReglas: Solo se moverán cuando la música suene.\nVariantes: Seguir el ritmo de la música sin mover los pies. Seguir el ritmo de la música solo con los brazos.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la tensión-relajación a través de diversas situaciones lúdicas."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-026",
+    "data": {
+      "title": "EL OBJETO INVISIBLE",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar las diferentes posibilidades de acción y movimiento del cuerpo y de sus segmentos.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Individual.\nDesarrollo: Cada alumno se desplazará por el espacio imaginando que lleva un palo largo de uno de los extremos.\nReglas: Solo se usa la parte elegida para trasladar el palo.\nVariantes: Llevar el palo con diferentes partes del cuerpo (mano, rodilla, pie, etc.). Ídem, pero por parejas.",
+      "groupings": [
+        "Individual"
+      ],
+      "objectives": [
+        "Desarrollar las diferentes posibilidades de acción y movimiento del cuerpo y de sus segmentos."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-027",
+    "data": {
+      "title": "DIBUJA CON EL CUERPO",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar las diferentes posibilidades de acción y movimiento del propio cuerpo y de sus segmentos.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Por parejas.\nDesarrollo: Por parejas, uno dibuja con alguno de sus segmentos letras o números y el compañero intentará adivinarlo.\nReglas: Realizar los movimientos lentamente.\nVariantes: Dibujar palabras, cifras y objetos.",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Desarrollar las diferentes posibilidades de acción y movimiento del propio cuerpo y de sus segmentos."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-029",
+    "data": {
+      "title": "DOBLAR AL ÁRBOL",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Identificar y utilizar posturas corporales diversas.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Por parejas.\nDesarrollo: Flexionar y extender en todos los sentidos el tronco de un compañero que está sentado y ofrece cierta resistencia.\nReglas: No realizar movimientos bruscos que puedan causar lesiones.\nVariantes: «Doblar las ramas»: flexionar y extender los brazos o las piernas de un compañero que opone cierta resistencia.",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Identificar y utilizar posturas corporales diversas."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-030",
+    "data": {
+      "title": "BLANDO Y RÍGIDO",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Interiorizar diferentes partes corporales por medio de la relajación.\nBloque específico: ELEMENTOS PSICOMOTORES BÁSICOS.\nOrganización: Gran grupo.\nDesarrollo: Nombrar diferentes materiales y objetos característicos por su dureza o su blandura e imitarlos: algodón, hierro, muñeco de goma, piedra, gomaespuma, etc.\nReglas: Estar atentos a las indicaciones del profesor.\nVariantes: Cambiar los objetos a imitar.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Interiorizar diferentes partes corporales por medio de la relajación."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  }
+]
