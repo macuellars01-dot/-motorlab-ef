@@ -37,10 +37,8 @@ async function init(){
       if(p.op==='add') catalogById.set(p.id,p.data);
       else if(p.op==='update'&&catalogById.has(p.id)) catalogById.set(p.id,{...catalogById.get(p.id),...p.data});
     });
-    // Auditoría de calidad: las fichas OCR pendientes o fragmentarias no deben aparecer como fichas utilizables.
-    // Se conservan en el catálogo de datos para su revisión posterior, pero quedan fuera de la biblioteca visible.
-    games=[...catalogById.values()].filter(g=>g.visibility!=='review'&&g.kind!=='page-review'&&g.needsReview!==true);
-    console.info('[MotorLab] Catálogo v16.4-v62 · biblioteca visible sin OCR pendiente:',games.length,'registros');
+    games=[...catalogById.values()];
+    console.info('[MotorLab] Catálogo v16.4-v61:',games.length,'registros');
 
     sanitizeLocalGameState();
 
