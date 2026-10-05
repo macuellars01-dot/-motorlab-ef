@@ -86,3 +86,5 @@ input,textarea,select{font-size:16px;}
 .ocr-filter{padding:12px 2px;margin:0!important;border-top:1px solid var(--line)}
 .filter-note{padding:12px 2px 4px!important}
 @media(min-width:761px){.workspace{grid-template-columns:285px 1fr}.filters{padding:16px}.filter-group summary{font-size:12px}}
+
+.session-add-mode{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 14px;padding:12px 14px;border:1px solid #bfdbfe;border-radius:12px;background:#eff6ff;color:#1e3a8a}.session-add-mode span{font-size:13px;color:#64748b;flex:1}.session-add-mode.hidden{display:none}.session-add-mode .small{padding:8px 12px}
