@@ -1,0 +1,18 @@
+{
+  "version": "v77",
+  "source": "juegos 6a12anos.pdf",
+  "sourcePages": [
+    57,
+    59,
+    97,
+    101
+  ],
+  "correctedCount": 4,
+  "patch": "data/catalog_patch_v77_juegos6a12_fragments.json",
+  "previousVersion": "v76",
+  "status": "completed",
+  "notes": [
+    "Solo se han corregido registros cuyo propio fragmento identifica inequívocamente un único título.",
+    "Los registros que mezclan dos títulos consecutivos se mantienen sin modificar para evitar asignar el título equivocado."
+  ]
+}
