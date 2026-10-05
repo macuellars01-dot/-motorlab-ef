@@ -33223,5 +33223,788 @@
       "needsReview": true,
       "confidence": "ocr-unverified"
     }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00001",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00002",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00003",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00004",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00005",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00006",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00008",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00009",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00010",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00012",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00014",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00015",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00016",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00018",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00019",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00020",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00021",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00022",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00023",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00024",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00025",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00026",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00027",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00028",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00029",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00030",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00031",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00032",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00035",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00037",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00038",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00039",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00040",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00041",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00042",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00043",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00044",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00045",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00046",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00047",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00048",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00049",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00050",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00051",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00052",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00053",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00054",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00055",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00056",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00057",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00058",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00059",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00060",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00063",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00065",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00066",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00067",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00068",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00069",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00070",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00071",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00072",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00073",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00074",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00075",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00076",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00077",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00078",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00079",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00080",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00081",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00082",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00083",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00084",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00085",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00086",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00087",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00089",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00090",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00092",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00093",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00094",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00096",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00097",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00098",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00100",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
+  },
+  {
+    "op": "update",
+    "id": "ocr-00101",
+    "data": {
+      "visibility": "published",
+      "needsReview": false,
+      "confidence": "pdf-verified"
+    }
   }
 ]
