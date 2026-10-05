@@ -1,5 +1,5 @@
 {
-  "catalogVersion": "v16.4-v66",
+  "catalogVersion": "v16.4-v68",
   "records": 2724,
   "uniqueIds": 2724,
   "deletions": 0,
@@ -68,5 +68,15 @@
     "j6a12-201",
     "j6a12-204",
     "j6a12-205"
-  ]
+  ],
+  "sourceCorrectionsV67": 3,
+  "sourceCorrectionsV68": 2,
+  "finalSourceGamesJ6a12": 390,
+  "finalVisibleJ6a12": 390,
+  "finalQuarantineJ6a12": 1,
+  "finalQuarantineIdsJ6a12": [
+    "j6a12-2247"
+  ],
+  "auditCompletedAllJ6a12": true,
+  "auditNote": "Revisión completa de las 390 fichas numeradas del PDF juegos 6a12anos.pdf. Se recuperó la ficha nº 2 desde la fuente, se corrigieron títulos/descripciones restantes y se dejó fuera de catálogo visible el registro OCR duplicado 2247."
 }
