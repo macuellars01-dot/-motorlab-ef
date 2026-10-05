@@ -131,6 +131,14 @@ function ageBucket(g){
   if(/primaria|todas|cualquier edad/.test(x))return'Primaria';
   return'No especificada';
 }
+function spaceBucket(g){
+  const x=normalize(g?.space);
+  if(!x)return'No especificado';
+  if(/aula|clase|interior|cerrado|gimnasio/.test(x))return'Interior';
+  if(/patio|pista|cancha|exterior|aire libre/.test(x))return'Exterior';
+  if(/agua|piscina/.test(x))return'Acuático';
+  return g.space||'No especificado';
+}
 function materialTags(m){return [materialTag(m)]}
 function inferIntensity(g){
   const v=normalize(g?.intensity);
@@ -148,7 +156,7 @@ function buildFilters(){
   const configs=[
     ['ageFilters',['Infantil','1.º-2.º Primaria','3.º-4.º Primaria','5.º-6.º Primaria','Primaria','No especificada']],
     ['materialFilters',['Sin material','Balones/pelotas','Aros','Conos','Cuerdas/combas','Picas','Pañuelos/petos','Colchonetas','Raquetas','Tizas','Globos','Tarjetas','Bancos/vallas','Material variado','Otros']],
-    ['spaceFilters',uniqSorted(games.map(g=>g.space||'No especificado'))],
+    ['spaceFilters',['Interior','Exterior','Acuático','No especificado']],
     ['intensityFilters',['Baja','Media','Alta','No especificada']],
     ['sourceFilters',sources],
     ['groupingFilters',['Individual','Parejas','Pequeños grupos','Gran grupo','No especificado']],
@@ -190,7 +198,7 @@ function matches(g){
   const ages=selected('#ageFilters'),mats=selected('#materialFilters'),spaces=selected('#spaceFilters'),ints=selected('#intensityFilters'),srcs=selected('#sourceFilters'),groups=selected('#groupingFilters'),objs=selected('#objectiveFilters');
   return(!ages.length||ages.includes(ageBucket(g)))
     &&(!mats.length||mats.some(v=>materialTags(g.material).includes(v)))
-    &&(!spaces.length||spaces.includes(g.space||'No especificado'))
+    &&(!spaces.length||spaces.includes(spaceBucket(g)))
     &&(!ints.length||ints.includes(inferIntensity(g)))
     &&(!srcs.length||srcs.includes(sourceLabel(g)))
     &&(!groups.length||groups.some(v=>groupingValues(g).includes(v)))
