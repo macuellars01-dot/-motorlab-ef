@@ -1,0 +1,370 @@
+[
+  {
+    "op": "update",
+    "id": "j6a12-151",
+    "data": {
+      "title": "TIRO AL BLANCO",
+      "age": "Primaria",
+      "material": "Botes y balones",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Botes y balones.\nObjetivo a desarrollar: Desarrollar la coordinación visomotriz.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Por parejas.\nDesarrollo: Uno frente a otro a unos seis metros de distancia; en el centro se coloca un bote, bolo o similar. Tratan de derribarlo alternativamente.\nReglas: Ganará el que más veces derribe el bote.\nVariantes: Aumentar distancias. Lanzar con las dos manos, con la derecha o con la izquierda. Lanzar con otros materiales, como por ejemplo una piedra.",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación visomotriz."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-153",
+    "data": {
+      "title": "CESTA MÓVIL",
+      "age": "Primaria",
+      "material": "Papelera o bote y balones pequeños",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Papelera o bote y balones pequeños.\nObjetivo a desarrollar: Desarrollar la coordinación de acciones y movimientos.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: Dos jugadores llevan una cesta colgada en la espalda (papelera o bote), en continuo movimiento. Los demás, con pelotas pequeñas, tratan de encestar. Cuando todas las pelotas están en las cestas, se cambia de rol.\nReglas: Los que llevan la cesta no pueden correr.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación de acciones y movimientos."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-155",
+    "data": {
+      "title": "LANZAMIENTOS DE BOLOS",
+      "age": "Primaria",
+      "material": "Botellas de plástico y balones",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Botellas de plástico y balones.\nObjetivo a desarrollar: Ser capaz de lanzar, recepcionar y desplazarse con objetos conocidos componiendo gestos coordinados.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Pequeño grupo.\nDesarrollo: Se colocan las botellas en el centro de la pista. Los jugadores se colocarán de 8 a 10 metros de las botellas. Lanzarán un balón de forma rodada hacia las botellas; cada botella que derriben será un punto.\nReglas: La última botella valdrá dos puntos. No vale traspasar la línea de tirada. Establecer turnos de tirada.\nVariantes: Variar las distancias y situación de las botellas.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Ser capaz de lanzar, recepcionar y desplazarse con objetos conocidos componiendo gestos coordinados."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-156",
+    "data": {
+      "title": "LAS CUATRO PORTERÍAS",
+      "age": "Primaria",
+      "material": "Balones blandos y porterías o similar",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Balones blandos y porterías o similar.\nObjetivo a desarrollar: Desarrollar la coordinación de acciones y movimientos.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: Clase dividida en grupos. Las porterías se colocan en cada esquina del campo; cada grupo tiene dos porterías para defender y dos para intentar meter gol, colocadas en las esquinas del campo.\nReglas: Lanzar los balones con cuidado.\nVariantes: Con muchos balones.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación de acciones y movimientos."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-157",
+    "data": {
+      "title": "DE BOTE EN BOTE",
+      "age": "Primaria",
+      "material": "Balones",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Balones.\nObjetivo a desarrollar: Desarrollar la coordinación de acciones y movimientos.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Pequeño grupo.\nDesarrollo: Se sitúan los grupos, cada uno dividido en dos grupos de cuatro, que se colocan en los extremos de la pista. Deben llevar el balón botando de uno en uno al compañero de la otra fila, quedándose en esa fila; el compañero sale hacia la otra. Gana el equipo que primero cambie todos sus miembros de fila.\nReglas: Cuando se pierde el balón hay que empezar desde el principio.\nVariantes: Se puede llevar el balón de distintas formas, con una u otra mano. Poner obstáculos.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación de acciones y movimientos."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-158",
+    "data": {
+      "title": "TULIPÁN BOTANDO",
+      "age": "Primaria",
+      "material": "Balones de psicomotricidad",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Balones de psicomotricidad.\nObjetivo a desarrollar: Ser capaz de lanzar, recepcionar y desplazarse con objetos conocidos componiendo gestos coordinados.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Pequeño grupo.\nDesarrollo: Cinco niños con pelota tratan de dar a los demás. El que es dado se queda en posición de tulipán (de pie, con los brazos en cruz y las piernas abiertas). Para ser liberado, otro compañero sin balón debe pasar por debajo de las piernas. Después se intercambian los papeles, quedándose otros cinco a dar con el balón.\nReglas: No quitarse de la posición de tulipán hasta ser salvado por un compañero.\nVariantes: Variar el número inicial de los que pillan.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Ser capaz de lanzar, recepcionar y desplazarse con objetos conocidos componiendo gestos coordinados."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-159",
+    "data": {
+      "title": "TORTILLA DE MANOS",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la coordinación visomotriz.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Por parejas.\nDesarrollo: Por parejas, frente a frente, tendidos en posición de pronación, intentar aplastar la mano del compañero con la nuestra.\nReglas: Establecer turnos de tirada.\nVariantes: Una mano o la otra.",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación visomotriz."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-160",
+    "data": {
+      "title": "LA RATA Y EL GATO",
+      "age": "Primaria",
+      "material": "Una pelota grande y una pequeña",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Una pelota grande y una pequeña.\nObjetivo a desarrollar: Desarrollar la coordinación visomotriz.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: Se forma un círculo. A un niño se le da una pelota grande que será el gato. A otro niño, situado a cinco o seis puestos hacia la derecha o hacia la izquierda del anterior, se le da la pelota pequeña que será la rata. A la voz de «atrapa», el gato, es decir, la pelota grande, pasando de mano en mano ha de intentar atrapar a la rata, es decir, la pelota pequeña que también estará en circulación.\nReglas: Sin reglas.\nVariantes: Se puede introducir una tercera pelota, mediana o de un color determinado, que se entregará a otro niño situado a una distancia similar y que hará la función de casa de la rata. Si la rata llega a su casa, está salvada.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación visomotriz."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-161",
+    "data": {
+      "title": "PELOTA AL CUELLO",
+      "age": "Primaria",
+      "material": "Dos o tres pelotas no muy duras que puedan cogerse entre la barbilla y el cuello",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Dos o tres pelotas no muy duras que puedan cogerse entre la barbilla y el cuello.\nObjetivo a desarrollar: Desarrollar la coordinación visomotriz a través de distintos juegos motrices.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: Se forma un corro. Un niño se coloca una pelota entre la barbilla y el pecho y, sin tocarla con las manos, pasa a su compañero más cercano, que se la coloca en el cuello cogiéndola únicamente con la barbilla y el pecho. La pelota va pasando de cuello en cuello hasta regresar al punto de origen.\nReglas: Sin reglas.\nVariantes: Se pueden inventar por turnos otras formas de pasar la pelota: con la axila y un dedo, con la parte posterior de la rodilla y una mano.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación visomotriz a través de distintos juegos motrices."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-163",
+    "data": {
+      "title": "EL CUBO Y LAS PELOTAS",
+      "age": "Primaria",
+      "material": "Un cubo, pelotas no muy grandes",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Un cubo, pelotas no muy grandes.\nObjetivo a desarrollar: Desarrollar la coordinación visomotriz a través de distintos juegos motrices.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: El profesor pone en un cubo tantas pelotas como jugadores, menos una. De golpe vacía el cubo y cada niño ha de coger una pelota. El niño que se quede sin pelota será el encargado de vaciar el cubo en la siguiente jugada.\nReglas: Sin reglas.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación visomotriz a través de distintos juegos motrices."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-165",
+    "data": {
+      "title": "TRIÁNGULO",
+      "age": "Primaria",
+      "material": "Balones",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Balones.\nObjetivo a desarrollar: Desarrollar la coordinación óculo-pédica a través de diferentes situaciones lúdicas.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Pequeño grupo.\nDesarrollo: Grupos de cuatro. Tres de ellos se colocan formando un triángulo. Realizan entre ellos pases con el pie. En el centro se colocará el otro alumno, que intentará interceptar el balón.\nReglas: Al que le interceptan el balón o da un mal pase se la queda dentro del triángulo.\nVariantes: Poner otro balón a los pasadores.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación óculo-pédica a través de diferentes situaciones lúdicas."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-170",
+    "data": {
+      "title": "ELEVAR LA PELOTA",
+      "age": "Primaria",
+      "material": "Una pelota que no sea muy pesada o un globo gigante",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Una pelota que no sea muy pesada o un globo gigante.\nObjetivo a desarrollar: Desarrollar la coordinación visomotriz a través de distintos juegos motrices.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: Para jugar se ha de formar un grupo de diez personas como máximo. El juego consiste en elevar la pelota evitando que caiga al suelo. Se puede tocar con cualquier parte del cuerpo, sin establecer ningún tipo de orden entre los jugadores, aunque una misma persona no puede tocar la pelota dos veces consecutivas. Se cuentan las veces que la pelota es golpeada para saber cuánto tiempo se consigue mantenerla en el aire.\nReglas: Sin reglas.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación visomotriz a través de distintos juegos motrices."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-174",
+    "data": {
+      "title": "LA SACA",
+      "age": "Primaria",
+      "material": "Canicas",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Canicas.\nObjetivo a desarrollar: Mejorar la coordinación de acciones y movimientos.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Pequeño grupo.\nDesarrollo: Se hace un círculo en el suelo y se colocan tantas canicas como participantes haya. Los alumnos se sitúan a una distancia del círculo y con una canica cada uno. El juego consiste en sacar todas las canicas del círculo.\nReglas: Ganará el jugador que más canicas saque del círculo.\nVariantes: En vez de con canicas, con chapas u otros materiales.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Mejorar la coordinación de acciones y movimientos."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-175",
+    "data": {
+      "title": "LA DIANA NUMERADA",
+      "age": "Primaria",
+      "material": "Canicas",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Canicas.\nObjetivo a desarrollar: Desarrollar la coordinación óculo-segmentaria a través del juego.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Pequeño grupo.\nDesarrollo: Se dibuja en el suelo una diana con diferentes puntuaciones. A cierta distancia se colocan los alumnos detrás de una línea, con una canica cada uno. ¿Qué alumno conseguirá mayor puntuación en tres lanzamientos?\nReglas: Ganará el que más puntos tenga tras realizar sus lanzamientos.\nVariantes: Incluir puntuaciones negativas que resten puntos. Lanzar otros objetos.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación óculo-segmentaria a través del juego."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-177",
+    "data": {
+      "title": "A POR LA ZAPATILLA",
+      "age": "Primaria",
+      "material": "Pelotas y una zapatilla",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Pelotas y una zapatilla.\nObjetivo a desarrollar: Desarrollar la coordinación visomotriz a través del juego.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Pequeño grupo.\nDesarrollo: Dos equipos con balones en su poder se sitúan uno enfrente de otro, colocando entre ellos una zapatilla. A la señal del profesor, los componentes de uno y otro equipo lanzarán las pelotas contra la zapatilla para hacerla llegar al campo del equipo contrario.\nReglas: Ganará el equipo que consiga hacer llegar la zapatilla al campo contrario, o el que una vez finalizado el juego tenga la zapatilla más alejada de su campo.\nVariantes: Colocar la zapatilla dentro de un círculo para ver qué equipo consigue sacarla antes. Utilizar dos o más zapatillas en el desarrollo del juego.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la coordinación visomotriz a través del juego."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-178",
+    "data": {
+      "title": "LA RAYA",
+      "age": "Primaria",
+      "material": "Monedas",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Monedas.\nObjetivo a desarrollar: Desarrollar el control de objetos en diferentes acciones motrices.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Pequeño grupo.\nDesarrollo: Todos los alumnos, con una moneda en su poder, se sitúan a una cierta distancia de una raya dibujada en el suelo. Todos lanzan, de uno en uno, sus monedas.\nReglas: Gana el que se acerca más a la raya.\nVariantes: Lanzar la moneda con un ojo cerrado.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar el control de objetos en diferentes acciones motrices."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  }
+]
