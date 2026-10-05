@@ -1,0 +1,232 @@
+[
+  {
+    "op": "update",
+    "id": "j6a12-085",
+    "data": {
+      "title": "HAZ LO QUE DIGA LA CANCIÓN",
+      "age": "Primaria",
+      "material": "Cassette y cinta infantil",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Cassette y cinta infantil.\nObjetivo a desarrollar: Identificar ritmos y responder con ritmos adecuados.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Individual.\nDesarrollo: Expresar las acciones descritas en una canción infantil, cantando simultáneamente.\nReglas: Adecuar los movimientos al ritmo de la música.\nVariantes: Trasladándose, gesticulando, cantando.",
+      "groupings": [
+        "Individual"
+      ],
+      "objectives": [
+        "Identificar ritmos y responder con ritmos adecuados."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-088",
+    "data": {
+      "title": "POR GESTOS",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Secuenciar gestos motrices con estructuras temporales repetitivas.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: Se elige una canción, que se deberá cantar la primera vez con todas las palabras. A la siguiente vez se elimina una palabra sustituyéndola por un gesto motriz relacionado con dicha palabra. Se continuará repitiendo la canción sustituyendo palabras por gestos.\nReglas: Quien se equivoca dos veces queda eliminado.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Secuenciar gestos motrices con estructuras temporales repetitivas."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-089",
+    "data": {
+      "title": "SIGO AL BALÓN",
+      "age": "Primaria",
+      "material": "Balones",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Balones.\nObjetivo a desarrollar: Adecuar la velocidad de desplazamiento a la que nos marca un objeto dado.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Individual.\nDesarrollo: Cada alumno lanzará su balón rodando de una banda a otra. Una vez que se suelta el balón se deberá correr adecuando la velocidad de desplazamiento para llegar antes que, después de, al mismo tiempo que, etc.\nReglas: Cada vez se le dará más impulso al balón.\nVariantes: Igual, pero por parejas, marcando el compañero la velocidad.",
+      "groupings": [
+        "Individual"
+      ],
+      "objectives": [
+        "Adecuar la velocidad de desplazamiento a la que nos marca un objeto dado."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-091",
+    "data": {
+      "title": "CRUZA EL RÍO Y NO TE MOJES",
+      "age": "Primaria",
+      "material": "Aros de diferentes tamaños",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Aros de diferentes tamaños.\nObjetivo a desarrollar: Desarrollar la agilidad a través de diferentes formas de desplazamiento.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: Se colocan aros intercalados de diferentes tamaños formando un camino (de piedras) no recto y hay que ir pasando de piedra en piedra sin caer al río. El que se caiga se moja.\nReglas: No se puede salir del aro.\nVariantes: A mayor velocidad, a pata coja, con los dos pies juntos, poniendo obstáculos, los aros más separados.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la agilidad a través de diferentes formas de desplazamiento."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-092",
+    "data": {
+      "title": "EL ZORRO",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la agilidad a través de diferentes formas de desplazamiento.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: Todos los alumnos excepto uno, que estará en el centro de la pista, se sitúan en el fondo formando una línea. A la señal del profesor o de un alumno todos correrán hacia el otro fondo. El alumno del centro intentará tocar a sus compañeros desplazándose lateralmente. El niño tocado se quedará también en el centro para capturar a los demás.\nReglas: Bastará con tocar al compañero. Los alumnos que se quedan en el centro solo se pueden desplazar por la línea central.\nVariantes: Los alumnos del centro pueden cogerse de la mano.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Desarrollar la agilidad a través de diferentes formas de desplazamiento."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-093",
+    "data": {
+      "title": "EL GLOBO LOCO",
+      "age": "Primaria",
+      "material": "Globos y cuerdas",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Globos y cuerdas.\nObjetivo a desarrollar: Desarrollar la agilidad y la coordinación dinámica-general.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Pequeño grupo.\nDesarrollo: Cada jugador se ata cuatro globos, dos en las muñecas y dos en los tobillos. Se reparten los jugadores de los dos equipos por todo el campo y, a la señal, todos intentarán explotar los globos del equipo contrario. Gana el equipo que antes explote los globos del otro equipo.\nReglas: No se puede salir del campo marcado para el juego.\nVariantes: Un equipo sin globos y el otro con globos. Cambiar el número de participantes. Cambiar la colocación de los globos.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la agilidad y la coordinación dinámica-general."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-095",
+    "data": {
+      "title": "LAS TIJERAS",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la agilidad y la coordinación dinámica general a través de distintas formas de desplazamiento.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Por parejas.\nDesarrollo: Un alumno sentado en el suelo abre y cierra las piernas mientras otro alumno, de pie junto a él, debe saltar de modo alternativo entre las piernas de su compañero para no pisarlo.\nReglas: Coordinar los movimientos con los del compañero.\nVariantes: Un alumno con las piernas juntas y extendidas en el suelo las desplaza hacia uno y otro lado mientras el compañero las salta con los pies juntos.",
+      "groupings": [
+        "Por parejas"
+      ],
+      "objectives": [
+        "Desarrollar la agilidad y la coordinación dinámica general a través de distintas formas de desplazamiento."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-097",
+    "data": {
+      "title": "EL JEFE",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la agilidad y la coordinación dinámica general a través de diferentes juegos motrices.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Pequeño grupo.\nDesarrollo: Los alumnos, colocados en grupos, se van desplazando libremente por el campo. Uno del grupo es el jefe. A la señal del profesor, el jefe se desplaza hasta un determinado lugar sentándose en el suelo y todos los demás deben ir inmediatamente a sentarse detrás. Posteriormente van cambiando los papeles del jefe.\nReglas: Estar siempre atentos a los movimientos del jefe.\nVariantes: Sin variantes.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la agilidad y la coordinación dinámica general a través de diferentes juegos motrices."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-098",
+    "data": {
+      "title": "LA ORUGA",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la agilidad y la coordinación dinámica general a través de diferentes juegos motrices.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Pequeño grupo.\nDesarrollo: Los grupos forman una fila y deberán ir agarrados de los tobillos del compañero que tenemos delante. Desplazarse por el terreno sin romper la formación de oruga. ¿Qué grupo consigue recorrer la mayor distancia sin romperse?\nReglas: No soltar nunca al compañero de delante.\nVariantes: Agarrar al compañero de otros segmentos corporales.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la agilidad y la coordinación dinámica general a través de diferentes juegos motrices."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  },
+  {
+    "op": "update",
+    "id": "j6a12-100",
+    "data": {
+      "title": "LO QUE HACE EL PADRE, HACEN LOS NIÑOS",
+      "age": "Primaria",
+      "material": "Sin material",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Sin material.\nObjetivo a desarrollar: Desarrollar la agilidad y la coordinación dinámica general a través de diferentes juegos motrices.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Pequeño grupo.\nDesarrollo: Se colocan todos los alumnos en fila india. A una señal empiezan a correr; el primero de los alumnos realizará los gestos que se le ocurran, debiendo ser imitado por el resto.\nReglas: Es obligatorio estar siempre en movimiento. Hay que procurar que todos los alumnos pasen por la cabeza de la fila.\nVariantes: Las que adopten los alumnos que hacen de padres.",
+      "groupings": [
+        "Pequeño grupo"
+      ],
+      "objectives": [
+        "Desarrollar la agilidad y la coordinación dinámica general a través de diferentes juegos motrices."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  }
+]
