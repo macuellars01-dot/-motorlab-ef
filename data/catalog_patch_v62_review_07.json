@@ -1,0 +1,25 @@
+[
+  {
+    "op": "update",
+    "id": "j6a12-129",
+    "data": {
+      "title": "CADA VEZ MÁS BAJO",
+      "age": "Primaria",
+      "material": "Dos saltómetros y una cuerda",
+      "space": "Pista polideportiva o gimnasio",
+      "intensity": "Media",
+      "description": "Etapa: Primaria.\nLugar: Pista polideportiva o gimnasio.\nMaterial: Dos saltómetros y una cuerda.\nObjetivo a desarrollar: Mantener posiciones de equilibrio dinámico sin objetos.\nBloque específico: COORDINACIÓN MOTRIZ.\nOrganización: Gran grupo.\nDesarrollo: Los alumnos se colocan en fila india y de uno en uno deben pasar por debajo de un listón colocado frente a ellos. Es obligatorio pasar siempre de frente al listón.\nReglas: El listón se irá bajando progresivamente, ganando el alumno que menos veces derribe el listón.\nVariantes: Pasar bajo el listón por parejas con las manos cogidas.",
+      "groupings": [
+        "Gran grupo"
+      ],
+      "objectives": [
+        "Mantener posiciones de equilibrio dinámico sin objetos."
+      ],
+      "needsReview": false,
+      "kind": "source-transcription-verified",
+      "visibility": "visible",
+      "catalogVersion": "v16.4-v62",
+      "catalogAudit": "revisión visual de la página original del PDF"
+    }
+  }
+]
