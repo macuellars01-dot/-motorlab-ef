@@ -1,0 +1,31 @@
+{
+  "version": "v71",
+  "generatedAt": "2026-10-06T00:25:00+02:00",
+  "source": "tercero.pdf",
+  "originalPdfReceived": "tercero(2).pdf",
+  "pages": 175,
+  "scope": "OCR fragment title correction against original scanned pages",
+  "correctedFragments": 14,
+  "sourcePages": [
+    8,
+    10,
+    15,
+    34,
+    48,
+    52,
+    87,
+    103,
+    119,
+    125,
+    127,
+    151,
+    159
+  ],
+  "notes": [
+    "Correcciones contrastadas con páginas originales.",
+    "No se eliminan ni fusionan registros.",
+    "Los fragmentos sin título inequívoco se mantienen para revisión."
+  ],
+  "previous": "v70",
+  "status": "ready"
+}
