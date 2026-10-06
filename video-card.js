@@ -1,4 +1,4 @@
-/* MotorLab v16.4-v93 · reproducción directa desde miniaturas */
+/* MotorLab v16.4-v94.7 · reproducción directa desde miniaturas */
 (function(){
   function youtubeId(url){
     try{
@@ -40,6 +40,7 @@
     video.autoplay=true;
     video.playsInline=true;
     video.setAttribute('playsinline','');
+    video.setAttribute('webkit-playsinline','');
     video.preload='auto';
     video.load();
     video.style.width='100%';
