@@ -353,7 +353,7 @@ function openGame(id){const g=games.find(x=>x.id===id);if(!g)return;const imageB
 const NAS_BASE_URL='https://ugreen-tailscale.tailfc6c36.ts.net';
 function buildNasUrl(kind,filename){
   let f=String(filename||'').trim().replace(/^['"]|['"]$/g,'').replace(/\\/g,'/');
-  f=f.replace(/^.*\\/(?:videos|images)\\//i,'');
+  f=f.replace(/^.*[\\/]/,'');
   f=f.split('/').pop().trim();
   if(!f)return'';
   return NAS_BASE_URL+'/'+(kind==='image'?'images':'videos')+'/'+encodeURIComponent(f).replace(/%2F/g,'/');
