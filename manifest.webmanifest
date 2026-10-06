@@ -1,6 +1,6 @@
 {
-  "name": "MotorLab EF · Repositorio editable de juegos",
-  "short_name": "MotorLab EF",
+  "name": "LUDOMUNDO · Juegos de Educación Física",
+  "short_name": "LUDOMUNDO",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
@@ -11,7 +11,7 @@
   "orientation": "any",
   "background_color": "#f5f7fb",
   "theme_color": "#2563eb",
-  "description": "Repositorio editable de juegos de Educación Física con constructor de sesiones.",
+  "description": "LUDOMUNDO: repositorio editable de juegos de Educación Física con constructor de sesiones.",
   "icons": [
     {
       "src": "icon-192.png",
