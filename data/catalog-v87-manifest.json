@@ -1,0 +1,28 @@
+{
+  "version": "v87",
+  "source": "120 Juegos.pdf",
+  "sourcePages": [
+    26,
+    27,
+    47,
+    48,
+    51,
+    53,
+    58,
+    60,
+    62,
+    65,
+    82,
+    83,
+    84,
+    86,
+    90,
+    92,
+    103
+  ],
+  "correctedCount": 20,
+  "patch": "data/catalog_patch_v87_120juegos_confirmed_titles.json",
+  "previousVersion": "v86",
+  "status": "completed",
+  "notes": "Limpieza de títulos de fragmentos OCR contrastados con los registros del mismo PDF. Se dejan sin tocar los fragmentos cuya cabecera no queda inequívocamente recuperable."
+}
