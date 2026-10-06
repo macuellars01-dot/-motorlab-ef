@@ -243,33 +243,5 @@
     "data": {
       "title": "Aquí manda el rey"
     }
-  },
-  {
-    "id": "src-02581",
-    "op": "update",
-    "data": {
-      "title": "Sube al bote"
-    }
-  },
-  {
-    "id": "src-02675",
-    "op": "update",
-    "data": {
-      "title": "Hockey con porterías móviles"
-    }
-  },
-  {
-    "id": "src-02681",
-    "op": "update",
-    "data": {
-      "title": "Rugby de pelota gigante"
-    }
-  },
-  {
-    "id": "src-02700",
-    "op": "update",
-    "data": {
-      "title": "Tirar las banderas invencibles"
-    }
   }
 ]
