@@ -1,0 +1,24 @@
+{
+  "version": "v90",
+  "previous": "v89",
+  "scope": "Auditoría global de fragmentos OCR y fuentes externas",
+  "corrections": 35,
+  "sourceFiles": [
+    "120 Juegos.pdf",
+    "sexto_compressed.pdf",
+    "primero B.pdf",
+    "LIBRO Sesiones de Educación Física 12 a 13 Añoz Lopez y varios mas.pdf",
+    "215 Juegos para Educación Física en Primaria — J. Ignacio Manzano Moreno et al.",
+    "1001 ejercicios y juegos de recreación — Oleguer Camerino Foguet y Marta Castañer Balcells"
+  ],
+  "auditedSources": [
+    "cuarto.pdf",
+    "tercero.pdf",
+    "primero.pdf",
+    "quinto.pdf",
+    "juegos 6a12anos.pdf",
+    "infantil.pdf"
+  ],
+  "correctedCount": 35,
+  "note": "Se aplican únicamente correcciones de título con respaldo textual claro en la fuente. Los fragmentos ambiguos o que no permiten identificar inequívocamente un título se mantienen sin modificar."
+}
