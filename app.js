@@ -82,11 +82,13 @@ async function init(){
     const correctionsV84=await fetch('data/catalog_patch_v84_juegos6a12_early_titles.json',{cache:'no-store'}).then(r=>r.ok?r.json():[]).catch(()=>[]);
     const correctionsV85=await fetch('data/catalog_patch_v85_juegos6a12_mid_titles.json',{cache:'no-store'}).then(r=>r.ok?r.json():[]).catch(()=>[]);
     const correctionsV86=await fetch('data/catalog_patch_v86_juegos6a12_conos.json',{cache:'no-store'}).then(r=>r.ok?r.json():[]).catch(()=>[]);
+    const correctionsV87=await fetch('data/catalog_patch_v87_120juegos_confirmed_titles.json',{cache:'no-store'}).then(r=>r.ok?r.json():[]).catch(()=>[]);
     correctionsV82.forEach(p=>{const g=catalogById.get(p.id);if(g&&p.op==='update')Object.assign(g,p.data)});
     correctionsV83.forEach(p=>{const g=catalogById.get(p.id);if(g&&p.op==='update')Object.assign(g,p.data)});
     correctionsV84.forEach(p=>{const g=catalogById.get(p.id);if(g&&p.op==='update')Object.assign(g,p.data)});
     correctionsV85.forEach(p=>{const g=catalogById.get(p.id);if(g&&p.op==='update')Object.assign(g,p.data)});
     correctionsV86.forEach(p=>{const g=catalogById.get(p.id);if(g&&p.op==='update')Object.assign(g,p.data)});
+    correctionsV87.forEach(p=>{const g=catalogById.get(p.id);if(g&&p.op==='update')Object.assign(g,p.data)});
     // Limpieza final de transcripciones de juegos 6a12años: la ficha conserva
     // desarrollo, reglas y variantes, pero no repite los campos bibliográficos.
     catalogById.forEach(g=>{
@@ -103,7 +105,7 @@ async function init(){
       if(parts.length)g.description=parts.join(' ');
     });
     games=[...catalogById.values()];
-    console.info('[MotorLab] Catálogo v16.4-v86 · auditoría OCR:',games.length,'registros');
+    console.info('[MotorLab] Catálogo v16.4-v87 · auditoría OCR:',games.length,'registros');
 
     sanitizeLocalGameState();
 
