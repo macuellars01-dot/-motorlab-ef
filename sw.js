@@ -1,6 +1,6 @@
-const CACHE = 'motorlab-ef-v16.4-v61.10.15';
+const CACHE = 'motorlab-ef-v94.6-ludomundo';
 const ASSETS = [
-  './', './index.html', './styles.css', './app.js?v=16.4-v61.10.15',
+  './', './index.html', './styles.css', './app.js?v=16.4-v94.5',
   './manifest.webmanifest', './apple-touch-icon.png',
   './icon-192.png', './icon-512.png',
   './data/games.json', './data/catalog_patch_v60.json', './data/sources.json'
