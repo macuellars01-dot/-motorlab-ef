@@ -20,5 +20,5 @@
     "infantil.pdf"
   ],
   "correctedCount": 35,
-  "note": "Se aplican únicamente correcciones de título con respaldo textual claro en la fuente. Los fragmentos ambiguos o que no permiten identificar inequívocamente un título se mantienen sin modificar."
+  "note": "Se aplican únicamente correcciones de título con respaldo textual claro en la fuente. Los fragmentos ambiguos o que no permiten identificar inequívocamente un título se mantienen sin modificar. El bloque de fuentes externas no activas en el catálogo web actual se auditó por separado y no se incorpora a este parche."
 }
