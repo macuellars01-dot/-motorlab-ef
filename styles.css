@@ -99,3 +99,13 @@ input,textarea,select{font-size:16px;}
 
 /* MotorLab v91 · vídeos en fichas */
 .video-thumb{position:relative;width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#0f172a;margin:4px 0 10px;cursor:pointer}.video-thumb img,.video-thumb video{width:100%;height:100%;display:block;object-fit:cover}.video-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:rgba(15,23,42,.78);color:#fff;font-size:16px;padding-left:2px;box-shadow:0 4px 16px rgba(0,0,0,.25)}.video-thumb-loading{height:100%;display:grid;place-items:center;color:#cbd5e1;font-size:28px}.game-video-detail{margin:14px 0 18px}.detail-video-thumb{aspect-ratio:16/9;margin-bottom:10px}.detail-video-player{display:block;width:100%;max-height:420px;border-radius:12px;background:#0f172a}.video-link{display:inline-block;margin-top:8px;color:var(--blue);font-size:11px;font-weight:700}.video-editor-preview{margin-top:6px}.editor-video-thumb{max-width:420px}.video-empty{border:1px dashed #cbd5e1;border-radius:12px;padding:24px;text-align:center;color:#94a3b8;background:#f8fafc;font-size:12px}.form-help{display:block;margin-top:6px;color:#8794a7;font-size:10px;font-weight:500;line-height:1.45}@media(max-width:760px){.video-play{width:46px;height:46px}.detail-video-player{max-height:300px}}
+
+/* MotorLab v93 · imágenes en fichas y tarjetas */
+.image-gallery{display:flex;gap:7px;flex-wrap:wrap;position:relative;margin:4px 0 10px}
+.image-thumb{display:block;width:calc(25% - 6px);min-width:72px;aspect-ratio:4/3;border-radius:10px;overflow:hidden;background:#eef2f7;border:1px solid var(--line);transition:transform .15s ease,box-shadow .15s ease}
+.image-thumb:hover{transform:translateY(-1px);box-shadow:0 5px 14px rgba(15,23,42,.12)}
+.image-thumb img{width:100%;height:100%;display:block;object-fit:cover}
+.image-count{position:absolute;right:7px;bottom:7px;padding:4px 7px;border-radius:999px;background:rgba(15,23,42,.78);color:#fff;font-size:10px;font-weight:800}
+.detail-images{margin:14px 0 18px}.detail-images .image-thumb{width:calc(25% - 6px);min-width:90px}
+.editor-image-preview,.image-editor-preview{margin-top:6px}.editor-images{max-width:620px}.image-empty{border:1px dashed #cbd5e1;border-radius:12px;padding:24px;text-align:center;color:#94a3b8;background:#f8fafc;font-size:12px}
+@media(max-width:760px){.image-thumb{width:calc(50% - 4px)}.detail-images .image-thumb{min-width:0}}
