@@ -22,7 +22,7 @@ async function init(){
     games=await gameResponse.json();
     if(!Array.isArray(games))throw new Error('games.json no es un array');
 
-    // MotorLab v16.4-v61: mantener las 141 fichas recuperadas, pero NO cargar todavía la transcripción v62 hasta completar su revisión visual.
+    // MotorLab v16.4-v92: mantener las 141 fichas recuperadas, pero NO cargar todavía la transcripción v62 hasta completar su revisión visual.
     const patchResponse=await fetch('data/catalog_patch_v60.json',{cache:'no-store'});
     if(!patchResponse.ok)throw new Error(`catalog_patch_v60.json ${patchResponse.status}`);
     const catalogPatch=await patchResponse.json();
