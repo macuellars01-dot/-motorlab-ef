@@ -1,0 +1,33 @@
+{
+  "version": "v89",
+  "source": "120 Juegos.pdf",
+  "sourcePages": [
+    14,
+    17,
+    19,
+    25,
+    26,
+    27,
+    38,
+    41,
+    46,
+    47,
+    48,
+    60,
+    77,
+    78,
+    86,
+    88,
+    90,
+    92,
+    103,
+    109,
+    114,
+    122
+  ],
+  "correctedCount": 27,
+  "patch": "data/catalog_patch_v89_120juegos_ocr_fragments.json",
+  "previousVersion": "v88",
+  "status": "completed",
+  "notes": "Limpieza de fragmentos OCR que son continuaciones de fichas cuyo título se puede identificar de forma inequívoca en el propio 120 Juegos.pdf. No se han modificado los fragmentos para los que la cabecera no queda suficientemente respaldada."
+}
