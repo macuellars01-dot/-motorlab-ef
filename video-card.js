@@ -39,8 +39,7 @@
     video.controls=true;
     video.autoplay=true;
     video.playsInline=true;
-    video.preload='metadata';
-    video.crossOrigin='anonymous';
+    video.preload='auto';
     video.style.width='100%';
     video.style.height='100%';
     video.style.minHeight='180px';
