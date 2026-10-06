@@ -80,6 +80,7 @@ async function init(){
     const correctionsV82=await fetch('data/catalog_patch_v82_juegos6a12_magos.json',{cache:'no-store'}).then(r=>r.ok?r.json():[]).catch(()=>[]);
     const correctionsV83=await fetch('data/catalog_patch_v83_juegos6a12_compound_titles.json',{cache:'no-store'}).then(r=>r.ok?r.json():[]).catch(()=>[]);
     correctionsV82.forEach(p=>{const g=catalogById.get(p.id);if(g&&p.op==='update')Object.assign(g,p.data)});
+    correctionsV83.forEach(p=>{const g=catalogById.get(p.id);if(g&&p.op==='update')Object.assign(g,p.data)});
     // Limpieza final de transcripciones de juegos 6a12años: la ficha conserva
     // desarrollo, reglas y variantes, pero no repite los campos bibliográficos.
     catalogById.forEach(g=>{
