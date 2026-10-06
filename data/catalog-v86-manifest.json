@@ -1,0 +1,12 @@
+{
+  "version": "v86",
+  "source": "juegos 6a12anos.pdf",
+  "sourcePages": [
+    81
+  ],
+  "correctedCount": 1,
+  "patch": "data/catalog_patch_v86_juegos6a12_conos.json",
+  "previousVersion": "v85",
+  "status": "completed",
+  "notes": "Corrección del título del juego n.º 307; se eliminó del título el fragmento correspondiente al juego n.º 309."
+}
