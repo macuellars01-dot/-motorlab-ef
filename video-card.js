@@ -39,7 +39,9 @@
     video.controls=true;
     video.autoplay=true;
     video.playsInline=true;
+    video.setAttribute('playsinline','');
     video.preload='auto';
+    video.load();
     video.style.width='100%';
     video.style.height='100%';
     video.style.minHeight='180px';
