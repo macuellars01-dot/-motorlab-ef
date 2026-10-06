@@ -1,0 +1,33 @@
+{
+  "version": "v83",
+  "source": "juegos 6a12anos.pdf",
+  "sourcePages": [
+    19,
+    20,
+    27,
+    28,
+    61,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    75,
+    76,
+    78,
+    81,
+    82,
+    84,
+    94,
+    95,
+    99,
+    101
+  ],
+  "correctedCount": 25,
+  "patch": "data/catalog_patch_v83_juegos6a12_compound_titles.json",
+  "previousVersion": "v82",
+  "status": "completed",
+  "notes": "Limpieza de títulos OCR compuestos: cuando una ficha contenía dos títulos consecutivos, se conservó el título correspondiente al primer número de juego identificado en la propia ficha/listado. No se modificó la descripción."
+}
