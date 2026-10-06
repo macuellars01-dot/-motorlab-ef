@@ -1,0 +1,18 @@
+{
+  "version": "v85",
+  "source": "juegos 6a12anos.pdf",
+  "sourcePages": [
+    36,
+    40,
+    41,
+    43,
+    44,
+    107,
+    109
+  ],
+  "correctedCount": 6,
+  "patch": "data/catalog_patch_v85_juegos6a12_mid_titles.json",
+  "previousVersion": "v84",
+  "status": "completed",
+  "notes": "Limpieza de títulos OCR intermedios confirmados por las fichas y listados de la fuente. Se dejó sin modificar ocr-00124 por no contener un título inequívoco."
+}
