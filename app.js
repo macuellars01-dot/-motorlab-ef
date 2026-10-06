@@ -3,7 +3,7 @@ const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
 const KEYS={sessions:'motorlab_sessions',units:'motorlab_units',overrides:'motorlab_game_overrides',deleted:'motorlab_deleted_games',deletedSessions:'motorlab_deleted_sessions',deletedUnits:'motorlab_deleted_units',meta:'motorlab_game_meta',settings:'motorlab_sync_settings',sync:'motorlab_sync_meta'};
 const DEFAULT_API='https://ugreen-tailscale.tailfc6c36.ts.net:8443/motorlab';
-const CATALOG_VERSION='2026-10-06T16:00:00.000Z';
+const CATALOG_VERSION='2026-10-06T16:30:00.000Z';
 let syncState='idle', syncTimer=null, sessionAddMode=false, sessionSelection=new Set(), videoThumbCache=new Map();
 
 function read(k,f){try{return JSON.parse(localStorage.getItem(k))??f}catch(_){return f}}
@@ -23,15 +23,17 @@ async function init(){
     if(!Array.isArray(games))throw new Error('games.json no es un array');
 
     // MotorLab v16.4-v92: mantener las 141 fichas recuperadas, pero NO cargar todavía la transcripción v62 hasta completar su revisión visual.
-    const patchResponse=await fetch('data/catalog_patch_v60.json',{cache:'no-store'});
-    if(!patchResponse.ok)throw new Error(`catalog_patch_v60.json ${patchResponse.status}`);
-    const catalogPatch=await patchResponse.json();
-    const additionsResponse=await fetch('data/catalog_patch_v61_additions.json',{cache:'no-store'});
-    if(!additionsResponse.ok)throw new Error(`catalog_patch_v61_additions.json ${additionsResponse.status}`);
-    const catalogAdditions=await additionsResponse.json();
-    const verifiedResponse=await fetch('data/catalog_patch_v62_verified_141.json',{cache:'no-store'});
-    if(!verifiedResponse.ok)throw new Error(`catalog_patch_v62_verified_141.json ${verifiedResponse.status}`);
-    const verifiedPatch=await verifiedResponse.json();
+    const optionalCatalogPatch=async(path)=>{
+      try{
+        const r=await fetch(path,{cache:'no-store'});
+        if(!r.ok)return[];
+        const data=await r.json();
+        return Array.isArray(data)?data:[];
+      }catch(_){return[]}
+    };
+    const catalogPatch=await optionalCatalogPatch('data/catalog_patch_v60.json');
+    const catalogAdditions=await optionalCatalogPatch('data/catalog_patch_v61_additions.json');
+    const verifiedPatch=await optionalCatalogPatch('data/catalog_patch_v62_verified_141.json');
     const catalogById=new Map(games.map(g=>[g.id,g]));
     [...catalogPatch,...catalogAdditions,...verifiedPatch].forEach(p=>{
       if(p.op==='add') catalogById.set(p.id,p.data);
