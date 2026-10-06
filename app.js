@@ -322,16 +322,17 @@ function videoPreviewUrl(url){
 function hydrateVideoThumbnail(container,url){
   if(!container||!url||youtubeVideoId(url))return;
   const video=document.createElement('video');
-  // iOS Safari no es fiable al hacer currentTime=... justo en loadedmetadata.
-  // El fragmento temporal #t=1.5 permite que WebKit seleccione directamente
-  // un fotograma del MP4 sin depender de un seek programático.
+  // En iPhone/iPad WebKit puede mostrar un <video> negro hasta que empieza
+  // una reproducción inline. Lo reproducimos en silencio y lo pausamos
+  // inmediatamente alrededor de 1,5 s para forzar el pintado del fotograma.
   video.src=videoPreviewUrl(url);
   video.muted=true;
   video.defaultMuted=true;
+  video.autoplay=true;
   video.playsInline=true;
   video.setAttribute('playsinline','');
   video.setAttribute('webkit-playsinline','');
-  video.preload='metadata';
+  video.preload='auto';
   video.controls=false;
   video.style.width='100%';
   video.style.height='100%';
@@ -342,7 +343,20 @@ function hydrateVideoThumbnail(container,url){
   const play=document.createElement('span');
   play.className='video-play';
   play.textContent='▶';
-  container.appendChild(play);
+  let stopped=false;
+  const stopAtPreview=()=>{
+    if(stopped)return;
+    if(Number.isFinite(video.currentTime)&&video.currentTime>=1.5){
+      stopped=true;
+      video.pause();
+      video.currentTime=1.5;
+    }
+  };
+  video.addEventListener('timeupdate',stopAtPreview);
+  video.addEventListener('loadeddata',()=>{
+    const p=video.play();
+    if(p&&typeof p.catch==='function')p.catch(()=>{});
+  },{once:true});
   video.addEventListener('error',()=>{
     container.innerHTML='<div class="video-thumb-loading">No se puede cargar el vídeo</div><span class="video-play">▶</span>';
   },{once:true});
