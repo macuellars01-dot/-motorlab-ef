@@ -309,39 +309,40 @@ function videoThumbMarkup(url,extraClass='',posterUrl=''){
   if(id)return '<div class="video-thumb '+extraClass+'" data-video-url="'+esc(url)+'" data-poster-url="'+esc(poster)+'"><img src="'+esc(poster)+'" alt="Miniatura del vídeo" loading="lazy" decoding="async"><span class="video-play">▶</span></div>';
   return '<div class="video-thumb '+extraClass+'" data-video-url="'+esc(url)+'"><div class="video-thumb-loading">Cargando vídeo…</div><span class="video-play">▶</span></div>';
 }
+function videoPreviewUrl(url){
+  try{
+    const u=new URL(url,location.href);
+    if(/^https?:$/i.test(u.protocol)){
+      u.hash='t=1.5';
+      return u.toString();
+    }
+  }catch(_){}
+  return url;
+}
 function hydrateVideoThumbnail(container,url){
   if(!container||!url||youtubeVideoId(url))return;
   const video=document.createElement('video');
-  video.src=url;
+  // iOS Safari no es fiable al hacer currentTime=... justo en loadedmetadata.
+  // El fragmento temporal #t=1.5 permite que WebKit seleccione directamente
+  // un fotograma del MP4 sin depender de un seek programático.
+  video.src=videoPreviewUrl(url);
   video.muted=true;
   video.defaultMuted=true;
   video.playsInline=true;
   video.setAttribute('playsinline','');
+  video.setAttribute('webkit-playsinline','');
   video.preload='metadata';
   video.controls=false;
   video.style.width='100%';
   video.style.height='100%';
   video.style.display='block';
   video.style.objectFit='cover';
-  let done=false;
-  const finish=()=>{
-    if(done)return;
-    done=true;
-    container.innerHTML='';
-    container.appendChild(video);
-    const play=document.createElement('span');
-    play.className='video-play';
-    play.textContent='▶';
-    container.appendChild(play);
-  };
-  video.addEventListener('loadedmetadata',()=>{
-    try{
-      const t=Number.isFinite(video.duration)&&video.duration>0?Math.min(1.5,video.duration/3):0;
-      if(t>0)video.currentTime=t; else finish();
-    }catch(_){finish()}
-  },{once:true});
-  video.addEventListener('seeked',finish,{once:true});
-  video.addEventListener('loadeddata',finish,{once:true});
+  container.innerHTML='';
+  container.appendChild(video);
+  const play=document.createElement('span');
+  play.className='video-play';
+  play.textContent='▶';
+  container.appendChild(play);
   video.addEventListener('error',()=>{
     container.innerHTML='<div class="video-thumb-loading">No se puede cargar el vídeo</div><span class="video-play">▶</span>';
   },{once:true});
