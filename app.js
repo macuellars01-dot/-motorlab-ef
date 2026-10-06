@@ -111,7 +111,7 @@ async function init(){
       if(parts.length)g.description=parts.join(' ');
     });
     games=[...catalogById.values()];
-    console.info('[MotorLab] Catálogo v16.4-v90 · auditoría global OCR:',games.length,'registros');
+    console.info('[MotorLab] Catálogo v16.4-v92 · auditoría global OCR:',games.length,'registros');
 
     sanitizeLocalGameState();
 
