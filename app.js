@@ -308,9 +308,9 @@ function videoThumbMarkup(url,extraClass='',posterUrl=''){
   let nasPoster='';
   try{
     const u=new URL(url,location.href);
-    if(u.hostname===new URL(NAS_BASE_URL).hostname && /\\.mp4$/i.test(u.pathname)){
+    if(u.hostname===new URL(NAS_BASE_URL).hostname && /\.mp4$/i.test(u.pathname)){
       const filename=decodeURIComponent(u.pathname.split('/').pop()||'');
-      const stem=filename.replace(/\\.[^.]+$/,'');
+      const stem=filename.replace(/\.[^.]+$/,'');
       nasPoster=buildNasUrl('image',stem+'-poster.jpg');
     }
   }catch(_){ }
