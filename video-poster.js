@@ -26,7 +26,7 @@
     const filename=nasVideoFilename(videoUrl);
     if(!filename)throw new Error('La URL no corresponde a un vídeo MP4 del NAS');
     const settings=getSettings();
-    const base=String(settings.url||DEFAULT_API).replace(/\/+$/,'');
+    const base=DEFAULT_API.replace(/\/+$/,'');
     if(!settings.token)throw new Error('Falta el token de sincronización');
     const headers={'X-MotorLab-Token':settings.token};
     const endpoint=base+'/thumbnail?file='+encodeURIComponent(filename);
