@@ -1,14 +1,6 @@
 (()=>{
   const NAS_HOST=new URL(NAS_BASE_URL).hostname;
-  let authHeaders=null;
-
-  // Reutiliza las cabeceras de la sincronización normal de LUDOMUNDO.
   const nativeFetch=window.fetch.bind(window);
-  window.fetch=async function(input,init){
-    const url=typeof input==='string'?input:(input?.url||'');
-    if(/\/sync(?:[?#]|$)/.test(url)&&init?.headers)authHeaders=init.headers;
-    return nativeFetch(input,init);
-  };
 
   function isNasVideoUrl(url){
     try{return new URL(url,location.href).hostname===NAS_HOST}catch(_){return false}
@@ -33,14 +25,13 @@
   async function ensureNasVideoPoster(videoUrl){
     const filename=nasVideoFilename(videoUrl);
     if(!filename)throw new Error('La URL no corresponde a un vídeo MP4 del NAS');
-    if(!authHeaders&&typeof syncNow==='function'){
-      await syncNow({silent:true});
-    }
-    if(!authHeaders)throw new Error('No se ha podido recuperar la conexión de sincronización');
     const settings=getSettings();
     const base=String(settings.url||DEFAULT_API).replace(/\/+$/,'');
-    const r=await nativeFetch(`${base}/thumbnail?file=${encodeURIComponent(filename)}`,{headers:authHeaders,cache:'no-store'});
-    if(!r.ok)throw new Error(`Thumbnail HTTP ${r.status}`);
+    if(!settings.token)throw new Error('Falta el token de sincronización');
+    const headers={'X-MotorLab-Token':settings.token};
+    const endpoint=base+'/thumbnail?file='+encodeURIComponent(filename);
+    const r=await nativeFetch(endpoint,{headers,cache:'no-store'});
+    if(!r.ok)throw new Error('Thumbnail HTTP '+r.status);
     return nasPosterUrl(videoUrl);
   }
 
