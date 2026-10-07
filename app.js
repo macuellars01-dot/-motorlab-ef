@@ -316,7 +316,7 @@ function videoThumbMarkup(url,extraClass='',posterUrl=''){
     }
   }catch(_){}
   const poster=posterUrl||nasPoster||(id?'https://img.youtube.com/vi/'+encodeURIComponent(id)+'/hqdefault.jpg':'');
-  if(poster)return '<div class="video-thumb '+extraClass+'" data-video-url="'+esc(url)+'" data-poster-url="'+esc(poster)+'"><img src="'+esc(poster)+'" alt="Miniatura del vídeo" loading="lazy" decoding="async"><span class="video-play">▶</span></div>';
+  if(poster)return '<div class="video-thumb '+extraClass+'" data-video-url="'+esc(url)+'" data-poster-url="'+esc(poster)+'" style="background-image:url(\''+esc(poster)+'\');background-size:cover;background-position:center"><img src="'+esc(poster)+'" alt="Miniatura del vídeo" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block"><span class="video-play">▶</span></div>';
   return '<div class="video-thumb '+extraClass+'" data-video-url="'+esc(url)+'"><div class="video-thumb-loading">Cargando vídeo…</div><span class="video-play">▶</span></div>';
 }
 function videoPreviewUrl(url){
