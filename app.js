@@ -308,15 +308,16 @@ function videoThumbMarkup(url,extraClass='',posterUrl=''){
   let nasPoster='';
   try{
     const u=new URL(url,location.href);
-    if(u.hostname===new URL(NAS_BASE_URL).hostname && /\.mp4$/i.test(u.pathname)){
+    const nasHost=new URL(NAS_BASE_URL).hostname;
+    if(u.hostname===nasHost && /\.mp4$/i.test(u.pathname)){
       const filename=decodeURIComponent(u.pathname.split('/').pop()||'');
-      const stem=filename.replace(/\.[^.]+$/,'');
-      nasPoster=buildNasUrl('image',stem+'-poster.jpg');
+      const stem=filename.slice(0,-4);
+      nasPoster=NAS_BASE_URL+'/images/'+encodeURIComponent(stem+'-poster.jpg')+'?v=94.11';
     }
-  }catch(_){ }
+  }catch(_){}
   const poster=posterUrl||nasPoster||(id?'https://img.youtube.com/vi/'+encodeURIComponent(id)+'/hqdefault.jpg':'');
   if(id)return '<div class="video-thumb '+extraClass+'" data-video-url="'+esc(url)+'" data-poster-url="'+esc(poster)+'"><img src="'+esc(poster)+'" alt="Miniatura del vídeo" loading="lazy" decoding="async"><span class="video-play">▶</span></div>';
-  if(nasPoster)return '<div class="video-thumb '+extraClass+'" data-video-url="'+esc(url)+'" data-poster-url="'+esc(nasPoster)+'"><img src="'+esc(nasPoster)+'" alt="Miniatura del vídeo" loading="lazy" decoding="async" onerror="this.style.display=\'none\'"><span class="video-play">▶</span></div>';
+  if(nasPoster)return '<div class="video-thumb '+extraClass+'" data-video-url="'+esc(url)+'" data-poster-url="'+esc(nasPoster)+'"><img src="'+esc(nasPoster)+'" alt="Miniatura del vídeo" loading="lazy" decoding="async"><span class="video-play">▶</span></div>';
   return '<div class="video-thumb '+extraClass+'" data-video-url="'+esc(url)+'"><div class="video-thumb-loading">Cargando vídeo…</div><span class="video-play">▶</span></div>';
 }
 function videoPreviewUrl(url){
