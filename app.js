@@ -177,8 +177,33 @@ function cleanGameOverrides(){
   if(Object.keys(clean).length!==Object.keys(raw).length)write(KEYS.overrides,clean);
   return clean;
 }
+function readDeletedGames(){
+  const raw=read(KEYS.deleted,{});
+  if(Array.isArray(raw)){
+    const migrated={};
+    raw.forEach(id=>{if(id)migrated[id]={id,updatedAt:now()}});
+    write(KEYS.deleted,migrated);
+    return migrated;
+  }
+  return raw&&typeof raw==='object'?raw:{};
+}
+function deleteGame(id){
+  const g=games.find(x=>x.id===id);
+  if(!g)return;
+  if(!confirm('¿Eliminar "'+g.title+'" del repositorio?\\n\\nEl juego dejará de aparecer en el repositorio y la eliminación se sincronizará con tus otros dispositivos.'))return;
+  const deleted=readDeletedGames();
+  deleted[id]={id,updatedAt:now()};
+  write(KEYS.deleted,deleted);
+  const overrides=read(KEYS.overrides,{});
+  delete overrides[id];
+  write(KEYS.overrides,overrides);
+  games=games.filter(x=>x.id!==id);
+  renderGames();
+  if(typeof gameDialog!=='undefined'&&gameDialog.open)gameDialog.close();
+  markPending();
+}
 function applyGameLocalState(){
-  const overrides=cleanGameOverrides(), deleted=new Set(read(KEYS.deleted,[]));
+  const overrides=cleanGameOverrides(), deleted=new Set(Object.keys(readDeletedGames()));
   games=games.filter(g=>!deleted.has(g.id)).map(g=>({...g,...(overrides[g.id]||{}),updatedAt:(overrides[g.id]?.updatedAt||g.updatedAt||CATALOG_VERSION)}));
   Object.values(overrides).forEach(g=>{if(g.manual&&!games.some(x=>x.id===g.id)&&!deleted.has(g.id))games.push(g)});
 }
@@ -386,7 +411,7 @@ function hydrateVideoThumbnail(container,url){
 }
 function renderGames(){const visibleCatalog=games.filter(g=>g.kind!=='page-review'&&g.kind!=='fragment-review'&&g.visibility!=='review'&&g.visibility!=='reference');let list=visibleCatalog.filter(matches);const sort=$('#sort').value;if(sort==='az')list.sort((a,b)=>a.title.localeCompare(b.title,'es'));if(sort==='za')list.sort((a,b)=>b.title.localeCompare(a.title,'es'));$('#resultSummary').textContent=list.length+' juego'+(list.length===1?'':'s')+' encontrados';const grid=$('#gameGrid');grid.innerHTML='';const tpl=$('#gameCardTemplate');list.forEach(g=>{const n=tpl.content.cloneNode(true),card=n.querySelector('.game-card');card.dataset.id=g.id;card.querySelector('.age').textContent=g.age||'Edad variable';card.querySelector('.ocr-badge').classList.toggle('hidden',!g.needsReview);card.querySelector('.custom-badge').classList.toggle('hidden',!g.manual);card.querySelector('h3').textContent=g.title;card.querySelector('.desc').textContent=g.description;card.querySelector('.material').textContent=materialTag(g.material);card.querySelector('.space').textContent=g.space||'No especificado';card.querySelector('.intensity').textContent=inferIntensity(g);card.querySelector('.source').textContent=sourceLabel(g)+' · pág. '+(g.page||'—');card.querySelector('.chips').insertAdjacentHTML('beforeend',groupingValues(g).slice(0,1).map(v=>'<span class="chip grouping-chip">'+esc(v)+'</span>').join(''));card.querySelector('.chips').insertAdjacentHTML('beforeend',objectiveValues(g).slice(0,2).map(v=>'<span class="chip objective-chip">'+esc(v)+'</span>').join(''));if(g.videoUrl){card.querySelector('h3').insertAdjacentHTML('beforebegin',videoThumbMarkup(g.videoUrl));hydrateVideoThumbnail(card.querySelector('.video-thumb'),g.videoUrl)}else{const imageMarkup=imageCardMarkup(g.imageUrls,'card-images');if(imageMarkup)card.querySelector('h3').insertAdjacentHTML('beforebegin',imageMarkup)}const addBtn=card.querySelector('.add-btn');addBtn.textContent=sessionAddMode?(sessionSelection.has(g.id)?'✓':'＋'):'＋';addBtn.classList.toggle('selected',sessionAddMode&&sessionSelection.has(g.id));addBtn.onclick=e=>{e.stopPropagation();sessionAddMode?toggleSessionSelection(g.id):addToSession(g.id)};card.classList.toggle('session-selected',sessionAddMode&&sessionSelection.has(g.id));card.querySelector('.details').onclick=e=>{e.stopPropagation();openGame(g.id)};card.onclick=()=>openGame(g.id);card.ondragstart=e=>e.dataTransfer.setData('text/plain',g.id);grid.appendChild(n)});$('#empty').classList.toggle('hidden',list.length>0);$('#totalGames').textContent=visibleCatalog.length;updateSessionAddBar()}
 
-function openGame(id){const g=games.find(x=>x.id===id);if(!g)return;const imageBlock=normalizeImageUrls(g.imageUrls).length?imageThumbMarkup(g.imageUrls,'detail-images'):'';const videoBlock=g.videoUrl?'<div class="game-video-detail"><video class="detail-video-player" controls playsinline webkit-playsinline preload="metadata" poster="'+esc(videoPosterUrl(g.videoUrl))+'" src="'+esc(g.videoUrl)+'"></video><a class="video-link" href="'+esc(g.videoUrl)+'" target="_blank" rel="noopener">Abrir vídeo en una pestaña nueva ↗</a><div class="video-detail-help">Si el reproductor no carga, abre el vídeo en una pestaña nueva para comprobar el acceso al archivo.</div></div>':'';$('#dialogContent').innerHTML='<div class="eyebrow">FICHA DE JUEGO</div><div class="source-box" style="margin:0 0 12px"><strong>FUENTE DE PROCEDENCIA</strong><br>'+esc(g.source||'MotorLab')+' · página '+esc(g.page||'—')+'</div><h2>'+esc(g.title)+'</h2>'+videoBlock+imageBlock+'<div class="detail-meta"><span class="tag">'+esc(g.age||'Edad variable')+'</span><span class="chip">'+esc(materialTag(g.material))+'</span><span class="chip">'+esc(g.space||'')+'</span><span class="chip">'+esc(inferIntensity(g))+'</span>'+groupingValues(g).map(v=>'<span class="chip">👥 '+esc(v)+'</span>').join('')+objectiveValues(g).map(v=>'<span class="chip">🎯 '+esc(v)+'</span>').join('')+'</div><p class="detail-desc">'+esc(g.description||'')+'</p><div class="source-box"><strong>Fuente</strong><br>'+esc(g.source||'MotorLab')+' · página '+esc(g.page||'—')+'<br><small>Material original: '+esc(g.material||'')+'</small></div><div class="dialog-actions"><button class="primary" id="editGameBtn">✏️ Editar ficha</button><button class="primary secondary" id="addGameSessionBtn">＋ Añadir a sesión</button><button class="ghost" onclick="gameDialog.close()">Cerrar</button></div>';$('#editGameBtn').onclick=()=>{gameDialog.close();openGameEditor(g.id)};$('#addGameSessionBtn').onclick=()=>{addToSession(g.id);gameDialog.close()};gameDialog.showModal()}
+function openGame(id){const g=games.find(x=>x.id===id);if(!g)return;const imageBlock=normalizeImageUrls(g.imageUrls).length?imageThumbMarkup(g.imageUrls,'detail-images'):'';const videoBlock=g.videoUrl?'<div class="game-video-detail"><video class="detail-video-player" controls playsinline webkit-playsinline preload="metadata" poster="'+esc(videoPosterUrl(g.videoUrl))+'" src="'+esc(g.videoUrl)+'"></video><a class="video-link" href="'+esc(g.videoUrl)+'" target="_blank" rel="noopener">Abrir vídeo en una pestaña nueva ↗</a><div class="video-detail-help">Si el reproductor no carga, abre el vídeo en una pestaña nueva para comprobar el acceso al archivo.</div></div>':'';$('#dialogContent').innerHTML='<div class="eyebrow">FICHA DE JUEGO</div><div class="source-box" style="margin:0 0 12px"><strong>FUENTE DE PROCEDENCIA</strong><br>'+esc(g.source||'MotorLab')+' · página '+esc(g.page||'—')+'</div><h2>'+esc(g.title)+'</h2>'+videoBlock+imageBlock+'<div class="detail-meta"><span class="tag">'+esc(g.age||'Edad variable')+'</span><span class="chip">'+esc(materialTag(g.material))+'</span><span class="chip">'+esc(g.space||'')+'</span><span class="chip">'+esc(inferIntensity(g))+'</span>'+groupingValues(g).map(v=>'<span class="chip">👥 '+esc(v)+'</span>').join('')+objectiveValues(g).map(v=>'<span class="chip">🎯 '+esc(v)+'</span>').join('')+'</div><p class="detail-desc">'+esc(g.description||'')+'</p><div class="source-box"><strong>Fuente</strong><br>'+esc(g.source||'MotorLab')+' · página '+esc(g.page||'—')+'<br><small>Material original: '+esc(g.material||'')+'</small></div><div class="dialog-actions"><button class="primary" id="editGameBtn">✏️ Editar ficha</button><button class="primary secondary" id="addGameSessionBtn">＋ Añadir a sesión</button><button class="danger" id="deleteGameBtn">🗑️ Eliminar juego</button><button class="ghost" onclick="gameDialog.close()">Cerrar</button></div>';$('#editGameBtn').onclick=()=>{gameDialog.close();openGameEditor(g.id)};$('#addGameSessionBtn').onclick=()=>{addToSession(g.id);gameDialog.close()};$('#deleteGameBtn').onclick=()=>deleteGame(g.id);gameDialog.showModal()}
 const NAS_BASE_URL='https://ugreen-tailscale.tailfc6c36.ts.net';
 function buildNasUrl(kind,filename){
   let f=String(filename||'').trim().replace(/^['"]|['"]$/g,'').replace(/\\/g,'/');
@@ -571,9 +596,10 @@ function buildLocalRecords(){
   const gameRecords=Object.values(overrides).map(g=>({id:g.id,type:'game',data:g,updatedAt:g.updatedAt||now(),deleted:false}));
   const sessionRecords=savedSessions.map(s=>({id:s.id,type:'session',data:s,updatedAt:s.updatedAt||now(),deleted:false}));
   const unitRecords=units.map(u=>({id:u.id,type:'unit',data:u,updatedAt:u.updatedAt||now(),deleted:false}));
+  const deletedGames=Object.values(readDeletedGames()).map(x=>({id:x.id,type:'game',data:null,updatedAt:x.updatedAt,deleted:true}));
   const deletedSessions=Object.values(read(KEYS.deletedSessions,{})).map(x=>({id:x.id,type:'session',data:null,updatedAt:x.updatedAt,deleted:true}));
   const deletedUnits=Object.values(read(KEYS.deletedUnits,{})).map(x=>({id:x.id,type:'unit',data:null,updatedAt:x.updatedAt,deleted:true}));
-  return [...gameRecords,...sessionRecords,...unitRecords,...deletedSessions,...deletedUnits];
+  return [...gameRecords,...deletedGames,...sessionRecords,...unitRecords,...deletedSessions,...deletedUnits];
 }
 function mergeRemote(remote){
   let changed=false;
@@ -581,7 +607,20 @@ function mergeRemote(remote){
   const remoteSessions=[],remoteUnits=[];
   remote.forEach(r=>{
     if(r.type==='game'){
-      if(r.deleted)return;
+      if(r.deleted){
+        const deletedGames=readDeletedGames();
+        const localTomb=deletedGames[r.id];
+        if(!localTomb||new Date(r.updatedAt)>new Date(localTomb.updatedAt||0)){
+          deletedGames[r.id]={id:r.id,updatedAt:r.updatedAt||now()};
+          write(KEYS.deleted,deletedGames);
+          const o=read(KEYS.overrides,{});
+          delete o[r.id];
+          write(KEYS.overrides,o);
+          games=games.filter(x=>x.id!==r.id);
+          changed=true;
+        }
+        return;
+      }
       const base=games.find(g=>g.id===r.id);
       const localOverride=override[r.id];
       const remoteIsManual=Boolean(r.data?.manual);
