@@ -12,14 +12,14 @@
     try{
       const u=new URL(url,location.href);
       const filename=decodeURIComponent(u.pathname.split('/').pop()||'').trim();
-      return /\\.mp4$/i.test(filename)?filename:'';
+      return /\.mp4$/i.test(filename)?filename:'';
     }catch(_){return''}
   }
 
   function nasPosterUrl(videoUrl){
     const filename=nasVideoFilename(videoUrl);
     if(!filename)return'';
-    const stem=filename.replace(/\\.[^.]+$/,'');
+    const stem=filename.replace(/\.[^.]+$/,'');
     return buildNasUrl('image',`${stem}-poster.jpg`);
   }
 
