@@ -161,9 +161,11 @@ function sanitizeLocalGameState(){
     if(g.manual||baseIds.has(g.id))cleanOverrides[g.id]=g;
   });
   if(JSON.stringify(Object.keys(cleanOverrides).sort())!==JSON.stringify(Object.keys(rawOverrides).sort()))write(KEYS.overrides,cleanOverrides);
-  const deleted=read(KEYS.deleted,[]);
-  const validDeleted=Array.isArray(deleted)?deleted.filter(id=>baseIds.has(id)):[];
-  if(JSON.stringify(validDeleted)!==JSON.stringify(deleted))write(KEYS.deleted,validDeleted);
+  const deleted=readDeletedGames();
+  Object.keys(deleted).forEach(id=>{
+    if(!id)delete deleted[id];
+  });
+  write(KEYS.deleted,deleted);
 }
 function cleanGameOverrides(){
   const raw=read(KEYS.overrides,{});
