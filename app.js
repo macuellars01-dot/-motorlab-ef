@@ -345,6 +345,19 @@ function videoPreviewUrl(url){
   }catch(_){}
   return url;
 }
+function nasH264FallbackUrl(value){
+  try{
+    const u=new URL(value,location.href);
+    const base=new URL(NAS_BASE_URL);
+    if(u.hostname!==base.hostname||!u.pathname.toLowerCase().includes('/videos/'))return'';
+    const filename=decodeURIComponent(u.pathname.split('/').pop()||'');
+    if(!/\.mp4$/i.test(filename)||/ H264\.mp4$/i.test(filename))return'';
+    const replacement=filename.replace(/\.mp4$/i,' H264.mp4');
+    u.pathname=u.pathname.slice(0,u.pathname.lastIndexOf('/')+1)+encodeURIComponent(replacement);
+    u.hash='';
+    return u.toString();
+  }catch(_){return''}
+}
 function hydrateVideoThumbnail(container,url){
   if(!container||!url||youtubeVideoId(url))return;
   const video=document.createElement('video');
@@ -384,13 +397,22 @@ function hydrateVideoThumbnail(container,url){
     if(p&&typeof p.catch==='function')p.catch(()=>{});
   },{once:true});
   video.addEventListener('error',()=>{
+    const fallback=nasH264FallbackUrl(url);
+    if(fallback&&!video.dataset.h264FallbackTried){
+      video.dataset.h264FallbackTried='1';
+      video.src=videoPreviewUrl(fallback);
+      video.load();
+      const card=container.closest('.video-thumb');
+      if(card)card.dataset.videoUrl=fallback;
+      return;
+    }
     container.innerHTML='<div class="video-thumb-loading">No se puede cargar el vídeo</div><span class="video-play">▶</span>';
-  },{once:true});
+  });
   video.load();
 }
 function renderGames(){const visibleCatalog=games.filter(g=>g.kind!=='page-review'&&g.kind!=='fragment-review'&&g.visibility!=='review'&&g.visibility!=='reference');let list=visibleCatalog.filter(matches);const sort=$('#sort').value;if(sort==='az')list.sort((a,b)=>a.title.localeCompare(b.title,'es'));if(sort==='za')list.sort((a,b)=>b.title.localeCompare(a.title,'es'));$('#resultSummary').textContent=list.length+' juego'+(list.length===1?'':'s')+' encontrados';const grid=$('#gameGrid');grid.innerHTML='';const tpl=$('#gameCardTemplate');list.forEach(g=>{const n=tpl.content.cloneNode(true),card=n.querySelector('.game-card');card.dataset.id=g.id;card.querySelector('.age').textContent=g.age||'Edad variable';card.querySelector('.ocr-badge').classList.toggle('hidden',!g.needsReview);card.querySelector('.custom-badge').classList.toggle('hidden',!g.manual);card.querySelector('h3').textContent=g.title;card.querySelector('.desc').textContent=g.description;card.querySelector('.material').textContent=materialTag(g.material);card.querySelector('.space').textContent=g.space||'No especificado';card.querySelector('.intensity').textContent=inferIntensity(g);card.querySelector('.source').textContent=sourceLabel(g)+' · pág. '+(g.page||'—');card.querySelector('.chips').insertAdjacentHTML('beforeend',groupingValues(g).slice(0,1).map(v=>'<span class="chip grouping-chip">'+esc(v)+'</span>').join(''));card.querySelector('.chips').insertAdjacentHTML('beforeend',objectiveValues(g).slice(0,2).map(v=>'<span class="chip objective-chip">'+esc(v)+'</span>').join(''));if(g.videoUrl){card.querySelector('h3').insertAdjacentHTML('beforebegin',videoThumbMarkup(g.videoUrl));hydrateVideoThumbnail(card.querySelector('.video-thumb'),g.videoUrl)}else{const imageMarkup=imageCardMarkup(g.imageUrls,'card-images');if(imageMarkup)card.querySelector('h3').insertAdjacentHTML('beforebegin',imageMarkup)}const addBtn=card.querySelector('.add-btn');addBtn.textContent=sessionAddMode?(sessionSelection.has(g.id)?'✓':'＋'):'＋';addBtn.classList.toggle('selected',sessionAddMode&&sessionSelection.has(g.id));addBtn.onclick=e=>{e.stopPropagation();sessionAddMode?toggleSessionSelection(g.id):addToSession(g.id)};card.classList.toggle('session-selected',sessionAddMode&&sessionSelection.has(g.id));card.querySelector('.details').onclick=e=>{e.stopPropagation();openGame(g.id)};card.onclick=()=>openGame(g.id);card.ondragstart=e=>e.dataTransfer.setData('text/plain',g.id);grid.appendChild(n)});$('#empty').classList.toggle('hidden',list.length>0);$('#totalGames').textContent=visibleCatalog.length;updateSessionAddBar()}
 
-function openGame(id){const g=games.find(x=>x.id===id);if(!g)return;const videoUrl=normalizeNasMediaUrl(g.videoUrl);const imageUrls=normalizeImageUrls(g.imageUrls);const imageBlock=imageUrls.length?imageThumbMarkup(imageUrls,'detail-images'):'';const videoBlock=videoUrl?'<div class="game-video-detail"><video class="detail-video-player" controls playsinline webkit-playsinline preload="metadata" poster="'+esc(videoPosterUrl(videoUrl))+'" src="'+esc(videoUrl)+'"></video><a class="video-link" href="'+esc(videoUrl)+'" target="_blank" rel="noopener">Abrir vídeo en una pestaña nueva ↗</a><div class="video-detail-help">Si el reproductor no carga, abre el vídeo en una pestaña nueva para comprobar el acceso al archivo.</div></div>':'';$('#dialogContent').innerHTML='<div class="eyebrow">FICHA DE JUEGO</div><div class="source-box" style="margin:0 0 12px"><strong>FUENTE DE PROCEDENCIA</strong><br>'+esc(g.source||'MotorLab')+' · página '+esc(g.page||'—')+'</div><h2>'+esc(g.title)+'</h2>'+videoBlock+imageBlock+'<div class="detail-meta"><span class="tag">'+esc(g.age||'Edad variable')+'</span><span class="chip">'+esc(materialTag(g.material))+'</span><span class="chip">'+esc(g.space||'')+'</span><span class="chip">'+esc(inferIntensity(g))+'</span>'+groupingValues(g).map(v=>'<span class="chip">👥 '+esc(v)+'</span>').join('')+objectiveValues(g).map(v=>'<span class="chip">🎯 '+esc(v)+'</span>').join('')+'</div><p class="detail-desc">'+esc(g.description||'')+'</p><div class="source-box"><strong>Fuente</strong><br>'+esc(g.source||'MotorLab')+' · página '+esc(g.page||'—')+'<br><small>Material original: '+esc(g.material||'')+'</small></div><div class="dialog-actions"><button class="primary" id="editGameBtn">✏️ Editar ficha</button><button class="primary secondary" id="addGameSessionBtn">＋ Añadir a sesión</button><button class="ghost" onclick="gameDialog.close()">Cerrar</button></div>';$('#editGameBtn').onclick=()=>{gameDialog.close();openGameEditor(g.id)};$('#addGameSessionBtn').onclick=()=>{addToSession(g.id);gameDialog.close()};gameDialog.showModal()}
+function openGame(id){const g=games.find(x=>x.id===id);if(!g)return;const videoUrl=normalizeNasMediaUrl(g.videoUrl);const imageUrls=normalizeImageUrls(g.imageUrls);const imageBlock=imageUrls.length?imageThumbMarkup(imageUrls,'detail-images'):'';const videoBlock=videoUrl?'<div class="game-video-detail"><video class="detail-video-player" controls playsinline webkit-playsinline preload="metadata" poster="'+esc(videoPosterUrl(videoUrl))+'" src="'+esc(videoUrl)+'"></video><a class="video-link" href="'+esc(videoUrl)+'" target="_blank" rel="noopener">Abrir vídeo en una pestaña nueva ↗</a><div class="video-detail-help">Si el reproductor no carga, abre el vídeo en una pestaña nueva para comprobar el acceso al archivo.</div></div>':'';$('#dialogContent').innerHTML='<div class="eyebrow">FICHA DE JUEGO</div><div class="source-box" style="margin:0 0 12px"><strong>FUENTE DE PROCEDENCIA</strong><br>'+esc(g.source||'MotorLab')+' · página '+esc(g.page||'—')+'</div><h2>'+esc(g.title)+'</h2>'+videoBlock+imageBlock+'<div class="detail-meta"><span class="tag">'+esc(g.age||'Edad variable')+'</span><span class="chip">'+esc(materialTag(g.material))+'</span><span class="chip">'+esc(g.space||'')+'</span><span class="chip">'+esc(inferIntensity(g))+'</span>'+groupingValues(g).map(v=>'<span class="chip">👥 '+esc(v)+'</span>').join('')+objectiveValues(g).map(v=>'<span class="chip">🎯 '+esc(v)+'</span>').join('')+'</div><p class="detail-desc">'+esc(g.description||'')+'</p><div class="source-box"><strong>Fuente</strong><br>'+esc(g.source||'MotorLab')+' · página '+esc(g.page||'—')+'<br><small>Material original: '+esc(g.material||'')+'</small></div><div class="dialog-actions"><button class="primary" id="editGameBtn">✏️ Editar ficha</button><button class="primary secondary" id="addGameSessionBtn">＋ Añadir a sesión</button><button class="ghost" onclick="gameDialog.close()">Cerrar</button></div>';const detailPlayer=$('#dialogContent .detail-video-player');if(detailPlayer){detailPlayer.addEventListener('error',()=>{const fallback=nasH264FallbackUrl(videoUrl);if(fallback&&!detailPlayer.dataset.h264FallbackTried){detailPlayer.dataset.h264FallbackTried='1';detailPlayer.src=fallback;detailPlayer.load();}}, {once:true})}$('#editGameBtn').onclick=()=>{gameDialog.close();openGameEditor(g.id)};$('#addGameSessionBtn').onclick=()=>{addToSession(g.id);gameDialog.close()};gameDialog.showModal()}
 const NAS_BASE_URL='https://ugreen-tailscale.tailfc6c36.ts.net:8443/motorlab/media';
 function buildNasUrl(kind,filename){
   let f=String(filename||'').trim().replace(/^['"]|['"]$/g,'').replace(/\\/g,'/');
