@@ -9,6 +9,18 @@
     return null;
   }
 
+  function nasH264FallbackUrlForCard(value){
+    try{
+      const u=new URL(value,location.href);
+      if(!u.pathname.toLowerCase().includes('/videos/'))return'';
+      const filename=decodeURIComponent(u.pathname.split('/').pop()||'');
+      if(!/\.mp4$/i.test(filename)||/ H264\.mp4$/i.test(filename))return'';
+      u.pathname=u.pathname.slice(0,u.pathname.lastIndexOf('/')+1)+encodeURIComponent(filename.replace(/\.mp4$/i,' H264.mp4'));
+      u.hash='';
+      return u.toString();
+    }catch(_){return''}
+  }
+
   function startCardVideo(thumb){
     if(!thumb || thumb.dataset.playing==='1') return;
     const url=thumb.dataset.videoUrl;
@@ -50,6 +62,15 @@
     video.style.objectFit='cover';
     thumb.appendChild(video);
 
+    video.addEventListener('error',function(){
+      if(video.dataset.h264FallbackTried==='1')return;
+      const fallback=nasH264FallbackUrlForCard(url);
+      if(!fallback)return;
+      video.dataset.h264FallbackTried='1';
+      video.src=fallback;
+      thumb.dataset.videoUrl=fallback;
+      video.load();
+    });
     const playAttempt=video.play();
     if(playAttempt&&typeof playAttempt.catch==='function') playAttempt.catch(()=>{});
   }
