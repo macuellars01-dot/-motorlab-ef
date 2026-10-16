@@ -665,7 +665,7 @@ function exportChatImportData(){
   const payload={format:'ludomundo-chat-import-v1',exportedAt:now(),units,sessions:savedSessions};
   const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
   const url=URL.createObjectURL(blob);const a=document.createElement('a');
-  a.href=url;a.download='ludomundo-sesiones-unidades.json';a.click();URL.revokeObjectURL(url);
+  a.href=url;a.download='ludomundo-sesiones-unidades.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
   $('#dataToolsStatus').textContent='Exportación preparada. El archivo contiene sesiones y unidades, no tokens ni ajustes de conexión.';
 }
 function validateChatImport(payload){
@@ -682,7 +682,7 @@ function validateChatImport(payload){
     if(!s||typeof s!=='object'||typeof s.name!=='string'||!s.name.trim()||!Array.isArray(s.games))throw new Error('Sesión no válida en la posición '+(i+1)+'.');
     const entries=s.games.map((entry,j)=>{
       const e=typeof entry==='string'?{id:entry}:entry;
-      if(!e||typeof e.id!=='string'||!validGames.has(e.id))throw new Error('La sesión "'+s.name+'" referencia un juego que no existe en el catálogo (juego '+(j+1)+').');
+      if(!e||!['string','number'].includes(typeof e.id)||!validGames.has(String(e.id)))throw new Error('La sesión "'+s.name+'" referencia un juego que no existe en el catálogo (juego '+(j+1)+').');
       return typeof entry==='string'?{id:e.id,phase:'Sin asignar',minutes:'',grouping:s.grouping||'Gran grupo',note:''}:{id:e.id,phase:String(e.phase||'Sin asignar'),minutes:String(e.minutes??''),grouping:String(e.grouping||s.grouping||'Gran grupo'),note:String(e.note||'')};
     });
     const unitId=typeof s.unitId==='string'&&validUnitIds.has(s.unitId)?s.unitId:'';
@@ -698,6 +698,10 @@ async function importChatImportData(){
     if(!confirm('Se añadirán o actualizarán '+incoming.sessions.length+' sesiones y '+incoming.units.length+' unidades. Los demás datos locales no se borrarán. ¿Continuar?'))return;
     const unitMap=new Map(units.map(u=>[u.id,u]));incoming.units.forEach(u=>unitMap.set(u.id,u));units=[...unitMap.values()];
     const sessionMap=new Map(savedSessions.map(s=>[s.id,s]));incoming.sessions.forEach(s=>sessionMap.set(s.id,s));savedSessions=[...sessionMap.values()];
+    // Si se reimporta un registro eliminado anteriormente, quitar su marca de borrado para que la sincronización no lo elimine de nuevo.
+    const deletedSessions=read(KEYS.deletedSessions,{}),deletedUnits=read(KEYS.deletedUnits,{});
+    incoming.sessions.forEach(s=>delete deletedSessions[s.id]);incoming.units.forEach(u=>delete deletedUnits[u.id]);
+    write(KEYS.deletedSessions,deletedSessions);write(KEYS.deletedUnits,deletedUnits);
     write(KEYS.units,units);write(KEYS.sessions,savedSessions);
     renderUnits();renderSaved();renderUnitSelect();markPending();
     status.textContent='Importación local completada: '+incoming.sessions.length+' sesiones y '+incoming.units.length+' unidades. Si la sincronización está configurada, se enviarán al NAS.';
