@@ -661,9 +661,62 @@ function mergeRemote(remote){
   }
 }
 function openSyncDialog(){loadSyncSettingsUI();syncDialog.showModal()}
+function exportChatImportData(){
+  const payload={format:'ludomundo-chat-import-v1',exportedAt:now(),units,sessions:savedSessions};
+  const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
+  const url=URL.createObjectURL(blob);const a=document.createElement('a');
+  a.href=url;a.download='ludomundo-sesiones-unidades.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  $('#dataToolsStatus').textContent='Exportación preparada. El archivo contiene sesiones y unidades, no tokens ni ajustes de conexión.';
+}
+function validateChatImport(payload){
+  if(!payload||payload.format!=='ludomundo-chat-import-v1')throw new Error('Formato no reconocido. Debe ser ludomundo-chat-import-v1.');
+  if(!Array.isArray(payload.sessions)||!Array.isArray(payload.units))throw new Error('El JSON debe incluir arrays "sessions" y "units".');
+  if(payload.sessions.length>500||payload.units.length>200)throw new Error('El archivo supera el límite de sesiones o unidades.');
+  const validUnits=payload.units.map((u,i)=>{
+    if(!u||typeof u!=='object'||typeof u.name!=='string'||!u.name.trim())throw new Error('Unidad no válida en la posición '+(i+1)+'.');
+    return {...u,id:typeof u.id==='string'&&u.id.trim()?u.id.trim():uid('unit'),name:u.name.trim(),updatedAt:now()};
+  });
+  const validUnitIds=new Set([...units,...validUnits].map(u=>u.id));
+  const validGames=new Set(games.map(g=>String(g.id)));
+  const validSessions=payload.sessions.map((s,i)=>{
+    if(!s||typeof s!=='object'||typeof s.name!=='string'||!s.name.trim()||!Array.isArray(s.games))throw new Error('Sesión no válida en la posición '+(i+1)+'.');
+    const entries=s.games.map((entry,j)=>{
+      const e=typeof entry==='string'?{id:entry}:entry;
+      if(!e||!['string','number'].includes(typeof e.id)||!validGames.has(String(e.id)))throw new Error('La sesión "'+s.name+'" referencia un juego que no existe en el catálogo (juego '+(j+1)+').');
+      return typeof entry==='string'?{id:e.id,phase:'Sin asignar',minutes:'',grouping:s.grouping||'Gran grupo',note:''}:{id:e.id,phase:String(e.phase||'Sin asignar'),minutes:String(e.minutes??''),grouping:String(e.grouping||s.grouping||'Gran grupo'),note:String(e.note||'')};
+    });
+    const unitId=typeof s.unitId==='string'&&validUnitIds.has(s.unitId)?s.unitId:'';
+    return {...s,id:typeof s.id==='string'&&s.id.trim()?s.id.trim():uid('session'),name:s.name.trim(),games:entries,unitId,updatedAt:now()};
+  });
+  return {units:validUnits,sessions:validSessions};
+}
+async function importChatImportData(){
+  const status=$('#dataToolsStatus');status.textContent='';
+  try{
+    const payload=JSON.parse($('#dataToolsJson').value);
+    const incoming=validateChatImport(payload);
+    if(!confirm('Se añadirán o actualizarán '+incoming.sessions.length+' sesiones y '+incoming.units.length+' unidades. Los demás datos locales no se borrarán. ¿Continuar?'))return;
+    const unitMap=new Map(units.map(u=>[u.id,u]));incoming.units.forEach(u=>unitMap.set(u.id,u));units=[...unitMap.values()];
+    const sessionMap=new Map(savedSessions.map(s=>[s.id,s]));incoming.sessions.forEach(s=>sessionMap.set(s.id,s));savedSessions=[...sessionMap.values()];
+    // Si se reimporta un registro eliminado anteriormente, quitar su marca de borrado para que la sincronización no lo elimine de nuevo.
+    const deletedSessions=read(KEYS.deletedSessions,{}),deletedUnits=read(KEYS.deletedUnits,{});
+    incoming.sessions.forEach(s=>delete deletedSessions[s.id]);incoming.units.forEach(u=>delete deletedUnits[u.id]);
+    write(KEYS.deletedSessions,deletedSessions);write(KEYS.deletedUnits,deletedUnits);
+    write(KEYS.units,units);write(KEYS.sessions,savedSessions);
+    renderUnits();renderSaved();renderUnitSelect();markPending();
+    status.textContent='Importación local completada: '+incoming.sessions.length+' sesiones y '+incoming.units.length+' unidades. Si la sincronización está configurada, se enviarán al NAS.';
+  }catch(e){status.textContent='No se ha importado nada: '+String(e.message||e)}
+}
+
 $('#search').addEventListener('input',renderGames);$('#sort').addEventListener('change',renderGames);$('#filterToggle').onclick=()=>{if($('#filterDialog')?.showModal)$('#filterDialog').showModal();else $('#filters').classList.toggle('open')};$('#clearFilters').onclick=clearAllFilters;$('#clearFiltersDialog').onclick=clearAllFilters;$('#applyFiltersDialog').onclick=()=>{renderGames();filterDialog.close()};$('#closeFilterDialog').onclick=()=>filterDialog.close();$$('.tab').forEach(x=>x.onclick=()=>switchView(x.dataset.view));
 $('#newSessionBtn').onclick=()=>{switchView('builder');session=[];$('#editingSessionId').value='';$('#sessionName').value='';$('#sessionGroup').value='';$('#sessionDate').value=new Date().toISOString().slice(0,10);if($('#sessionUnit'))$('#sessionUnit').value='';if($('#studentCount'))$('#studentCount').value='';if($('#sessionDuration'))$('#sessionDuration').value='';if($('#sessionGrouping'))$('#sessionGrouping').value='Gran grupo';if($('#sessionObjectives'))$('#sessionObjectives').value='';if($('#sessionCompetencies'))$('#sessionCompetencies').value='';if($('#sessionObservations'))$('#sessionObservations').value='';renderSession();$('#sessionCount').textContent=0};
 $('#sessionAddConfirm').onclick=finishAddingSelected;$('#sessionAddCancel').onclick=cancelAddingSelected;$('#saveSession').onclick=saveCurrentSession;$('#printSession').onclick=()=>window.print();$('#autoPhaseBtn').onclick=autoPhase;$('#clearSessionBtn')?.addEventListener('click',clearCurrentSession);$('#addGamesBtn')?.addEventListener('click',openLibraryForAdding);$('#newUnitFromSession')?.addEventListener('click',createUnit);$('#sessionDuration')?.addEventListener('input',()=>{updateTotals();updatePhasePctStatus();if(phasePercentages().total===100)redistributePhaseTimes()});$('#phaseWarmPct')?.addEventListener('input',()=>{updatePhasePctStatus();if(phasePercentages().total===100)redistributePhaseTimes()});$('#phaseMainPct')?.addEventListener('input',()=>{updatePhasePctStatus();if(phasePercentages().total===100)redistributePhaseTimes()});$('#phaseCoolPct')?.addEventListener('input',()=>{updatePhasePctStatus();if(phasePercentages().total===100)redistributePhaseTimes()});$('#sourcesBtn').onclick=()=>sourcesDialog.showModal();$('#newGameBtn').onclick=()=>openGameEditor();$('#newUnitBtn').onclick=createUnit;$('#syncBtn').onclick=()=>syncNow();$('#syncSettingsBtn').onclick=openSyncDialog;
+$('#dataToolsBtn').onclick=()=>{$('#dataToolsStatus').textContent='';$('#dataToolsDialog').showModal()};
+$('#closeDataTools').onclick=()=>$('#dataToolsDialog').close();
+$('#exportDataTools').onclick=exportChatImportData;
+$('#importDataTools').onclick=importChatImportData;
+$('#dataToolsFile').onchange=async e=>{const f=e.target.files?.[0];if(!f)return;try{$('#dataToolsJson').value=await f.text();$('#dataToolsStatus').textContent='Archivo cargado. Pulsa "Validar e importar" para comprobarlo.'}catch(_){$('#dataToolsStatus').textContent='No se pudo leer el archivo.'}e.target.value=''};
+
 $('#syncForm').onsubmit=e=>{e.preventDefault();const url=$('#apiUrl').value.trim().replace(/\/$/,'');const token=$('#apiToken').value.trim();write(KEYS.settings,{url,token});syncDialog.close();syncNow()};
 document.addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();$('#search').focus()}});document.addEventListener('click',e=>{const link=e.target.closest?.('.image-thumb');if(!link)return;e.preventDefault();e.stopPropagation();const src=link.dataset.imageUrl||link.getAttribute('href');const img=$('#imageViewerImg');if(!src||!img||!$('#imageViewerDialog'))return;img.src=src;img.alt=link.querySelector('img')?.alt||'Imagen del juego';$('#imageViewerDialog').showModal()});$('#imageViewerDialog')?.addEventListener('click',e=>{if(e.target.id==='imageViewerDialog'||e.target.closest('[data-close-image-viewer]'))$('#imageViewerDialog').close()});
 init();
