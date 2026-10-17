@@ -55,7 +55,6 @@ class AdapterTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "ID de juego ausente"):
             self.mod.save_session({"id": "s1", "name": "Prueba", "games": [{"id": "missing"}]}, True)
 
-    @patch.object
     def test_save_unit_requires_name_and_id(self):
         with self.assertRaisesRegex(ValueError, "nombre e ID"):
             self.mod.save_unit({"id": "u1"}, True)
