@@ -78,12 +78,14 @@ def list_units() -> list[dict[str, Any]]:
     ]
 
 
-def _save_record(record_type: str, record_id: str, data: dict[str, Any]) -> dict[str, Any]:
+def _save_record(record_type: str, record_id: str, data: dict[str, Any], confirm_update: bool = False) -> dict[str, Any]:
     if not record_id or len(record_id) > 200:
         raise ValueError("Identificador no válido.")
     existing = [r for r in _read_records() if r.get("id") == record_id and r.get("type") == record_type]
     if existing and existing[0].get("deleted"):
         raise ValueError("El registro está marcado como eliminado; no se sobrescribe automáticamente.")
+    if existing and not confirm_update:
+        raise ValueError("El registro ya existe. Para actualizarlo, vuelve a llamar con confirm_update=true tras revisar los cambios.")
     record = {"id": record_id, "type": record_type, "data": data, "updatedAt": __import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(), "deleted": False}
     with httpx.Client(timeout=15) as client:
         response = client.post(f"{API_URL}/sync", headers=_headers(), json={"items": [record]})
@@ -92,7 +94,7 @@ def _save_record(record_type: str, record_id: str, data: dict[str, Any]) -> dict
 
 
 @mcp.tool()
-def save_session(session: dict[str, Any], confirm_write: bool = False) -> dict[str, Any]:
+def save_session(session: dict[str, Any], confirm_write: bool = False, confirm_update: bool = False) -> dict[str, Any]:
     """Crea/actualiza una sesión. Requiere confirm_write=true. Los IDs de juego deben existir en el catálogo."""
     if not confirm_write:
         raise ValueError("Para escribir, vuelve a llamar con confirm_write=true tras revisar la sesión.")
@@ -107,11 +109,11 @@ def save_session(session: dict[str, Any], confirm_write: bool = False) -> dict[s
     record_id = str(session.get("id") or "")
     if not record_id:
         raise ValueError("La sesión necesita un ID único explícito; no se genera automáticamente.")
-    return _save_record("session", record_id, session)
+    return _save_record("session", record_id, session, confirm_update=confirm_update)
 
 
 @mcp.tool()
-def save_unit(unit: dict[str, Any], confirm_write: bool = False) -> dict[str, Any]:
+def save_unit(unit: dict[str, Any], confirm_write: bool = False, confirm_update: bool = False) -> dict[str, Any]:
     """Crea/actualiza una unidad didáctica. Requiere confirm_write=true."""
     if not confirm_write:
         raise ValueError("Para escribir, vuelve a llamar con confirm_write=true tras revisar la unidad.")
@@ -119,7 +121,7 @@ def save_unit(unit: dict[str, Any], confirm_write: bool = False) -> dict[str, An
     record_id = str(unit.get("id") or "")
     if not isinstance(name, str) or not name.strip() or not record_id:
         raise ValueError("La unidad necesita un nombre e ID único explícito.")
-    return _save_record("unit", record_id, unit)
+    return _save_record("unit", record_id, unit, confirm_update=confirm_update)
 
 
 if __name__ == "__main__":
