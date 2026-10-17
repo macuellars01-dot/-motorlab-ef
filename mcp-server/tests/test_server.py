@@ -59,6 +59,12 @@ class AdapterTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "nombre e ID"):
             self.mod.save_unit({"id": "u1"}, True)
 
+    def test_existing_record_requires_explicit_update_confirmation(self):
+        existing = [{"id": "u1", "type": "unit", "data": {"id": "u1", "name": "Unidad anterior"}, "deleted": False}]
+        with patch.object(self.mod, "_read_records", return_value=existing):
+            with self.assertRaisesRegex(ValueError, "confirm_update=true"):
+                self.mod.save_unit({"id": "u1", "name": "Unidad nueva"}, confirm_write=True)
+
 
 if __name__ == "__main__":
     unittest.main()
