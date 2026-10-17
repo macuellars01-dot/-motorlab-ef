@@ -13,7 +13,7 @@ This is an isolated prototype only. It has **not** been deployed to the NAS and 
 1. Do not expose port 8000 publicly. This prototype has no OAuth implementation and must only be tested on an isolated private network behind a separately configured authenticated gateway/tunnel.
 2. Do not deploy to the existing Docker stack until the NAS paths, network routing, API response shape, and supported ChatGPT MCP write capabilities are confirmed.
 3. The adapter only intends to write `session` and `unit` records through the existing `/sync` endpoint. It does not delete records or modify game records.
-4. `save_session` and `save_unit` require an explicit `confirm_write=true` parameter and validate basic structure. Test against a disposable dataset first.
+4. `save_session` and `save_unit` require `confirm_write=true`; updating an existing record additionally requires `confirm_update=true`. They validate basic structure. Test against a disposable dataset first.
 5. Existing passwords and tokens must not be rotated or changed as part of this prototype.
 
 ## Tools
