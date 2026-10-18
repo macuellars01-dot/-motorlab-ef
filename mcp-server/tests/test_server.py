@@ -78,5 +78,34 @@ class AdapterTests(unittest.TestCase):
                 self.mod.save_unit({"id": "u1", "name": "Unidad nueva"}, confirm_write=True)
 
 
+    def test_read_records_rejects_missing_items_instead_of_returning_empty(self):
+        response = unittest.mock.Mock()
+        response.json.return_value = {"unexpected": []}
+        response.raise_for_status.return_value = None
+        client = unittest.mock.Mock()
+        client.get.return_value = response
+        context = unittest.mock.MagicMock()
+        context.__enter__.return_value = client
+        with patch.object(self.mod.httpx, "Client", return_value=context):
+            with self.assertRaisesRegex(ValueError, "lista items esperada"):
+                self.mod._read_records()
+
+    def test_list_sessions_redacts_student_details_and_observations(self):
+        record = {
+            "id": "s1", "type": "session", "updatedAt": "now", "deleted": False,
+            "data": {
+                "name": "Sesión de prueba", "date": "2026-10-18", "group": "6º",
+                "students": "25", "observations": "dato privado", "games": [{"id": "g1"}],
+            },
+        }
+        with patch.object(self.mod, "_read_records", return_value=[record]):
+            result = self.mod.list_sessions()
+        self.assertEqual(result[0]["name"], "Sesión de prueba")
+        self.assertEqual(result[0]["game_count"], 1)
+        self.assertNotIn("students", result[0])
+        self.assertNotIn("observations", result[0])
+        self.assertNotIn("data", result[0])
+
+
 if __name__ == "__main__":
     unittest.main()
