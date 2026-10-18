@@ -33,8 +33,10 @@ def _read_records() -> list[dict[str, Any]]:
 def _catalog() -> list[dict[str, Any]]:
     payload = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
     if isinstance(payload, dict):
-        payload = payload.get("games", [])
-    if not isinstance(payload, list):
+        if "games" not in payload:
+            raise ValueError("El catálogo debe ser una lista de juegos o un objeto con la propiedad games.")
+        payload = payload["games"]
+    if not isinstance(payload, list) or any(not isinstance(game, dict) for game in payload):
         raise ValueError("El catálogo debe ser una lista de juegos.")
     return payload
 
