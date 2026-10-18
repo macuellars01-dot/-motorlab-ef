@@ -45,7 +45,19 @@ class AdapterTests(unittest.TestCase):
         self.assertEqual([x["id"] for x in result], ["g1", "g2"])
 
     def test_search_games_caps_limit(self):
-        self.assertLessEqual(len(self.mod.search_games("", 500)), 30)
+        self.assertLessEqual(len(self.mod.search_games("", limit=500)), 30)
+
+    def test_search_games_filters_by_material(self):
+        self.catalog_path.write_text('[{"id":"g1","name":"Juego uno","material":"aros"},{"id":"g2","name":"Juego dos","material":"conos"}]', encoding="utf-8")
+        result = self.mod.search_games(material="aros")
+        self.assertEqual([x["id"] for x in result], ["g1"])
+
+    def test_get_game_returns_exact_id(self):
+        self.assertEqual(self.mod.get_game("g1")["name"], "Juego uno")
+
+    def test_get_game_rejects_unknown_id(self):
+        with self.assertRaisesRegex(ValueError, "No se encontró"):
+            self.mod.get_game("missing")
 
     def test_write_requires_explicit_confirmation(self):
         with self.assertRaisesRegex(ValueError, "confirm_write=true"):
