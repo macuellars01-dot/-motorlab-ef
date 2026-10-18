@@ -695,6 +695,19 @@ function exportChatCatalogCSV(){
   a.href=url;a.download='ludomundo-catalogo-chatgpt.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
   $('#dataToolsStatus').textContent='Catálogo exportado para ChatGPT: '+games.length+' juegos. Incluye los datos disponibles en la versión actual de LUDOMUNDO; vuelve a exportarlo cuando cambie el catálogo.';
 }
+async function copyChatImportData(){
+  const payload={format:'ludomundo-chat-import-v1',exportedAt:now(),units,sessions:savedSessions};
+  const json=JSON.stringify(payload,null,2);
+  try{
+    await navigator.clipboard.writeText(json);
+    $('#dataToolsJson').value=json;
+    $('#dataToolsStatus').textContent='JSON copiado al portapapeles y mostrado en el cuadro. Pégalo en ChatGPT para consultar o continuar trabajando con tus sesiones y unidades.';
+  }catch(_){
+    $('#dataToolsJson').value=json;
+    $('#dataToolsJson').focus();$('#dataToolsJson').select();
+    $('#dataToolsStatus').textContent='No se pudo copiar automáticamente. El JSON está seleccionado en el cuadro: usa ⌘C (Mac) o Ctrl+C (Windows).';
+  }
+}
 function exportChatImportData(){
   const payload={format:'ludomundo-chat-import-v1',exportedAt:now(),units,sessions:savedSessions};
   const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
@@ -748,6 +761,7 @@ $('#sessionAddConfirm').onclick=finishAddingSelected;$('#sessionAddCancel').oncl
 $('#dataToolsBtn').onclick=()=>{$('#dataToolsStatus').textContent='';$('#dataToolsDialog').showModal()};
 $('#closeDataTools').onclick=()=>$('#dataToolsDialog').close();
 $('#exportDataTools').onclick=exportChatImportData;
+$('#copyChatImportData').onclick=copyChatImportData;
 $('#exportChatCatalog').onclick=exportChatCatalogCSV;
 $('#importDataTools').onclick=importChatImportData;
 $('#dataToolsFile').onchange=async e=>{const f=e.target.files?.[0];if(!f)return;try{$('#dataToolsJson').value=await f.text();$('#dataToolsStatus').textContent='Archivo cargado. Pulsa "Validar e importar" para comprobarlo.'}catch(_){$('#dataToolsStatus').textContent='No se pudo leer el archivo.'}e.target.value=''};
