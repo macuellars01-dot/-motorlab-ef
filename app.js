@@ -715,6 +715,57 @@ function exportChatImportData(){
   a.href=url;a.download='ludomundo-sesiones-unidades.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
   $('#dataToolsStatus').textContent='Exportación preparada. El archivo contiene sesiones y unidades, no tokens ni ajustes de conexión.';
 }
+function normalizeGameImportTitle(value){return String(value||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim()}
+function validateGamesImport(payload){
+  if(!payload||payload.format!=='ludomundo-games-import-v1')throw new Error('Formato no reconocido. Debe ser ludomundo-games-import-v1.');
+  if(!Array.isArray(payload.games))throw new Error('El JSON debe incluir un array "games".');
+  if(payload.games.length>1000)throw new Error('El archivo supera el límite de 1000 fichas por importación.');
+  const existingIds=new Set(games.map(g=>String(g.id)));
+  const existingTitles=new Set(games.map(g=>normalizeGameImportTitle(g.title)));
+  const seenTitles=new Set();
+  const clean=[];let skipped=0;
+  payload.games.forEach((raw,i)=>{
+    if(!raw||typeof raw!=='object'||Array.isArray(raw))throw new Error('Ficha no válida en la posición '+(i+1)+'.');
+    const pick=(...keys)=>{for(const k of keys){const v=raw[k];if(v!==undefined&&v!==null&&v!=='')return v}return ''};
+    const title=String(pick('title','name','nombre','titulo','título')).trim();
+    const description=String(pick('description','descripcion','descripción','development','desarrollo','rules','reglas')).trim();
+    if(!title)throw new Error('La ficha '+(i+1)+' no tiene título.');
+    if(!description)throw new Error('La ficha "'+title+'" no tiene descripción. Añádela antes de importar.');
+    const normalized=normalizeGameImportTitle(title);
+    const suppliedId=String(pick('id')).trim();
+    if((suppliedId&&existingIds.has(suppliedId))||existingTitles.has(normalized)||seenTitles.has(normalized)){skipped++;return}
+    const listValue=(...keys)=>{const v=pick(...keys);if(Array.isArray(v))return v.map(x=>String(x).trim()).filter(Boolean);if(typeof v==='string'&&v.trim())return v.split(/[;,|]/).map(x=>x.trim()).filter(Boolean);return []};
+    const age=pick('age','ages','edad','edades','course','courses','curso','cursos')||'Por determinar';
+    const material=pick('material','materials','materiales')||'No especificado';
+    const space=pick('space','spaces','espacio','espacios')||'No especificado';
+    const intensity=pick('intensity','intensidad')||'No especificada';
+    const source=pick('source','sourceName','fuente','autor')||'Creación propia / vídeo aportado';
+    const videoUrl=String(pick('videoUrl','video_url','urlVideo')).trim();
+    const imageUrls=listValue('imageUrls','images','image','imageUrl','imagen','imagenes','imágenes');
+    const game={id:uid('manual'),title,description,age,material,space,intensity,source,page:String(pick('page','pagina','página')||''),needsReview:Boolean(raw.needsReview),manual:true,videoUrl,imageUrls,updatedAt:now()};
+    const groupings=listValue('groupings','grouping','agrupamiento','kind','type','category','categoria','categoría');
+    const objectives=listValue('objectives','objetivos');
+    if(groupings.length)game.groupings=groupings;
+    if(objectives.length)game.objectives=objectives;
+    if(pick('videoFilename','videoFile','nombreVideo'))game.videoFilename=String(pick('videoFilename','videoFile','nombreVideo')).trim();
+    clean.push(game);seenTitles.add(normalized);existingIds.add(game.id);existingTitles.add(normalized);
+  });
+  return {games:clean,skipped};
+}
+function exportGamesJson(){
+  const payload={format:'ludomundo-games-import-v1',exportedAt:now(),games:games.map(g=>({id:g.id,title:g.title,description:g.description,age:g.age,material:g.material,space:g.space,intensity:g.intensity,source:g.source,page:g.page,groupings:g.groupings||[],objectives:g.objectives||[],needsReview:Boolean(g.needsReview),manual:Boolean(g.manual),videoUrl:g.videoUrl||'',videoFilename:g.videoFilename||'',imageUrls:g.imageUrls||[]}))};
+  const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='ludomundo-juegos.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  $('#dataToolsStatus').textContent='Exportación preparada: '+games.length+' fichas de juegos. El archivo incluye las fichas disponibles en este dispositivo.';
+}
+function importGamesPayload(payload){
+  const incoming=validateGamesImport(payload);
+  if(!incoming.games.length){$('#dataToolsStatus').textContent='No hay fichas nuevas para añadir. Se omitieron '+incoming.skipped+' fichas duplicadas por identificador o título.';return}
+  if(!confirm('Se añadirán '+incoming.games.length+' fichas nuevas al catálogo y se omitirán '+incoming.skipped+' duplicadas. No se borrará ni reemplazará ningún juego existente. ¿Continuar?'))return;
+  const overrides=cleanGameOverrides();
+  incoming.games.forEach(g=>{games.push(g);overrides[g.id]=g});
+  write(KEYS.overrides,overrides);renderGames();markPending();
+  $('#dataToolsStatus').textContent='Importación completada en este dispositivo: '+incoming.games.length+' fichas nuevas añadidas; '+incoming.skipped+' duplicadas omitidas. Se intentará sincronizarlas con el NAS si la conexión está configurada.';
+}
 function validateChatImport(payload){
   if(!payload||payload.format!=='ludomundo-chat-import-v1')throw new Error('Formato no reconocido. Debe ser ludomundo-chat-import-v1.');
   if(!Array.isArray(payload.sessions)||!Array.isArray(payload.units))throw new Error('El JSON debe incluir arrays "sessions" y "units".');
@@ -741,6 +792,7 @@ async function importChatImportData(){
   const status=$('#dataToolsStatus');status.textContent='';
   try{
     const payload=JSON.parse($('#dataToolsJson').value);
+    if(payload?.format==='ludomundo-games-import-v1'){importGamesPayload(payload);return}
     const incoming=validateChatImport(payload);
     if(!confirm('Se añadirán o actualizarán '+incoming.sessions.length+' sesiones y '+incoming.units.length+' unidades. Los demás datos locales no se borrarán. ¿Continuar?'))return;
     const unitMap=new Map(units.map(u=>[u.id,u]));incoming.units.forEach(u=>unitMap.set(u.id,u));units=[...unitMap.values()];
@@ -761,6 +813,7 @@ $('#sessionAddConfirm').onclick=finishAddingSelected;$('#sessionAddCancel').oncl
 $('#dataToolsBtn').onclick=()=>{$('#dataToolsStatus').textContent='';$('#dataToolsDialog').showModal()};
 $('#closeDataTools').onclick=()=>$('#dataToolsDialog').close();
 $('#exportDataTools').onclick=exportChatImportData;
+$('#exportGamesJson').onclick=exportGamesJson;
 $('#copyChatImportData').onclick=copyChatImportData;
 $('#exportChatCatalog').onclick=exportChatCatalogCSV;
 $('#importDataTools').onclick=importChatImportData;
