@@ -661,6 +661,40 @@ function mergeRemote(remote){
   }
 }
 function openSyncDialog(){loadSyncSettingsUI();syncDialog.showModal()}
+function csvCell(value){
+  const text=Array.isArray(value)?value.join('; '):(value&&typeof value==='object'?JSON.stringify(value):String(value??''));
+  return '"'+text.replace(/"/g,'""')+'"';
+}
+function exportChatCatalogCSV(){
+  const columns=[
+    ['id','Identificador','id'],
+    ['title','Título','title,name,nombre,titulo'],
+    ['age','Edad','age,ages,edad,edades,course,courses,curso,cursos'],
+    ['material','Material','material,materials,materiales'],
+    ['space','Espacio','space,spaces,espacio,espacios'],
+    ['intensity','Intensidad','intensity,intensidad'],
+    ['kind','Tipo / agrupamiento','kind,type,category,categoria,categoría,grouping,agrupamiento'],
+    ['source','Fuente','source,sourceName,fuente,autor'],
+    ['objectives','Objetivos','objectives,objetivos'],
+    ['description','Descripción','description,descripcion,descripción,development,desarrollo,rules,reglas'],
+    ['imageUrls','Imágenes','imageUrls,images,image,imageUrl,imagen,imagenes,imágenes'],
+    ['videoUrl','Vídeo','videoUrl,video,video_url,urlVideo']
+  ];
+  const rows=[columns.map(c=>c[1])];
+  const pick=(game,aliases)=>{
+    for(const key of aliases.split(',')){
+      const value=game[key];
+      if(value!==undefined&&value!==null&&value!=='')return value;
+    }
+    return '';
+  };
+  games.forEach(game=>rows.push(columns.map((column,index)=>index===0?game.id:pick(game,column[2]))));
+  const csv='\uFEFF'+rows.map(row=>row.map(csvCell).join(',')).join('\r\n');
+  const blob=new Blob([csv],{type:'text/csv;charset=utf-8;'});
+  const url=URL.createObjectURL(blob);const a=document.createElement('a');
+  a.href=url;a.download='ludomundo-catalogo-chatgpt.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  $('#dataToolsStatus').textContent='Catálogo exportado para ChatGPT: '+games.length+' juegos. Incluye los datos disponibles en la versión actual de LUDOMUNDO; vuelve a exportarlo cuando cambie el catálogo.';
+}
 function exportChatImportData(){
   const payload={format:'ludomundo-chat-import-v1',exportedAt:now(),units,sessions:savedSessions};
   const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
@@ -714,6 +748,7 @@ $('#sessionAddConfirm').onclick=finishAddingSelected;$('#sessionAddCancel').oncl
 $('#dataToolsBtn').onclick=()=>{$('#dataToolsStatus').textContent='';$('#dataToolsDialog').showModal()};
 $('#closeDataTools').onclick=()=>$('#dataToolsDialog').close();
 $('#exportDataTools').onclick=exportChatImportData;
+$('#exportChatCatalog').onclick=exportChatCatalogCSV;
 $('#importDataTools').onclick=importChatImportData;
 $('#dataToolsFile').onchange=async e=>{const f=e.target.files?.[0];if(!f)return;try{$('#dataToolsJson').value=await f.text();$('#dataToolsStatus').textContent='Archivo cargado. Pulsa "Validar e importar" para comprobarlo.'}catch(_){$('#dataToolsStatus').textContent='No se pudo leer el archivo.'}e.target.value=''};
 
