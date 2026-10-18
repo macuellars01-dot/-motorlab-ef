@@ -44,20 +44,58 @@ def health_check() -> dict[str, str]:
     return {"status": "ok", "service": "LUDOMUNDO MCP", "api": "reachable"}
 
 
+def _matches_filter(game: dict[str, Any], field: str, wanted: str) -> bool:
+    """Match a filter case-insensitively without assuming one catalog schema."""
+    if not wanted.strip():
+        return True
+    value = game.get(field, "")
+    if isinstance(value, list):
+        haystack = " ".join(str(item) for item in value)
+    else:
+        haystack = str(value)
+    return wanted.casefold().strip() in haystack.casefold()
+
+
 @mcp.tool()
-def search_games(query: str = "", limit: int = 10) -> list[dict[str, Any]]:
-    """Busca juegos del catálogo local por nombre o descripción. Máximo 30 resultados."""
+def search_games(
+    query: str = "",
+    age: str = "",
+    material: str = "",
+    space: str = "",
+    intensity: str = "",
+    limit: int = 10,
+) -> list[dict[str, Any]]:
+    """Busca juegos por texto y filtros opcionales de edad, material, espacio e intensidad."""
     limit = max(1, min(int(limit), 30))
     q = query.casefold().strip()
-    games = _catalog()
     matches = []
-    for game in games:
+    for game in _catalog():
         text = " ".join(str(game.get(k, "")) for k in ("name", "title", "description", "objectives", "material")).casefold()
-        if not q or q in text:
-            matches.append({k: game.get(k) for k in ("id", "name", "title", "description", "objectives", "material", "age", "space", "intensity") if k in game})
+        if q and q not in text:
+            continue
+        if not all((
+            _matches_filter(game, "age", age),
+            _matches_filter(game, "material", material),
+            _matches_filter(game, "space", space),
+            _matches_filter(game, "intensity", intensity),
+        )):
+            continue
+        matches.append({k: game.get(k) for k in ("id", "name", "title", "description", "objectives", "material", "age", "space", "intensity") if k in game})
         if len(matches) >= limit:
             break
     return matches
+
+
+@mcp.tool()
+def get_game(game_id: str) -> dict[str, Any]:
+    """Devuelve la ficha de un juego por su ID exacto, sin modificar datos."""
+    wanted = str(game_id).strip()
+    if not wanted:
+        raise ValueError("Indica un ID de juego.")
+    for game in _catalog():
+        if str(game.get("id", "")) == wanted:
+            return game
+    raise ValueError("No se encontró un juego con ese ID en el catálogo configurado.")
 
 
 @mcp.tool()
