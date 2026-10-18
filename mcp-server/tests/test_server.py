@@ -107,5 +107,27 @@ class AdapterTests(unittest.TestCase):
         self.assertNotIn("data", result[0])
 
 
+    def test_search_games_filters_by_age_space_and_intensity(self):
+        self.catalog_path.write_text(
+            '[{"id":"g1","name":"Juego uno","age":"10-12","space":"interior","intensity":"media"},'
+            '{"id":"g2","name":"Juego dos","age":"6-8","space":"exterior","intensity":"alta"}]',
+            encoding="utf-8",
+        )
+        result = self.mod.search_games(age="10-12", space="interior", intensity="media")
+        self.assertEqual([item["id"] for item in result], ["g1"])
+
+    def test_search_games_filter_is_case_insensitive(self):
+        self.catalog_path.write_text(
+            '[{"id":"g1","name":"Juego uno","material":"Aros"}]',
+            encoding="utf-8",
+        )
+        self.assertEqual([item["id"] for item in self.mod.search_games(material="aros")], ["g1"])
+
+    def test_catalog_rejects_unexpected_top_level_shape(self):
+        self.catalog_path.write_text('{"items":[]}', encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "lista de juegos"):
+            self.mod._catalog()
+
+
 if __name__ == "__main__":
     unittest.main()
