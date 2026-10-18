@@ -1,6 +1,16 @@
 # Comprobación del contrato de sincronización para MCP
 
-Estado: pendiente de comprobar contra la API real del NAS. Este documento no autoriza el despliegue.
+Estado: revisión parcial del código del NAS; prueba de lectura real y catálogo pendientes. Este documento no autoriza el despliegue.
+
+## Confirmado en el código del NAS (capturas aportadas el 18-10-2026)
+
+- La API está en `api/server.py` y el endpoint comprueba autorización antes de operar en `/sync`.
+- `GET /sync` consulta la tabla `items`, ordena por `updated_at, id` y devuelve `{ "items": [...] }` con `id`, `type`, `data`, `updatedAt` y `deleted`.
+- `POST /sync` lee la propiedad `items`, procesa cada registro con un `INSERT INTO items` y usa `ON CONFLICT (id) DO UPDATE` para actualizar `type`, `data` y `deleted`; asigna `updated_at=now()`.
+- El código mostrado ejecuta `db.commit()` tras procesar el lote y devuelve `{ "ok": true, "count": len(items) }` si termina correctamente.
+- El contenedor de la API aparece en ejecución y publica el puerto 8090 en la captura de Docker.
+
+Estos hallazgos proceden de capturas del código, no de una llamada HTTP en vivo. No se ha verificado la respuesta real del endpoint ni su configuración de red desde el contenedor MCP.
 
 ## Lo que confirma el frontend de LUDOMUNDO
 
@@ -34,25 +44,20 @@ El frontend actual (app.js, rama main) construye registros con esta forma:
 
 Las unidades se envían como registros `type: "unit"`, con `data` que incluye al menos `id`, `name` y `updatedAt`. Las eliminaciones se representan mediante `deleted: true` y `data: null`; el adaptador MCP no debe crear ni alterar tombstones.
 
-El frontend lee `GET /sync` y espera un objeto cuya propiedad `items` sea una lista de registros. Envía lotes mediante `POST /sync` con cuerpo `{"items":[...]}`.
+## Pendiente de verificar
 
-## Pendiente de verificar en el servidor real
-
-No se ha accedido al NAS ni a la implementación del endpoint en esta revisión. Por tanto, siguen sin confirmarse:
-
-- El formato real de respuesta y los códigos HTTP de `GET /sync` y `POST /sync`.
-- Si el endpoint valida `type`, `data`, `updatedAt` y `deleted`, y cómo trata IDs repetidos.
-- Si un POST con un único registro hace upsert sin borrar ni sustituir otros registros.
-- Si la ruta base configurada desde el contenedor es accesible por la red Docker y acepta el token existente.
-- Si el catálogo JSON montado en el contenedor coincide con el catálogo usado por la app y conserva los IDs reales.
+- Hacer una petición de solo lectura a `GET /sync` y confirmar la respuesta real, sin imprimir token ni datos personales.
+- Confirmar si un POST con un registro individual preserva el resto de registros (la implementación visible sugiere que sí, pero aún no se ha probado).
+- Identificar el catálogo de juegos real y su esquema/IDs. La búsqueda realizada en `/volume1/docker/motorlab` no encontró archivos de catálogo JSON; el catálogo puede estar en otra ruta o integrado en los archivos de la aplicación.
+- Confirmar la ruta base accesible desde el contenedor MCP y la autenticación sin exponer secretos.
+- Verificar la compatibilidad de la cuenta ChatGPT con el transporte MCP y las operaciones necesarias.
 
 ## Prueba segura antes de cualquier escritura
 
 1. Consultar solo lectura `GET /sync` y validar la forma de respuesta sin imprimir tokens ni contenido sensible en logs.
-2. Contrastar el resultado con un pequeño conjunto de IDs y tipos, sin copiar sesiones completas ni datos personales.
-3. Revisar la implementación del endpoint y confirmar la semántica de upsert.
-4. Si la semántica no puede confirmarse por código, usar un entorno de prueba separado y datos desechables; no experimentar sobre los datos de producción.
-5. Mantener el adaptador sin desplegar hasta completar estos pasos y revisar autenticación de transporte.
+2. Contrastar únicamente recuentos, tipos y unos pocos IDs, sin copiar sesiones completas ni datos personales.
+3. Revisar la semántica de upsert y usar un entorno de prueba con datos desechables antes de la primera escritura.
+4. Mantener el adaptador sin desplegar hasta completar estos pasos y revisar autenticación de transporte.
 
 ## Seguridad
 
