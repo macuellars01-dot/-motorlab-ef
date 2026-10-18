@@ -1,0 +1,133 @@
+"""Basic offline tests for the LUDOMUNDO MCP adapter.
+
+Run with: python -m unittest discover -s tests -v
+These tests do not contact the NAS or use credentials.
+"""
+import importlib.util
+import os
+import tempfile
+import unittest
+from pathlib import Path
+from unittest.mock import patch
+
+os.environ.setdefault("MOTORLAB_API_URL", "http://127.0.0.1:8688/motorlab")
+os.environ.setdefault("MOTORLAB_TOKEN", "test-token")
+
+try:
+    import mcp  # noqa: F401
+except ImportError:
+    MCP_AVAILABLE = False
+else:
+    MCP_AVAILABLE = True
+
+
+@unittest.skipUnless(MCP_AVAILABLE, "Install mcp[cli] and httpx to run adapter tests")
+class AdapterTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        spec = importlib.util.spec_from_file_location("ludomundo_mcp_server", Path(__file__).parents[1] / "server.py")
+        cls.mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(cls.mod)
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.catalog_path = Path(self.tmp.name) / "games.json"
+        self.catalog_path.write_text('[{"id":"g1","name":"Juego uno"},{"id":"g2","title":"Juego dos"}]', encoding="utf-8")
+        self.old_path = self.mod.CATALOG_PATH
+        self.mod.CATALOG_PATH = self.catalog_path
+
+    def tearDown(self):
+        self.mod.CATALOG_PATH = self.old_path
+        self.tmp.cleanup()
+
+    def test_search_games_matches_name_and_title(self):
+        result = self.mod.search_games("juego", limit=10)
+        self.assertEqual([x["id"] for x in result], ["g1", "g2"])
+
+    def test_search_games_caps_limit(self):
+        self.assertLessEqual(len(self.mod.search_games("", limit=500)), 30)
+
+    def test_search_games_filters_by_material(self):
+        self.catalog_path.write_text('[{"id":"g1","name":"Juego uno","material":"aros"},{"id":"g2","name":"Juego dos","material":"conos"}]', encoding="utf-8")
+        result = self.mod.search_games(material="aros")
+        self.assertEqual([x["id"] for x in result], ["g1"])
+
+    def test_get_game_returns_exact_id(self):
+        self.assertEqual(self.mod.get_game("g1")["name"], "Juego uno")
+
+    def test_get_game_rejects_unknown_id(self):
+        with self.assertRaisesRegex(ValueError, "No se encontró"):
+            self.mod.get_game("missing")
+
+    def test_write_requires_explicit_confirmation(self):
+        with self.assertRaisesRegex(ValueError, "confirm_write=true"):
+            self.mod.save_session({"id": "s1", "name": "Prueba", "games": []})
+
+    def test_session_rejects_unknown_game_id(self):
+        with self.assertRaisesRegex(ValueError, "ID de juego ausente"):
+            self.mod.save_session({"id": "s1", "name": "Prueba", "games": [{"id": "missing"}]}, True)
+
+    def test_save_unit_requires_name_and_id(self):
+        with self.assertRaisesRegex(ValueError, "nombre e ID"):
+            self.mod.save_unit({"id": "u1"}, True)
+
+    def test_existing_record_requires_explicit_update_confirmation(self):
+        existing = [{"id": "u1", "type": "unit", "data": {"id": "u1", "name": "Unidad anterior"}, "deleted": False}]
+        with patch.object(self.mod, "_read_records", return_value=existing):
+            with self.assertRaisesRegex(ValueError, "confirm_update=true"):
+                self.mod.save_unit({"id": "u1", "name": "Unidad nueva"}, confirm_write=True)
+
+
+    def test_read_records_rejects_missing_items_instead_of_returning_empty(self):
+        response = unittest.mock.Mock()
+        response.json.return_value = {"unexpected": []}
+        response.raise_for_status.return_value = None
+        client = unittest.mock.Mock()
+        client.get.return_value = response
+        context = unittest.mock.MagicMock()
+        context.__enter__.return_value = client
+        with patch.object(self.mod.httpx, "Client", return_value=context):
+            with self.assertRaisesRegex(ValueError, "lista items esperada"):
+                self.mod._read_records()
+
+    def test_list_sessions_redacts_student_details_and_observations(self):
+        record = {
+            "id": "s1", "type": "session", "updatedAt": "now", "deleted": False,
+            "data": {
+                "name": "Sesión de prueba", "date": "2026-10-18", "group": "6º",
+                "students": "25", "observations": "dato privado", "games": [{"id": "g1"}],
+            },
+        }
+        with patch.object(self.mod, "_read_records", return_value=[record]):
+            result = self.mod.list_sessions()
+        self.assertEqual(result[0]["name"], "Sesión de prueba")
+        self.assertEqual(result[0]["game_count"], 1)
+        self.assertNotIn("students", result[0])
+        self.assertNotIn("observations", result[0])
+        self.assertNotIn("data", result[0])
+
+
+    def test_search_games_filters_by_age_space_and_intensity(self):
+        self.catalog_path.write_text(
+            '[{"id":"g1","name":"Juego uno","age":"10-12","space":"interior","intensity":"media"},'
+            '{"id":"g2","name":"Juego dos","age":"6-8","space":"exterior","intensity":"alta"}]',
+            encoding="utf-8",
+        )
+        result = self.mod.search_games(age="10-12", space="interior", intensity="media")
+        self.assertEqual([item["id"] for item in result], ["g1"])
+
+    def test_search_games_filter_is_case_insensitive(self):
+        self.catalog_path.write_text(
+            '[{"id":"g1","name":"Juego uno","material":"Aros"}]',
+            encoding="utf-8",
+        )
+        self.assertEqual([item["id"] for item in self.mod.search_games(material="aros")], ["g1"])
+
+    def test_catalog_rejects_unexpected_top_level_shape(self):
+        self.catalog_path.write_text('{"items":[]}', encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "lista de juegos"):
+            self.mod._catalog()
+
+
+if __name__ == "__main__":
+    unittest.main()
