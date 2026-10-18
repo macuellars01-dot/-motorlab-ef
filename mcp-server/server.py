@@ -22,8 +22,10 @@ def _read_records() -> list[dict[str, Any]]:
         response = client.get(f"{API_URL}/sync", headers=_headers())
         response.raise_for_status()
         payload = response.json()
-    items = payload.get("items", [])
-    if not isinstance(items, list):
+    if not isinstance(payload, dict) or "items" not in payload:
+        raise ValueError("La API no devolvió la lista items esperada; se detiene para evitar interpretar datos como vacíos.")
+    items = payload["items"]
+    if not isinstance(items, list) or any(not isinstance(item, dict) for item in items):
         raise ValueError("La API devolvió un formato de sincronización no válido.")
     return items
 
@@ -101,19 +103,40 @@ def get_game(game_id: str) -> dict[str, Any]:
 @mcp.tool()
 def list_sessions() -> list[dict[str, Any]]:
     """Lista sesiones guardadas, con campos resumidos."""
-    return [
-        {"id": r.get("id"), "updatedAt": r.get("updatedAt"), "deleted": bool(r.get("deleted")), "data": r.get("data")}
-        for r in _read_records() if r.get("type") == "session"
-    ]
+    result = []
+    for record in _read_records():
+        if record.get("type") != "session":
+            continue
+        data = record.get("data") if isinstance(record.get("data"), dict) else {}
+        games = data.get("games", [])
+        result.append({
+            "id": record.get("id"),
+            "name": data.get("name", ""),
+            "date": data.get("date", ""),
+            "group": data.get("group", ""),
+            "unitId": data.get("unitId", ""),
+            "game_count": len(games) if isinstance(games, list) else 0,
+            "updatedAt": record.get("updatedAt"),
+            "deleted": bool(record.get("deleted")),
+        })
+    return result
 
 
 @mcp.tool()
 def list_units() -> list[dict[str, Any]]:
     """Lista unidades didácticas guardadas."""
-    return [
-        {"id": r.get("id"), "updatedAt": r.get("updatedAt"), "deleted": bool(r.get("deleted")), "data": r.get("data")}
-        for r in _read_records() if r.get("type") == "unit"
-    ]
+    result = []
+    for record in _read_records():
+        if record.get("type") != "unit":
+            continue
+        data = record.get("data") if isinstance(record.get("data"), dict) else {}
+        result.append({
+            "id": record.get("id"),
+            "name": data.get("name", ""),
+            "updatedAt": record.get("updatedAt"),
+            "deleted": bool(record.get("deleted")),
+        })
+    return result
 
 
 def _save_record(record_type: str, record_id: str, data: dict[str, Any], confirm_update: bool = False) -> dict[str, Any]:
