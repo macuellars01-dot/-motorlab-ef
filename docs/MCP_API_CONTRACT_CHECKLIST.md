@@ -1,6 +1,6 @@
 # Comprobación del contrato de sincronización para MCP
 
-Estado: revisión parcial del código del NAS; prueba de lectura real y catálogo pendientes. Este documento no autoriza el despliegue.
+Estado: revisión parcial del código del NAS; prueba de lectura real y transporte seguro pendientes. Este documento no autoriza el despliegue.
 
 ## Confirmado en el código del NAS (capturas aportadas el 18-10-2026)
 
@@ -12,9 +12,17 @@ Estado: revisión parcial del código del NAS; prueba de lectura real y catálog
 
 Estos hallazgos proceden de capturas del código, no de una llamada HTTP en vivo. No se ha verificado la respuesta real del endpoint ni su configuración de red desde el contenedor MCP.
 
+## Catálogo de juegos localizado en GitHub
+
+- El frontend en la rama `main` carga el catálogo base desde `data/games.json` (fetch de solo lectura).
+- También aplica parches de catálogo opcionales desde `data/catalog_patch_v60.json`, `data/catalog_patch_v61_additions.json` y una serie de parches/correcciones posteriores hasta v90. Por tanto, para que MCP use los mismos juegos que la web, no basta con montar solo el archivo base: hay que reproducir la combinación de parches en el mismo orden o reutilizar una exportación canónica del catálogo ya ensamblado.
+- `data/sources.json` documenta las fuentes bibliográficas y los recuentos declarados de juegos por fuente.
+- El archivo base se encuentra en el repositorio GitHub Pages, no en la carpeta `/volume1/docker/motorlab` examinada en el NAS. No se ha confirmado que exista una copia equivalente en el NAS.
+- El contenido del catálogo no debe volcarse en logs ni duplicarse a mano; conservar los IDs existentes es requisito para validar las sesiones.
+
 ## Lo que confirma el frontend de LUDOMUNDO
 
-El frontend actual (app.js, rama main) construye registros con esta forma:
+El frontend actual (`app.js`, rama `main`) construye registros con esta forma:
 
 ```json
 {
@@ -48,20 +56,20 @@ Las unidades se envían como registros `type: "unit"`, con `data` que incluye al
 
 - Hacer una petición de solo lectura a `GET /sync` y confirmar la respuesta real, sin imprimir token ni datos personales.
 - Confirmar si un POST con un registro individual preserva el resto de registros (la implementación visible sugiere que sí, pero aún no se ha probado).
-- Identificar el catálogo de juegos real y su esquema/IDs. La búsqueda realizada en `/volume1/docker/motorlab` no encontró archivos de catálogo JSON; el catálogo puede estar en otra ruta o integrado en los archivos de la aplicación.
+- Obtener o generar una exportación canónica del catálogo ya ensamblado, incluyendo los parches v60–v90, y validar esquema e IDs sin exponer todo el contenido.
 - Confirmar la ruta base accesible desde el contenedor MCP y la autenticación sin exponer secretos.
 - Verificar la compatibilidad de la cuenta ChatGPT con el transporte MCP y las operaciones necesarias.
 
 ## Prueba segura antes de cualquier escritura
 
-1. Consultar solo lectura `GET /sync` y validar la forma de respuesta sin imprimir tokens ni contenido sensible en logs.
+1. Consultar solo lectura `GET /sync` y validar la forma de respuesta sin imprimir token ni contenido sensible en logs.
 2. Contrastar únicamente recuentos, tipos y unos pocos IDs, sin copiar sesiones completas ni datos personales.
 3. Revisar la semántica de upsert y usar un entorno de prueba con datos desechables antes de la primera escritura.
 4. Mantener el adaptador sin desplegar hasta completar estos pasos y revisar autenticación de transporte.
 
 ## Seguridad
 
-- No cambiar contraseñas ni tokens durante esta tarea.
+- Las capturas compartidas expusieron credenciales de la base de datos y un token de API. No reutilizarlos en documentación, código, prompts ni logs. Planificar una rotación coordinada antes de cualquier despliegue o acceso nuevo, cuando pueda hacerse sin interrumpir servicios.
 - No publicar la API del NAS ni el puerto MCP en Internet.
 - No desplegar el prototipo sin autenticación adecuada y autorización para operaciones de escritura.
 - No tocar Home Assistant ni la aplicación del formulario de lectura.
