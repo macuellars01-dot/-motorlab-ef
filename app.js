@@ -719,10 +719,11 @@ function normalizeGameImportTitle(value){return String(value||'').normalize('NFD
 function validateGamesImport(payload){
   if(!payload||payload.format!=='ludomundo-games-import-v1')throw new Error('Formato no reconocido. Debe ser ludomundo-games-import-v1.');
   if(!Array.isArray(payload.games))throw new Error('El JSON debe incluir un array "games".');
-  if(payload.games.length>1000)throw new Error('El archivo supera el límite de 1000 fichas por importación.');
+  if(payload.games.length>5000)throw new Error('El archivo supera el límite de 5000 fichas por importación.');
   const existingIds=new Set(games.map(g=>String(g.id)));
-  const existingTitles=new Set(games.map(g=>normalizeGameImportTitle(g.title)));
-  const seenTitles=new Set();
+  const signature=(title,description)=>normalizeGameImportTitle(title)+'::'+String(description||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase().replace(/\\s+/g,' ').trim();
+  const existingSignatures=new Set(games.map(g=>signature(g.title,g.description)));
+  const seenSignatures=new Set();
   const clean=[];let skipped=0;
   payload.games.forEach((raw,i)=>{
     if(!raw||typeof raw!=='object'||Array.isArray(raw))throw new Error('Ficha no válida en la posición '+(i+1)+'.');
@@ -732,8 +733,10 @@ function validateGamesImport(payload){
     if(!title)throw new Error('La ficha '+(i+1)+' no tiene título.');
     if(!description)throw new Error('La ficha "'+title+'" no tiene descripción. Añádela antes de importar.');
     const normalized=normalizeGameImportTitle(title);
+    const signatureKey=signature(title,description);
     const suppliedId=String(pick('id')).trim();
-    if((suppliedId&&existingIds.has(suppliedId))||existingTitles.has(normalized)||seenTitles.has(normalized)){skipped++;return}
+    // Omitir solo la misma ficha (título y descripción), no variantes con igual título.
+    if(existingSignatures.has(signatureKey)||seenSignatures.has(signatureKey)){skipped++;return}
     const listValue=(...keys)=>{const v=pick(...keys);if(Array.isArray(v))return v.map(x=>String(x).trim()).filter(Boolean);if(typeof v==='string'&&v.trim())return v.split(/[;,|]/).map(x=>x.trim()).filter(Boolean);return []};
     const age=pick('age','ages','edad','edades','course','courses','curso','cursos')||'Por determinar';
     const material=pick('material','materials','materiales')||'No especificado';
@@ -748,7 +751,7 @@ function validateGamesImport(payload){
     if(groupings.length)game.groupings=groupings;
     if(objectives.length)game.objectives=objectives;
     if(pick('videoFilename','videoFile','nombreVideo'))game.videoFilename=String(pick('videoFilename','videoFile','nombreVideo')).trim();
-    clean.push(game);seenTitles.add(normalized);existingIds.add(game.id);existingTitles.add(normalized);
+    clean.push(game);seenSignatures.add(signatureKey);existingIds.add(game.id);
   });
   return {games:clean,skipped};
 }
