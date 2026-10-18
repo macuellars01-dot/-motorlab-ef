@@ -41,7 +41,7 @@ class AdapterTests(unittest.TestCase):
         self.tmp.cleanup()
 
     def test_search_games_matches_name_and_title(self):
-        result = self.mod.search_games("juego", 10)
+        result = self.mod.search_games("juego", limit=10)
         self.assertEqual([x["id"] for x in result], ["g1", "g2"])
 
     def test_search_games_caps_limit(self):
